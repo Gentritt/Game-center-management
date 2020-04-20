@@ -76,5 +76,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Game-center maagement.BO\Game-center maagement.BO.csproj">
+      <Project>{4e74e640-3dd5-4484-95ca-7d5a0214df3b}</Project>
+      <Name>Game-center maagement.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\game-center management.BLL\game-center management.BLL.csproj">
+      <Project>{f634e746-a986-4031-af15-79f8cbd6767b}</Project>
+      <Name>game-center management.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
