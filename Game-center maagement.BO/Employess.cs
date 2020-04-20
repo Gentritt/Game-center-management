@@ -12,6 +12,7 @@ namespace Game_center_maagement.BO
 		public int PersonalID { get; set; }
 		public string Name { get; set; }
 		public string LastName { get; set; }
+        public string City { get; set; }
 		public DateTime Birthday { get; set; }
 		public int PhoneNumber { get; set; }
 		public string Username { get; set; }
