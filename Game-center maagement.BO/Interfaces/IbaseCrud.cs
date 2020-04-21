@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game_center_maagement.BO.Interfaces
 {
-	interface IbaseCrud<T>
+	public interface IbaseCrud<T>
 	{
 		//Interface gjenerik qe kthen bool,int,void	dhe ka metodat Insert,ADD,REmove,Modify...
 

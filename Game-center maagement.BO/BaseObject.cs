@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game_center_maagement.BO
 {
-	class BaseObject
+	public class BaseObject
 	{
 
 		public string Insertby { get; set; }

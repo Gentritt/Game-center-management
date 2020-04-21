@@ -44,6 +44,7 @@
     <Compile Include="BaseObject.cs" />
     <Compile Include="Employess.cs" />
     <Compile Include="Interfaces\IbaseCrud.cs" />
+    <Compile Include="Interfaces\IConvertToObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
