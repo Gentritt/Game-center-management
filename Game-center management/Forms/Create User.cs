@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Game_center_management
+namespace Game_center_management.Forms
 {
-	public partial class Form1 : Form
+	public partial class Create_User : Form
 	{
-		public Form1()
+		public Create_User()
 		{
 			InitializeComponent();
 		}

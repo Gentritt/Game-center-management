@@ -11,7 +11,7 @@ namespace game_center_management.DAL
 {
 	public class SqlHelper
 	{
-		//private static string _Conn 
+		//private static string _Conn
 
 		public static SqlConnection GetConnection()
 		{
