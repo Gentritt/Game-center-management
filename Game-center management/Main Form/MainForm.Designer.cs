@@ -54,13 +54,13 @@
 			this.radMenu1 = new Telerik.WinControls.UI.RadDropDownMenu();
 			this.radMenu2 = new Telerik.WinControls.UI.RadMenu();
 			this.radMenuItem13 = new Telerik.WinControls.UI.RadMenuItem();
-			this.radMenuItem14 = new Telerik.WinControls.UI.RadMenuItem();
-			this.radMenuItem15 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem16 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem17 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem18 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem19 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem20 = new Telerik.WinControls.UI.RadMenuItem();
+			this.radMenuItem14 = new Telerik.WinControls.UI.RadMenuItem();
+			this.radMenuItem15 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem21 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem22 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem23 = new Telerik.WinControls.UI.RadMenuItem();
@@ -181,7 +181,7 @@
 			this.radMenu1.ProcessKeyboard = false;
 			this.radMenu1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.radMenu1.RollOverItemSelection = true;
-			this.radMenu1.Size = new System.Drawing.Size(133, 80);
+			this.radMenu1.Size = new System.Drawing.Size(154, 80);
 			this.radMenu1.TabIndex = 0;
 			this.radMenu1.ThemeName = "Crystal";
 			this.radMenu1.VerticalAlignmentCorrectionMode = Telerik.WinControls.UI.AlignmentCorrectionMode.SnapToOuterEdges;
@@ -208,20 +208,6 @@
             this.radMenuItem18});
 			this.radMenuItem13.Name = "radMenuItem13";
 			this.radMenuItem13.Text = "Administrimi";
-			// 
-			// radMenuItem14
-			// 
-			this.radMenuItem14.Name = "radMenuItem14";
-			this.radMenuItem14.Text = "Raportet";
-			// 
-			// radMenuItem15
-			// 
-			this.radMenuItem15.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuItem21,
-            this.radMenuItem22,
-            this.radMenuItem23});
-			this.radMenuItem15.Name = "radMenuItem15";
-			this.radMenuItem15.Text = "Help";
 			// 
 			// radMenuItem16
 			// 
@@ -251,6 +237,20 @@
 			// 
 			this.radMenuItem20.Name = "radMenuItem20";
 			this.radMenuItem20.Text = "German";
+			// 
+			// radMenuItem14
+			// 
+			this.radMenuItem14.Name = "radMenuItem14";
+			this.radMenuItem14.Text = "Raportet";
+			// 
+			// radMenuItem15
+			// 
+			this.radMenuItem15.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radMenuItem21,
+            this.radMenuItem22,
+            this.radMenuItem23});
+			this.radMenuItem15.Name = "radMenuItem15";
+			this.radMenuItem15.Text = "Help";
 			// 
 			// radMenuItem21
 			// 
