@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Game_center_maagement.BO
+namespace Game_center_management.BO
 {
 	public class Employess : BaseObject
 	{
@@ -12,7 +12,10 @@ namespace Game_center_maagement.BO
 		public int PersonalID { get; set; }
 		public string Name { get; set; }
 		public string LastName { get; set; }
-		//public string City { get; set; }
+		public string Adress { get; set; }
+		public double Salary { get; set; }
+		public DateTime WorkTime { get; set; }
+
 		public string Email { get; set; }
 		public DateTime Birthday { get; set; }
 		public int PhoneNumber { get; set; }

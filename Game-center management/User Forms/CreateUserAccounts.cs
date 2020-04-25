@@ -16,5 +16,15 @@ namespace Game_center_management.Forms
 		{
 			InitializeComponent();
 		}
+
+		private void CreateUserAccounts_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void grLoginInformation_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

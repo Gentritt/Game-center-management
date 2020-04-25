@@ -23,5 +23,12 @@ namespace Game_center_management
 		{
 			this.Close();
 		}
+
+		
+
+		private void btnCancel_Click_1(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
 	}
 }

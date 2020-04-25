@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Game_center_maagement.BO.Interfaces
+namespace Game_center_management.BO.Interfaces
 {
 	public interface IbaseCrud<T>
 	{

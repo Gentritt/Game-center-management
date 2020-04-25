@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game-center management", "Game-center management\Game-center management.csproj", "{B41E1232-45F6-48D2-A388-AB7D0933B7B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game-center maagement.BO", "Game-center maagement.BO\Game-center maagement.BO.csproj", "{4E74E640-3DD5-4484-95CA-7D5A0214DF3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game-center management.BO", "Game-center maagement.BO\Game-center management.BO.csproj", "{4E74E640-3DD5-4484-95CA-7D5A0214DF3B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "game-center management.BLL", "game-center management.BLL\game-center management.BLL.csproj", "{F634E746-A986-4031-AF15-79F8CBD6767B}"
 EndProject

@@ -47,9 +47,9 @@
     <Compile Include="SqlHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Game-center maagement.BO\Game-center maagement.BO.csproj">
+    <ProjectReference Include="..\Game-center maagement.BO\Game-center management.BO.csproj">
       <Project>{4e74e640-3dd5-4484-95ca-7d5a0214df3b}</Project>
-      <Name>Game-center maagement.BO</Name>
+      <Name>Game-center management.BO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

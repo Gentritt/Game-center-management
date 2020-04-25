@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Game_center_maagement.BO.Interfaces;
+using Game_center_management.BO.Interfaces;
 
 namespace game_center_management.BLL
 {

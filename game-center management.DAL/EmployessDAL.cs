@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.Sql;
-using Game_center_maagement.BO;
-using Game_center_maagement.BO.Interfaces;
+using Game_center_management.BO;
+using Game_center_management.BO.Interfaces;
 
 
 namespace game_center_management.DAL

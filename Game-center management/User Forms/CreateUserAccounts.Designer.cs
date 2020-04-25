@@ -29,42 +29,43 @@
 		private void InitializeComponent()
 		{
 			this.grLoginInformation = new Telerik.WinControls.UI.RadGroupBox();
-			this.lblUsername = new System.Windows.Forms.Label();
-			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.txtUsername = new Telerik.WinControls.UI.RadTextBox();
-			this.txtPassowrd = new JTextBox.JTextBox();
+			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
+			this.lblUsername = new System.Windows.Forms.Label();
 			this.grUserInformation = new Telerik.WinControls.UI.RadGroupBox();
-			this.lblName = new System.Windows.Forms.Label();
-			this.lblLastName = new System.Windows.Forms.Label();
-			this.lblBirthday = new System.Windows.Forms.Label();
-			this.lblPhone = new System.Windows.Forms.Label();
-			this.lblEmail = new System.Windows.Forms.Label();
-			this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
-			this.radTextBox2 = new Telerik.WinControls.UI.RadTextBox();
-			this.radTextBox3 = new Telerik.WinControls.UI.RadTextBox();
-			this.radTextBox4 = new Telerik.WinControls.UI.RadTextBox();
 			this.radTextBox5 = new Telerik.WinControls.UI.RadTextBox();
+			this.radTextBox4 = new Telerik.WinControls.UI.RadTextBox();
+			this.radTextBox3 = new Telerik.WinControls.UI.RadTextBox();
+			this.radTextBox2 = new Telerik.WinControls.UI.RadTextBox();
+			this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
+			this.lblEmail = new System.Windows.Forms.Label();
+			this.lblPhone = new System.Windows.Forms.Label();
+			this.lblBirthday = new System.Windows.Forms.Label();
+			this.lblLastName = new System.Windows.Forms.Label();
+			this.lblName = new System.Windows.Forms.Label();
 			this.btnSave = new Telerik.WinControls.UI.RadButton();
 			this.btnCancel = new Telerik.WinControls.UI.RadButton();
+			this.txtPasswordUserAcc = new Telerik.WinControls.UI.RadTextBox();
 			((System.ComponentModel.ISupportInitialize)(this.grLoginInformation)).BeginInit();
 			this.grLoginInformation.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUsername)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.grUserInformation)).BeginInit();
 			this.grUserInformation.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radTextBox5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPasswordUserAcc)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// grLoginInformation
 			// 
 			this.grLoginInformation.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.grLoginInformation.Controls.Add(this.txtPassowrd);
+			this.grLoginInformation.Controls.Add(this.txtPasswordUserAcc);
 			this.grLoginInformation.Controls.Add(this.txtUsername);
 			this.grLoginInformation.Controls.Add(this.radLabel1);
 			this.grLoginInformation.Controls.Add(this.lblUsername);
@@ -76,16 +77,14 @@
 			this.grLoginInformation.TabIndex = 0;
 			this.grLoginInformation.Text = "Login Information";
 			this.grLoginInformation.ThemeName = "Crystal";
+			this.grLoginInformation.Click += new System.EventHandler(this.grLoginInformation_Click);
 			// 
-			// lblUsername
+			// txtUsername
 			// 
-			this.lblUsername.AutoSize = true;
-			this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblUsername.Location = new System.Drawing.Point(20, 31);
-			this.lblUsername.Name = "lblUsername";
-			this.lblUsername.Size = new System.Drawing.Size(81, 21);
-			this.lblUsername.TabIndex = 0;
-			this.lblUsername.Text = "Username";
+			this.txtUsername.Location = new System.Drawing.Point(116, 32);
+			this.txtUsername.Name = "txtUsername";
+			this.txtUsername.Size = new System.Drawing.Size(146, 20);
+			this.txtUsername.TabIndex = 2;
 			// 
 			// radLabel1
 			// 
@@ -96,29 +95,15 @@
 			this.radLabel1.TabIndex = 1;
 			this.radLabel1.Text = "Password";
 			// 
-			// txtUsername
+			// lblUsername
 			// 
-			this.txtUsername.Location = new System.Drawing.Point(116, 32);
-			this.txtUsername.Name = "txtUsername";
-			this.txtUsername.Size = new System.Drawing.Size(146, 20);
-			this.txtUsername.TabIndex = 2;
-			// 
-			// txtPassowrd
-			// 
-			this.txtPassowrd.AutoSize = true;
-			this.txtPassowrd.BorderColor = System.Drawing.Color.MediumTurquoise;
-			this.txtPassowrd.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtPassowrd.Hint = "";
-			this.txtPassowrd.IsPassword = true;
-			this.txtPassowrd.Length = 0;
-			this.txtPassowrd.Location = new System.Drawing.Point(116, 80);
-			this.txtPassowrd.Name = "txtPassowrd";
-			this.txtPassowrd.OnFocus = System.Drawing.Color.DarkGray;
-			this.txtPassowrd.OnlyChar = false;
-			this.txtPassowrd.OnlyNumber = false;
-			this.txtPassowrd.Size = new System.Drawing.Size(146, 24);
-			this.txtPassowrd.TabIndex = 3;
-			this.txtPassowrd.TextValue = "";
+			this.lblUsername.AutoSize = true;
+			this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblUsername.Location = new System.Drawing.Point(20, 31);
+			this.lblUsername.Name = "lblUsername";
+			this.lblUsername.Size = new System.Drawing.Size(81, 21);
+			this.lblUsername.TabIndex = 0;
+			this.lblUsername.Text = "Username";
 			// 
 			// grUserInformation
 			// 
@@ -142,41 +127,40 @@
 			this.grUserInformation.Text = "User Information";
 			this.grUserInformation.ThemeName = "Crystal";
 			// 
-			// lblName
+			// radTextBox5
 			// 
-			this.lblName.AutoSize = true;
-			this.lblName.Location = new System.Drawing.Point(6, 40);
-			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(51, 17);
-			this.lblName.TabIndex = 0;
-			this.lblName.Text = "Name: ";
+			this.radTextBox5.Location = new System.Drawing.Point(91, 220);
+			this.radTextBox5.Name = "radTextBox5";
+			this.radTextBox5.Size = new System.Drawing.Size(148, 20);
+			this.radTextBox5.TabIndex = 7;
 			// 
-			// lblLastName
+			// radTextBox4
 			// 
-			this.lblLastName.AutoSize = true;
-			this.lblLastName.Location = new System.Drawing.Point(6, 82);
-			this.lblLastName.Name = "lblLastName";
-			this.lblLastName.Size = new System.Drawing.Size(79, 17);
-			this.lblLastName.TabIndex = 1;
-			this.lblLastName.Text = "LastName: ";
+			this.radTextBox4.Location = new System.Drawing.Point(91, 175);
+			this.radTextBox4.Name = "radTextBox4";
+			this.radTextBox4.Size = new System.Drawing.Size(148, 20);
+			this.radTextBox4.TabIndex = 6;
 			// 
-			// lblBirthday
+			// radTextBox3
 			// 
-			this.lblBirthday.AutoSize = true;
-			this.lblBirthday.Location = new System.Drawing.Point(6, 124);
-			this.lblBirthday.Name = "lblBirthday";
-			this.lblBirthday.Size = new System.Drawing.Size(67, 17);
-			this.lblBirthday.TabIndex = 2;
-			this.lblBirthday.Text = "Birthday: ";
+			this.radTextBox3.Location = new System.Drawing.Point(91, 85);
+			this.radTextBox3.Name = "radTextBox3";
+			this.radTextBox3.Size = new System.Drawing.Size(148, 20);
+			this.radTextBox3.TabIndex = 6;
 			// 
-			// lblPhone
+			// radTextBox2
 			// 
-			this.lblPhone.AutoSize = true;
-			this.lblPhone.Location = new System.Drawing.Point(6, 166);
-			this.lblPhone.Name = "lblPhone";
-			this.lblPhone.Size = new System.Drawing.Size(54, 17);
-			this.lblPhone.TabIndex = 3;
-			this.lblPhone.Text = "Phone: ";
+			this.radTextBox2.Location = new System.Drawing.Point(91, 130);
+			this.radTextBox2.Name = "radTextBox2";
+			this.radTextBox2.Size = new System.Drawing.Size(148, 20);
+			this.radTextBox2.TabIndex = 6;
+			// 
+			// radTextBox1
+			// 
+			this.radTextBox1.Location = new System.Drawing.Point(91, 40);
+			this.radTextBox1.Name = "radTextBox1";
+			this.radTextBox1.Size = new System.Drawing.Size(148, 20);
+			this.radTextBox1.TabIndex = 5;
 			// 
 			// lblEmail
 			// 
@@ -187,40 +171,41 @@
 			this.lblEmail.TabIndex = 4;
 			this.lblEmail.Text = "Email: ";
 			// 
-			// radTextBox1
+			// lblPhone
 			// 
-			this.radTextBox1.Location = new System.Drawing.Point(91, 40);
-			this.radTextBox1.Name = "radTextBox1";
-			this.radTextBox1.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox1.TabIndex = 5;
+			this.lblPhone.AutoSize = true;
+			this.lblPhone.Location = new System.Drawing.Point(6, 166);
+			this.lblPhone.Name = "lblPhone";
+			this.lblPhone.Size = new System.Drawing.Size(54, 17);
+			this.lblPhone.TabIndex = 3;
+			this.lblPhone.Text = "Phone: ";
 			// 
-			// radTextBox2
+			// lblBirthday
 			// 
-			this.radTextBox2.Location = new System.Drawing.Point(91, 130);
-			this.radTextBox2.Name = "radTextBox2";
-			this.radTextBox2.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox2.TabIndex = 6;
+			this.lblBirthday.AutoSize = true;
+			this.lblBirthday.Location = new System.Drawing.Point(6, 124);
+			this.lblBirthday.Name = "lblBirthday";
+			this.lblBirthday.Size = new System.Drawing.Size(67, 17);
+			this.lblBirthday.TabIndex = 2;
+			this.lblBirthday.Text = "Birthday: ";
 			// 
-			// radTextBox3
+			// lblLastName
 			// 
-			this.radTextBox3.Location = new System.Drawing.Point(91, 85);
-			this.radTextBox3.Name = "radTextBox3";
-			this.radTextBox3.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox3.TabIndex = 6;
+			this.lblLastName.AutoSize = true;
+			this.lblLastName.Location = new System.Drawing.Point(6, 82);
+			this.lblLastName.Name = "lblLastName";
+			this.lblLastName.Size = new System.Drawing.Size(79, 17);
+			this.lblLastName.TabIndex = 1;
+			this.lblLastName.Text = "LastName: ";
 			// 
-			// radTextBox4
+			// lblName
 			// 
-			this.radTextBox4.Location = new System.Drawing.Point(91, 175);
-			this.radTextBox4.Name = "radTextBox4";
-			this.radTextBox4.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox4.TabIndex = 6;
-			// 
-			// radTextBox5
-			// 
-			this.radTextBox5.Location = new System.Drawing.Point(91, 220);
-			this.radTextBox5.Name = "radTextBox5";
-			this.radTextBox5.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox5.TabIndex = 7;
+			this.lblName.AutoSize = true;
+			this.lblName.Location = new System.Drawing.Point(6, 40);
+			this.lblName.Name = "lblName";
+			this.lblName.Size = new System.Drawing.Size(51, 17);
+			this.lblName.TabIndex = 0;
+			this.lblName.Text = "Name: ";
 			// 
 			// btnSave
 			// 
@@ -240,6 +225,13 @@
 			this.btnCancel.Text = "Cancel";
 			this.btnCancel.ThemeName = "Crystal";
 			// 
+			// txtPasswordUserAcc
+			// 
+			this.txtPasswordUserAcc.Location = new System.Drawing.Point(116, 79);
+			this.txtPasswordUserAcc.Name = "txtPasswordUserAcc";
+			this.txtPasswordUserAcc.Size = new System.Drawing.Size(146, 20);
+			this.txtPasswordUserAcc.TabIndex = 3;
+			// 
 			// CreateUserAccounts
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -251,21 +243,23 @@
 			this.Controls.Add(this.grLoginInformation);
 			this.Name = "CreateUserAccounts";
 			this.Text = "CreateUserAccounts";
+			this.Load += new System.EventHandler(this.CreateUserAccounts_Load);
 			((System.ComponentModel.ISupportInitialize)(this.grLoginInformation)).EndInit();
 			this.grLoginInformation.ResumeLayout(false);
 			this.grLoginInformation.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUsername)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.grUserInformation)).EndInit();
 			this.grUserInformation.ResumeLayout(false);
 			this.grUserInformation.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radTextBox5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPasswordUserAcc)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -274,7 +268,6 @@
 
 		private Telerik.WinControls.UI.RadGroupBox grLoginInformation;
 		private System.Windows.Forms.Label lblUsername;
-		private JTextBox.JTextBox txtPassowrd;
 		private Telerik.WinControls.UI.RadTextBox txtUsername;
 		private Telerik.WinControls.UI.RadTextBox radTextBox1;
 		private Telerik.WinControls.UI.RadLabel radLabel1;
@@ -290,5 +283,6 @@
 		private System.Windows.Forms.Label lblName;
 		private Telerik.WinControls.UI.RadButton btnSave;
 		private Telerik.WinControls.UI.RadButton btnCancel;
+		private Telerik.WinControls.UI.RadTextBox txtPasswordUserAcc;
 	}
 }

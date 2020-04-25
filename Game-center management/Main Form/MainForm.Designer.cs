@@ -59,6 +59,7 @@
 			this.radMenuItem18 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem19 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem20 = new Telerik.WinControls.UI.RadMenuItem();
+			this.radMenuItem24 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem14 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem15 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem21 = new Telerik.WinControls.UI.RadMenuItem();
@@ -205,7 +206,8 @@
 			this.radMenuItem13.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuItem16,
             this.radMenuItem17,
-            this.radMenuItem18});
+            this.radMenuItem18,
+            this.radMenuItem24});
 			this.radMenuItem13.Name = "radMenuItem13";
 			this.radMenuItem13.Text = "Administrimi";
 			// 
@@ -237,6 +239,12 @@
 			// 
 			this.radMenuItem20.Name = "radMenuItem20";
 			this.radMenuItem20.Text = "German";
+			// 
+			// radMenuItem24
+			// 
+			this.radMenuItem24.Name = "radMenuItem24";
+			this.radMenuItem24.Text = " Menaxhimi Kompjutereve";
+			this.radMenuItem24.Click += new System.EventHandler(this.radMenuItem24_Click);
 			// 
 			// radMenuItem14
 			// 
@@ -277,6 +285,7 @@
 			this.Name = "MainForm";
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.Shown += new System.EventHandler(this.MainForm_Shown);
 			((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radMenu2)).EndInit();
 			this.ResumeLayout(false);
@@ -320,6 +329,7 @@
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem21;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem22;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem23;
+		private Telerik.WinControls.UI.RadMenuItem radMenuItem24;
 	}
 }
 
