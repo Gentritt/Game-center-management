@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,16 +12,15 @@ namespace game_center_management.DAL
 {
 	public class SqlHelper
 	{
-		//private static string _Conn
-
+		private static string _connectionString = ConfigurationManager.ConnectionStrings["Game-Center"].ConnectionString;
 		public static SqlConnection GetConnection()
 		{
 
 			try
 			{
 
-				SqlConnection conn = new SqlConnection();
-				//conn.Open();
+				SqlConnection conn = new SqlConnection(_connectionString);
+				conn.Open();
 				return conn;
 
 			}
@@ -33,7 +33,7 @@ namespace game_center_management.DAL
 
 		}
 
-		public SqlCommand Command(SqlConnection conn,string cmdText,CommandType cmdType = CommandType.StoredProcedure)
+		public static SqlCommand Command(SqlConnection conn,string cmdText,CommandType cmdType = CommandType.StoredProcedure)
 		{
 			SqlCommand command = new SqlCommand(cmdText,conn);
 			command.CommandType = CommandType.StoredProcedure;

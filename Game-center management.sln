@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game-center management.BO",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "game-center management.BLL", "game-center management.BLL\game-center management.BLL.csproj", "{F634E746-A986-4031-AF15-79F8CBD6767B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "game-center management.DAL", "game-center management.DAL\game-center management.DAL.csproj", "{7E02A785-4682-482C-849A-7CE58BD05B2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game-center management.DAL", "game-center management.DAL\Game-center management.DAL.csproj", "{7E02A785-4682-482C-849A-7CE58BD05B2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

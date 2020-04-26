@@ -282,6 +282,7 @@
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.radMenu2);
 			this.Controls.Add(this.radMenu1);
+			this.IsMdiContainer = true;
 			this.Name = "MainForm";
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);

@@ -14,9 +14,9 @@ using Game_center_management.BO.Interfaces;
 namespace game_center_management.DAL
 {
 
-	public class EmployessDAL: IbaseCrud<Employess>
+	public class EmployessDAL: IbaseCrud<Employess>,IConvertToObject<Employess>
 	{
-		public string _connString = ConfigurationManager.ConnectionStrings["Game Center"].ConnectionString;
+		public string _connString = ConfigurationManager.ConnectionStrings["Game-Center"].ConnectionString;
 
 
 		public int ADD(Employess model)
@@ -74,6 +74,60 @@ namespace game_center_management.DAL
 		public List<Employess> GetAll()
 		{
 			throw new NotImplementedException();
+		}
+
+		public Employess Login(string username, string password)
+		{
+			Employess employess = null;
+			using (var con = SqlHelper.GetConnection())
+			{
+
+				using (var cmd = SqlHelper.Command(con,cmdText: "usp_LoginPuntori",CommandType.StoredProcedure))
+				{
+
+					cmd.Parameters.AddWithValue("username", username);
+					cmd.Parameters.AddWithValue("password", password);
+
+					using (var reader = cmd.ExecuteReader())
+					{
+						if (reader.Read())
+						{
+							employess = ToObject(reader);
+
+						}
+						
+					}
+				}
+
+				
+					
+			}
+
+			return employess;
+
+		}
+		public Employess ToObject(SqlDataReader reader)
+		{
+			Employess employess = new Employess();
+
+			employess.ID = int.Parse(reader["ID"].ToString());
+			employess.Username = reader["UserName"].ToString();
+			employess.Name = reader["Emri"].ToString();
+			employess.LastName = reader["Mbiemri"].ToString();
+			employess.Email = reader["Email"].ToString();
+			employess.Adress = reader["Adresa"].ToString();
+			employess.Birthday = DateTime.Parse(reader["DataLindjes"].ToString());
+			employess.Salary = Double.Parse(reader["Rroga"].ToString());
+			employess.WorkTime = DateTime.Parse(reader["OrariPunes"].ToString());
+			employess.Insertby = reader["InsertBy"].ToString();
+			employess.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
+			employess.IsActive = (bool) reader["IsActive"];
+
+
+			
+
+			return employess;
+
 		}
 	}
 }

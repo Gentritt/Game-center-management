@@ -32,8 +32,10 @@ namespace Game_center_management
 
 		private void MainForm_Shown(object sender, EventArgs e)
 		{
-			LoginForm frmLogin = new LoginForm();
-			frmLogin.ShowDialog();
+			LoginForm loginForm = new LoginForm();
+			loginForm.ShowDialog();
+
+
 
 		}
 

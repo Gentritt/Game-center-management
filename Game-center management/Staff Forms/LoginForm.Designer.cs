@@ -40,14 +40,16 @@
 			this.office2010BlueTheme1 = new Telerik.WinControls.Themes.Office2010BlueTheme();
 			this.lblUsername = new System.Windows.Forms.Label();
 			this.lblPassword = new System.Windows.Forms.Label();
-			this.txtUsername = new JTextBox.JTextBox();
-			this.txtPassword = new JTextBox.JTextBox();
 			this.btnLogin = new Telerik.WinControls.UI.RadButton();
 			this.btnCancel = new Telerik.WinControls.UI.RadButton();
+			this.txtUsername = new Telerik.WinControls.UI.RadTextBox();
+			this.txtPassword = new Telerik.WinControls.UI.RadTextBox();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUsername)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPassword)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -118,41 +120,6 @@
 			this.lblPassword.TabIndex = 5;
 			this.lblPassword.Text = "PASSWORD";
 			// 
-			// txtUsername
-			// 
-			this.txtUsername.AutoSize = true;
-			this.txtUsername.BorderColor = System.Drawing.Color.Gray;
-			this.txtUsername.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtUsername.Hint = "";
-			this.txtUsername.IsPassword = false;
-			this.txtUsername.Length = 0;
-			this.txtUsername.Location = new System.Drawing.Point(155, 150);
-			this.txtUsername.Name = "txtUsername";
-			this.txtUsername.OnFocus = System.Drawing.Color.DarkGray;
-			this.txtUsername.OnlyChar = false;
-			this.txtUsername.OnlyNumber = false;
-			this.txtUsername.Size = new System.Drawing.Size(168, 36);
-			this.txtUsername.TabIndex = 6;
-			this.txtUsername.TextValue = "";
-			// 
-			// txtPassword
-			// 
-			this.txtPassword.AutoSize = true;
-			this.txtPassword.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-			this.txtPassword.BorderColor = System.Drawing.Color.Gray;
-			this.txtPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtPassword.Hint = "";
-			this.txtPassword.IsPassword = true;
-			this.txtPassword.Length = 0;
-			this.txtPassword.Location = new System.Drawing.Point(155, 229);
-			this.txtPassword.Name = "txtPassword";
-			this.txtPassword.OnFocus = System.Drawing.Color.DarkGray;
-			this.txtPassword.OnlyChar = false;
-			this.txtPassword.OnlyNumber = false;
-			this.txtPassword.Size = new System.Drawing.Size(168, 36);
-			this.txtPassword.TabIndex = 7;
-			this.txtPassword.TextValue = "";
-			// 
 			// btnLogin
 			// 
 			this.btnLogin.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
@@ -162,6 +129,7 @@
 			this.btnLogin.TabIndex = 8;
 			this.btnLogin.Text = "LOGIN";
 			this.btnLogin.ThemeName = "Crystal";
+			this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
 			// 
 			// btnCancel
 			// 
@@ -173,25 +141,44 @@
 			this.btnCancel.ThemeName = "Crystal";
 			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
 			// 
+			// txtUsername
+			// 
+			this.txtUsername.Location = new System.Drawing.Point(167, 158);
+			this.txtUsername.Name = "txtUsername";
+			this.txtUsername.Size = new System.Drawing.Size(124, 24);
+			this.txtUsername.TabIndex = 10;
+			this.txtUsername.ThemeName = "Crystal";
+			// 
+			// txtPassword
+			// 
+			this.txtPassword.Location = new System.Drawing.Point(167, 246);
+			this.txtPassword.Name = "txtPassword";
+			this.txtPassword.Size = new System.Drawing.Size(124, 24);
+			this.txtPassword.TabIndex = 10;
+			this.txtPassword.ThemeName = "Crystal";
+			// 
 			// LoginForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(359, 409);
-			this.Controls.Add(this.btnCancel);
-			this.Controls.Add(this.btnLogin);
 			this.Controls.Add(this.txtPassword);
 			this.Controls.Add(this.txtUsername);
+			this.Controls.Add(this.btnCancel);
+			this.Controls.Add(this.btnLogin);
 			this.Controls.Add(this.lblPassword);
 			this.Controls.Add(this.lblUsername);
 			this.Controls.Add(this.panel1);
 			this.Name = "LoginForm";
+			this.Load += new System.EventHandler(this.LoginForm_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnLogin)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUsername)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPassword)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -210,9 +197,9 @@
 		private System.Windows.Forms.Label lblUsername;
 		private System.Windows.Forms.Label lblX;
 		private System.Windows.Forms.PictureBox pictureBox1;
-		private JTextBox.JTextBox txtUsername;
-		private JTextBox.JTextBox txtPassword;
 		private Telerik.WinControls.UI.RadButton btnLogin;
 		private Telerik.WinControls.UI.RadButton btnCancel;
+		private Telerik.WinControls.UI.RadTextBox txtUsername;
+		private Telerik.WinControls.UI.RadTextBox txtPassword;
 	}
 }

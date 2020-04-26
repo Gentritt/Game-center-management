@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmployessBLL.cs" />
+    <Compile Include="LoginBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,9 +50,9 @@
       <Project>{4e74e640-3dd5-4484-95ca-7d5a0214df3b}</Project>
       <Name>Game-center management.BO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\game-center management.DAL\game-center management.DAL.csproj">
+    <ProjectReference Include="..\game-center management.DAL\Game-center management.DAL.csproj">
       <Project>{7e02a785-4682-482c-849a-7ce58bd05b2b}</Project>
-      <Name>game-center management.DAL</Name>
+      <Name>Game-center management.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
