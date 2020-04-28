@@ -8,7 +8,7 @@ namespace Game_center_management.BO
 {
 	public class Clients: BaseObject
 	{
-
+		public int ID { get; set; }
 		public string Name { get; set; }
 		public string LastName { get; set; }
 		public int PersonalID { get; set; }
@@ -20,6 +20,8 @@ namespace Game_center_management.BO
 		public string Password { get; set; }
 		public bool IsActive { get; set; }
 		public double Balance { get; set; }
+
+		public bool IsGuest { get; set; }
 
 
 

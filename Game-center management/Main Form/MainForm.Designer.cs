@@ -52,19 +52,21 @@
 			this.radContextMenu1 = new Telerik.WinControls.UI.RadContextMenu(this.components);
 			this.radContextMenuManager1 = new Telerik.WinControls.UI.RadContextMenuManager();
 			this.radMenu1 = new Telerik.WinControls.UI.RadDropDownMenu();
-			this.radMenu2 = new Telerik.WinControls.UI.RadMenu();
 			this.radMenuItem13 = new Telerik.WinControls.UI.RadMenuItem();
-			this.radMenuItem16 = new Telerik.WinControls.UI.RadMenuItem();
-			this.radMenuItem17 = new Telerik.WinControls.UI.RadMenuItem();
+			this.menuPuntoret = new Telerik.WinControls.UI.RadMenuItem();
+			this.menuMenaxhimiPuntoreve = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem18 = new Telerik.WinControls.UI.RadMenuItem();
-			this.radMenuItem19 = new Telerik.WinControls.UI.RadMenuItem();
-			this.radMenuItem20 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem24 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem14 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem15 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem21 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem22 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem23 = new Telerik.WinControls.UI.RadMenuItem();
+			this.lblUsername = new System.Windows.Forms.Label();
+			this.MenuEnglish = new Telerik.WinControls.UI.RadMenuItem();
+			this.menuGerman = new Telerik.WinControls.UI.RadMenuItem();
+			this.menuRegjistrimiProduktev = new Telerik.WinControls.UI.RadMenuItem();
+			this.radMenu2 = new Telerik.WinControls.UI.RadMenu();
 			((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radMenu2)).BeginInit();
 			this.SuspendLayout();
@@ -189,61 +191,42 @@
 			this.radMenu1.VerticalPopupAlignment = Telerik.WinControls.UI.VerticalPopupAlignment.TopToTop;
 			this.radMenu1.Visible = false;
 			// 
-			// radMenu2
-			// 
-			this.radMenu2.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuItem13,
-            this.radMenuItem14,
-            this.radMenuItem15});
-			this.radMenu2.Location = new System.Drawing.Point(0, 0);
-			this.radMenu2.Name = "radMenu2";
-			this.radMenu2.Size = new System.Drawing.Size(800, 34);
-			this.radMenu2.TabIndex = 1;
-			this.radMenu2.ThemeName = "Crystal";
-			// 
 			// radMenuItem13
 			// 
 			this.radMenuItem13.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuItem16,
-            this.radMenuItem17,
+            this.menuPuntoret,
+            this.menuMenaxhimiPuntoreve,
             this.radMenuItem18,
-            this.radMenuItem24});
+            this.radMenuItem24,
+            this.menuRegjistrimiProduktev});
 			this.radMenuItem13.Name = "radMenuItem13";
 			this.radMenuItem13.Text = "Administrimi";
 			// 
-			// radMenuItem16
+			// menuPuntoret
 			// 
-			this.radMenuItem16.Name = "radMenuItem16";
-			this.radMenuItem16.Text = "Menaxhimi i Klientav";
+			this.menuPuntoret.Name = "menuPuntoret";
+			this.menuPuntoret.Text = "Menaxhimi i Klientav";
+			this.menuPuntoret.Click += new System.EventHandler(this.radMenuItem16_Click);
 			// 
-			// radMenuItem17
+			// menuMenaxhimiPuntoreve
 			// 
-			this.radMenuItem17.Name = "radMenuItem17";
-			this.radMenuItem17.Text = "Menaxhimi Puntoreve";
-			this.radMenuItem17.Click += new System.EventHandler(this.radMenuItem17_Click);
+			this.menuMenaxhimiPuntoreve.Name = "menuMenaxhimiPuntoreve";
+			this.menuMenaxhimiPuntoreve.Text = "Menaxhimi Puntoreve";
+			this.menuMenaxhimiPuntoreve.Click += new System.EventHandler(this.radMenuItem17_Click);
 			// 
 			// radMenuItem18
 			// 
-			this.radMenuItem18.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuItem19,
-            this.radMenuItem20});
 			this.radMenuItem18.Name = "radMenuItem18";
-			this.radMenuItem18.Text = "Language";
-			// 
-			// radMenuItem19
-			// 
-			this.radMenuItem19.Name = "radMenuItem19";
-			this.radMenuItem19.Text = "English";
-			// 
-			// radMenuItem20
-			// 
-			this.radMenuItem20.Name = "radMenuItem20";
-			this.radMenuItem20.Text = "German";
+			this.radMenuItem18.Text = "Menaxhimi Kompjuterave";
+			this.radMenuItem18.Click += new System.EventHandler(this.radMenuItem18_Click);
 			// 
 			// radMenuItem24
 			// 
+			this.radMenuItem24.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.MenuEnglish,
+            this.menuGerman});
 			this.radMenuItem24.Name = "radMenuItem24";
-			this.radMenuItem24.Text = " Menaxhimi Kompjutereve";
+			this.radMenuItem24.Text = "Language";
 			this.radMenuItem24.Click += new System.EventHandler(this.radMenuItem24_Click);
 			// 
 			// radMenuItem14
@@ -275,11 +258,48 @@
 			this.radMenuItem23.Name = "radMenuItem23";
 			this.radMenuItem23.Text = "Contact Us";
 			// 
+			// lblUsername
+			// 
+			this.lblUsername.AutoSize = true;
+			this.lblUsername.Location = new System.Drawing.Point(23, 425);
+			this.lblUsername.Name = "lblUsername";
+			this.lblUsername.Size = new System.Drawing.Size(0, 13);
+			this.lblUsername.TabIndex = 3;
+			// 
+			// MenuEnglish
+			// 
+			this.MenuEnglish.Name = "MenuEnglish";
+			this.MenuEnglish.Text = "English";
+			// 
+			// menuGerman
+			// 
+			this.menuGerman.Name = "menuGerman";
+			this.menuGerman.Text = "German";
+			// 
+			// menuRegjistrimiProduktev
+			// 
+			this.menuRegjistrimiProduktev.Name = "menuRegjistrimiProduktev";
+			this.menuRegjistrimiProduktev.Text = "Regjistrimi Produkteve";
+			this.menuRegjistrimiProduktev.Click += new System.EventHandler(this.menuRegjistrimiProduktev_Click);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			// 
+			// radMenu2
+			// 
+			this.radMenu2.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radMenuItem13,
+            this.radMenuItem14,
+            this.radMenuItem15});
+			this.radMenu2.Location = new System.Drawing.Point(0, 0);
+			this.radMenu2.Name = "radMenu2";
+			this.radMenu2.Size = new System.Drawing.Size(800, 34);
+			this.radMenu2.TabIndex = 1;
+			this.radMenu2.ThemeName = "Crystal";
+			this.Controls.Add(this.lblUsername);
 			this.Controls.Add(this.radMenu2);
 			this.Controls.Add(this.radMenu1);
 			this.IsMdiContainer = true;
@@ -318,19 +338,21 @@
 		private Telerik.WinControls.UI.RadMenuItem rpdInfo;
 		private Telerik.WinControls.UI.RadMenuItem radContent;
 		private Telerik.WinControls.UI.RadDropDownMenu radMenu1;
-		private Telerik.WinControls.UI.RadMenu radMenu2;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem13;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem14;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem15;
-		private Telerik.WinControls.UI.RadMenuItem radMenuItem16;
-		private Telerik.WinControls.UI.RadMenuItem radMenuItem17;
+		private Telerik.WinControls.UI.RadMenuItem menuPuntoret;
+		private Telerik.WinControls.UI.RadMenuItem menuMenaxhimiPuntoreve;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem18;
-		private Telerik.WinControls.UI.RadMenuItem radMenuItem19;
-		private Telerik.WinControls.UI.RadMenuItem radMenuItem20;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem21;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem22;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem23;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem24;
+		private System.Windows.Forms.Label lblUsername;
+		private Telerik.WinControls.UI.RadMenuItem MenuEnglish;
+		private Telerik.WinControls.UI.RadMenu radMenu2;
+		private Telerik.WinControls.UI.RadMenuItem menuGerman;
+		private Telerik.WinControls.UI.RadMenuItem menuRegjistrimiProduktev;
 	}
 }
 

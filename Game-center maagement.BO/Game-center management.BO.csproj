@@ -47,7 +47,6 @@
     <Compile Include="Computer.cs" />
     <Compile Include="ComputerParts.cs" />
     <Compile Include="Employess.cs" />
-    <Compile Include="Guest.cs" />
     <Compile Include="Interfaces\IbaseCrud.cs" />
     <Compile Include="Interfaces\IConvertToObject.cs" />
     <Compile Include="Product.cs" />

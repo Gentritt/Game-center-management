@@ -11,6 +11,7 @@ using game_center_management.BLL;
 using Game_center_management.BO;
 
 
+
 namespace Game_center_management
 {
 	public partial class LoginForm : Form
@@ -21,13 +22,6 @@ namespace Game_center_management
 		}
 
 
-
-		private void lblX_Click(object sender, EventArgs e)
-		{
-			this.Close();
-		}
-
-		
 
 		private void btnCancel_Click_1(object sender, EventArgs e)
 		{
@@ -67,7 +61,7 @@ namespace Game_center_management
 
 			else
 			{
-				//UserSession.loggedUser = employess;
+				UserSession.loggedUser = employess;
 				this.Close();
 				
 			}

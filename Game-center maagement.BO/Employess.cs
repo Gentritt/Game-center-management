@@ -15,8 +15,6 @@ namespace Game_center_management.BO
 		public string LastName { get; set; }
 		public string Adress { get; set; }
 		public double Salary { get; set; }
-		public DateTime WorkTime { get; set; }
-
 		public string Email { get; set; }
 		public DateTime Birthday { get; set; }
 		public int PhoneNumber { get; set; }

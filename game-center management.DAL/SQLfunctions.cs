@@ -10,7 +10,7 @@ using System.Data.Sql;
 
 namespace game_center_management.DAL
 {
-	public class SqlHelper
+	public class SQLfunctions
 	{
 		private static string _connectionString = ConfigurationManager.ConnectionStrings["Game-Center"].ConnectionString;
 		public static SqlConnection GetConnection()

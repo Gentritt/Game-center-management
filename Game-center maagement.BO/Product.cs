@@ -9,7 +9,7 @@ namespace Game_center_management.BO
 		public string ProductName { get; set; }
 		public double Price { get; set; }
 		public int Quantity { get; set; }
-		public DateTime ProductDate { get; set; }
+		//public DateTime ProductDate { get; set; }
 
 
 	}

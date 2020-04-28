@@ -1,45 +1,61 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Game_center_management.BO;
 using Game_center_management.BO.Interfaces;
+using game_center_management.DAL;
 
 namespace game_center_management.BLL
 {
-	public class EmployessBLL : IbaseCrud<EmployessBLL>
+	public class EmployessBLL : IbaseCrud<Employess>
 	{
-		private EmployessBLL emp;
+		private readonly EmployessDAL empDal;
 
-		public int ADD(EmployessBLL model)
+		public EmployessBLL()
 		{
-			return emp.ADD(model);
+			empDal = new EmployessDAL();
+			
 		}
 
-		public int Modify(EmployessBLL model)
+		public int ADD(Employess model)
 		{
-			return emp.Modify(model);
+			try
+			{
+				return empDal.ADD(model);
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
+		}
+
+		public int Modify(Employess model)
+		{
+			throw new System.NotImplementedException();
 		}
 
 		public int Remove(int ID)
 		{
-			return emp.Remove(ID);
+			throw new System.NotImplementedException();
 		}
 
-		public int Remove(EmployessBLL model)
+		public int Remove(Employess model)
 		{
-			return emp.Remove(model);
+			throw new System.NotImplementedException();
 		}
 
-		public EmployessBLL get(int ID)
+		public Employess get(int ID)
 		{
-			return emp.get(ID);
+			throw new System.NotImplementedException();
 		}
 
-		public EmployessBLL get(EmployessBLL model)
+		public Employess get(Employess model)
 		{
-			return emp.get(model);
+			throw new System.NotImplementedException();
 		}
 
-		public List<EmployessBLL> GetAll()
+		public List<Employess> GetAll()
 		{
-			return emp.GetAll();
+			return empDal.GetAll();
 		}
 	}
 }

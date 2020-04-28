@@ -13,7 +13,7 @@ namespace Game_center_management
 	public class UserSession
 	{
 
-		public static UserSession loggedUser = null;
+		public static Employess loggedUser = null;
 
 	}
 }
