@@ -90,6 +90,7 @@
 			// 
 			// gridServiceStaff
 			// 
+			this.gridServiceStaff.AccessibleName = "gridServiceStaff";
 			this.gridServiceStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -105,6 +106,7 @@
 			this.gridServiceStaff.Size = new System.Drawing.Size(726, 434);
 			this.gridServiceStaff.TabIndex = 4;
 			this.gridServiceStaff.ThemeName = "Crystal";
+			this.gridServiceStaff.Click += new System.EventHandler(this.gridServiceStaff_Click);
 			// 
 			// StaffForm
 			// 

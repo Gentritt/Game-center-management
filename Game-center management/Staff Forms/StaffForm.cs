@@ -47,5 +47,10 @@ namespace Game_center_management.Forms
 		{
 
 		}
+
+		private void gridServiceStaff_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

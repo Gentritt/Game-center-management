@@ -29,16 +29,14 @@ namespace Game_center_management.Forms
 
 		private void InitData()
 		{
+			gridUserss.Refresh();
 			var result = clientsBll.GetAll();
-			gridUsers.DataSource = result;
+			gridUserss.DataSource = result;
 
 
 		}
 
-		private void radPanel1_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
+		
 
 		private void Create_User_Load(object sender, EventArgs e)
 		{

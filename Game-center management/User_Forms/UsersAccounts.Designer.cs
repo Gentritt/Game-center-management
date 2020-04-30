@@ -28,22 +28,23 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+			this.components = new System.ComponentModel.Container();
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.crystalTheme1 = new Telerik.WinControls.Themes.CrystalTheme();
-			this.gridUsers = new Telerik.WinControls.UI.RadGridView();
 			this.btnCreateAccount = new Telerik.WinControls.UI.RadButton();
 			this.btnEditAccount = new Telerik.WinControls.UI.RadButton();
 			this.btnDeleteAccount = new Telerik.WinControls.UI.RadButton();
+			this.gridUserss = new System.Windows.Forms.DataGridView();
+			this.clientsBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
 			this.radPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridUsers)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridUsers.MasterTemplate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCreateAccount)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEditAccount)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDeleteAccount)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridUserss)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.clientsBLLBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// radPanel1
@@ -55,7 +56,6 @@
 			this.radPanel1.Size = new System.Drawing.Size(800, 59);
 			this.radPanel1.TabIndex = 0;
 			this.radPanel1.ThemeName = "CrystalDark";
-			this.radPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.radPanel1_Paint);
 			// 
 			// radLabel1
 			// 
@@ -67,18 +67,6 @@
 			this.radLabel1.TabIndex = 1;
 			this.radLabel1.Text = "User Accounts Administration";
 			this.radLabel1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-			// 
-			// gridUsers
-			// 
-			this.gridUsers.Location = new System.Drawing.Point(12, 65);
-			// 
-			// 
-			// 
-			this.gridUsers.MasterTemplate.ViewDefinition = tableViewDefinition1;
-			this.gridUsers.Name = "gridUsers";
-			this.gridUsers.Size = new System.Drawing.Size(604, 373);
-			this.gridUsers.TabIndex = 1;
-			this.gridUsers.Click += new System.EventHandler(this.radGridView1_Click);
 			// 
 			// btnCreateAccount
 			// 
@@ -107,15 +95,32 @@
 			this.btnDeleteAccount.Text = "Delete Account";
 			this.btnDeleteAccount.ThemeName = "Crystal";
 			// 
+			// gridUserss
+			// 
+			this.gridUserss.AllowUserToAddRows = false;
+			this.gridUserss.AllowUserToDeleteRows = false;
+			this.gridUserss.AutoGenerateColumns = false;
+			this.gridUserss.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.gridUserss.DataSource = this.clientsBLLBindingSource;
+			this.gridUserss.Location = new System.Drawing.Point(0, 66);
+			this.gridUserss.Name = "gridUserss";
+			this.gridUserss.ReadOnly = true;
+			this.gridUserss.Size = new System.Drawing.Size(616, 372);
+			this.gridUserss.TabIndex = 5;
+			// 
+			// clientsBLLBindingSource
+			// 
+			this.clientsBLLBindingSource.DataSource = typeof(game_center_management.BLL.ClientsBLL);
+			// 
 			// UserAccounts
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.gridUserss);
 			this.Controls.Add(this.btnDeleteAccount);
 			this.Controls.Add(this.btnEditAccount);
 			this.Controls.Add(this.btnCreateAccount);
-			this.Controls.Add(this.gridUsers);
 			this.Controls.Add(this.radPanel1);
 			this.Name = "UserAccounts";
 			this.Text = "Create_User";
@@ -124,11 +129,11 @@
 			this.radPanel1.ResumeLayout(false);
 			this.radPanel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridUsers.MasterTemplate)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridUsers)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCreateAccount)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEditAccount)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDeleteAccount)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridUserss)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.clientsBLLBindingSource)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -138,9 +143,10 @@
 		private Telerik.WinControls.UI.RadPanel radPanel1;
 		private Telerik.WinControls.UI.RadLabel radLabel1;
 		private Telerik.WinControls.Themes.CrystalTheme crystalTheme1;
-		private Telerik.WinControls.UI.RadGridView gridUsers;
 		private Telerik.WinControls.UI.RadButton btnCreateAccount;
 		private Telerik.WinControls.UI.RadButton btnEditAccount;
 		private Telerik.WinControls.UI.RadButton btnDeleteAccount;
+		private System.Windows.Forms.DataGridView gridUserss;
+		private System.Windows.Forms.BindingSource clientsBLLBindingSource;
 	}
 }

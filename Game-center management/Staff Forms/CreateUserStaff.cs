@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,72 +25,63 @@ namespace Game_center_management.Staff_Forms
 			
 		}
 
-		private void ValidateTextBoxes()
-		{
+		//private void ValidateTextBoxes()
+		//{
 
-			foreach (Control item in this.Controls)
-			{
-				if (item is TextBox)
-				{
+		//	foreach (Control item in this.Controls)
+		//	{
+		//		if (item is TextBox)
+		//		{
 
-					if (string.IsNullOrEmpty(item.Text))
-					{
+		//			if (string.IsNullOrEmpty(item.Text))
+		//			{
 
-						MessageBox.Show(item.Name + "Must be filled");
-						break;
+		//				MessageBox.Show(item.Name + "Must be filled");
+		//				break;
 
 
-					}
-				}
+		//			}
+		//		}
 				
-			}
+		//	}
 
-		}
+		//}
 		
 		private void InitData()
 		{
 			var result = employessbll.GetAll();
 			
-			
-
-
 
 		}
-		
 
-		private void btnOK_Click(object sender, EventArgs e)
+		private bool ValidateFields()
 		{
 
 
-			//if (txtNameStaff.Text.Trim() == "")
-			//{
+			var controls = new[]
+			{
+				txtNameStaff, txtBirthday, txtPhoneNumber, txtPersonalID, txtLastNameStaff, txtPasswordStaff,
+				txtUsernameStaff, txtPersonalID, txtEmail
+			};
 
-			//	MessageBox.Show("Please Enter");
-			//	txtNameStaff.Focus();
+			bool isValid = true;
+			foreach (var control in controls.Where(e => string.IsNullOrEmpty(e.Text)));
+			{
+				MessageBox.Show("Please fill all your required fields!!");
 
-			//}
+				isValid = false;
 
-			//if (txtLastNameStaff.Text.Trim() == "")
-			//{
-			//	MessageBox.Show("Please Enter LastName!!");
-			//	txtLastNameStaff.Focus();
+			}
+
+			return isValid;
+		}
 
 
-			//}
-
-			//if (txtBirthday.Text.Trim() == "")
-			//{
-
-			//	MessageBox.Show("Please enter Your Birthday!!");
-			//	txtBirthday.Focus();
-			//}
-
-			ValidateTextBoxes();
-			Employess employess = new Employess();
-
+		private void btnOK_Click(object sender, EventArgs e)
+		{
 			
-
-
+			ValidateFields();
+			Employess employess = new Employess();
 
 		}
 
@@ -97,5 +89,7 @@ namespace Game_center_management.Staff_Forms
 		{
 
 		}
+
+		
 	}
 }

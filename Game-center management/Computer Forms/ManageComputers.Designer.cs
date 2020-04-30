@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition5 = new Telerik.WinControls.UI.TableViewDefinition();
+			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.gridManageComputers = new Telerik.WinControls.UI.RadGridView();
@@ -71,7 +71,7 @@
 			// 
 			// 
 			// 
-			this.gridManageComputers.MasterTemplate.ViewDefinition = tableViewDefinition5;
+			this.gridManageComputers.MasterTemplate.ViewDefinition = tableViewDefinition1;
 			this.gridManageComputers.Name = "gridManageComputers";
 			this.gridManageComputers.Size = new System.Drawing.Size(590, 389);
 			this.gridManageComputers.TabIndex = 1;
@@ -117,7 +117,6 @@
 			this.Controls.Add(this.radPanel1);
 			this.Name = "ManageComputers";
 			this.Text = "ManageComputers";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
 			this.radPanel1.ResumeLayout(false);
 			this.radPanel1.PerformLayout();

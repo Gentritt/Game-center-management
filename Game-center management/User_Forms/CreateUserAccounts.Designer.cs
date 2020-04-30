@@ -29,15 +29,16 @@
 		private void InitializeComponent()
 		{
 			this.grLoginInformation = new Telerik.WinControls.UI.RadGroupBox();
+			this.txtPasswordUserAcc = new Telerik.WinControls.UI.RadTextBox();
 			this.txtUsername = new Telerik.WinControls.UI.RadTextBox();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.lblUsername = new System.Windows.Forms.Label();
 			this.grUserInformation = new Telerik.WinControls.UI.RadGroupBox();
-			this.radTextBox5 = new Telerik.WinControls.UI.RadTextBox();
-			this.radTextBox4 = new Telerik.WinControls.UI.RadTextBox();
-			this.radTextBox3 = new Telerik.WinControls.UI.RadTextBox();
-			this.radTextBox2 = new Telerik.WinControls.UI.RadTextBox();
-			this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
+			this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
+			this.txtPhone = new Telerik.WinControls.UI.RadTextBox();
+			this.txtLastname = new Telerik.WinControls.UI.RadTextBox();
+			this.txtBirthday = new Telerik.WinControls.UI.RadTextBox();
+			this.txtName = new Telerik.WinControls.UI.RadTextBox();
 			this.lblEmail = new System.Windows.Forms.Label();
 			this.lblPhone = new System.Windows.Forms.Label();
 			this.lblBirthday = new System.Windows.Forms.Label();
@@ -45,21 +46,20 @@
 			this.lblName = new System.Windows.Forms.Label();
 			this.btnSave = new Telerik.WinControls.UI.RadButton();
 			this.btnCancel = new Telerik.WinControls.UI.RadButton();
-			this.txtPasswordUserAcc = new Telerik.WinControls.UI.RadTextBox();
 			((System.ComponentModel.ISupportInitialize)(this.grLoginInformation)).BeginInit();
 			this.grLoginInformation.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txtPasswordUserAcc)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUsername)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.grUserInformation)).BeginInit();
 			this.grUserInformation.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPhone)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtLastname)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtBirthday)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtName)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtPasswordUserAcc)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// grLoginInformation
@@ -78,6 +78,13 @@
 			this.grLoginInformation.Text = "Login Information";
 			this.grLoginInformation.ThemeName = "Crystal";
 			this.grLoginInformation.Click += new System.EventHandler(this.grLoginInformation_Click);
+			// 
+			// txtPasswordUserAcc
+			// 
+			this.txtPasswordUserAcc.Location = new System.Drawing.Point(116, 79);
+			this.txtPasswordUserAcc.Name = "txtPasswordUserAcc";
+			this.txtPasswordUserAcc.Size = new System.Drawing.Size(146, 20);
+			this.txtPasswordUserAcc.TabIndex = 3;
 			// 
 			// txtUsername
 			// 
@@ -108,11 +115,11 @@
 			// grUserInformation
 			// 
 			this.grUserInformation.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.grUserInformation.Controls.Add(this.radTextBox5);
-			this.grUserInformation.Controls.Add(this.radTextBox4);
-			this.grUserInformation.Controls.Add(this.radTextBox3);
-			this.grUserInformation.Controls.Add(this.radTextBox2);
-			this.grUserInformation.Controls.Add(this.radTextBox1);
+			this.grUserInformation.Controls.Add(this.txtEmail);
+			this.grUserInformation.Controls.Add(this.txtPhone);
+			this.grUserInformation.Controls.Add(this.txtLastname);
+			this.grUserInformation.Controls.Add(this.txtBirthday);
+			this.grUserInformation.Controls.Add(this.txtName);
 			this.grUserInformation.Controls.Add(this.lblEmail);
 			this.grUserInformation.Controls.Add(this.lblPhone);
 			this.grUserInformation.Controls.Add(this.lblBirthday);
@@ -127,40 +134,40 @@
 			this.grUserInformation.Text = "User Information";
 			this.grUserInformation.ThemeName = "Crystal";
 			// 
-			// radTextBox5
+			// txtEmail
 			// 
-			this.radTextBox5.Location = new System.Drawing.Point(91, 220);
-			this.radTextBox5.Name = "radTextBox5";
-			this.radTextBox5.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox5.TabIndex = 7;
+			this.txtEmail.Location = new System.Drawing.Point(91, 220);
+			this.txtEmail.Name = "txtEmail";
+			this.txtEmail.Size = new System.Drawing.Size(148, 20);
+			this.txtEmail.TabIndex = 7;
 			// 
-			// radTextBox4
+			// txtPhone
 			// 
-			this.radTextBox4.Location = new System.Drawing.Point(91, 175);
-			this.radTextBox4.Name = "radTextBox4";
-			this.radTextBox4.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox4.TabIndex = 6;
+			this.txtPhone.Location = new System.Drawing.Point(91, 175);
+			this.txtPhone.Name = "txtPhone";
+			this.txtPhone.Size = new System.Drawing.Size(148, 20);
+			this.txtPhone.TabIndex = 6;
 			// 
-			// radTextBox3
+			// txtLastname
 			// 
-			this.radTextBox3.Location = new System.Drawing.Point(91, 85);
-			this.radTextBox3.Name = "radTextBox3";
-			this.radTextBox3.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox3.TabIndex = 6;
+			this.txtLastname.Location = new System.Drawing.Point(91, 85);
+			this.txtLastname.Name = "txtLastname";
+			this.txtLastname.Size = new System.Drawing.Size(148, 20);
+			this.txtLastname.TabIndex = 6;
 			// 
-			// radTextBox2
+			// txtBirthday
 			// 
-			this.radTextBox2.Location = new System.Drawing.Point(91, 130);
-			this.radTextBox2.Name = "radTextBox2";
-			this.radTextBox2.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox2.TabIndex = 6;
+			this.txtBirthday.Location = new System.Drawing.Point(91, 130);
+			this.txtBirthday.Name = "txtBirthday";
+			this.txtBirthday.Size = new System.Drawing.Size(148, 20);
+			this.txtBirthday.TabIndex = 6;
 			// 
-			// radTextBox1
+			// txtName
 			// 
-			this.radTextBox1.Location = new System.Drawing.Point(91, 40);
-			this.radTextBox1.Name = "radTextBox1";
-			this.radTextBox1.Size = new System.Drawing.Size(148, 20);
-			this.radTextBox1.TabIndex = 5;
+			this.txtName.Location = new System.Drawing.Point(91, 40);
+			this.txtName.Name = "txtName";
+			this.txtName.Size = new System.Drawing.Size(148, 20);
+			this.txtName.TabIndex = 5;
 			// 
 			// lblEmail
 			// 
@@ -215,6 +222,7 @@
 			this.btnSave.TabIndex = 2;
 			this.btnSave.Text = "Save";
 			this.btnSave.ThemeName = "Crystal";
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
 			// btnCancel
 			// 
@@ -224,13 +232,6 @@
 			this.btnCancel.TabIndex = 3;
 			this.btnCancel.Text = "Cancel";
 			this.btnCancel.ThemeName = "Crystal";
-			// 
-			// txtPasswordUserAcc
-			// 
-			this.txtPasswordUserAcc.Location = new System.Drawing.Point(116, 79);
-			this.txtPasswordUserAcc.Name = "txtPasswordUserAcc";
-			this.txtPasswordUserAcc.Size = new System.Drawing.Size(146, 20);
-			this.txtPasswordUserAcc.TabIndex = 3;
 			// 
 			// CreateUserAccounts
 			// 
@@ -247,19 +248,19 @@
 			((System.ComponentModel.ISupportInitialize)(this.grLoginInformation)).EndInit();
 			this.grLoginInformation.ResumeLayout(false);
 			this.grLoginInformation.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txtPasswordUserAcc)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUsername)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.grUserInformation)).EndInit();
 			this.grUserInformation.ResumeLayout(false);
 			this.grUserInformation.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox5)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPhone)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtLastname)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtBirthday)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtName)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtPasswordUserAcc)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -269,13 +270,13 @@
 		private Telerik.WinControls.UI.RadGroupBox grLoginInformation;
 		private System.Windows.Forms.Label lblUsername;
 		private Telerik.WinControls.UI.RadTextBox txtUsername;
-		private Telerik.WinControls.UI.RadTextBox radTextBox1;
+		private Telerik.WinControls.UI.RadTextBox txtName;
 		private Telerik.WinControls.UI.RadLabel radLabel1;
 		private Telerik.WinControls.UI.RadGroupBox grUserInformation;
-		private Telerik.WinControls.UI.RadTextBox radTextBox5;
-		private Telerik.WinControls.UI.RadTextBox radTextBox4;
-		private Telerik.WinControls.UI.RadTextBox radTextBox3;
-		private Telerik.WinControls.UI.RadTextBox radTextBox2;
+		private Telerik.WinControls.UI.RadTextBox txtEmail;
+		private Telerik.WinControls.UI.RadTextBox txtPhone;
+		private Telerik.WinControls.UI.RadTextBox txtLastname;
+		private Telerik.WinControls.UI.RadTextBox txtBirthday;
 		private System.Windows.Forms.Label lblEmail;
 		private System.Windows.Forms.Label lblPhone;
 		private System.Windows.Forms.Label lblBirthday;

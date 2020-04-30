@@ -25,18 +25,18 @@ namespace game_center_management.DAL
 			{
 				SqlConnection conn = new SqlConnection(_connString);
 				conn.Open();
-				SqlCommand cmd = new SqlCommand("InsertimiPuntorit",conn);
+				SqlCommand cmd = new SqlCommand("Add_Employess",conn);
 				cmd.CommandType = CommandType.StoredProcedure;
-				cmd.Parameters.AddWithValue("@emri", model.Name);
-				cmd.Parameters.AddWithValue("@numriPersonal", model.PersonalID);
-				cmd.Parameters.AddWithValue("@mbiemri", model.LastName);
-				cmd.Parameters.AddWithValue("@dataLindjes", model.Birthday);
+				cmd.Parameters.AddWithValue("@name", model.Name);
+				cmd.Parameters.AddWithValue("@personalid", model.PersonalID);
+				cmd.Parameters.AddWithValue("@lastname", model.LastName);
+				cmd.Parameters.AddWithValue("@birthday", model.Birthday);
 				cmd.Parameters.AddWithValue("@email", model.Email);
-				cmd.Parameters.AddWithValue("@numriTelefonit", model.PhoneNumber);
-				cmd.Parameters.AddWithValue("@userName", model.Username);
-				cmd.Parameters.AddWithValue("@userPass", model.Password);
-				cmd.Parameters.AddWithValue("@rroga", model.Salary);
-				//cmd.Parameters.AddWithValue("@isActive", model.IsActive);
+				cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
+				cmd.Parameters.AddWithValue("@username", model.Username);
+				cmd.Parameters.AddWithValue("@password", model.Password);
+				cmd.Parameters.AddWithValue("@salay", model.Salary);
+				cmd.Parameters.AddWithValue("@isactive", model.IsActive);
 				int rowaffected = cmd.ExecuteNonQuery();
 				cmd .Dispose();
 				conn.Close();
@@ -83,7 +83,7 @@ namespace game_center_management.DAL
 				List<Employess> EmployessResult = null;
 				using (var conn = SQLfunctions.GetConnection())
 				{
-					using (var cmd = SQLfunctions.Command(conn,cmdText: "Employes_GetALL" ,CommandType.StoredProcedure))
+					using (var cmd = SQLfunctions.Command(conn,cmdText: "Employess_GetALL" ,CommandType.StoredProcedure))
 					{
 						EmployessResult = new List<Employess>();
 						using (SqlDataReader reader = cmd.ExecuteReader())
@@ -125,7 +125,7 @@ namespace game_center_management.DAL
 			using (var con = SQLfunctions.GetConnection())
 			{
 
-				using (var cmd = SQLfunctions.Command(con,cmdText: "usp_LoginPuntori",CommandType.StoredProcedure))
+				using (var cmd = SQLfunctions.Command(con,cmdText: "LoginEmployee",CommandType.StoredProcedure))
 				{
 
 					cmd.Parameters.AddWithValue("username", username);
@@ -153,14 +153,14 @@ namespace game_center_management.DAL
 		{
 			Employess employess = new Employess();
 
-			employess.ID = int.Parse(reader["ID"].ToString());
+			employess.ID = int.Parse(reader["EmployeeID"].ToString());
 			employess.Username = reader["UserName"].ToString();
-			employess.Name = reader["Emri"].ToString();
-			employess.LastName = reader["Mbiemri"].ToString();
+			employess.Name = reader["Name"].ToString();
+			employess.LastName = reader["LastName"].ToString();
 			employess.Email = reader["Email"].ToString();
-			employess.Adress = reader["Adresa"].ToString();
-			employess.Birthday = DateTime.Parse(reader["DataLindjes"].ToString());
-			employess.Salary = Double.Parse(reader["Rroga"].ToString());
+			employess.Adress = reader["Adress"].ToString();
+			employess.Birthday = DateTime.Parse(reader["Birthday"].ToString());
+			employess.Salary = Double.Parse(reader["Salary"].ToString());
 			employess.Insertby = reader["InsertBy"].ToString();
 			employess.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
 			employess.IsActive = (bool)reader["IsActive"];

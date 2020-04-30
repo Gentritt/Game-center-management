@@ -19,18 +19,21 @@ namespace game_center_management.DAL
 			{
 				SqlConnection con = new SqlConnection(_connString);
 				con.Open();
-				SqlCommand cmd = new SqlCommand("InsertimiKlientit", con);
+				SqlCommand cmd = new SqlCommand("Add_Clients", con);
 				cmd.CommandType = CommandType.StoredProcedure;
-				cmd.Parameters.AddWithValue("@emri", model.Name);
-				cmd.Parameters.AddWithValue("@mbiemri", model.LastName);
-				cmd.Parameters.AddWithValue("numriPersonal", model.PersonalID);
-				cmd.Parameters.AddWithValue("adresa", model.Address);
-				cmd.Parameters.AddWithValue("dataLindjes", model.Birthday);
-				cmd.Parameters.AddWithValue("email", model.Email);
-				cmd.Parameters.AddWithValue("@userName",model.UserName);
-				cmd.Parameters.AddWithValue("userPassword", model.Password);
-				cmd.Parameters.AddWithValue("balanca", model.Balance);
-				//cmd.Parameters.AddWithValue("isActive", model.IsActive);
+				cmd.Parameters.AddWithValue("@name", model.Name);
+				cmd.Parameters.AddWithValue("@lastname", model.LastName);
+				cmd.Parameters.AddWithValue("@personalid", model.PersonalID);
+				cmd.Parameters.AddWithValue("@address", model.Address);
+				cmd.Parameters.AddWithValue("@birthday", model.Birthday);
+				cmd.Parameters.AddWithValue("@email", model.Email);
+				cmd.Parameters.AddWithValue("@username",model.UserName);
+				cmd.Parameters.AddWithValue("@password", model.Password);
+				cmd.Parameters.AddWithValue("@balance", model.Balance);
+				cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
+				cmd.Parameters.AddWithValue("@isactive", model.IsActive);
+				cmd.Parameters.AddWithValue("@isguest", model.IsGuest);
+
 				int rowaffect = cmd.ExecuteNonQuery();
 				return rowaffect;
 
@@ -77,7 +80,7 @@ namespace game_center_management.DAL
 				List<Clients> clientsResult = null;
 				using (var con = SQLfunctions.GetConnection())
 				{
-					using (var cmd = SQLfunctions.Command(con,cmdText: "usp_GetAllClients", CommandType.StoredProcedure))
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Clients_GetALL", CommandType.StoredProcedure))
 					{
 						clientsResult = new List<Clients>();
 						using (SqlDataReader reader = cmd.ExecuteReader())
@@ -114,19 +117,22 @@ namespace game_center_management.DAL
 		{
 			Clients clients = new Clients();
 
-			clients.ID = int.Parse(reader["KonsumatoriID"].ToString());
-			clients.Name = reader["Emri"].ToString();
-			clients.LastName = reader["Mbiemri"].ToString();
-			clients.Address = reader["Adresa"].ToString();
-			clients.Birthday = (DateTime) reader["DataLindjes"];
-			clients.PhoneNumber = int.Parse(reader["NumriTelefonit"].ToString());
+			clients.ID = int.Parse(reader["ClientID"].ToString());
+			clients.Name = reader["Name"].ToString();
+			clients.LastName = reader["LastName"].ToString();
+			clients.Address = reader["Adress"].ToString();
+			clients.Birthday = (DateTime) reader["Birthday"];
+			clients.PhoneNumber = int.Parse(reader["PhoneNumber"].ToString());
 			clients.UserName = reader["UserName"].ToString();
-			clients.Balance = int.Parse(reader["Balanca"].ToString());
+			clients.Balance = int.Parse(reader["Balance"].ToString());
 			clients.IsGuest = (bool) reader["IsGuest"];
 			clients.Insertby = reader["InsertBy"].ToString();
 			clients.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
 			clients.IsActive = (bool) reader["IsActive"];
-
+			clients.Email = reader["Email"].ToString();
+			clients.PersonalID = int.Parse(reader["PersonallD"].ToString());
+			clients.IsGuest = (bool) reader["IsGuest"];
+			
 
 			return clients;
 
