@@ -28,28 +28,32 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
-			this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+			this.ProductsGRID = new Telerik.WinControls.UI.RadGridView();
 			this.btnADD = new Telerik.WinControls.UI.RadButton();
 			this.btnUpdate = new Telerik.WinControls.UI.RadButton();
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID.MasterTemplate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// radGridView1
+			// ProductsGRID
 			// 
-			this.radGridView1.Location = new System.Drawing.Point(2, 71);
+			this.ProductsGRID.Location = new System.Drawing.Point(2, 71);
 			// 
 			// 
 			// 
-			this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition2;
-			this.radGridView1.Name = "radGridView1";
-			this.radGridView1.Size = new System.Drawing.Size(622, 373);
-			this.radGridView1.TabIndex = 0;
+			this.ProductsGRID.MasterTemplate.AllowAddNewRow = false;
+			this.ProductsGRID.MasterTemplate.AllowColumnReorder = false;
+			this.ProductsGRID.MasterTemplate.ViewDefinition = tableViewDefinition1;
+			this.ProductsGRID.Name = "ProductsGRID";
+			this.ProductsGRID.ReadOnly = true;
+			this.ProductsGRID.Size = new System.Drawing.Size(622, 373);
+			this.ProductsGRID.TabIndex = 0;
+			this.ProductsGRID.ThemeName = "Crystal";
 			// 
 			// btnADD
 			// 
@@ -87,12 +91,12 @@
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnUpdate);
 			this.Controls.Add(this.btnADD);
-			this.Controls.Add(this.radGridView1);
+			this.Controls.Add(this.ProductsGRID);
 			this.Name = "Products";
 			this.Text = "Products";
 			this.Load += new System.EventHandler(this.Products_Load);
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID.MasterTemplate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
@@ -102,7 +106,7 @@
 
 		#endregion
 
-		private Telerik.WinControls.UI.RadGridView radGridView1;
+		private Telerik.WinControls.UI.RadGridView ProductsGRID;
 		private Telerik.WinControls.UI.RadButton btnADD;
 		private Telerik.WinControls.UI.RadButton btnUpdate;
 		private Telerik.WinControls.UI.RadButton btnDelete;

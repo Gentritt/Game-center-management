@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
 			this.pnlServicStaff = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
@@ -37,12 +38,14 @@
 			this.btnAdd = new Telerik.WinControls.UI.RadButton();
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
 			this.crystalDarkTheme1 = new Telerik.WinControls.Themes.CrystalDarkTheme();
+			this.employessBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.gridServiceStaff = new Telerik.WinControls.UI.RadGridView();
 			((System.ComponentModel.ISupportInitialize)(this.pnlServicStaff)).BeginInit();
 			this.pnlServicStaff.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff.MasterTemplate)).BeginInit();
 			this.SuspendLayout();
@@ -53,7 +56,7 @@
 			this.pnlServicStaff.Dock = System.Windows.Forms.DockStyle.Top;
 			this.pnlServicStaff.Location = new System.Drawing.Point(0, 0);
 			this.pnlServicStaff.Name = "pnlServicStaff";
-			this.pnlServicStaff.Size = new System.Drawing.Size(820, 59);
+			this.pnlServicStaff.Size = new System.Drawing.Size(819, 59);
 			this.pnlServicStaff.TabIndex = 0;
 			this.pnlServicStaff.ThemeName = "CrystalDark";
 			// 
@@ -88,31 +91,33 @@
 			this.btnDelete.Text = "Delete";
 			this.btnDelete.ThemeName = "Crystal";
 			// 
+			// employessBLLBindingSource
+			// 
+			this.employessBLLBindingSource.DataSource = typeof(game_center_management.BLL.EmployessBLL);
+			// 
 			// gridServiceStaff
 			// 
-			this.gridServiceStaff.AccessibleName = "gridServiceStaff";
-			this.gridServiceStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.gridServiceStaff.Location = new System.Drawing.Point(21, 118);
+			this.gridServiceStaff.Location = new System.Drawing.Point(21, 137);
 			// 
 			// 
 			// 
 			this.gridServiceStaff.MasterTemplate.AllowAddNewRow = false;
 			this.gridServiceStaff.MasterTemplate.AllowColumnReorder = false;
+			this.gridServiceStaff.MasterTemplate.BottomPinnedRowsMode = Telerik.WinControls.UI.GridViewBottomPinnedRowsMode.Fixed;
+			this.gridServiceStaff.MasterTemplate.HorizontalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
+			this.gridServiceStaff.MasterTemplate.VerticalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
 			this.gridServiceStaff.MasterTemplate.ViewDefinition = tableViewDefinition1;
 			this.gridServiceStaff.Name = "gridServiceStaff";
 			this.gridServiceStaff.ReadOnly = true;
-			this.gridServiceStaff.Size = new System.Drawing.Size(726, 434);
+			this.gridServiceStaff.Size = new System.Drawing.Size(786, 409);
 			this.gridServiceStaff.TabIndex = 4;
 			this.gridServiceStaff.ThemeName = "Crystal";
-			this.gridServiceStaff.Click += new System.EventHandler(this.gridServiceStaff_Click);
 			// 
 			// StaffForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(820, 493);
+			this.ClientSize = new System.Drawing.Size(819, 558);
 			this.Controls.Add(this.gridServiceStaff);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnAdd);
@@ -126,6 +131,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).EndInit();
 			this.ResumeLayout(false);
@@ -142,6 +148,7 @@
 		private Telerik.WinControls.UI.RadButton btnAdd;
 		private Telerik.WinControls.UI.RadButton btnDelete;
 		private Telerik.WinControls.Themes.CrystalDarkTheme crystalDarkTheme1;
-		public Telerik.WinControls.UI.RadGridView gridServiceStaff;
+		private System.Windows.Forms.BindingSource employessBLLBindingSource;
+		private Telerik.WinControls.UI.RadGridView gridServiceStaff;
 	}
 }

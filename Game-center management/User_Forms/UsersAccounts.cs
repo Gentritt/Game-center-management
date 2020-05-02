@@ -29,9 +29,10 @@ namespace Game_center_management.Forms
 
 		private void InitData()
 		{
-			gridUserss.Refresh();
+			
 			var result = clientsBll.GetAll();
-			gridUserss.DataSource = result;
+			gridUsers.DataSource = result;
+
 
 
 		}

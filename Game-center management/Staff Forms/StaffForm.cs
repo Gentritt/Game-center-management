@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using game_center_management.BLL;
 using Game_center_management.Staff_Forms;
+using Telerik.WinControls.UI;
 
 namespace Game_center_management.Forms
 {
@@ -32,6 +33,7 @@ namespace Game_center_management.Forms
 		
 		private void StaffForm_Load(object sender, EventArgs e)
 		{
+			//gridServiceStaff.AutoSizeColumnsMode = (GridViewAutoSizeColumnsMode) DataGridViewAutoSizeColumnsMode.ColumnHeader;
 
 			FillGrid();
 

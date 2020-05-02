@@ -122,16 +122,15 @@ namespace game_center_management.DAL
 			clients.LastName = reader["LastName"].ToString();
 			clients.Address = reader["Adress"].ToString();
 			clients.Birthday = (DateTime) reader["Birthday"];
-			clients.PhoneNumber = int.Parse(reader["PhoneNumber"].ToString());
+			clients.PhoneNumber = reader["PhoneNumber"].ToString();
 			clients.UserName = reader["UserName"].ToString();
-			clients.Balance = int.Parse(reader["Balance"].ToString());
+			clients.Balance = decimal.Parse(reader["Balance"].ToString());
 			clients.IsGuest = (bool) reader["IsGuest"];
 			clients.Insertby = reader["InsertBy"].ToString();
 			clients.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
 			clients.IsActive = (bool) reader["IsActive"];
 			clients.Email = reader["Email"].ToString();
-			clients.PersonalID = int.Parse(reader["PersonallD"].ToString());
-			clients.IsGuest = (bool) reader["IsGuest"];
+			clients.PersonalID = reader["PersonalID"].ToString();
 			
 
 			return clients;

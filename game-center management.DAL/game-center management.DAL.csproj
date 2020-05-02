@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientsDAL.cs" />
+    <Compile Include="ComputersDAL.cs" />
     <Compile Include="EmployessDAL.cs" />
+    <Compile Include="ProductsDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLfunctions.cs" />
   </ItemGroup>

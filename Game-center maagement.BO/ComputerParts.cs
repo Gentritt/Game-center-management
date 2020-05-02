@@ -18,6 +18,8 @@
 		public string ComputerKeyboard { get; set; }
 		public string ComputerCooler { get; set; }
 
+		//public virtual Computer ComputerID;
+
 
 
 		//public virtual Computer computerID { get; set; }
