@@ -20,7 +20,7 @@ namespace game_center_management.BLL
 		public int ADD(Clients model)
 		{
 
-			throw new NotImplementedException();
+			 return clientsDal.ADD(model);
 		}
 
 		public int Modify(Clients model)

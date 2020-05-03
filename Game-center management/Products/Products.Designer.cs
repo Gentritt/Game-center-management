@@ -105,10 +105,9 @@
 		}
 
 		#endregion
-
-		private Telerik.WinControls.UI.RadGridView ProductsGRID;
 		private Telerik.WinControls.UI.RadButton btnADD;
 		private Telerik.WinControls.UI.RadButton btnUpdate;
 		private Telerik.WinControls.UI.RadButton btnDelete;
+		public Telerik.WinControls.UI.RadGridView ProductsGRID;
 	}
 }

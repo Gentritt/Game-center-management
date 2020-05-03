@@ -27,7 +27,7 @@ namespace Game_center_management.Forms
 
 		}
 
-		private void InitData()
+		public void InitData()
 		{
 			
 			var result = clientsBll.GetAll();
@@ -42,6 +42,17 @@ namespace Game_center_management.Forms
 		private void Create_User_Load(object sender, EventArgs e)
 		{
 			InitData();
+
+		}
+
+		private void btnCreateAccount_Click(object sender, EventArgs e)
+		{
+			CreateUserAccounts createUser = new CreateUserAccounts();
+			createUser.ShowDialog();
+		}
+
+		private void gridUsers_Click(object sender, EventArgs e)
+		{
 
 		}
 	}

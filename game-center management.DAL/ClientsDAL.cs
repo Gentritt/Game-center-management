@@ -19,7 +19,7 @@ namespace game_center_management.DAL
 			{
 				SqlConnection con = new SqlConnection(_connString);
 				con.Open();
-				SqlCommand cmd = new SqlCommand("Add_Clients", con);
+				SqlCommand cmd = new SqlCommand("Clients_Insert", con);
 				cmd.CommandType = CommandType.StoredProcedure;
 				cmd.Parameters.AddWithValue("@name", model.Name);
 				cmd.Parameters.AddWithValue("@lastname", model.LastName);
@@ -31,8 +31,11 @@ namespace game_center_management.DAL
 				cmd.Parameters.AddWithValue("@password", model.Password);
 				cmd.Parameters.AddWithValue("@balance", model.Balance);
 				cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
-				cmd.Parameters.AddWithValue("@isactive", model.IsActive);
-				cmd.Parameters.AddWithValue("@isguest", model.IsGuest);
+				cmd.Parameters.AddWithValue("@insertby", model.Insertby);
+				cmd.Parameters.AddWithValue("@insertdate", model.InserDate);
+
+				//cmd.Parameters.AddWithValue("@isactive", model.IsActive);
+				//cmd.Parameters.AddWithValue("@isguest", model.IsGuest);
 
 				int rowaffect = cmd.ExecuteNonQuery();
 				return rowaffect;
@@ -125,7 +128,7 @@ namespace game_center_management.DAL
 			clients.PhoneNumber = reader["PhoneNumber"].ToString();
 			clients.UserName = reader["UserName"].ToString();
 			clients.Balance = decimal.Parse(reader["Balance"].ToString());
-			clients.IsGuest = (bool) reader["IsGuest"];
+			//clients.IsGuest = (bool) reader["IsGuest"];
 			clients.Insertby = reader["InsertBy"].ToString();
 			clients.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
 			clients.IsActive = (bool) reader["IsActive"];

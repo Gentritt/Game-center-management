@@ -49,6 +49,7 @@
     <Compile Include="Employess.cs" />
     <Compile Include="Interfaces\IbaseCrud.cs" />
     <Compile Include="Interfaces\IConvertToObject.cs" />
+    <Compile Include="Orders.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

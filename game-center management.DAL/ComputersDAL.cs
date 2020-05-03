@@ -83,7 +83,7 @@ namespace game_center_management.DAL
 		//	ComputerParts computerParts = new ComputerParts();
 
 		//	computerParts.PartID = int.Parse(reader["PartID"].ToString());
-			
+
 
 
 		//}

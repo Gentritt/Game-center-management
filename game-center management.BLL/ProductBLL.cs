@@ -21,7 +21,14 @@ namespace game_center_management.BLL
 		public int ADD(Product model)
 		{
 
-			throw new NotImplementedException();
+			try
+			{
+			 return	productsDal.ADD(model);
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
 
 		}
 

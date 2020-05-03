@@ -15,13 +15,15 @@ namespace Game_center_management.Products
 	public partial class Products : Form
 	{
 		private readonly ProductBLL productBll;
+		
+		
 		public Products()
 		{
 			InitializeComponent();
 			productBll = new ProductBLL();
 		}
 
-		private void InitData()
+		public void InitData()
 		{
 			var result = productBll.GetAll();
 			ProductsGRID.DataSource = result;

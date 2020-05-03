@@ -14,7 +14,36 @@ namespace game_center_management.DAL
 	{
 		public int ADD(Product model)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Products_ADD", CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@productname", model.ProductName);
+						cmd.Parameters.AddWithValue("@productprice", model.Price);
+						cmd.Parameters.AddWithValue("@quantity", model.Quantity);
+						cmd.Parameters.AddWithValue("@insertby", model.Insertby);
+						cmd.Parameters.AddWithValue("@insertdate", model.InserDate);
+
+						int rowaffected = cmd.ExecuteNonQuery();
+
+						return rowaffected;
+						
+
+					}
+					
+
+				}
+
+
+
+			}
+			catch (Exception e)
+			{
+				return -1;
+
+			}
 		}
 
 		public int Modify(Product model)
@@ -89,6 +118,8 @@ namespace game_center_management.DAL
 			product.ProductID = int.Parse(reader["ProductID"].ToString());
 			product.Price = decimal.Parse(reader["ProductPrice"].ToString());
 			product.Quantity = int.Parse(reader["ProductQuantity"].ToString());
+			product.Insertby = reader["InsertBy"].ToString();
+			product.InserDate = (DateTime) reader["InsertDate"];
 
 			return product;
 

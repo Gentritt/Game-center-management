@@ -28,12 +28,23 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.grLoginInformation = new Telerik.WinControls.UI.RadGroupBox();
 			this.txtPasswordUserAcc = new Telerik.WinControls.UI.RadTextBox();
 			this.txtUsername = new Telerik.WinControls.UI.RadTextBox();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.lblUsername = new System.Windows.Forms.Label();
 			this.grUserInformation = new Telerik.WinControls.UI.RadGroupBox();
+			this.txtInsertDate = new Telerik.WinControls.UI.RadTextBox();
+			this.txtInsertBy = new Telerik.WinControls.UI.RadTextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.txtBalance = new Telerik.WinControls.UI.RadTextBox();
+			this.label3 = new System.Windows.Forms.Label();
+			this.txtAdress = new Telerik.WinControls.UI.RadTextBox();
+			this.txtPersonalID = new Telerik.WinControls.UI.RadTextBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
 			this.txtPhone = new Telerik.WinControls.UI.RadTextBox();
 			this.txtLastname = new Telerik.WinControls.UI.RadTextBox();
@@ -46,6 +57,18 @@
 			this.lblName = new System.Windows.Forms.Label();
 			this.btnSave = new Telerik.WinControls.UI.RadButton();
 			this.btnCancel = new Telerik.WinControls.UI.RadButton();
+			this.erpUsername = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpPassword = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpName = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpLastname = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpBirthday = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpPhone = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpMail = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpInsertbY = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpInsertDate = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpPersonalID = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpAdress = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpBalance = new System.Windows.Forms.ErrorProvider(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.grLoginInformation)).BeginInit();
 			this.grLoginInformation.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.txtPasswordUserAcc)).BeginInit();
@@ -53,6 +76,11 @@
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.grUserInformation)).BeginInit();
 			this.grUserInformation.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txtInsertDate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtInsertBy)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtBalance)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtAdress)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPersonalID)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPhone)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtLastname)).BeginInit();
@@ -60,6 +88,18 @@
 			((System.ComponentModel.ISupportInitialize)(this.txtName)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpUsername)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpPassword)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpName)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpLastname)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpBirthday)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpPhone)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpMail)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpInsertbY)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpInsertDate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpPersonalID)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpAdress)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpBalance)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// grLoginInformation
@@ -84,14 +124,14 @@
 			this.txtPasswordUserAcc.Location = new System.Drawing.Point(116, 79);
 			this.txtPasswordUserAcc.Name = "txtPasswordUserAcc";
 			this.txtPasswordUserAcc.Size = new System.Drawing.Size(146, 20);
-			this.txtPasswordUserAcc.TabIndex = 3;
+			this.txtPasswordUserAcc.TabIndex = 1;
 			// 
 			// txtUsername
 			// 
 			this.txtUsername.Location = new System.Drawing.Point(116, 32);
 			this.txtUsername.Name = "txtUsername";
 			this.txtUsername.Size = new System.Drawing.Size(146, 20);
-			this.txtUsername.TabIndex = 2;
+			this.txtUsername.TabIndex = 0;
 			// 
 			// radLabel1
 			// 
@@ -115,6 +155,16 @@
 			// grUserInformation
 			// 
 			this.grUserInformation.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.grUserInformation.Controls.Add(this.txtInsertDate);
+			this.grUserInformation.Controls.Add(this.txtInsertBy);
+			this.grUserInformation.Controls.Add(this.label5);
+			this.grUserInformation.Controls.Add(this.label4);
+			this.grUserInformation.Controls.Add(this.txtBalance);
+			this.grUserInformation.Controls.Add(this.label3);
+			this.grUserInformation.Controls.Add(this.txtAdress);
+			this.grUserInformation.Controls.Add(this.txtPersonalID);
+			this.grUserInformation.Controls.Add(this.label2);
+			this.grUserInformation.Controls.Add(this.label1);
 			this.grUserInformation.Controls.Add(this.txtEmail);
 			this.grUserInformation.Controls.Add(this.txtPhone);
 			this.grUserInformation.Controls.Add(this.txtLastname);
@@ -129,50 +179,130 @@
 			this.grUserInformation.HeaderText = "User Information";
 			this.grUserInformation.Location = new System.Drawing.Point(36, 156);
 			this.grUserInformation.Name = "grUserInformation";
-			this.grUserInformation.Size = new System.Drawing.Size(304, 277);
+			this.grUserInformation.Size = new System.Drawing.Size(304, 431);
 			this.grUserInformation.TabIndex = 1;
 			this.grUserInformation.Text = "User Information";
 			this.grUserInformation.ThemeName = "Crystal";
 			// 
+			// txtInsertDate
+			// 
+			this.txtInsertDate.Location = new System.Drawing.Point(91, 382);
+			this.txtInsertDate.Name = "txtInsertDate";
+			this.txtInsertDate.Size = new System.Drawing.Size(148, 20);
+			this.txtInsertDate.TabIndex = 11;
+			// 
+			// txtInsertBy
+			// 
+			this.txtInsertBy.Location = new System.Drawing.Point(91, 344);
+			this.txtInsertBy.Name = "txtInsertBy";
+			this.txtInsertBy.Size = new System.Drawing.Size(148, 20);
+			this.txtInsertBy.TabIndex = 10;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(9, 382);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(79, 17);
+			this.label5.TabIndex = 15;
+			this.label5.Text = "InsertDate: ";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(9, 344);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(66, 17);
+			this.label4.TabIndex = 14;
+			this.label4.Text = "InsertBy: ";
+			// 
+			// txtBalance
+			// 
+			this.txtBalance.Location = new System.Drawing.Point(91, 306);
+			this.txtBalance.Name = "txtBalance";
+			this.txtBalance.Size = new System.Drawing.Size(148, 20);
+			this.txtBalance.TabIndex = 9;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(9, 306);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(64, 17);
+			this.label3.TabIndex = 12;
+			this.label3.Text = "Balance: ";
+			// 
+			// txtAdress
+			// 
+			this.txtAdress.Location = new System.Drawing.Point(91, 268);
+			this.txtAdress.Name = "txtAdress";
+			this.txtAdress.Size = new System.Drawing.Size(148, 20);
+			this.txtAdress.TabIndex = 8;
+			// 
+			// txtPersonalID
+			// 
+			this.txtPersonalID.Location = new System.Drawing.Point(91, 230);
+			this.txtPersonalID.Name = "txtPersonalID";
+			this.txtPersonalID.Size = new System.Drawing.Size(148, 20);
+			this.txtPersonalID.TabIndex = 7;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(9, 268);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(65, 17);
+			this.label2.TabIndex = 9;
+			this.label2.Text = "Address: ";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(9, 230);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(82, 17);
+			this.label1.TabIndex = 8;
+			this.label1.Text = "PersonalID: ";
+			// 
 			// txtEmail
 			// 
-			this.txtEmail.Location = new System.Drawing.Point(91, 220);
+			this.txtEmail.Location = new System.Drawing.Point(91, 192);
 			this.txtEmail.Name = "txtEmail";
 			this.txtEmail.Size = new System.Drawing.Size(148, 20);
-			this.txtEmail.TabIndex = 7;
+			this.txtEmail.TabIndex = 6;
 			// 
 			// txtPhone
 			// 
-			this.txtPhone.Location = new System.Drawing.Point(91, 175);
+			this.txtPhone.Location = new System.Drawing.Point(91, 154);
 			this.txtPhone.Name = "txtPhone";
 			this.txtPhone.Size = new System.Drawing.Size(148, 20);
-			this.txtPhone.TabIndex = 6;
+			this.txtPhone.TabIndex = 5;
 			// 
 			// txtLastname
 			// 
-			this.txtLastname.Location = new System.Drawing.Point(91, 85);
+			this.txtLastname.Location = new System.Drawing.Point(91, 78);
 			this.txtLastname.Name = "txtLastname";
 			this.txtLastname.Size = new System.Drawing.Size(148, 20);
-			this.txtLastname.TabIndex = 6;
+			this.txtLastname.TabIndex = 3;
 			// 
 			// txtBirthday
 			// 
-			this.txtBirthday.Location = new System.Drawing.Point(91, 130);
+			this.txtBirthday.Location = new System.Drawing.Point(91, 116);
 			this.txtBirthday.Name = "txtBirthday";
 			this.txtBirthday.Size = new System.Drawing.Size(148, 20);
-			this.txtBirthday.TabIndex = 6;
+			this.txtBirthday.TabIndex = 4;
 			// 
 			// txtName
 			// 
 			this.txtName.Location = new System.Drawing.Point(91, 40);
 			this.txtName.Name = "txtName";
 			this.txtName.Size = new System.Drawing.Size(148, 20);
-			this.txtName.TabIndex = 5;
+			this.txtName.TabIndex = 2;
 			// 
 			// lblEmail
 			// 
 			this.lblEmail.AutoSize = true;
-			this.lblEmail.Location = new System.Drawing.Point(6, 208);
+			this.lblEmail.Location = new System.Drawing.Point(9, 192);
 			this.lblEmail.Name = "lblEmail";
 			this.lblEmail.Size = new System.Drawing.Size(48, 17);
 			this.lblEmail.TabIndex = 4;
@@ -181,7 +311,7 @@
 			// lblPhone
 			// 
 			this.lblPhone.AutoSize = true;
-			this.lblPhone.Location = new System.Drawing.Point(6, 166);
+			this.lblPhone.Location = new System.Drawing.Point(9, 154);
 			this.lblPhone.Name = "lblPhone";
 			this.lblPhone.Size = new System.Drawing.Size(54, 17);
 			this.lblPhone.TabIndex = 3;
@@ -190,7 +320,7 @@
 			// lblBirthday
 			// 
 			this.lblBirthday.AutoSize = true;
-			this.lblBirthday.Location = new System.Drawing.Point(6, 124);
+			this.lblBirthday.Location = new System.Drawing.Point(9, 116);
 			this.lblBirthday.Name = "lblBirthday";
 			this.lblBirthday.Size = new System.Drawing.Size(67, 17);
 			this.lblBirthday.TabIndex = 2;
@@ -199,7 +329,7 @@
 			// lblLastName
 			// 
 			this.lblLastName.AutoSize = true;
-			this.lblLastName.Location = new System.Drawing.Point(6, 82);
+			this.lblLastName.Location = new System.Drawing.Point(9, 78);
 			this.lblLastName.Name = "lblLastName";
 			this.lblLastName.Size = new System.Drawing.Size(79, 17);
 			this.lblLastName.TabIndex = 1;
@@ -208,7 +338,7 @@
 			// lblName
 			// 
 			this.lblName.AutoSize = true;
-			this.lblName.Location = new System.Drawing.Point(6, 40);
+			this.lblName.Location = new System.Drawing.Point(9, 40);
 			this.lblName.Name = "lblName";
 			this.lblName.Size = new System.Drawing.Size(51, 17);
 			this.lblName.TabIndex = 0;
@@ -216,28 +346,76 @@
 			// 
 			// btnSave
 			// 
-			this.btnSave.Location = new System.Drawing.Point(45, 439);
+			this.btnSave.Location = new System.Drawing.Point(27, 593);
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Size = new System.Drawing.Size(110, 46);
-			this.btnSave.TabIndex = 2;
+			this.btnSave.TabIndex = 11;
 			this.btnSave.Text = "Save";
 			this.btnSave.ThemeName = "Crystal";
 			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
 			// btnCancel
 			// 
-			this.btnCancel.Location = new System.Drawing.Point(210, 439);
+			this.btnCancel.Location = new System.Drawing.Point(230, 593);
 			this.btnCancel.Name = "btnCancel";
 			this.btnCancel.Size = new System.Drawing.Size(110, 46);
-			this.btnCancel.TabIndex = 3;
+			this.btnCancel.TabIndex = 12;
 			this.btnCancel.Text = "Cancel";
 			this.btnCancel.ThemeName = "Crystal";
+			// 
+			// erpUsername
+			// 
+			this.erpUsername.ContainerControl = this;
+			// 
+			// erpPassword
+			// 
+			this.erpPassword.ContainerControl = this;
+			// 
+			// erpName
+			// 
+			this.erpName.ContainerControl = this;
+			// 
+			// erpLastname
+			// 
+			this.erpLastname.ContainerControl = this;
+			// 
+			// erpBirthday
+			// 
+			this.erpBirthday.ContainerControl = this;
+			// 
+			// erpPhone
+			// 
+			this.erpPhone.ContainerControl = this;
+			// 
+			// erpMail
+			// 
+			this.erpMail.ContainerControl = this;
+			// 
+			// erpInsertbY
+			// 
+			this.erpInsertbY.ContainerControl = this;
+			// 
+			// erpInsertDate
+			// 
+			this.erpInsertDate.ContainerControl = this;
+			// 
+			// erpPersonalID
+			// 
+			this.erpPersonalID.ContainerControl = this;
+			// 
+			// erpAdress
+			// 
+			this.erpAdress.ContainerControl = this;
+			// 
+			// erpBalance
+			// 
+			this.erpBalance.ContainerControl = this;
 			// 
 			// CreateUserAccounts
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(417, 508);
+			this.ClientSize = new System.Drawing.Size(423, 651);
 			this.Controls.Add(this.btnCancel);
 			this.Controls.Add(this.btnSave);
 			this.Controls.Add(this.grUserInformation);
@@ -254,6 +432,11 @@
 			((System.ComponentModel.ISupportInitialize)(this.grUserInformation)).EndInit();
 			this.grUserInformation.ResumeLayout(false);
 			this.grUserInformation.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txtInsertDate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtInsertBy)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtBalance)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtAdress)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPersonalID)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPhone)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtLastname)).EndInit();
@@ -261,6 +444,18 @@
 			((System.ComponentModel.ISupportInitialize)(this.txtName)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpUsername)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpPassword)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpName)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpLastname)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpBirthday)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpPhone)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpMail)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpInsertbY)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpInsertDate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpPersonalID)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpAdress)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpBalance)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -285,5 +480,27 @@
 		private Telerik.WinControls.UI.RadButton btnSave;
 		private Telerik.WinControls.UI.RadButton btnCancel;
 		private Telerik.WinControls.UI.RadTextBox txtPasswordUserAcc;
+		private System.Windows.Forms.ErrorProvider erpUsername;
+		private System.Windows.Forms.ErrorProvider erpPassword;
+		private System.Windows.Forms.ErrorProvider erpName;
+		private System.Windows.Forms.ErrorProvider erpLastname;
+		private System.Windows.Forms.ErrorProvider erpBirthday;
+		private System.Windows.Forms.ErrorProvider erpPhone;
+		private System.Windows.Forms.ErrorProvider erpMail;
+		private System.Windows.Forms.Label label1;
+		private Telerik.WinControls.UI.RadTextBox txtAdress;
+		private Telerik.WinControls.UI.RadTextBox txtPersonalID;
+		private System.Windows.Forms.Label label2;
+		private Telerik.WinControls.UI.RadTextBox txtBalance;
+		private System.Windows.Forms.Label label3;
+		private Telerik.WinControls.UI.RadTextBox txtInsertDate;
+		private Telerik.WinControls.UI.RadTextBox txtInsertBy;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.ErrorProvider erpInsertbY;
+		private System.Windows.Forms.ErrorProvider erpInsertDate;
+		private System.Windows.Forms.ErrorProvider erpPersonalID;
+		private System.Windows.Forms.ErrorProvider erpAdress;
+		private System.Windows.Forms.ErrorProvider erpBalance;
 	}
 }

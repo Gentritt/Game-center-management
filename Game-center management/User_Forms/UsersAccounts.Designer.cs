@@ -37,17 +37,17 @@
 			this.btnCreateAccount = new Telerik.WinControls.UI.RadButton();
 			this.btnEditAccount = new Telerik.WinControls.UI.RadButton();
 			this.btnDeleteAccount = new Telerik.WinControls.UI.RadButton();
-			this.clientsBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.gridUsers = new Telerik.WinControls.UI.RadGridView();
+			this.clientsBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
 			this.radPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCreateAccount)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEditAccount)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDeleteAccount)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.clientsBLLBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridUsers)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridUsers.MasterTemplate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.clientsBLLBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// radPanel1
@@ -79,6 +79,7 @@
 			this.btnCreateAccount.TabIndex = 2;
 			this.btnCreateAccount.Text = "Create new Account";
 			this.btnCreateAccount.ThemeName = "Crystal";
+			this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
 			// 
 			// btnEditAccount
 			// 
@@ -98,10 +99,6 @@
 			this.btnDeleteAccount.Text = "Delete Account";
 			this.btnDeleteAccount.ThemeName = "Crystal";
 			// 
-			// clientsBLLBindingSource
-			// 
-			this.clientsBLLBindingSource.DataSource = typeof(game_center_management.BLL.ClientsBLL);
-			// 
 			// gridUsers
 			// 
 			this.gridUsers.Location = new System.Drawing.Point(13, 75);
@@ -119,6 +116,11 @@
 			this.gridUsers.Size = new System.Drawing.Size(603, 363);
 			this.gridUsers.TabIndex = 5;
 			this.gridUsers.ThemeName = "Crystal";
+			this.gridUsers.Click += new System.EventHandler(this.gridUsers_Click);
+			// 
+			// clientsBLLBindingSource
+			// 
+			this.clientsBLLBindingSource.DataSource = typeof(game_center_management.BLL.ClientsBLL);
 			// 
 			// UserAccounts
 			// 
@@ -140,9 +142,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnCreateAccount)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEditAccount)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDeleteAccount)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.clientsBLLBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridUsers.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridUsers)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.clientsBLLBindingSource)).EndInit();
 			this.ResumeLayout(false);
 
 		}
