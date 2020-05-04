@@ -51,7 +51,7 @@ namespace Game_center_management
 			
 
 			LoginBLL login = new LoginBLL();
-			Employess employess = login.Login(username, password);
+			Employess employess = login.Login(username, password);	
 
 			if (employess == null)
 			{
@@ -61,7 +61,7 @@ namespace Game_center_management
 
 			else
 			{
-				UserSession.loggedUser = employess;
+				UserSession.LoggedUser = employess;
 				this.Close();
 				
 			}

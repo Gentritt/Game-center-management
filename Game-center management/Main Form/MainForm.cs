@@ -23,7 +23,7 @@ namespace Game_center_management
 		{
 			
 			//this.Shown += MainForm_Shown;
-		    //lblUsername.Text = UserSession.loggedUser.Username;
+		
 
 		}
 
@@ -38,7 +38,8 @@ namespace Game_center_management
 		{
 			LoginForm loginForm = new LoginForm();
 			loginForm.ShowDialog();
-
+			lblLoggedUser.Text += UserSession.LoggedUser.Username;
+			lblDatetime.Text += DateTime.Now.ToString();
 
 
 		}
@@ -65,6 +66,11 @@ namespace Game_center_management
 		{
 			Products.Products products = new Products.Products();
 			products.ShowDialog();
+
+		}
+
+		private void radMenu2_Click(object sender, EventArgs e)
+		{
 
 		}
 	}

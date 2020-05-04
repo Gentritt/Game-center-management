@@ -69,6 +69,7 @@
 			this.erpPersonalID = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpAdress = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpBalance = new System.Windows.Forms.ErrorProvider(this.components);
+			this.erpEmailValidator = new System.Windows.Forms.ErrorProvider(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.grLoginInformation)).BeginInit();
 			this.grLoginInformation.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.txtPasswordUserAcc)).BeginInit();
@@ -100,6 +101,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.erpPersonalID)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpAdress)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpBalance)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpEmailValidator)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// grLoginInformation
@@ -117,7 +119,6 @@
 			this.grLoginInformation.TabIndex = 0;
 			this.grLoginInformation.Text = "Login Information";
 			this.grLoginInformation.ThemeName = "Crystal";
-			this.grLoginInformation.Click += new System.EventHandler(this.grLoginInformation_Click);
 			// 
 			// txtPasswordUserAcc
 			// 
@@ -203,7 +204,7 @@
 			this.label5.AutoSize = true;
 			this.label5.Location = new System.Drawing.Point(9, 382);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(79, 17);
+			this.label5.Size = new System.Drawing.Size(66, 13);
 			this.label5.TabIndex = 15;
 			this.label5.Text = "InsertDate: ";
 			// 
@@ -212,7 +213,7 @@
 			this.label4.AutoSize = true;
 			this.label4.Location = new System.Drawing.Point(9, 344);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(66, 17);
+			this.label4.Size = new System.Drawing.Size(53, 13);
 			this.label4.TabIndex = 14;
 			this.label4.Text = "InsertBy: ";
 			// 
@@ -228,7 +229,7 @@
 			this.label3.AutoSize = true;
 			this.label3.Location = new System.Drawing.Point(9, 306);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(64, 17);
+			this.label3.Size = new System.Drawing.Size(52, 13);
 			this.label3.TabIndex = 12;
 			this.label3.Text = "Balance: ";
 			// 
@@ -251,7 +252,7 @@
 			this.label2.AutoSize = true;
 			this.label2.Location = new System.Drawing.Point(9, 268);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(65, 17);
+			this.label2.Size = new System.Drawing.Size(54, 13);
 			this.label2.TabIndex = 9;
 			this.label2.Text = "Address: ";
 			// 
@@ -260,7 +261,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Location = new System.Drawing.Point(9, 230);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(82, 17);
+			this.label1.Size = new System.Drawing.Size(68, 13);
 			this.label1.TabIndex = 8;
 			this.label1.Text = "PersonalID: ";
 			// 
@@ -304,7 +305,7 @@
 			this.lblEmail.AutoSize = true;
 			this.lblEmail.Location = new System.Drawing.Point(9, 192);
 			this.lblEmail.Name = "lblEmail";
-			this.lblEmail.Size = new System.Drawing.Size(48, 17);
+			this.lblEmail.Size = new System.Drawing.Size(40, 13);
 			this.lblEmail.TabIndex = 4;
 			this.lblEmail.Text = "Email: ";
 			// 
@@ -313,7 +314,7 @@
 			this.lblPhone.AutoSize = true;
 			this.lblPhone.Location = new System.Drawing.Point(9, 154);
 			this.lblPhone.Name = "lblPhone";
-			this.lblPhone.Size = new System.Drawing.Size(54, 17);
+			this.lblPhone.Size = new System.Drawing.Size(46, 13);
 			this.lblPhone.TabIndex = 3;
 			this.lblPhone.Text = "Phone: ";
 			// 
@@ -322,7 +323,7 @@
 			this.lblBirthday.AutoSize = true;
 			this.lblBirthday.Location = new System.Drawing.Point(9, 116);
 			this.lblBirthday.Name = "lblBirthday";
-			this.lblBirthday.Size = new System.Drawing.Size(67, 17);
+			this.lblBirthday.Size = new System.Drawing.Size(55, 13);
 			this.lblBirthday.TabIndex = 2;
 			this.lblBirthday.Text = "Birthday: ";
 			// 
@@ -331,7 +332,7 @@
 			this.lblLastName.AutoSize = true;
 			this.lblLastName.Location = new System.Drawing.Point(9, 78);
 			this.lblLastName.Name = "lblLastName";
-			this.lblLastName.Size = new System.Drawing.Size(79, 17);
+			this.lblLastName.Size = new System.Drawing.Size(62, 13);
 			this.lblLastName.TabIndex = 1;
 			this.lblLastName.Text = "LastName: ";
 			// 
@@ -340,7 +341,7 @@
 			this.lblName.AutoSize = true;
 			this.lblName.Location = new System.Drawing.Point(9, 40);
 			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(51, 17);
+			this.lblName.Size = new System.Drawing.Size(42, 13);
 			this.lblName.TabIndex = 0;
 			this.lblName.Text = "Name: ";
 			// 
@@ -411,6 +412,10 @@
 			// 
 			this.erpBalance.ContainerControl = this;
 			// 
+			// erpEmailValidator
+			// 
+			this.erpEmailValidator.ContainerControl = this;
+			// 
 			// CreateUserAccounts
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,6 +461,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.erpPersonalID)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpAdress)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpBalance)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.erpEmailValidator)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -502,5 +508,6 @@
 		private System.Windows.Forms.ErrorProvider erpPersonalID;
 		private System.Windows.Forms.ErrorProvider erpAdress;
 		private System.Windows.Forms.ErrorProvider erpBalance;
+		private System.Windows.Forms.ErrorProvider erpEmailValidator;
 	}
 }

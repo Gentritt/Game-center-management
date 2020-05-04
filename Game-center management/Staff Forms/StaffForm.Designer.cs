@@ -40,6 +40,7 @@
 			this.crystalDarkTheme1 = new Telerik.WinControls.Themes.CrystalDarkTheme();
 			this.employessBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.gridServiceStaff = new Telerik.WinControls.UI.RadGridView();
+			this.btnEdit = new Telerik.WinControls.UI.RadButton();
 			((System.ComponentModel.ISupportInitialize)(this.pnlServicStaff)).BeginInit();
 			this.pnlServicStaff.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
@@ -48,6 +49,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff.MasterTemplate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pnlServicStaff
@@ -78,7 +80,7 @@
 			this.btnAdd.Size = new System.Drawing.Size(138, 47);
 			this.btnAdd.TabIndex = 2;
 			this.btnAdd.Text = "Add";
-			this.btnAdd.ThemeName = "Crystal";
+			this.btnAdd.ThemeName = "TelerikMetroTouch";
 			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
 			// btnDelete
@@ -86,10 +88,10 @@
 			this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnDelete.Location = new System.Drawing.Point(165, 65);
 			this.btnDelete.Name = "btnDelete";
-			this.btnDelete.Size = new System.Drawing.Size(131, 47);
+			this.btnDelete.Size = new System.Drawing.Size(126, 47);
 			this.btnDelete.TabIndex = 3;
 			this.btnDelete.Text = "Delete";
-			this.btnDelete.ThemeName = "Crystal";
+			this.btnDelete.ThemeName = "TelerikMetroTouch";
 			// 
 			// employessBLLBindingSource
 			// 
@@ -113,11 +115,21 @@
 			this.gridServiceStaff.TabIndex = 4;
 			this.gridServiceStaff.ThemeName = "Crystal";
 			// 
+			// btnEdit
+			// 
+			this.btnEdit.Location = new System.Drawing.Point(297, 65);
+			this.btnEdit.Name = "btnEdit";
+			this.btnEdit.Size = new System.Drawing.Size(127, 47);
+			this.btnEdit.TabIndex = 5;
+			this.btnEdit.Text = "Edit";
+			this.btnEdit.ThemeName = "TelerikMetroTouch";
+			// 
 			// StaffForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(819, 558);
+			this.Controls.Add(this.btnEdit);
 			this.Controls.Add(this.gridServiceStaff);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnAdd);
@@ -134,6 +146,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -150,5 +163,6 @@
 		private Telerik.WinControls.Themes.CrystalDarkTheme crystalDarkTheme1;
 		private System.Windows.Forms.BindingSource employessBLLBindingSource;
 		private Telerik.WinControls.UI.RadGridView gridServiceStaff;
+		private Telerik.WinControls.UI.RadButton btnEdit;
 	}
 }

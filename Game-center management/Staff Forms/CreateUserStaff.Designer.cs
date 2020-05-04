@@ -95,7 +95,7 @@
 			this.radGroupBox1.Size = new System.Drawing.Size(275, 439);
 			this.radGroupBox1.TabIndex = 0;
 			this.radGroupBox1.Text = "Personal Information";
-			this.radGroupBox1.ThemeName = "Crystal";
+			this.radGroupBox1.ThemeName = "CrystalDark";
 			// 
 			// txtEmail
 			// 
@@ -232,7 +232,7 @@
 			this.btnOK.Size = new System.Drawing.Size(110, 33);
 			this.btnOK.TabIndex = 16;
 			this.btnOK.Text = "OK";
-			this.btnOK.ThemeName = "Crystal";
+			this.btnOK.ThemeName = "CrystalDark";
 			this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
 			// 
 			// btnCancelStaff
@@ -242,7 +242,7 @@
 			this.btnCancelStaff.Size = new System.Drawing.Size(110, 33);
 			this.btnCancelStaff.TabIndex = 17;
 			this.btnCancelStaff.Text = "Cancel";
-			this.btnCancelStaff.ThemeName = "Crystal";
+			this.btnCancelStaff.ThemeName = "CrystalDark";
 			// 
 			// CreateUserStaff
 			// 
@@ -254,7 +254,6 @@
 			this.Controls.Add(this.radGroupBox1);
 			this.Name = "CreateUserStaff";
 			this.Text = "CreateUserStaff";
-			this.Load += new System.EventHandler(this.CreateUserStaff_Load);
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
 			this.radGroupBox1.ResumeLayout(false);
 			this.radGroupBox1.PerformLayout();

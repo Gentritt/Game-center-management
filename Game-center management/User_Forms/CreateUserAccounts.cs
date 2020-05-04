@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using game_center_management.BLL;
@@ -22,6 +24,42 @@ namespace Game_center_management.Forms
 			
 		}
 
+		private void EmailValidator()
+		{
+			string pattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
+			if (Regex.IsMatch(txtEmail.Text, pattern))
+			{
+
+				erpEmailValidator.Clear();
+
+			}
+			else
+			{
+				erpEmailValidator.SetError(txtEmail,"Please enter a valid Email !!!");
+			}
+
+
+		}
+
+		private void BirthdayValidator()
+		{
+
+			Regex pattern = new Regex(@"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$");
+			bool isValid = pattern.IsMatch(txtBirthday.Text.Trim());
+			DateTime dt;
+			isValid = DateTime.TryParseExact(txtBirthday.Text, "dd/MM/yyyy", new CultureInfo("en-GB"), 
+				DateTimeStyles.None, out dt);
+			if (!isValid)
+			{
+
+				MessageBox.Show("Ivalid Birthday!!");
+			}
+			else
+			{
+				//MessageBox.Show("email is valid");
+				return;
+			}
+		}
 		private void ValidateNotNULL()
 		{
 
@@ -175,19 +213,6 @@ namespace Game_center_management.Forms
 				clients.Insertby = txtInsertBy.Text;
 				clients.InserDate = DateTime.Parse(txtInsertDate.Text);
 				clientsBll.ADD(clients);
-
-				//Employess employess = new Employess();
-
-				//employess.Name = txtName.Text;
-				//employess.LastName = txtLastname.Text;
-				//employess.Username = txtUsername.Text;
-				//employess.Password = txtPasswordUserAcc.Text;
-				//employess.PersonalID = txtPersonalID.Text;
-				//employess.Adress = txtAdress.Text;
-				//employess.Birthday = DateTime.Parse(txtBirthday.Text);
-				//employess.Email = txtEmail.Text;
-				//employessBll.ADD(employess);
-
 				UserAccounts userAccounts = new UserAccounts();
 				userAccounts.InitData();
 				this.Close();
@@ -196,20 +221,19 @@ namespace Game_center_management.Forms
 			}
 
 		}
-		private void CreateUserAccounts_Load(object sender, EventArgs e)
-		{
-
-		}
-
-		private void grLoginInformation_Click(object sender, EventArgs e)
-		{
-
-		}
-
+		
 		private void btnSave_Click(object sender, EventArgs e)
 		{
+			EmailValidator();
 			ValidateFields();
 			ValidateNotNULL();
+			BirthdayValidator();
+			
+
+		}
+
+		private void CreateUserAccounts_Load(object sender, EventArgs e)
+		{
 
 		}
 	}
