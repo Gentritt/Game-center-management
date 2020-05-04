@@ -27,34 +27,34 @@ namespace Game_center_management.Staff_Forms
 			
 		}
 
-		private void InitData()
-		{
-			var result = employessbll.GetAll();
+		//private void InitData()
+		//{
+		//	var result = employessbll.GetAll();
 			
 
-		}
+		//}
 
-		private bool ValidateFields()
-		{
+		//private bool ValidateFields()
+		//{
 
 
-			var controls = new[]
-			{
-				txtNameStaff, txtBirthday, txtPhoneNumber, txtPersonalID, txtLastNameStaff, txtPasswordStaff,
-				txtUsernameStaff, txtPersonalID, txtEmail
-			};
+		//	var controls = new[]
+		//	{
+		//		txtNameStaff, txtBirthday, txtPhoneNumber, txtPersonalID, txtLastNameStaff, txtPasswordStaff,
+		//		txtUsernameStaff, txtPersonalID, txtEmail
+		//	};
 
-			bool isValid = true;
-			foreach (var control in controls.Where(e => string.IsNullOrEmpty(e.Text)));
-			{
-				MessageBox.Show("Please fill all your required fields!!");
+		//	bool isValid = true;
+		//	foreach (var control in controls.Where(e => string.IsNullOrEmpty(e.Text)));
+		//	{
+		//		MessageBox.Show("Please fill all your required fields!!");
 
-				isValid = false;
+		//		isValid = false;
 
-			}
+		//	}
 
-			return isValid;
-		}
+		//	return isValid;
+		//}
 		private void EmailValidator()
 		{
 			string pattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
@@ -82,7 +82,7 @@ namespace Game_center_management.Staff_Forms
 			if (!isValid)
 			{
 
-				MessageBox.Show("Invalid Birthday!!");
+				MessageBox.Show("Invalid Birthday (Ex: dd/mm/yyyy)");
 			}
 			else
 			{
@@ -90,18 +90,168 @@ namespace Game_center_management.Staff_Forms
 				return;
 			}
 		}
+		private void ValidateNotNULL()
+		{
+
+			if (txtNameStaff.Text != "")
+			{
+				erpName.Dispose();
+			}
+
+			if (txtLastNameStaff.Text != "")
+			{
+				erpLastName.Dispose();
+
+			}
+
+			if (txtBirthday.Text != "")
+			{
+				erpBirthday.Dispose();
+				BirthdayValidator();
+			}
+
+			if (txtEmail.Text != "")
+			{
+				erpMail.Dispose();
+				EmailValidator();
+			}
+
+			if (txtAddress.Text != "")
+			{
+				erpAdress.Dispose();
+			}
+
+			if (txtUsernameStaff.Text != "")
+			{
+				erpUsername.Dispose();
+			}
+
+			if (txtPasswordStaff.Text != "")
+			{
+				erpPassword.Dispose();
+			}
+
+			if (txtPersonalID.Text != "")
+			{
+				erpPersonalID.Dispose();
+			}
+
+			if (txtSalary.Text != "")
+			{
+				erpSalary.Dispose();
+			}
+
+			if (txtInsertBy.Text != "")
+			{
+				erpInsertby.Dispose();
+			}
+
+			if (txtInsertDate.Text != "")
+			{
+				erpInsertDate.Dispose();
+			}
+
+			if (txtPhoneNumber.Text != "")
+			{
+				erpPhone.Dispose();
+			}
+
+
+		}
+		private void ValidateFields()
+		{
+			if (txtUsernameStaff.Text == "")
+			{
+
+				erpUsername.SetError(txtUsernameStaff, "This cannot be blank");
+			}
+			if (txtPasswordStaff.Text == "")
+			{
+
+				erpPassword.SetError(txtPasswordStaff, "This cannot be blank");
+			}
+			if (txtNameStaff.Text == "")
+			{
+
+				erpName.SetError(txtNameStaff, "This cannot be blank");
+			}
+			if (txtLastNameStaff.Text == "")
+			{
+
+				erpLastName.SetError(txtLastNameStaff, "This cannot be blank");
+			}
+			if (txtBirthday.Text == "")
+			{
+
+				erpBirthday.SetError(txtBirthday, "This cannot be blank");
+			}
+			if (txtPhoneNumber.Text == "")
+			{
+				erpPhone.SetError(txtPhoneNumber, "This cannot be blank");
+			}
+			if (txtEmail.Text == "")
+			{
+
+				erpMail.SetError(txtEmail, "This cannot be blank");
+			}
+			if (txtInsertBy.Text == "")
+			{
+				erpInsertby.SetError(txtInsertBy, "This cannot be blank");
+			}
+			if (txtInsertDate.Text == "")
+			{
+				erpInsertDate.SetError(txtInsertDate, "This cannot be blank");
+			}
+			if (txtAddress.Text == "")
+			{
+				erpAdress.SetError(txtAddress, "This cannot be blank");
+			}
+			if (txtSalary.Text == "")
+			{
+				erpSalary.SetError(txtSalary, "This cannot be blank");
+			}
+			if (txtPersonalID.Text == "")
+			{
+				erpPersonalID.SetError(txtPersonalID, "This cannot be Blank");
+			}
+			else
+			{
+				Employess employess = new Employess();
+
+				employess.Name = txtNameStaff.Text;
+				employess.LastName = txtLastNameStaff.Text;
+				employess.Username = txtUsernameStaff.Text;
+				employess.Password = txtPasswordStaff.Text;
+				employess.PersonalID = txtPersonalID.Text;
+				employess.Adress = txtAddress.Text;
+				employess.Birthday = DateTime.Parse(txtBirthday.Text);
+				employess.Email = txtEmail.Text;
+				employess.PhoneNumber = txtPhoneNumber.Text;
+				employess.Salary = decimal.Parse(txtSalary.Text);
+				employess.Insertby = txtInsertBy.Text;
+				employess.InserDate = DateTime.Parse(txtInsertDate.Text);
+
+				employessbll.ADD(employess);
+
+				StaffForm sf = new StaffForm();
+				sf.FillGrid();
+			}
+
+		}
 
 		private void btnOK_Click(object sender, EventArgs e)
 		{
 			
 			ValidateFields();
-			EmailValidator();
-			BirthdayValidator();
+			ValidateNotNULL();
+			//EmailValidator();
+			//BirthdayValidator();
 
 		}
 
-	
+		private void CreateUserStaff_Load(object sender, EventArgs e)
+		{
 
-		
+		}
 	}
 }

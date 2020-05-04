@@ -21,7 +21,10 @@ namespace Game_center_management.Forms
 		{
 			InitializeComponent();
 			clientsBll = new ClientsBLL();
-			
+			//rdDatetime.Format = DateTimePickerFormat.Custom;
+			//rdDatetime.CustomFormat = "dd/MM/yyyy";
+			////rdDatetime.ShowUpDown = true;
+
 		}
 
 		private void EmailValidator()
@@ -47,7 +50,7 @@ namespace Game_center_management.Forms
 			Regex pattern = new Regex(@"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$");
 			bool isValid = pattern.IsMatch(txtBirthday.Text.Trim());
 			DateTime dt;
-			isValid = DateTime.TryParseExact(txtBirthday.Text, "dd/MM/yyyy", new CultureInfo("en-GB"), 
+			isValid = DateTime.TryParseExact(rdDatetime.Text, "dd/MM/yyyy", new CultureInfo("en-GB"),
 				DateTimeStyles.None, out dt);
 			if (!isValid)
 			{
@@ -74,7 +77,7 @@ namespace Game_center_management.Forms
 
 			}
 
-			if (txtBirthday.Text != "")
+			if (rdDatetime.Text != "")
 			{
 				erpBirthday.Dispose();
 			}
@@ -82,6 +85,7 @@ namespace Game_center_management.Forms
 			if (txtEmail.Text != "")
 			{
 				erpMail.Dispose();
+				EmailValidator();
 			}
 
 			if (txtAdress.Text != "")
@@ -128,6 +132,12 @@ namespace Game_center_management.Forms
 
 		}
 
+		private void MyCustomFormat()
+		{
+
+
+		}
+
 
 		private void ValidateFields()
 		{
@@ -156,10 +166,10 @@ namespace Game_center_management.Forms
 				erpLastname.SetError(txtLastname, "This cannot be blank");
 			}
 
-			if (txtBirthday.Text == "")
+			if (rdDatetime.Text == "")
 			{
 
-				erpBirthday.SetError(txtBirthday, "This cannot be blank");
+				erpBirthday.SetError(rdDatetime, "This cannot be blank");
 			}
 
 			if (txtPhone.Text == "")
@@ -224,10 +234,13 @@ namespace Game_center_management.Forms
 		
 		private void btnSave_Click(object sender, EventArgs e)
 		{
-			EmailValidator();
+
+			//EmailValidator();
+			//BirthdayValidator();
 			ValidateFields();
 			ValidateNotNULL();
-			BirthdayValidator();
+			//BirthdayValidator();
+			MyCustomFormat();
 			
 
 		}
@@ -235,6 +248,25 @@ namespace Game_center_management.Forms
 		private void CreateUserAccounts_Load(object sender, EventArgs e)
 		{
 
+			rdDatetime.Format = DateTimePickerFormat.Custom;
+			rdDatetime.CustomFormat = "dd-MM-yyyy";
+
+		}
+
+		private void grUserInformation_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void grLoginInformation_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void rdDatetime_ValueChanged(object sender, EventArgs e)
+		{
+		
+		//	rdDatetime.ShowUpDown = true;
 		}
 	}
 }

@@ -38,7 +38,7 @@ namespace Game_center_management.Forms
 			FillGrid();
 
 		}
-		private void FillGrid()
+		public void FillGrid()
 		{
 			var result = employessBll.GetAll();
 			gridServiceStaff.DataSource = result;

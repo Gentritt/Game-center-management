@@ -38,9 +38,10 @@ namespace Game_center_management
 		{
 			LoginForm loginForm = new LoginForm();
 			loginForm.ShowDialog();
+			
 			lblLoggedUser.Text += UserSession.LoggedUser.Username;
 			lblDatetime.Text += DateTime.Now.ToString();
-
+			timer1.Start();
 
 		}
 
@@ -72,6 +73,12 @@ namespace Game_center_management
 		private void radMenu2_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void timer1_Tick(object sender, EventArgs e)
+		{
+			lblDatetime.Text = DateTime.Now.ToString();
+			timer1.Start();
 		}
 	}
 }

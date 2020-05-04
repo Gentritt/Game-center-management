@@ -25,7 +25,7 @@ namespace game_center_management.DAL
 			{
 				SqlConnection conn = new SqlConnection(_connString);
 				conn.Open();
-				SqlCommand cmd = new SqlCommand("Add_Employess",conn);
+				SqlCommand cmd = new SqlCommand("Add_Employess", conn);
 				cmd.CommandType = CommandType.StoredProcedure;
 				cmd.Parameters.AddWithValue("@name", model.Name);
 				cmd.Parameters.AddWithValue("@personalid", model.PersonalID);
@@ -35,10 +35,11 @@ namespace game_center_management.DAL
 				cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
 				cmd.Parameters.AddWithValue("@username", model.Username);
 				cmd.Parameters.AddWithValue("@password", model.Password);
-				cmd.Parameters.AddWithValue("@salay", model.Salary);
-				cmd.Parameters.AddWithValue("@isactive", model.IsActive);
+				cmd.Parameters.AddWithValue("@salary", model.Salary);
+				cmd.Parameters.AddWithValue("@insertBy", model.Insertby);
+				cmd.Parameters.AddWithValue("@insertDate", model.InserDate);
 				int rowaffected = cmd.ExecuteNonQuery();
-				cmd .Dispose();
+				cmd.Dispose();
 				conn.Close();
 				conn.Dispose();
 				return rowaffected;

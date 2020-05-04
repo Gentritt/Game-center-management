@@ -12,6 +12,7 @@ Telerik.WinControls.Themes.CrystalDarkTheme, Telerik.WinControls.Themes.CrystalD
 Telerik.WinControls.UI.RadImageEditor, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.Themes.Office2010SilverTheme, Telerik.WinControls.Themes.Office2010Silver, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadContextMenuManager, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+Telerik.WinControls.UI.RadDateTimePicker, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadApplicationMenu, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.Themes.MaterialTheme, Telerik.WinControls.Themes.Material, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e

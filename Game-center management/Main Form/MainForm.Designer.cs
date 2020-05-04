@@ -77,6 +77,7 @@
 			this.office2010SilverTheme1 = new Telerik.WinControls.Themes.Office2010SilverTheme();
 			this.lblDatetime = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radMenu2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
@@ -313,9 +314,10 @@
 			this.radPanel1.Controls.Add(this.lblDatetime);
 			this.radPanel1.Controls.Add(this.lblLoggedUser);
 			this.radPanel1.Controls.Add(this.label1);
-			this.radPanel1.Location = new System.Drawing.Point(0, 425);
+			this.radPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.radPanel1.Location = new System.Drawing.Point(0, 428);
 			this.radPanel1.Name = "radPanel1";
-			this.radPanel1.Size = new System.Drawing.Size(800, 33);
+			this.radPanel1.Size = new System.Drawing.Size(804, 33);
 			this.radPanel1.TabIndex = 5;
 			this.radPanel1.ThemeName = "CrystalDark";
 			// 
@@ -356,6 +358,11 @@
 			this.label2.Size = new System.Drawing.Size(131, 23);
 			this.label2.TabIndex = 4;
 			this.label2.Text = "Date and Time: ";
+			// 
+			// timer1
+			// 
+			this.timer1.Enabled = true;
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// MainForm
 			// 
@@ -430,6 +437,7 @@
 		private Telerik.WinControls.Themes.Office2010SilverTheme office2010SilverTheme1;
 		private System.Windows.Forms.Label lblDatetime;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Timer timer1;
 	}
 }
 
