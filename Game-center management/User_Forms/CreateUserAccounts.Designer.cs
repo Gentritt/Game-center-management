@@ -72,7 +72,7 @@ namespace Game_center_management.Forms
 			this.erpBalance = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpEmailValidator = new System.Windows.Forms.ErrorProvider(this.components);
 			this.rdDatetime = new Telerik.WinControls.UI.RadDateTimePicker();
-			this.txtBirthday = new Telerik.WinControls.UI.RadTextBox();
+			this.rdDatePicker = new Telerik.WinControls.UI.RadDateTimePicker();
 			((System.ComponentModel.ISupportInitialize)(this.grLoginInformation)).BeginInit();
 			this.grLoginInformation.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.txtPasswordUserAcc)).BeginInit();
@@ -105,7 +105,7 @@ namespace Game_center_management.Forms
 			((System.ComponentModel.ISupportInitialize)(this.erpBalance)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpEmailValidator)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.rdDatetime)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtBirthday)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.rdDatePicker)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// grLoginInformation
@@ -161,7 +161,7 @@ namespace Game_center_management.Forms
 			// grUserInformation
 			// 
 			this.grUserInformation.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.grUserInformation.Controls.Add(this.txtBirthday);
+			this.grUserInformation.Controls.Add(this.rdDatePicker);
 			this.grUserInformation.Controls.Add(this.txtInsertDate);
 			this.grUserInformation.Controls.Add(this.txtInsertBy);
 			this.grUserInformation.Controls.Add(this.label5);
@@ -431,12 +431,19 @@ namespace Game_center_management.Forms
 			this.rdDatetime.Text = "Monday, May 4, 2020";
 			this.rdDatetime.Value = new System.DateTime(2020, 5, 4, 22, 10, 27, 122);
 			// 
-			// txtBirthday
+			// rdDatePicker
 			// 
-			this.txtBirthday.Location = new System.Drawing.Point(111, 129);
-			this.txtBirthday.Name = "txtBirthday";
-			this.txtBirthday.Size = new System.Drawing.Size(148, 20);
-			this.txtBirthday.TabIndex = 16;
+			this.rdDatePicker.CalendarSize = new System.Drawing.Size(290, 320);
+			this.rdDatePicker.CustomFormat = "dd-MM-yyyy";
+			this.rdDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			this.rdDatePicker.Location = new System.Drawing.Point(113, 129);
+			this.rdDatePicker.Name = "rdDatePicker";
+			this.rdDatePicker.Size = new System.Drawing.Size(146, 24);
+			this.rdDatePicker.TabIndex = 16;
+			this.rdDatePicker.TabStop = false;
+			this.rdDatePicker.Text = "04-05-2020";
+			this.rdDatePicker.ThemeName = "Crystal";
+			this.rdDatePicker.Value = new System.DateTime(2020, 5, 4, 23, 4, 2, 809);
 			// 
 			// CreateUserAccounts
 			// 
@@ -484,7 +491,7 @@ namespace Game_center_management.Forms
 			((System.ComponentModel.ISupportInitialize)(this.erpBalance)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpEmailValidator)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.rdDatetime)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtBirthday)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.rdDatePicker)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -533,6 +540,6 @@ namespace Game_center_management.Forms
 		private System.Windows.Forms.ErrorProvider erpEmailValidator;
 		private DateTime DateTimePicker;
 		private Telerik.WinControls.UI.RadDateTimePicker rdDatetime;
-		private Telerik.WinControls.UI.RadTextBox txtBirthday;
+		private Telerik.WinControls.UI.RadDateTimePicker rdDatePicker;
 	}
 }

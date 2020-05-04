@@ -61,35 +61,40 @@ namespace Game_center_management.Staff_Forms
 			if (Regex.IsMatch(txtEmail.Text, pattern))
 			{
 
-				return;
+				this.Close();
 			}
 			else
 			{
-				MessageBox.Show("Email is not Valid!!");
+				DialogResult dialogResult = MessageBox.Show("Email is not Valid!!");
+				if (dialogResult ==DialogResult.OK)
+				{
+					txtEmail.Focus();
+
+				}
 			}
 
 
 		}
 
-		private void BirthdayValidator()
-		{
+		//private void BirthdayValidator()
+		//{
 
-			Regex pattern = new Regex(@"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$");
-			bool isValid = pattern.IsMatch(txtBirthday.Text.Trim());
-			DateTime dt;
-			isValid = DateTime.TryParseExact(txtBirthday.Text, "dd/MM/yyyy", new CultureInfo("en-GB"),
-				DateTimeStyles.None, out dt);
-			if (!isValid)
-			{
+		//	Regex pattern = new Regex(@"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$");
+		//	bool isValid = pattern.IsMatch(r.Text.Trim());
+		//	DateTime dt;
+		//	isValid = DateTime.TryParseExact(txtBirthday.Text, "dd/MM/yyyy", new CultureInfo("en-GB"),
+		//		DateTimeStyles.None, out dt);
+		//	if (!isValid)
+		//	{
 
-				MessageBox.Show("Invalid Birthday (Ex: dd/mm/yyyy)");
-			}
-			else
-			{
-				//MessageBox.Show("email is valid");
-				return;
-			}
-		}
+		//		MessageBox.Show("Invalid Birthday (Ex: dd/mm/yyyy)");
+		//	}
+		//	else
+		//	{
+		//		//MessageBox.Show("email is valid");
+		//		return;
+		//	}
+		//}
 		private void ValidateNotNULL()
 		{
 
@@ -104,16 +109,17 @@ namespace Game_center_management.Staff_Forms
 
 			}
 
-			if (txtBirthday.Text != "")
+			if (rdDatetimepicker.Text != "")
 			{
 				erpBirthday.Dispose();
-				BirthdayValidator();
+				//BirthdayValidator();
 			}
 
 			if (txtEmail.Text != "")
 			{
+				//EmailValidator();
 				erpMail.Dispose();
-				EmailValidator();
+				
 			}
 
 			if (txtAddress.Text != "")
@@ -180,10 +186,10 @@ namespace Game_center_management.Staff_Forms
 
 				erpLastName.SetError(txtLastNameStaff, "This cannot be blank");
 			}
-			if (txtBirthday.Text == "")
+			if (rdDatetimepicker.Text == "")
 			{
 
-				erpBirthday.SetError(txtBirthday, "This cannot be blank");
+				erpBirthday.SetError(rdDatetimepicker, "This cannot be blank");
 			}
 			if (txtPhoneNumber.Text == "")
 			{
@@ -224,7 +230,7 @@ namespace Game_center_management.Staff_Forms
 				employess.Password = txtPasswordStaff.Text;
 				employess.PersonalID = txtPersonalID.Text;
 				employess.Adress = txtAddress.Text;
-				employess.Birthday = DateTime.Parse(txtBirthday.Text);
+				employess.Birthday = DateTime.Parse(rdDatetimepicker.Text);
 				employess.Email = txtEmail.Text;
 				employess.PhoneNumber = txtPhoneNumber.Text;
 				employess.Salary = decimal.Parse(txtSalary.Text);
@@ -232,26 +238,30 @@ namespace Game_center_management.Staff_Forms
 				employess.InserDate = DateTime.Parse(txtInsertDate.Text);
 
 				employessbll.ADD(employess);
-
 				StaffForm sf = new StaffForm();
 				sf.FillGrid();
+				
+
 			}
 
 		}
 
 		private void btnOK_Click(object sender, EventArgs e)
 		{
-			
+			EmailValidator();
 			ValidateFields();
 			ValidateNotNULL();
-			//EmailValidator();
+		
 			//BirthdayValidator();
 
 		}
 
 		private void CreateUserStaff_Load(object sender, EventArgs e)
 		{
-
+			txtInsertBy.Text += UserSession.LoggedUser.Username;
+			txtInsertBy.ReadOnly = true;
+			txtInsertDate.Text += DateTime.Now.ToShortDateString();
+			txtInsertDate.ReadOnly = true;
 		}
 	}
 }

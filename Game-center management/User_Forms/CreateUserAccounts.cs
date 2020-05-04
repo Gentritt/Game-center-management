@@ -33,36 +33,42 @@ namespace Game_center_management.Forms
 			if (Regex.IsMatch(txtEmail.Text, pattern))
 			{
 
-				erpEmailValidator.Clear();
+				this.Close();
 
 			}
 			else
 			{
-				erpEmailValidator.SetError(txtEmail,"Please enter a valid Email !!!");
+				DialogResult dialogResult = MessageBox.Show("This email is not Valid");
+				if (dialogResult == DialogResult.OK)
+				{
+					txtEmail.Focus();
+
+				}
 			}
 
 
 		}
+		
 
-		private void BirthdayValidator()
-		{
+		//private void BirthdayValidator()
+		//{
 
-			Regex pattern = new Regex(@"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$");
-			bool isValid = pattern.IsMatch(txtBirthday.Text.Trim());
-			DateTime dt;
-			isValid = DateTime.TryParseExact(rdDatetime.Text, "dd/MM/yyyy", new CultureInfo("en-GB"),
-				DateTimeStyles.None, out dt);
-			if (!isValid)
-			{
+		//	Regex pattern = new Regex(@"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$");
+		//	bool isValid = pattern.IsMatch(date.Text.Trim());
+		//	DateTime dt;
+		//	isValid = DateTime.TryParseExact(rdDatetime.Text, "dd/MM/yyyy" , new CultureInfo("en-GB"),
+		//		DateTimeStyles.None, out dt);
+		//	if (!isValid)
+		//	{
 
-				MessageBox.Show("Ivalid Birthday!!");
-			}
-			else
-			{
-				//MessageBox.Show("email is valid");
-				return;
-			}
-		}
+		//		MessageBox.Show("Ivalid Birthday!!");
+		//	}
+		//	else
+		//	{
+		//		//MessageBox.Show("email is valid");
+		//		return;
+		//	}
+		//}
 		private void ValidateNotNULL()
 		{
 
@@ -85,7 +91,7 @@ namespace Game_center_management.Forms
 			if (txtEmail.Text != "")
 			{
 				erpMail.Dispose();
-				EmailValidator();
+				//EmailValidator();
 			}
 
 			if (txtAdress.Text != "")
@@ -209,11 +215,13 @@ namespace Game_center_management.Forms
 			}
 			else
 			{
+		
+
 				Clients clients = new Clients();
 				clients.Name = txtName.Text;
 				clients.LastName = txtLastname.Text;
 				clients.Address = txtAdress.Text;
-				clients.Birthday = DateTime.Parse(txtBirthday.Text);
+				clients.Birthday =DateTime.Parse(rdDatePicker.Text);
 				clients.Email = txtEmail.Text;
 				clients.UserName = txtUsername.Text;
 				clients.Password = txtPasswordUserAcc.Text;
@@ -225,7 +233,9 @@ namespace Game_center_management.Forms
 				clientsBll.ADD(clients);
 				UserAccounts userAccounts = new UserAccounts();
 				userAccounts.InitData();
-				this.Close();
+
+				
+
 
 
 			}
@@ -235,12 +245,12 @@ namespace Game_center_management.Forms
 		private void btnSave_Click(object sender, EventArgs e)
 		{
 
-			//EmailValidator();
+			EmailValidator();
 			//BirthdayValidator();
 			ValidateFields();
 			ValidateNotNULL();
 			//BirthdayValidator();
-			MyCustomFormat();
+	
 			
 
 		}
@@ -248,8 +258,12 @@ namespace Game_center_management.Forms
 		private void CreateUserAccounts_Load(object sender, EventArgs e)
 		{
 
-			rdDatetime.Format = DateTimePickerFormat.Custom;
-			rdDatetime.CustomFormat = "dd-MM-yyyy";
+			//rdDatetime.Format = DateTimePickerFormat.Custom;
+			//rdDatetime.CustomFormat = "dd-MM-yyyy";
+			txtInsertBy.Text += UserSession.LoggedUser.Username;
+			txtInsertBy.ReadOnly = true;
+			txtInsertDate.Text += DateTime.Now.ToShortDateString();
+			txtInsertDate.ReadOnly = true;
 
 		}
 

@@ -42,22 +42,27 @@
 			// 
 			// ProductsGRID
 			// 
+			this.ProductsGRID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.ProductsGRID.Location = new System.Drawing.Point(2, 71);
 			// 
 			// 
 			// 
 			this.ProductsGRID.MasterTemplate.AllowAddNewRow = false;
 			this.ProductsGRID.MasterTemplate.AllowColumnReorder = false;
+			this.ProductsGRID.MasterTemplate.HorizontalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
+			this.ProductsGRID.MasterTemplate.VerticalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
 			this.ProductsGRID.MasterTemplate.ViewDefinition = tableViewDefinition1;
 			this.ProductsGRID.Name = "ProductsGRID";
 			this.ProductsGRID.ReadOnly = true;
-			this.ProductsGRID.Size = new System.Drawing.Size(622, 373);
+			this.ProductsGRID.Size = new System.Drawing.Size(655, 400);
 			this.ProductsGRID.TabIndex = 0;
 			this.ProductsGRID.ThemeName = "Crystal";
 			// 
 			// btnADD
 			// 
-			this.btnADD.Location = new System.Drawing.Point(641, 71);
+			this.btnADD.Location = new System.Drawing.Point(12, 22);
 			this.btnADD.Name = "btnADD";
 			this.btnADD.Size = new System.Drawing.Size(110, 43);
 			this.btnADD.TabIndex = 1;
@@ -67,7 +72,7 @@
 			// 
 			// btnUpdate
 			// 
-			this.btnUpdate.Location = new System.Drawing.Point(641, 126);
+			this.btnUpdate.Location = new System.Drawing.Point(147, 22);
 			this.btnUpdate.Name = "btnUpdate";
 			this.btnUpdate.Size = new System.Drawing.Size(110, 43);
 			this.btnUpdate.TabIndex = 2;
@@ -76,7 +81,7 @@
 			// 
 			// btnDelete
 			// 
-			this.btnDelete.Location = new System.Drawing.Point(641, 181);
+			this.btnDelete.Location = new System.Drawing.Point(286, 22);
 			this.btnDelete.Name = "btnDelete";
 			this.btnDelete.Size = new System.Drawing.Size(110, 43);
 			this.btnDelete.TabIndex = 3;
@@ -87,7 +92,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(706, 477);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnUpdate);
 			this.Controls.Add(this.btnADD);

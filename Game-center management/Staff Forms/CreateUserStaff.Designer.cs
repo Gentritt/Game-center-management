@@ -31,7 +31,6 @@
 			this.components = new System.ComponentModel.Container();
 			this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
 			this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
-			this.txtBirthday = new Telerik.WinControls.UI.RadTextBox();
 			this.txtPhoneNumber = new Telerik.WinControls.UI.RadTextBox();
 			this.txtPersonalID = new Telerik.WinControls.UI.RadTextBox();
 			this.txtLastNameStaff = new Telerik.WinControls.UI.RadTextBox();
@@ -71,10 +70,10 @@
 			this.erpInsertby = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpInsertDate = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpPassword = new System.Windows.Forms.ErrorProvider(this.components);
+			this.rdDatetimepicker = new Telerik.WinControls.UI.RadDateTimePicker();
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
 			this.radGroupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtBirthday)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPersonalID)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtLastNameStaff)).BeginInit();
@@ -110,6 +109,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertby)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertDate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpPassword)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.rdDatetimepicker)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// radGroupBox1
@@ -136,14 +136,6 @@
 			this.txtEmail.Size = new System.Drawing.Size(167, 24);
 			this.txtEmail.TabIndex = 14;
 			this.txtEmail.ThemeName = "Crystal";
-			// 
-			// txtBirthday
-			// 
-			this.txtBirthday.Location = new System.Drawing.Point(428, 62);
-			this.txtBirthday.Name = "txtBirthday";
-			this.txtBirthday.Size = new System.Drawing.Size(167, 24);
-			this.txtBirthday.TabIndex = 10;
-			this.txtBirthday.ThemeName = "Crystal";
 			// 
 			// txtPhoneNumber
 			// 
@@ -297,6 +289,7 @@
 			// radGroupBox2
 			// 
 			this.radGroupBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.radGroupBox2.Controls.Add(this.rdDatetimepicker);
 			this.radGroupBox2.Controls.Add(this.txtInsertDate);
 			this.radGroupBox2.Controls.Add(this.txtInsertBy);
 			this.radGroupBox2.Controls.Add(this.txtSalary);
@@ -312,7 +305,6 @@
 			this.radGroupBox2.Controls.Add(this.txtLastNameStaff);
 			this.radGroupBox2.Controls.Add(this.radLabel8);
 			this.radGroupBox2.Controls.Add(this.radLabel4);
-			this.radGroupBox2.Controls.Add(this.txtBirthday);
 			this.radGroupBox2.Controls.Add(this.txtPersonalID);
 			this.radGroupBox2.Controls.Add(this.radLabel2);
 			this.radGroupBox2.Controls.Add(this.radLabel7);
@@ -450,6 +442,20 @@
 			// 
 			this.erpPassword.ContainerControl = this;
 			// 
+			// rdDatetimepicker
+			// 
+			this.rdDatetimepicker.CalendarSize = new System.Drawing.Size(290, 320);
+			this.rdDatetimepicker.CustomFormat = "dd-MM-yyyy";
+			this.rdDatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			this.rdDatetimepicker.Location = new System.Drawing.Point(428, 65);
+			this.rdDatetimepicker.Name = "rdDatetimepicker";
+			this.rdDatetimepicker.Size = new System.Drawing.Size(164, 24);
+			this.rdDatetimepicker.TabIndex = 23;
+			this.rdDatetimepicker.TabStop = false;
+			this.rdDatetimepicker.Text = "04-05-2020";
+			this.rdDatetimepicker.ThemeName = "FluentDark";
+			this.rdDatetimepicker.Value = new System.DateTime(2020, 5, 4, 23, 9, 47, 522);
+			// 
 			// CreateUserStaff
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,7 +472,6 @@
 			this.radGroupBox1.ResumeLayout(false);
 			this.radGroupBox1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtBirthday)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPersonalID)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtLastNameStaff)).EndInit();
@@ -503,6 +508,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertby)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertDate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpPassword)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.rdDatetimepicker)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -519,7 +525,6 @@
 		private Telerik.WinControls.UI.RadLabel radLabel5;
 		private Telerik.WinControls.UI.RadLabel radLabel4;
 		private Telerik.WinControls.UI.RadTextBox txtEmail;
-		private Telerik.WinControls.UI.RadTextBox txtBirthday;
 		private Telerik.WinControls.UI.RadTextBox txtPhoneNumber;
 		private Telerik.WinControls.UI.RadTextBox txtPersonalID;
 		private Telerik.WinControls.UI.RadTextBox txtLastNameStaff;
@@ -551,5 +556,6 @@
 		private System.Windows.Forms.ErrorProvider erpInsertby;
 		private System.Windows.Forms.ErrorProvider erpInsertDate;
 		private System.Windows.Forms.ErrorProvider erpPassword;
+		private Telerik.WinControls.UI.RadDateTimePicker rdDatetimepicker;
 	}
 }

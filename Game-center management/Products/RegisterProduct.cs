@@ -25,6 +25,10 @@ namespace Game_center_management.Products
 
 		private void RegisterProduct_Load(object sender, EventArgs e)
 		{
+			txtInserBy.Text += UserSession.LoggedUser.Username;
+			txtInserBy.ReadOnly = true;
+			txtInserDate.Text += DateTime.Now.ToShortDateString();
+			txtInserDate.ReadOnly = true;
 
 		}
 

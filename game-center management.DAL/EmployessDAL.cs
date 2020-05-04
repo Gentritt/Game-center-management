@@ -38,6 +38,7 @@ namespace game_center_management.DAL
 				cmd.Parameters.AddWithValue("@salary", model.Salary);
 				cmd.Parameters.AddWithValue("@insertBy", model.Insertby);
 				cmd.Parameters.AddWithValue("@insertDate", model.InserDate);
+				cmd.Parameters.AddWithValue("@address", model.Adress);
 				int rowaffected = cmd.ExecuteNonQuery();
 				cmd.Dispose();
 				conn.Close();
