@@ -10,7 +10,7 @@ using Game_center_management.BO.Interfaces;
 
 namespace game_center_management.DAL
 {
-	class ComputersDAL: ComputerParts,IbaseCrud<Computer>
+	public class ComputersDAL: ComputerParts,IbaseCrud<Computer>
 	{
 		public int ADD(Computer model)
 		{
@@ -80,10 +80,9 @@ namespace game_center_management.DAL
 		//public Computer ToObject(SqlDataReader reader)
 		//{
 		//	Computer computer = new Computer();
-		//	ComputerParts computerParts = new ComputerParts();
+		//	//ComputerParts computerParts = new ComputerParts();
 
-		//	computerParts.PartID = int.Parse(reader["PartID"].ToString());
-
+		//	computer.PartID = int.Parse(reader["PartID"].ToString());
 
 
 		//}

@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientsBLL.cs" />
+    <Compile Include="ComputerPartsBLL.cs" />
     <Compile Include="EmployessBLL.cs" />
     <Compile Include="LoginBLL.cs" />
     <Compile Include="ProductBLL.cs" />

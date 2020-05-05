@@ -56,7 +56,7 @@
 			this.radPanel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.radPanel1.Location = new System.Drawing.Point(0, 0);
 			this.radPanel1.Name = "radPanel1";
-			this.radPanel1.Size = new System.Drawing.Size(800, 59);
+			this.radPanel1.Size = new System.Drawing.Size(801, 59);
 			this.radPanel1.TabIndex = 0;
 			this.radPanel1.ThemeName = "CrystalDark";
 			// 
@@ -116,9 +116,9 @@
 			this.gridUsers.MasterTemplate.ViewDefinition = tableViewDefinition1;
 			this.gridUsers.Name = "gridUsers";
 			this.gridUsers.ReadOnly = true;
-			this.gridUsers.Size = new System.Drawing.Size(603, 363);
+			this.gridUsers.Size = new System.Drawing.Size(604, 366);
 			this.gridUsers.TabIndex = 5;
-			this.gridUsers.ThemeName = "Crystal";
+			this.gridUsers.ThemeName = "CrystalDark";
 			this.gridUsers.Click += new System.EventHandler(this.gridUsers_Click);
 			// 
 			// clientsBLLBindingSource
@@ -129,7 +129,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(801, 453);
 			this.Controls.Add(this.gridUsers);
 			this.Controls.Add(this.btnDeleteAccount);
 			this.Controls.Add(this.btnEditAccount);

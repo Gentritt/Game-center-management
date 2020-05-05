@@ -282,5 +282,25 @@ namespace Game_center_management.Forms
 		
 		//	rdDatetime.ShowUpDown = true;
 		}
+
+		private void txtPersonalID_TextChanged(object sender, EventArgs e)
+		{
+			if (Regex.IsMatch(txtPersonalID.Text, "[^0-9]"))
+			{
+				MessageBox.Show("Please enter only numbers");
+				txtPersonalID.Text = txtPersonalID.Text.Remove(txtPersonalID.Text.Length - 1);
+
+			}
+		}
+
+		private void txtBalance_TextChanged(object sender, EventArgs e)
+		{
+			if (Regex.IsMatch(txtBalance.Text, "[^0-9]"))
+			{
+				MessageBox.Show("Please enter only numbers");
+				txtBalance.Text = txtPersonalID.Text.Remove(txtBalance.Text.Length - 1);
+
+			}
+		}
 	}
 }

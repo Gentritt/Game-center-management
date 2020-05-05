@@ -59,7 +59,30 @@ namespace game_center_management.DAL
 
 		public int Remove(int ID)
 		{
-			throw new NotImplementedException();
+
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Delete_EmployeeByID",CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("employeeid", ID);
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+
+					}
+
+				}
+
+
+
+			}
+			catch (Exception )
+			{
+				return -1;
+
+			}
+
 		}
 
 		public int Remove(Employess model)

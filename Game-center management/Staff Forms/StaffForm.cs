@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using game_center_management.BLL;
+using Game_center_management.BO;
 using Game_center_management.Staff_Forms;
+using Telerik.Pivot.Core.Totals;
 using Telerik.WinControls.UI;
 
 namespace Game_center_management.Forms
@@ -53,6 +55,41 @@ namespace Game_center_management.Forms
 		private void gridServiceStaff_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void btnDelete_Click(object sender, EventArgs e)
+		{
+			
+			
+
+		}
+
+		private void contextMenuStaff_Opening(object sender, CancelEventArgs e)
+		{
+
+		}
+
+		private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+			int index = gridServiceStaff.SelectedCells[0].RowIndex;
+			if (index < 0) return;
+
+			Employess employess = (Employess) gridServiceStaff.Rows[index].DataBoundItem;
+			if (employess != null)
+			{
+
+				employessBll.Remove(employess.ID);
+
+			}
+
+
+		}
+
+		private void btnEdit_Click(object sender, EventArgs e)
+		{
+			gridServiceStaff.Update();
+			
 		}
 	}
 }

@@ -129,6 +129,7 @@
 			this.txtQuantity.Name = "txtQuantity";
 			this.txtQuantity.Size = new System.Drawing.Size(133, 20);
 			this.txtQuantity.TabIndex = 2;
+			this.txtQuantity.TextChanged += new System.EventHandler(this.txtQuantity_TextChanged);
 			// 
 			// label1
 			// 
@@ -165,6 +166,7 @@
 			this.txtPrice.Name = "txtPrice";
 			this.txtPrice.Size = new System.Drawing.Size(133, 20);
 			this.txtPrice.TabIndex = 1;
+			this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
 			// 
 			// txtProductName
 			// 

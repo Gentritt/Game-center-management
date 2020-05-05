@@ -35,7 +35,7 @@ namespace game_center_management.BLL
 
 		public int Remove(int ID)
 		{
-			throw new System.NotImplementedException();
+			return empDal.Remove(ID);
 		}
 
 		public int Remove(Employess model)

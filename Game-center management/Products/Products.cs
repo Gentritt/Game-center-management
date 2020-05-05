@@ -41,5 +41,10 @@ namespace Game_center_management.Products
 			RegisterProduct registerProduct = new RegisterProduct();
 			registerProduct.ShowDialog();
 		}
+
+		private void btnDelete_Click(object sender, EventArgs e)
+		{
+			//int index = ProductsGRID.SelectedCells[0].rowIndex
+		}
 	}
 }

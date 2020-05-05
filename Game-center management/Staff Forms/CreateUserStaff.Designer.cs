@@ -30,33 +30,34 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.txtPasswordStaff = new Telerik.WinControls.UI.RadTextBox();
+			this.txtUsernameStaff = new Telerik.WinControls.UI.RadTextBox();
+			this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
 			this.txtPhoneNumber = new Telerik.WinControls.UI.RadTextBox();
 			this.txtPersonalID = new Telerik.WinControls.UI.RadTextBox();
 			this.txtLastNameStaff = new Telerik.WinControls.UI.RadTextBox();
 			this.txtNameStaff = new Telerik.WinControls.UI.RadTextBox();
-			this.txtPasswordStaff = new Telerik.WinControls.UI.RadTextBox();
-			this.txtUsernameStaff = new Telerik.WinControls.UI.RadTextBox();
 			this.radLabel8 = new Telerik.WinControls.UI.RadLabel();
 			this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
 			this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
 			this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
 			this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
-			this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
 			this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.btnOK = new Telerik.WinControls.UI.RadButton();
 			this.btnCancelStaff = new Telerik.WinControls.UI.RadButton();
-			this.label2 = new System.Windows.Forms.Label();
 			this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.txtAddress = new Telerik.WinControls.UI.RadTextBox();
-			this.txtSalary = new Telerik.WinControls.UI.RadTextBox();
-			this.txtInsertBy = new Telerik.WinControls.UI.RadTextBox();
+			this.rdDatetimepicker = new Telerik.WinControls.UI.RadDateTimePicker();
 			this.txtInsertDate = new Telerik.WinControls.UI.RadTextBox();
+			this.txtInsertBy = new Telerik.WinControls.UI.RadTextBox();
+			this.txtSalary = new Telerik.WinControls.UI.RadTextBox();
+			this.txtAddress = new Telerik.WinControls.UI.RadTextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.erpUsername = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpEmployess = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpName = new System.Windows.Forms.ErrorProvider(this.components);
@@ -70,32 +71,32 @@
 			this.erpInsertby = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpInsertDate = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpPassword = new System.Windows.Forms.ErrorProvider(this.components);
-			this.rdDatetimepicker = new Telerik.WinControls.UI.RadDateTimePicker();
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
 			this.radGroupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txtPasswordStaff)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUsernameStaff)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPersonalID)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtLastNameStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtNameStaff)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtPasswordStaff)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtUsernameStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel8)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnOK)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancelStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
 			this.radGroupBox2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.txtAddress)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtSalary)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtInsertBy)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.rdDatetimepicker)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtInsertDate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtInsertBy)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtSalary)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtAddress)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpUsername)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpEmployess)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpName)).BeginInit();
@@ -109,7 +110,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertby)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertDate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpPassword)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.rdDatetimepicker)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// radGroupBox1
@@ -128,6 +128,50 @@
 			this.radGroupBox1.TabIndex = 0;
 			this.radGroupBox1.Text = "Personal Information";
 			this.radGroupBox1.ThemeName = "CrystalDark";
+			this.radGroupBox1.Click += new System.EventHandler(this.radGroupBox1_Click);
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(156, 650);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(45, 17);
+			this.label2.TabIndex = 16;
+			this.label2.Text = "label2";
+			// 
+			// txtPasswordStaff
+			// 
+			this.txtPasswordStaff.Location = new System.Drawing.Point(433, 51);
+			this.txtPasswordStaff.Name = "txtPasswordStaff";
+			this.txtPasswordStaff.Size = new System.Drawing.Size(167, 24);
+			this.txtPasswordStaff.TabIndex = 9;
+			this.txtPasswordStaff.ThemeName = "Crystal";
+			// 
+			// txtUsernameStaff
+			// 
+			this.txtUsernameStaff.Location = new System.Drawing.Point(92, 49);
+			this.txtUsernameStaff.Name = "txtUsernameStaff";
+			this.txtUsernameStaff.Size = new System.Drawing.Size(164, 24);
+			this.txtUsernameStaff.TabIndex = 8;
+			this.txtUsernameStaff.ThemeName = "Crystal";
+			// 
+			// radLabel3
+			// 
+			this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.radLabel3.Location = new System.Drawing.Point(325, 54);
+			this.radLabel3.Name = "radLabel3";
+			this.radLabel3.Size = new System.Drawing.Size(69, 21);
+			this.radLabel3.TabIndex = 2;
+			this.radLabel3.Text = "Password: ";
+			// 
+			// radLabel1
+			// 
+			this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.radLabel1.Location = new System.Drawing.Point(5, 49);
+			this.radLabel1.Name = "radLabel1";
+			this.radLabel1.Size = new System.Drawing.Size(73, 21);
+			this.radLabel1.TabIndex = 0;
+			this.radLabel1.Text = "Username: ";
 			// 
 			// txtEmail
 			// 
@@ -152,6 +196,8 @@
 			this.txtPersonalID.Size = new System.Drawing.Size(167, 24);
 			this.txtPersonalID.TabIndex = 12;
 			this.txtPersonalID.ThemeName = "Crystal";
+			this.txtPersonalID.TextChanged += new System.EventHandler(this.txtPersonalID_TextChanged);
+			this.txtPersonalID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPersonalID_KeyPress);
 			// 
 			// txtLastNameStaff
 			// 
@@ -168,22 +214,6 @@
 			this.txtNameStaff.Size = new System.Drawing.Size(167, 24);
 			this.txtNameStaff.TabIndex = 10;
 			this.txtNameStaff.ThemeName = "Crystal";
-			// 
-			// txtPasswordStaff
-			// 
-			this.txtPasswordStaff.Location = new System.Drawing.Point(433, 51);
-			this.txtPasswordStaff.Name = "txtPasswordStaff";
-			this.txtPasswordStaff.Size = new System.Drawing.Size(167, 24);
-			this.txtPasswordStaff.TabIndex = 9;
-			this.txtPasswordStaff.ThemeName = "Crystal";
-			// 
-			// txtUsernameStaff
-			// 
-			this.txtUsernameStaff.Location = new System.Drawing.Point(92, 49);
-			this.txtUsernameStaff.Name = "txtUsernameStaff";
-			this.txtUsernameStaff.Size = new System.Drawing.Size(164, 24);
-			this.txtUsernameStaff.TabIndex = 8;
-			this.txtUsernameStaff.ThemeName = "Crystal";
 			// 
 			// radLabel8
 			// 
@@ -231,15 +261,6 @@
 			this.radLabel4.TabIndex = 3;
 			this.radLabel4.Text = "LastName: ";
 			// 
-			// radLabel3
-			// 
-			this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.radLabel3.Location = new System.Drawing.Point(325, 54);
-			this.radLabel3.Name = "radLabel3";
-			this.radLabel3.Size = new System.Drawing.Size(69, 21);
-			this.radLabel3.TabIndex = 2;
-			this.radLabel3.Text = "Password: ";
-			// 
 			// radLabel2
 			// 
 			this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -248,15 +269,6 @@
 			this.radLabel2.Size = new System.Drawing.Size(49, 21);
 			this.radLabel2.TabIndex = 1;
 			this.radLabel2.Text = "Name: ";
-			// 
-			// radLabel1
-			// 
-			this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.radLabel1.Location = new System.Drawing.Point(5, 49);
-			this.radLabel1.Name = "radLabel1";
-			this.radLabel1.Size = new System.Drawing.Size(73, 21);
-			this.radLabel1.TabIndex = 0;
-			this.radLabel1.Text = "Username: ";
 			// 
 			// btnOK
 			// 
@@ -276,15 +288,6 @@
 			this.btnCancelStaff.TabIndex = 17;
 			this.btnCancelStaff.Text = "Cancel";
 			this.btnCancelStaff.ThemeName = "CrystalDark";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(156, 650);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(45, 17);
-			this.label2.TabIndex = 16;
-			this.label2.Text = "label2";
 			// 
 			// radGroupBox2
 			// 
@@ -318,35 +321,52 @@
 			this.radGroupBox2.Text = "Employe Information";
 			this.radGroupBox2.ThemeName = "CrystalDark";
 			// 
-			// label1
+			// rdDatetimepicker
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(325, 117);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(63, 17);
-			this.label1.TabIndex = 15;
-			this.label1.Text = "Address: ";
+			this.rdDatetimepicker.CalendarSize = new System.Drawing.Size(290, 320);
+			this.rdDatetimepicker.CustomFormat = "dd-MM-yyyy";
+			this.rdDatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			this.rdDatetimepicker.Location = new System.Drawing.Point(428, 65);
+			this.rdDatetimepicker.Name = "rdDatetimepicker";
+			this.rdDatetimepicker.Size = new System.Drawing.Size(164, 24);
+			this.rdDatetimepicker.TabIndex = 23;
+			this.rdDatetimepicker.TabStop = false;
+			this.rdDatetimepicker.Text = "04-05-2020";
+			this.rdDatetimepicker.ThemeName = "FluentDark";
+			this.rdDatetimepicker.Value = new System.DateTime(2020, 5, 4, 23, 9, 47, 522);
 			// 
-			// label3
+			// txtInsertDate
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(325, 163);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(50, 17);
-			this.label3.TabIndex = 16;
-			this.label3.Text = "Salary: ";
+			this.txtInsertDate.Location = new System.Drawing.Point(428, 250);
+			this.txtInsertDate.Name = "txtInsertDate";
+			this.txtInsertDate.Size = new System.Drawing.Size(167, 24);
+			this.txtInsertDate.TabIndex = 22;
+			this.txtInsertDate.ThemeName = "Crystal";
 			// 
-			// label4
+			// txtInsertBy
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(325, 209);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(60, 17);
-			this.label4.TabIndex = 17;
-			this.label4.Text = "InsertBy: ";
+			this.txtInsertBy.Location = new System.Drawing.Point(428, 203);
+			this.txtInsertBy.Name = "txtInsertBy";
+			this.txtInsertBy.Size = new System.Drawing.Size(167, 24);
+			this.txtInsertBy.TabIndex = 21;
+			this.txtInsertBy.ThemeName = "Crystal";
+			// 
+			// txtSalary
+			// 
+			this.txtSalary.Location = new System.Drawing.Point(428, 156);
+			this.txtSalary.Name = "txtSalary";
+			this.txtSalary.Size = new System.Drawing.Size(167, 24);
+			this.txtSalary.TabIndex = 20;
+			this.txtSalary.ThemeName = "Crystal";
+			this.txtSalary.TextChanged += new System.EventHandler(this.txtSalary_TextChanged);
+			// 
+			// txtAddress
+			// 
+			this.txtAddress.Location = new System.Drawing.Point(428, 109);
+			this.txtAddress.Name = "txtAddress";
+			this.txtAddress.Size = new System.Drawing.Size(167, 24);
+			this.txtAddress.TabIndex = 19;
+			this.txtAddress.ThemeName = "Crystal";
 			// 
 			// label5
 			// 
@@ -358,37 +378,35 @@
 			this.label5.TabIndex = 18;
 			this.label5.Text = "InsertDate: ";
 			// 
-			// txtAddress
+			// label4
 			// 
-			this.txtAddress.Location = new System.Drawing.Point(428, 109);
-			this.txtAddress.Name = "txtAddress";
-			this.txtAddress.Size = new System.Drawing.Size(167, 24);
-			this.txtAddress.TabIndex = 19;
-			this.txtAddress.ThemeName = "Crystal";
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(325, 209);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(60, 17);
+			this.label4.TabIndex = 17;
+			this.label4.Text = "InsertBy: ";
 			// 
-			// txtSalary
+			// label3
 			// 
-			this.txtSalary.Location = new System.Drawing.Point(428, 156);
-			this.txtSalary.Name = "txtSalary";
-			this.txtSalary.Size = new System.Drawing.Size(167, 24);
-			this.txtSalary.TabIndex = 20;
-			this.txtSalary.ThemeName = "Crystal";
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(325, 163);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(50, 17);
+			this.label3.TabIndex = 16;
+			this.label3.Text = "Salary: ";
 			// 
-			// txtInsertBy
+			// label1
 			// 
-			this.txtInsertBy.Location = new System.Drawing.Point(428, 203);
-			this.txtInsertBy.Name = "txtInsertBy";
-			this.txtInsertBy.Size = new System.Drawing.Size(167, 24);
-			this.txtInsertBy.TabIndex = 21;
-			this.txtInsertBy.ThemeName = "Crystal";
-			// 
-			// txtInsertDate
-			// 
-			this.txtInsertDate.Location = new System.Drawing.Point(428, 250);
-			this.txtInsertDate.Name = "txtInsertDate";
-			this.txtInsertDate.Size = new System.Drawing.Size(167, 24);
-			this.txtInsertDate.TabIndex = 22;
-			this.txtInsertDate.ThemeName = "Crystal";
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(325, 117);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(63, 17);
+			this.label1.TabIndex = 15;
+			this.label1.Text = "Address: ";
 			// 
 			// erpUsername
 			// 
@@ -442,20 +460,6 @@
 			// 
 			this.erpPassword.ContainerControl = this;
 			// 
-			// rdDatetimepicker
-			// 
-			this.rdDatetimepicker.CalendarSize = new System.Drawing.Size(290, 320);
-			this.rdDatetimepicker.CustomFormat = "dd-MM-yyyy";
-			this.rdDatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-			this.rdDatetimepicker.Location = new System.Drawing.Point(428, 65);
-			this.rdDatetimepicker.Name = "rdDatetimepicker";
-			this.rdDatetimepicker.Size = new System.Drawing.Size(164, 24);
-			this.rdDatetimepicker.TabIndex = 23;
-			this.rdDatetimepicker.TabStop = false;
-			this.rdDatetimepicker.Text = "04-05-2020";
-			this.rdDatetimepicker.ThemeName = "FluentDark";
-			this.rdDatetimepicker.Value = new System.DateTime(2020, 5, 4, 23, 9, 47, 522);
-			// 
 			// CreateUserStaff
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -471,30 +475,31 @@
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
 			this.radGroupBox1.ResumeLayout(false);
 			this.radGroupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txtPasswordStaff)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUsernameStaff)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPersonalID)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtLastNameStaff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtNameStaff)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtPasswordStaff)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtUsernameStaff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel8)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel7)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnOK)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancelStaff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
 			this.radGroupBox2.ResumeLayout(false);
 			this.radGroupBox2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.txtAddress)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtSalary)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtInsertBy)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.rdDatetimepicker)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtInsertDate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtInsertBy)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtSalary)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtAddress)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpUsername)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpEmployess)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpName)).EndInit();
@@ -508,7 +513,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertby)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertDate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpPassword)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.rdDatetimepicker)).EndInit();
 			this.ResumeLayout(false);
 
 		}

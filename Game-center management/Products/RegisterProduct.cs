@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using game_center_management.BLL;
@@ -135,6 +136,24 @@ namespace Game_center_management.Products
 			ValidateNotNULL();
 		}
 
-	
+		private void txtQuantity_TextChanged(object sender, EventArgs e)
+		{
+			if (Regex.IsMatch(txtQuantity.Text, "[^0-9]"))
+			{
+				MessageBox.Show("Please enter only numbers");
+				txtQuantity.Text = txtQuantity.Text.Remove(txtQuantity.Text.Length - 1);
+
+			}
+		}
+
+		private void txtPrice_TextChanged(object sender, EventArgs e)
+		{
+			if (Regex.IsMatch(txtPrice.Text, "[^0-9]"))
+			{
+				MessageBox.Show("Please enter only numbers");
+				txtPrice.Text = txtPrice.Text.Remove(txtPrice.Text.Length - 1);
+
+			}
+		}
 	}
 }

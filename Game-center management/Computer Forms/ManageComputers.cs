@@ -22,5 +22,11 @@ namespace Game_center_management.Computer_Forms
 			RegisterComputers registerComputers = new RegisterComputers();
 			registerComputers.ShowDialog();
 		}
+
+		private void radButton1_Click(object sender, EventArgs e)
+		{
+			ComputerParts computerParts = new ComputerParts();
+			computerParts.ShowDialog();
+		}
 	}
 }

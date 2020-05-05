@@ -35,6 +35,7 @@
 			this.btnADD = new Telerik.WinControls.UI.RadButton();
 			this.btnUpdate = new Telerik.WinControls.UI.RadButton();
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
+			this.btnParts = new Telerik.WinControls.UI.RadButton();
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
 			this.radPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
@@ -43,6 +44,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnParts)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// radPanel1
@@ -51,7 +53,7 @@
 			this.radPanel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.radPanel1.Location = new System.Drawing.Point(0, 0);
 			this.radPanel1.Name = "radPanel1";
-			this.radPanel1.Size = new System.Drawing.Size(712, 61);
+			this.radPanel1.Size = new System.Drawing.Size(716, 61);
 			this.radPanel1.TabIndex = 0;
 			this.radPanel1.ThemeName = "CrystalDark";
 			// 
@@ -105,11 +107,22 @@
 			this.btnDelete.Text = "Delete";
 			this.btnDelete.ThemeName = "Crystal";
 			// 
+			// btnParts
+			// 
+			this.btnParts.Location = new System.Drawing.Point(596, 240);
+			this.btnParts.Name = "btnParts";
+			this.btnParts.Size = new System.Drawing.Size(110, 50);
+			this.btnParts.TabIndex = 5;
+			this.btnParts.Text = "PARTS";
+			this.btnParts.ThemeName = "Crystal";
+			this.btnParts.Click += new System.EventHandler(this.radButton1_Click);
+			// 
 			// ManageComputers
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(712, 456);
+			this.ClientSize = new System.Drawing.Size(716, 458);
+			this.Controls.Add(this.btnParts);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnUpdate);
 			this.Controls.Add(this.btnADD);
@@ -126,6 +139,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnParts)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -138,5 +152,6 @@
 		private Telerik.WinControls.UI.RadButton btnADD;
 		private Telerik.WinControls.UI.RadButton btnUpdate;
 		private Telerik.WinControls.UI.RadButton btnDelete;
+		private Telerik.WinControls.UI.RadButton btnParts;
 	}
 }

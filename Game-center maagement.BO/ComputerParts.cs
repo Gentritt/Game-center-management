@@ -1,6 +1,6 @@
 ﻿namespace Game_center_management.BO
 {
-	public class ComputerParts
+	public class ComputerParts : BaseObject
 	{
 		public int PartID { get; set; }
 		public string ComputerCase { get; set; }

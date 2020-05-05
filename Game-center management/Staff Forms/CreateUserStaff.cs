@@ -237,9 +237,19 @@ namespace Game_center_management.Staff_Forms
 				employess.Insertby = txtInsertBy.Text;
 				employess.InserDate = DateTime.Parse(txtInsertDate.Text);
 
-				employessbll.ADD(employess);
+				int reg = employessbll.ADD(employess);
 				StaffForm sf = new StaffForm();
-				sf.FillGrid();
+				if (reg != 0)
+				{
+					MessageBox.Show("Insert Successful");
+					sf.FillGrid();
+
+				}
+				else
+				{
+					MessageBox.Show("Insert Unsuccesful");
+				}
+				
 				
 
 			}
@@ -262,6 +272,44 @@ namespace Game_center_management.Staff_Forms
 			txtInsertBy.ReadOnly = true;
 			txtInsertDate.Text += DateTime.Now.ToShortDateString();
 			txtInsertDate.ReadOnly = true;
+		}
+
+		private void radGroupBox1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void txtPersonalID_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			//e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+			//if (!char.IsLetter(e.KeyChar))
+			//{
+
+			//	MessageBox.Show("Only numbers accepted !");
+			//}
+
+		}
+
+		private void txtPersonalID_TextChanged(object sender, EventArgs e)
+		{
+			if (Regex.IsMatch(txtPersonalID.Text, "[^0-9]"))
+			{
+				MessageBox.Show("Please enter only numbers");
+				txtPersonalID.Text = txtPersonalID.Text.Remove(txtPersonalID.Text.Length - 1);
+
+			}
+
+
+		}
+
+		private void txtSalary_TextChanged(object sender, EventArgs e)
+		{
+			if (Regex.IsMatch(txtSalary.Text, "[^0-9]"))
+			{
+				MessageBox.Show("Please enter only numbers");
+				txtSalary.Text = txtPersonalID.Text.Remove(txtSalary.Text.Length - 1);
+
+			}
 		}
 	}
 }
