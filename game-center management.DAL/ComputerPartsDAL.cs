@@ -64,7 +64,23 @@ namespace game_center_management.DAL
 
 		public int Remove(int ID)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Delete_ComputerPartsByID",CommandType.StoredProcedure))
+					{
+
+						cmd.Parameters.AddWithValue("@partid", ID);
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+					}
+				}
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
 		}
 
 		public int Remove(ComputerParts model)
@@ -90,7 +106,7 @@ namespace game_center_management.DAL
 				List<ComputerParts> ComputerPartsResult = null;
 				using (var conn = SQLfunctions.GetConnection())
 				{
-					using (var cmd = SQLfunctions.Command(conn, cmdText: "Employess_GetALL", CommandType.StoredProcedure))
+					using (var cmd = SQLfunctions.Command(conn, cmdText: "GetALL_ComputerParts", CommandType.StoredProcedure))
 					{
 						ComputerPartsResult = new List<ComputerParts>();
 						using (SqlDataReader reader = cmd.ExecuteReader())

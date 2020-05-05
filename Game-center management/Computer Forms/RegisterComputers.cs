@@ -234,5 +234,10 @@ namespace Game_center_management.Computer_Forms
 			ValidateFields();
 			ValidateNotNULL();
 		}
+
+		private void btnCancel_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

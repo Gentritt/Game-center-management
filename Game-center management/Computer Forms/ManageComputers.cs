@@ -19,8 +19,7 @@ namespace Game_center_management.Computer_Forms
 
 		private void btnADD_Click(object sender, EventArgs e)
 		{
-			RegisterComputers registerComputers = new RegisterComputers();
-			registerComputers.ShowDialog();
+		
 		}
 
 		private void radButton1_Click(object sender, EventArgs e)

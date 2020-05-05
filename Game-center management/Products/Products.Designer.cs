@@ -28,37 +28,17 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-			this.ProductsGRID = new Telerik.WinControls.UI.RadGridView();
 			this.btnADD = new Telerik.WinControls.UI.RadButton();
 			this.btnUpdate = new Telerik.WinControls.UI.RadButton();
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
-			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID.MasterTemplate)).BeginInit();
+			this.ProductsGRID = new System.Windows.Forms.DataGridView();
+			this.btnRefresh = new Telerik.WinControls.UI.RadButton();
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// ProductsGRID
-			// 
-			this.ProductsGRID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.ProductsGRID.Location = new System.Drawing.Point(2, 71);
-			// 
-			// 
-			// 
-			this.ProductsGRID.MasterTemplate.AllowAddNewRow = false;
-			this.ProductsGRID.MasterTemplate.AllowColumnReorder = false;
-			this.ProductsGRID.MasterTemplate.HorizontalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
-			this.ProductsGRID.MasterTemplate.VerticalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
-			this.ProductsGRID.MasterTemplate.ViewDefinition = tableViewDefinition1;
-			this.ProductsGRID.Name = "ProductsGRID";
-			this.ProductsGRID.ReadOnly = true;
-			this.ProductsGRID.Size = new System.Drawing.Size(655, 400);
-			this.ProductsGRID.TabIndex = 0;
-			this.ProductsGRID.ThemeName = "Crystal";
 			// 
 			// btnADD
 			// 
@@ -89,23 +69,42 @@
 			this.btnDelete.ThemeName = "Crystal";
 			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
+			// ProductsGRID
+			// 
+			this.ProductsGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.ProductsGRID.Location = new System.Drawing.Point(2, 71);
+			this.ProductsGRID.Name = "ProductsGRID";
+			this.ProductsGRID.Size = new System.Drawing.Size(685, 394);
+			this.ProductsGRID.TabIndex = 4;
+			// 
+			// btnRefresh
+			// 
+			this.btnRefresh.Location = new System.Drawing.Point(580, 22);
+			this.btnRefresh.Name = "btnRefresh";
+			this.btnRefresh.Size = new System.Drawing.Size(114, 43);
+			this.btnRefresh.TabIndex = 5;
+			this.btnRefresh.Text = "REFRESH";
+			this.btnRefresh.ThemeName = "CrystalDark";
+			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+			// 
 			// Products
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(706, 477);
+			this.Controls.Add(this.btnRefresh);
+			this.Controls.Add(this.ProductsGRID);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnUpdate);
 			this.Controls.Add(this.btnADD);
-			this.Controls.Add(this.ProductsGRID);
 			this.Name = "Products";
 			this.Text = "Products";
 			this.Load += new System.EventHandler(this.Products_Load);
-			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID.MasterTemplate)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -114,6 +113,7 @@
 		private Telerik.WinControls.UI.RadButton btnADD;
 		private Telerik.WinControls.UI.RadButton btnUpdate;
 		private Telerik.WinControls.UI.RadButton btnDelete;
-		public Telerik.WinControls.UI.RadGridView ProductsGRID;
+		private System.Windows.Forms.DataGridView ProductsGRID;
+		private Telerik.WinControls.UI.RadButton btnRefresh;
 	}
 }

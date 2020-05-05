@@ -288,6 +288,7 @@
 			this.btnCancelStaff.TabIndex = 17;
 			this.btnCancelStaff.Text = "Cancel";
 			this.btnCancelStaff.ThemeName = "CrystalDark";
+			this.btnCancelStaff.Click += new System.EventHandler(this.btnCancelStaff_Click);
 			// 
 			// radGroupBox2
 			// 

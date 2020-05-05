@@ -91,5 +91,12 @@ namespace Game_center_management.Forms
 			gridServiceStaff.Update();
 			
 		}
+
+		private void btnRefresh_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			StaffForm stf = new StaffForm();
+			stf.ShowDialog();
+		}
 	}
 }

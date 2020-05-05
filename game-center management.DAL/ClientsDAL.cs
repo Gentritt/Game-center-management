@@ -58,7 +58,29 @@ namespace game_center_management.DAL
 
 		public int Remove(int ID)
 		{
-			throw new System.NotImplementedException();
+
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Delete_ClientsByID",CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@clientid", ID);
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+
+					}
+
+				}
+
+
+
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e);
+				throw;
+			}
 		}
 
 		public int Remove(Clients model)

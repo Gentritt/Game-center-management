@@ -392,6 +392,7 @@
 			this.btnCancel.TabIndex = 15;
 			this.btnCancel.Text = "CANCEL";
 			this.btnCancel.ThemeName = "Crystal";
+			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
 			// erpCase
 			// 

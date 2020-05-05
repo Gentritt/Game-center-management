@@ -311,5 +311,10 @@ namespace Game_center_management.Staff_Forms
 
 			}
 		}
+
+		private void btnCancelStaff_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

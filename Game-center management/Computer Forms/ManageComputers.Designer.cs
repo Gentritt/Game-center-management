@@ -86,7 +86,7 @@
 			this.btnADD.Size = new System.Drawing.Size(110, 53);
 			this.btnADD.TabIndex = 2;
 			this.btnADD.Text = "ADD";
-			this.btnADD.ThemeName = "Crystal";
+			this.btnADD.ThemeName = "CrystalDark";
 			this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
 			// 
 			// btnUpdate
@@ -96,7 +96,7 @@
 			this.btnUpdate.Size = new System.Drawing.Size(110, 53);
 			this.btnUpdate.TabIndex = 3;
 			this.btnUpdate.Text = "Update";
-			this.btnUpdate.ThemeName = "Crystal";
+			this.btnUpdate.ThemeName = "CrystalDark";
 			// 
 			// btnDelete
 			// 
@@ -105,7 +105,7 @@
 			this.btnDelete.Size = new System.Drawing.Size(110, 53);
 			this.btnDelete.TabIndex = 4;
 			this.btnDelete.Text = "Delete";
-			this.btnDelete.ThemeName = "Crystal";
+			this.btnDelete.ThemeName = "CrystalDark";
 			// 
 			// btnParts
 			// 
@@ -114,7 +114,7 @@
 			this.btnParts.Size = new System.Drawing.Size(110, 50);
 			this.btnParts.TabIndex = 5;
 			this.btnParts.Text = "PARTS";
-			this.btnParts.ThemeName = "Crystal";
+			this.btnParts.ThemeName = "CrystalDark";
 			this.btnParts.Click += new System.EventHandler(this.radButton1_Click);
 			// 
 			// ManageComputers

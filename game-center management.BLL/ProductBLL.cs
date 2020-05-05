@@ -39,7 +39,7 @@ namespace game_center_management.BLL
 
 		public int Remove(int ID)
 		{
-			throw new NotImplementedException();
+			return productsDal.Remove(ID);
 		}
 
 		public int Remove(Product model)

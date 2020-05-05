@@ -28,19 +28,21 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-			this.gridComputerParts = new Telerik.WinControls.UI.RadGridView();
 			this.btnEdit = new Telerik.WinControls.UI.RadButton();
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
+			this.gridComputerParts = new System.Windows.Forms.DataGridView();
+			this.btnADD = new Telerik.WinControls.UI.RadButton();
+			this.btnRefresh = new Telerik.WinControls.UI.RadButton();
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
 			this.radPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridComputerParts)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridComputerParts.MasterTemplate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridComputerParts)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnADD)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// radPanel1
@@ -63,47 +65,66 @@
 			this.radLabel1.TabIndex = 1;
 			this.radLabel1.Text = "Computer Parts";
 			// 
-			// gridComputerParts
-			// 
-			this.gridComputerParts.Location = new System.Drawing.Point(0, 109);
-			// 
-			// 
-			// 
-			this.gridComputerParts.MasterTemplate.AllowAddNewRow = false;
-			this.gridComputerParts.MasterTemplate.AllowColumnReorder = false;
-			this.gridComputerParts.MasterTemplate.ViewDefinition = tableViewDefinition1;
-			this.gridComputerParts.Name = "gridComputerParts";
-			this.gridComputerParts.ReadOnly = true;
-			this.gridComputerParts.Size = new System.Drawing.Size(702, 347);
-			this.gridComputerParts.TabIndex = 1;
-			this.gridComputerParts.ThemeName = "Crystal";
-			// 
 			// btnEdit
 			// 
-			this.btnEdit.Location = new System.Drawing.Point(71, 68);
+			this.btnEdit.Location = new System.Drawing.Point(150, 69);
 			this.btnEdit.Name = "btnEdit";
 			this.btnEdit.Size = new System.Drawing.Size(110, 35);
 			this.btnEdit.TabIndex = 2;
 			this.btnEdit.Text = "EDIT";
-			this.btnEdit.ThemeName = "Crystal";
+			this.btnEdit.ThemeName = "CrystalDark";
 			// 
 			// btnDelete
 			// 
-			this.btnDelete.Location = new System.Drawing.Point(207, 68);
+			this.btnDelete.Location = new System.Drawing.Point(286, 69);
 			this.btnDelete.Name = "btnDelete";
 			this.btnDelete.Size = new System.Drawing.Size(110, 35);
 			this.btnDelete.TabIndex = 3;
 			this.btnDelete.Text = "DELETE";
-			this.btnDelete.ThemeName = "Crystal";
+			this.btnDelete.ThemeName = "CrystalDark";
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+			// 
+			// gridComputerParts
+			// 
+			this.gridComputerParts.AllowUserToAddRows = false;
+			this.gridComputerParts.AllowUserToDeleteRows = false;
+			this.gridComputerParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.gridComputerParts.Location = new System.Drawing.Point(13, 124);
+			this.gridComputerParts.Name = "gridComputerParts";
+			this.gridComputerParts.ReadOnly = true;
+			this.gridComputerParts.Size = new System.Drawing.Size(666, 332);
+			this.gridComputerParts.TabIndex = 4;
+			// 
+			// btnADD
+			// 
+			this.btnADD.Location = new System.Drawing.Point(23, 69);
+			this.btnADD.Name = "btnADD";
+			this.btnADD.Size = new System.Drawing.Size(101, 35);
+			this.btnADD.TabIndex = 5;
+			this.btnADD.Text = "ADD";
+			this.btnADD.ThemeName = "CrystalDark";
+			this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
+			// 
+			// btnRefresh
+			// 
+			this.btnRefresh.Location = new System.Drawing.Point(432, 69);
+			this.btnRefresh.Name = "btnRefresh";
+			this.btnRefresh.Size = new System.Drawing.Size(110, 35);
+			this.btnRefresh.TabIndex = 6;
+			this.btnRefresh.Text = "REFRESH";
+			this.btnRefresh.ThemeName = "CrystalDark";
+			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
 			// 
 			// ComputerParts
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(714, 468);
+			this.Controls.Add(this.btnRefresh);
+			this.Controls.Add(this.btnADD);
+			this.Controls.Add(this.gridComputerParts);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnEdit);
-			this.Controls.Add(this.gridComputerParts);
 			this.Controls.Add(this.radPanel1);
 			this.Name = "ComputerParts";
 			this.Text = "ComputerParts";
@@ -112,10 +133,11 @@
 			this.radPanel1.ResumeLayout(false);
 			this.radPanel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridComputerParts.MasterTemplate)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridComputerParts)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridComputerParts)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnADD)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -126,6 +148,8 @@
 		private Telerik.WinControls.UI.RadLabel radLabel1;
 		private Telerik.WinControls.UI.RadButton btnEdit;
 		private Telerik.WinControls.UI.RadButton btnDelete;
-		public Telerik.WinControls.UI.RadGridView gridComputerParts;
+		private System.Windows.Forms.DataGridView gridComputerParts;
+		private Telerik.WinControls.UI.RadButton btnADD;
+		private Telerik.WinControls.UI.RadButton btnRefresh;
 	}
 }

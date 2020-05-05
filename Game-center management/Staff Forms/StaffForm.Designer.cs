@@ -43,6 +43,7 @@
 			this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.gridServiceStaff = new System.Windows.Forms.DataGridView();
 			this.employessBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.btnRefresh = new Telerik.WinControls.UI.RadButton();
 			((System.ComponentModel.ISupportInitialize)(this.pnlServicStaff)).BeginInit();
 			this.pnlServicStaff.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
@@ -52,6 +53,7 @@
 			this.contextMenuStaff.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pnlServicStaff
@@ -144,11 +146,22 @@
 			// 
 			this.employessBLLBindingSource.DataSource = typeof(game_center_management.BLL.EmployessBLL);
 			// 
+			// btnRefresh
+			// 
+			this.btnRefresh.Location = new System.Drawing.Point(643, 65);
+			this.btnRefresh.Name = "btnRefresh";
+			this.btnRefresh.Size = new System.Drawing.Size(129, 47);
+			this.btnRefresh.TabIndex = 7;
+			this.btnRefresh.Text = "REFRESH";
+			this.btnRefresh.ThemeName = "CrystalDark";
+			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+			// 
 			// StaffForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(819, 558);
+			this.Controls.Add(this.btnRefresh);
 			this.Controls.Add(this.gridServiceStaff);
 			this.Controls.Add(this.btnEdit);
 			this.Controls.Add(this.btnDelete);
@@ -167,6 +180,7 @@
 			this.contextMenuStaff.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -187,5 +201,6 @@
 		private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
 		private System.Windows.Forms.DataGridView gridServiceStaff;
+		private Telerik.WinControls.UI.RadButton btnRefresh;
 	}
 }

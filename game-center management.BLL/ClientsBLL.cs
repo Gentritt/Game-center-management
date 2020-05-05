@@ -30,7 +30,7 @@ namespace game_center_management.BLL
 
 		public int Remove(int ID)
 		{
-			throw new NotImplementedException();
+			return clientsDal.Remove(ID);
 		}
 
 		public int Remove(Clients model)
