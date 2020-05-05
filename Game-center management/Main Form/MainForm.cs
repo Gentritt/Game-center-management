@@ -38,17 +38,23 @@ namespace Game_center_management
 		{
 			LoginForm loginForm = new LoginForm();
 			loginForm.ShowDialog();
+
+			if (UserSession.LoggedUser != null)
+			{
+				lblLoggedUser.Text += UserSession.LoggedUser.Username;
+				lblDatetime.Text += DateTime.Now.ToString();
+				timer1.Start();
+			}
+			else
+			{
+				this.Close();
+
+			}
 			
-			lblLoggedUser.Text += UserSession.LoggedUser.Username;
-			lblDatetime.Text += DateTime.Now.ToString();
-			timer1.Start();
+			
 
 		}
 
-		private void radMenuItem24_Click(object sender, EventArgs e)
-		{
-
-		}
 
 		private void radMenuItem16_Click(object sender, EventArgs e)
 		{
@@ -79,6 +85,19 @@ namespace Game_center_management
 		{
 			lblDatetime.Text = DateTime.Now.ToString();
 			timer1.Start();
+		}
+
+		private void radLogout_Click(object sender, EventArgs e)
+		{
+			
+		Application.Restart();
+
+
+		}
+
+		private void radMenu2_Click_1(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

@@ -28,7 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageComputers));
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.gridManageComputers = new Telerik.WinControls.UI.RadGridView();
@@ -73,7 +74,7 @@
 			// 
 			// 
 			// 
-			this.gridManageComputers.MasterTemplate.ViewDefinition = tableViewDefinition1;
+			this.gridManageComputers.MasterTemplate.ViewDefinition = tableViewDefinition2;
 			this.gridManageComputers.Name = "gridManageComputers";
 			this.gridManageComputers.Size = new System.Drawing.Size(590, 389);
 			this.gridManageComputers.TabIndex = 1;
@@ -81,39 +82,44 @@
 			// 
 			// btnADD
 			// 
+			this.btnADD.Image = ((System.Drawing.Image)(resources.GetObject("btnADD.Image")));
 			this.btnADD.Location = new System.Drawing.Point(596, 67);
 			this.btnADD.Name = "btnADD";
 			this.btnADD.Size = new System.Drawing.Size(110, 53);
 			this.btnADD.TabIndex = 2;
-			this.btnADD.Text = "ADD";
+			this.btnADD.Text = "       ADD";
 			this.btnADD.ThemeName = "CrystalDark";
 			this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
 			// 
 			// btnUpdate
 			// 
+			this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
 			this.btnUpdate.Location = new System.Drawing.Point(596, 124);
 			this.btnUpdate.Name = "btnUpdate";
 			this.btnUpdate.Size = new System.Drawing.Size(110, 53);
 			this.btnUpdate.TabIndex = 3;
-			this.btnUpdate.Text = "Update";
+			this.btnUpdate.Text = "          UPDATE";
 			this.btnUpdate.ThemeName = "CrystalDark";
 			// 
 			// btnDelete
 			// 
+			this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
 			this.btnDelete.Location = new System.Drawing.Point(596, 181);
 			this.btnDelete.Name = "btnDelete";
 			this.btnDelete.Size = new System.Drawing.Size(110, 53);
 			this.btnDelete.TabIndex = 4;
-			this.btnDelete.Text = "Delete";
+			this.btnDelete.Text = "      DELETE";
 			this.btnDelete.ThemeName = "CrystalDark";
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
 			// btnParts
 			// 
+			this.btnParts.Image = ((System.Drawing.Image)(resources.GetObject("btnParts.Image")));
 			this.btnParts.Location = new System.Drawing.Point(596, 240);
 			this.btnParts.Name = "btnParts";
 			this.btnParts.Size = new System.Drawing.Size(110, 50);
 			this.btnParts.TabIndex = 5;
-			this.btnParts.Text = "PARTS";
+			this.btnParts.Text = "       PARTS";
 			this.btnParts.ThemeName = "CrystalDark";
 			this.btnParts.Click += new System.EventHandler(this.radButton1_Click);
 			// 

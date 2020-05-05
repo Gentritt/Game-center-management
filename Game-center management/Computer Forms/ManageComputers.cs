@@ -27,5 +27,10 @@ namespace Game_center_management.Computer_Forms
 			ComputerParts computerParts = new ComputerParts();
 			computerParts.ShowDialog();
 		}
+
+		private void btnDelete_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

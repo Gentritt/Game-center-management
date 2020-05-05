@@ -64,7 +64,10 @@ namespace Game_center_management.Products
 			else if (dialogResult == DialogResult.No)
 			{
 
-				//....
+				
+				this.Hide();
+				Products  products = new Products();
+				products.ShowDialog();
 			}
 		
 
@@ -75,6 +78,14 @@ namespace Game_center_management.Products
 			this.Hide();
 			Products products = new Products();
 			products.ShowDialog();
+		}
+
+		private void btnUpdate_Click(object sender, EventArgs e)
+		{
+			RegisterProduct reg = new RegisterProduct();
+			reg.ShowDialog();
+
+
 		}
 	}
 }

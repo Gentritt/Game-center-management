@@ -83,20 +83,7 @@ namespace game_center_management.DAL
 			}
 		}
 
-		public int Remove(Clients model)
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public Clients get(int ID)
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public Clients get(Clients model)
-		{
-			throw new System.NotImplementedException();
-		}
+	
 
 		public List<Clients> GetAll()
 		{

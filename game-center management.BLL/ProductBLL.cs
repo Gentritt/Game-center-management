@@ -20,21 +20,13 @@ namespace game_center_management.BLL
 		}
 		public int ADD(Product model)
 		{
-
-			try
-			{
-			 return	productsDal.ADD(model);
-			}
-			catch (Exception e)
-			{
-				return -1;
-			}
+			return	productsDal.ADD(model);
 
 		}
 
 		public int Modify(Product model)
 		{
-			throw new NotImplementedException();
+		   return productsDal.Modify(model);
 		}
 
 		public int Remove(int ID)

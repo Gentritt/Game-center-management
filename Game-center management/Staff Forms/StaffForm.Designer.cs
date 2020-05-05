@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffForm));
 			this.pnlServicStaff = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.desertTheme1 = new Telerik.WinControls.Themes.DesertTheme();
@@ -38,19 +39,16 @@
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
 			this.crystalDarkTheme1 = new Telerik.WinControls.Themes.CrystalDarkTheme();
 			this.btnEdit = new Telerik.WinControls.UI.RadButton();
-			this.contextMenuStaff = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.gridServiceStaff = new System.Windows.Forms.DataGridView();
 			this.employessBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.btnRefresh = new Telerik.WinControls.UI.RadButton();
+			this.jImageButton1 = new JImageButton.JImageButton();
 			((System.ComponentModel.ISupportInitialize)(this.pnlServicStaff)).BeginInit();
 			this.pnlServicStaff.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
-			this.contextMenuStaff.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
@@ -58,6 +56,7 @@
 			// 
 			// pnlServicStaff
 			// 
+			this.pnlServicStaff.Controls.Add(this.jImageButton1);
 			this.pnlServicStaff.Controls.Add(this.radLabel1);
 			this.pnlServicStaff.Dock = System.Windows.Forms.DockStyle.Top;
 			this.pnlServicStaff.Location = new System.Drawing.Point(0, 0);
@@ -70,7 +69,7 @@
 			// 
 			this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.radLabel1.ForeColor = System.Drawing.Color.White;
-			this.radLabel1.Location = new System.Drawing.Point(21, 12);
+			this.radLabel1.Location = new System.Drawing.Point(215, 12);
 			this.radLabel1.Name = "radLabel1";
 			this.radLabel1.Size = new System.Drawing.Size(298, 33);
 			this.radLabel1.TabIndex = 1;
@@ -79,56 +78,37 @@
 			// btnAdd
 			// 
 			this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
 			this.btnAdd.Location = new System.Drawing.Point(21, 65);
 			this.btnAdd.Name = "btnAdd";
 			this.btnAdd.Size = new System.Drawing.Size(138, 47);
 			this.btnAdd.TabIndex = 2;
-			this.btnAdd.Text = "Add";
-			this.btnAdd.ThemeName = "TelerikMetroTouch";
+			this.btnAdd.Text = "ADD";
+			this.btnAdd.ThemeName = "CrystalDark";
 			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
 			// btnDelete
 			// 
 			this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
 			this.btnDelete.Location = new System.Drawing.Point(165, 65);
 			this.btnDelete.Name = "btnDelete";
 			this.btnDelete.Size = new System.Drawing.Size(126, 47);
 			this.btnDelete.TabIndex = 3;
-			this.btnDelete.Text = "Delete";
-			this.btnDelete.ThemeName = "TelerikMetroTouch";
+			this.btnDelete.Text = "   DELETE";
+			this.btnDelete.ThemeName = "CrystalDark";
 			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
 			// btnEdit
 			// 
+			this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
 			this.btnEdit.Location = new System.Drawing.Point(297, 65);
 			this.btnEdit.Name = "btnEdit";
 			this.btnEdit.Size = new System.Drawing.Size(127, 47);
 			this.btnEdit.TabIndex = 5;
-			this.btnEdit.Text = "Edit";
-			this.btnEdit.ThemeName = "TelerikMetroTouch";
+			this.btnEdit.Text = "EDIT";
+			this.btnEdit.ThemeName = "CrystalDark";
 			this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-			// 
-			// contextMenuStaff
-			// 
-			this.contextMenuStaff.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteToolStripMenuItem,
-            this.editToolStripMenuItem});
-			this.contextMenuStaff.Name = "contextMenuStaff";
-			this.contextMenuStaff.Size = new System.Drawing.Size(108, 48);
-			this.contextMenuStaff.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStaff_Opening);
-			// 
-			// deleteToolStripMenuItem
-			// 
-			this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-			this.deleteToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-			this.deleteToolStripMenuItem.Text = "Delete";
-			this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
-			// 
-			// editToolStripMenuItem
-			// 
-			this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-			this.editToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-			this.editToolStripMenuItem.Text = "Edit";
 			// 
 			// gridServiceStaff
 			// 
@@ -136,7 +116,6 @@
 			this.gridServiceStaff.AllowUserToDeleteRows = false;
 			this.gridServiceStaff.AllowUserToResizeRows = false;
 			this.gridServiceStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.gridServiceStaff.ContextMenuStrip = this.contextMenuStaff;
 			this.gridServiceStaff.Location = new System.Drawing.Point(12, 135);
 			this.gridServiceStaff.Name = "gridServiceStaff";
 			this.gridServiceStaff.Size = new System.Drawing.Size(795, 325);
@@ -148,13 +127,31 @@
 			// 
 			// btnRefresh
 			// 
+			this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
 			this.btnRefresh.Location = new System.Drawing.Point(643, 65);
 			this.btnRefresh.Name = "btnRefresh";
 			this.btnRefresh.Size = new System.Drawing.Size(129, 47);
 			this.btnRefresh.TabIndex = 7;
-			this.btnRefresh.Text = "REFRESH";
+			this.btnRefresh.Text = "       REFRESH";
 			this.btnRefresh.ThemeName = "CrystalDark";
 			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+			// 
+			// jImageButton1
+			// 
+			this.jImageButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.jImageButton1.BackColor = System.Drawing.SystemColors.Highlight;
+			this.jImageButton1.CausesValidation = false;
+			this.jImageButton1.Cursor = System.Windows.Forms.Cursors.Default;
+			this.jImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("jImageButton1.ErrorImage")));
+			this.jImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("jImageButton1.Image")));
+			this.jImageButton1.ImageHover = null;
+			this.jImageButton1.InitialImage = null;
+			this.jImageButton1.Location = new System.Drawing.Point(0, 0);
+			this.jImageButton1.Name = "jImageButton1";
+			this.jImageButton1.Size = new System.Drawing.Size(157, 59);
+			this.jImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+			this.jImageButton1.TabIndex = 8;
+			this.jImageButton1.Zoom = 4;
 			// 
 			// StaffForm
 			// 
@@ -177,7 +174,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
-			this.contextMenuStaff.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
@@ -197,10 +193,8 @@
 		private Telerik.WinControls.Themes.CrystalDarkTheme crystalDarkTheme1;
 		private System.Windows.Forms.BindingSource employessBLLBindingSource;
 		private Telerik.WinControls.UI.RadButton btnEdit;
-		private System.Windows.Forms.ContextMenuStrip contextMenuStaff;
-		private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
 		private System.Windows.Forms.DataGridView gridServiceStaff;
 		private Telerik.WinControls.UI.RadButton btnRefresh;
+		private JImageButton.JImageButton jImageButton1;
 	}
 }

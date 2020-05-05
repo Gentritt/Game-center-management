@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ComputerParts));
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.btnEdit = new Telerik.WinControls.UI.RadButton();
@@ -67,6 +68,7 @@
 			// 
 			// btnEdit
 			// 
+			this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
 			this.btnEdit.Location = new System.Drawing.Point(150, 69);
 			this.btnEdit.Name = "btnEdit";
 			this.btnEdit.Size = new System.Drawing.Size(110, 35);
@@ -76,11 +78,12 @@
 			// 
 			// btnDelete
 			// 
+			this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
 			this.btnDelete.Location = new System.Drawing.Point(286, 69);
 			this.btnDelete.Name = "btnDelete";
 			this.btnDelete.Size = new System.Drawing.Size(110, 35);
 			this.btnDelete.TabIndex = 3;
-			this.btnDelete.Text = "DELETE";
+			this.btnDelete.Text = "     DELETE";
 			this.btnDelete.ThemeName = "CrystalDark";
 			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
@@ -92,26 +95,28 @@
 			this.gridComputerParts.Location = new System.Drawing.Point(13, 124);
 			this.gridComputerParts.Name = "gridComputerParts";
 			this.gridComputerParts.ReadOnly = true;
-			this.gridComputerParts.Size = new System.Drawing.Size(666, 332);
+			this.gridComputerParts.Size = new System.Drawing.Size(689, 332);
 			this.gridComputerParts.TabIndex = 4;
 			// 
 			// btnADD
 			// 
+			this.btnADD.Image = ((System.Drawing.Image)(resources.GetObject("btnADD.Image")));
 			this.btnADD.Location = new System.Drawing.Point(23, 69);
 			this.btnADD.Name = "btnADD";
 			this.btnADD.Size = new System.Drawing.Size(101, 35);
 			this.btnADD.TabIndex = 5;
-			this.btnADD.Text = "ADD";
+			this.btnADD.Text = "     ADD";
 			this.btnADD.ThemeName = "CrystalDark";
 			this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
 			// 
 			// btnRefresh
 			// 
-			this.btnRefresh.Location = new System.Drawing.Point(432, 69);
+			this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
+			this.btnRefresh.Location = new System.Drawing.Point(581, 69);
 			this.btnRefresh.Name = "btnRefresh";
-			this.btnRefresh.Size = new System.Drawing.Size(110, 35);
+			this.btnRefresh.Size = new System.Drawing.Size(121, 35);
 			this.btnRefresh.TabIndex = 6;
-			this.btnRefresh.Text = "REFRESH";
+			this.btnRefresh.Text = "            REFRESH";
 			this.btnRefresh.ThemeName = "CrystalDark";
 			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
 			// 

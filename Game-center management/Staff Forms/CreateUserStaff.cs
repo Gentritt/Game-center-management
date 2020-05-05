@@ -274,10 +274,6 @@ namespace Game_center_management.Staff_Forms
 			txtInsertDate.ReadOnly = true;
 		}
 
-		private void radGroupBox1_Click(object sender, EventArgs e)
-		{
-
-		}
 
 		private void txtPersonalID_KeyPress(object sender, KeyPressEventArgs e)
 		{
@@ -307,7 +303,7 @@ namespace Game_center_management.Staff_Forms
 			if (Regex.IsMatch(txtSalary.Text, "[^0-9]"))
 			{
 				MessageBox.Show("Please enter only numbers");
-				txtSalary.Text = txtPersonalID.Text.Remove(txtSalary.Text.Length - 1);
+				txtSalary.Text = txtSalary.Text.Remove(txtSalary.Text.Length - 1);
 
 			}
 		}

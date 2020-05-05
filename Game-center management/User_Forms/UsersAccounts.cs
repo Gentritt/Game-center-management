@@ -24,10 +24,6 @@ namespace Game_center_management.Forms
 			clientsBll = new ClientsBLL();
 		}
 
-		private void radGridView1_Click(object sender, EventArgs e)
-		{
-
-		}
 
 		public void InitData()
 		{
@@ -53,10 +49,6 @@ namespace Game_center_management.Forms
 			createUser.ShowDialog();
 		}
 
-		private void gridUsers_Click(object sender, EventArgs e)
-		{
-
-		}
 
 		private void btnDeleteAccount_Click(object sender, EventArgs e)
 		{
@@ -78,24 +70,22 @@ namespace Game_center_management.Forms
 
 
 			}
-			//else if (dialogResult == DialogResult.No)
-			//{
+			else if (dialogResult == DialogResult.No)
+			{
 
-			//	this.Close();
-
-
-			//}
-
-
-		
+				this.Hide();
+				UserAccounts user = new UserAccounts();
+				user.ShowDialog();
 
 
-		}
+			}
 
-		private void radPanel1_Paint(object sender, PaintEventArgs e)
-		{
+
+
+
 
 		}
+
 
 		private void btnRefresh_Click(object sender, EventArgs e)
 		{

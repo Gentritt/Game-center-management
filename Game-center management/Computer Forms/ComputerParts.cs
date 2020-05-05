@@ -54,7 +54,9 @@ namespace Game_center_management.Computer_Forms
 			}
 			else if (dialogResult == DialogResult.No)
 			{
-				//....
+				this.Hide();
+				ComputerParts cp = new ComputerParts();
+				cp.ShowDialog();
 			}
 
 		

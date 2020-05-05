@@ -74,6 +74,7 @@
 			this.materialBlueGreyTheme1 = new Telerik.WinControls.Themes.MaterialBlueGreyTheme();
 			this.office2010SilverTheme1 = new Telerik.WinControls.Themes.Office2010SilverTheme();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.radLogout = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenu2 = new Telerik.WinControls.UI.RadMenu();
 			((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
@@ -209,36 +210,36 @@
             this.radMenuItem18,
             this.menuRegjistrimiProduktev});
 			this.radMenuItem13.Name = "radMenuItem13";
-			this.radMenuItem13.Text = "Administrimi";
+			this.radMenuItem13.Text = "Administration";
 			// 
 			// menuPuntoret
 			// 
 			this.menuPuntoret.Name = "menuPuntoret";
-			this.menuPuntoret.Text = "Menaxhimi i Klientav";
+			this.menuPuntoret.Text = "Clients Management";
 			this.menuPuntoret.Click += new System.EventHandler(this.radMenuItem16_Click);
 			// 
 			// menuMenaxhimiPuntoreve
 			// 
 			this.menuMenaxhimiPuntoreve.Name = "menuMenaxhimiPuntoreve";
-			this.menuMenaxhimiPuntoreve.Text = "Menaxhimi Puntoreve";
+			this.menuMenaxhimiPuntoreve.Text = "Employess Management";
 			this.menuMenaxhimiPuntoreve.Click += new System.EventHandler(this.radMenuItem17_Click);
 			// 
 			// radMenuItem18
 			// 
 			this.radMenuItem18.Name = "radMenuItem18";
-			this.radMenuItem18.Text = "Menaxhimi Kompjuterave";
+			this.radMenuItem18.Text = "Computers Management";
 			this.radMenuItem18.Click += new System.EventHandler(this.radMenuItem18_Click);
 			// 
 			// menuRegjistrimiProduktev
 			// 
 			this.menuRegjistrimiProduktev.Name = "menuRegjistrimiProduktev";
-			this.menuRegjistrimiProduktev.Text = "Regjistrimi Produkteve";
+			this.menuRegjistrimiProduktev.Text = "Products Management";
 			this.menuRegjistrimiProduktev.Click += new System.EventHandler(this.menuRegjistrimiProduktev_Click);
 			// 
 			// radMenuItem14
 			// 
 			this.radMenuItem14.Name = "radMenuItem14";
-			this.radMenuItem14.Text = "Raportet";
+			this.radMenuItem14.Text = "Reports";
 			// 
 			// radMenuItem15
 			// 
@@ -328,23 +329,31 @@
 			this.timer1.Enabled = true;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
-			// MainForm
+			// radLogout
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(804, 461);
+			this.radLogout.Name = "radLogout";
+			this.radLogout.Text = "LOGOUT";
+			this.radLogout.Click += new System.EventHandler(this.radLogout_Click);
 			// 
 			// radMenu2
 			// 
 			this.radMenu2.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuItem13,
             this.radMenuItem14,
-            this.radMenuItem15});
+            this.radMenuItem15,
+            this.radLogout});
 			this.radMenu2.Location = new System.Drawing.Point(0, 0);
 			this.radMenu2.Name = "radMenu2";
 			this.radMenu2.Size = new System.Drawing.Size(804, 34);
 			this.radMenu2.TabIndex = 1;
 			this.radMenu2.ThemeName = "Crystal";
+			this.radMenu2.Click += new System.EventHandler(this.radMenu2_Click_1);
+			// 
+			// MainForm
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(804, 461);
 			this.Controls.Add(this.radPanel1);
 			this.Controls.Add(this.lblUsername);
 			this.Controls.Add(this.radMenu2);
@@ -411,6 +420,7 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Timer timer1;
 		private Telerik.WinControls.UI.RadMenu radMenu2;
+		private Telerik.WinControls.UI.RadMenuItem radLogout;
 	}
 }
 

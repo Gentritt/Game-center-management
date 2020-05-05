@@ -298,7 +298,7 @@ namespace Game_center_management.Forms
 			if (Regex.IsMatch(txtBalance.Text, "[^0-9]"))
 			{
 				MessageBox.Show("Please enter only numbers");
-				txtBalance.Text = txtPersonalID.Text.Remove(txtBalance.Text.Length - 1);
+				txtBalance.Text = txtBalance.Text.Remove(txtBalance.Text.Length - 1);
 
 			}
 		}

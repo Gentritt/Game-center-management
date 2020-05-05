@@ -48,6 +48,32 @@ namespace game_center_management.DAL
 
 		public int Modify(Product model)
 		{
+			//try
+			//{
+			//	using (var con = SQLfunctions.GetConnection()) 
+			//	{
+			//		using (var cmd = SQLfunctions.Command(con, cmdText: "Edit_Products", CommandType.StoredProcedure))
+			//		{
+			//			cmd.Parameters.AddWithValue("@productname", model.ProductName);
+			//			cmd.Parameters.AddWithValue("@productprice", model.Price);
+			//			cmd.Parameters.AddWithValue("@productquantity", model.Quantity);
+			//			cmd.Parameters.AddWithValue("@updateby", model.UpdatedBy);
+			//			cmd.Parameters.AddWithValue("@updatedate", model.UpdateDate);
+			//			cmd.Parameters.AddWithValue("@updateno", model.LastUpdate);
+
+			//			int rowaffected = cmd.ExecuteNonQuery();
+			//			return rowaffected;
+
+			//		}
+
+			//	}
+
+			//}
+			//catch (Exception e)
+			//{
+			//	Console.WriteLine(e);
+			//	throw;
+			//}
 			throw new NotImplementedException();
 		}
 
@@ -125,7 +151,11 @@ namespace game_center_management.DAL
 			product.Price = decimal.Parse(reader["ProductPrice"].ToString());
 			product.Quantity = int.Parse(reader["ProductQuantity"].ToString());
 			product.Insertby = reader["InsertBy"].ToString();
-			product.InserDate = (DateTime) reader["InsertDate"];
+			product.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
+			//product.UpdatedBy = reader["UpdateBy"].ToString();
+			//product.UpdateDate = DateTime.Parse(reader["UpdateDate"].ToString());
+			//product.LastUpdate = int.Parse(reader["UpdateNo"].ToString());
+
 
 			return product;
 

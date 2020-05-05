@@ -59,32 +59,39 @@ namespace Game_center_management.Forms
 
 		private void btnDelete_Click(object sender, EventArgs e)
 		{
-			
-			
-
-		}
-
-		private void contextMenuStaff_Opening(object sender, CancelEventArgs e)
-		{
-
-		}
-
-		private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-
-			int index = gridServiceStaff.SelectedCells[0].RowIndex;
-			if (index < 0) return;
-
-			Employess employess = (Employess) gridServiceStaff.Rows[index].DataBoundItem;
-			if (employess != null)
+			DialogResult dialogResult = MessageBox.Show("Are you sure you wanna delete this? ", "Delete Employee",
+				MessageBoxButtons.YesNo);
+			if (dialogResult == DialogResult.Yes)
 			{
+				int index = gridServiceStaff.SelectedCells[0].RowIndex;
+				if (index < 0) return;
 
-				employessBll.Remove(employess.ID);
+				Employess employess = (Employess)gridServiceStaff.Rows[index].DataBoundItem;
+				if (employess != null)
+				{
+
+					employessBll.Remove(employess.ID);
+
+				}
+
+
+			}
+			
+			else if (dialogResult == DialogResult.No)
+			{
+				this.Hide();
+				StaffForm form = new StaffForm();
+				form.ShowDialog();
 
 			}
 
+		
+
+
 
 		}
+
+		
 
 		private void btnEdit_Click(object sender, EventArgs e)
 		{

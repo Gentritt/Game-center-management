@@ -25,7 +25,7 @@ namespace Game_center_management
 
 		private void btnCancel_Click_1(object sender, EventArgs e)
 		{
-			Application.Exit();
+			this.Close();
 		}
 
 		private void btnLogin_Click(object sender, EventArgs e)
