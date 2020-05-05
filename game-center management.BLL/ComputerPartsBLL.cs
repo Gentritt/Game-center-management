@@ -33,20 +33,6 @@ namespace game_center_management.BLL
 			return _computersDal.Remove(ID);
 		}
 
-		public int Remove(ComputerParts model)
-		{
-			throw new NotImplementedException();
-		}
-
-		public ComputerParts get(int ID)
-		{
-			throw new NotImplementedException();
-		}
-
-		public ComputerParts get(ComputerParts model)
-		{
-			throw new NotImplementedException();
-		}
 
 		public List<ComputerParts> GetAll()
 		{

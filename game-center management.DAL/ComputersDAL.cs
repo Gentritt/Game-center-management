@@ -27,20 +27,6 @@ namespace game_center_management.DAL
 			throw new NotImplementedException();
 		}
 
-		public int Remove(Computer model)
-		{
-			throw new NotImplementedException();
-		}
-
-		public Computer get(int ID)
-		{
-			throw new NotImplementedException();
-		}
-
-		public Computer get(Computer model)
-		{
-			throw new NotImplementedException();
-		}
 
 		public List<Computer> GetAll()
 		{

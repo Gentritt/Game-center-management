@@ -85,20 +85,6 @@ namespace game_center_management.DAL
 
 		}
 
-		public int Remove(Employess model)
-		{
-			throw new NotImplementedException();
-		}
-
-		public Employess get(int ID)
-		{
-			throw new NotImplementedException();
-		}
-
-		public Employess get(Employess model)
-		{
-			throw new NotImplementedException();
-		}
 
 		public List<Employess> GetAll()
 		{

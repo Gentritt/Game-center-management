@@ -184,6 +184,7 @@
 			this.radPanel1.Size = new System.Drawing.Size(770, 42);
 			this.radPanel1.TabIndex = 4;
 			this.radPanel1.ThemeName = "CrystalDark";
+			this.radPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.radPanel1_Paint);
 			// 
 			// radLabel6
 			// 
@@ -299,21 +300,21 @@
 			// 
 			// txtHeadSets
 			// 
-			this.txtHeadSets.Location = new System.Drawing.Point(109, 204);
+			this.txtHeadSets.Location = new System.Drawing.Point(109, 201);
 			this.txtHeadSets.Name = "txtHeadSets";
 			this.txtHeadSets.Size = new System.Drawing.Size(207, 20);
 			this.txtHeadSets.TabIndex = 3;
 			// 
 			// txtMonitor
 			// 
-			this.txtMonitor.Location = new System.Drawing.Point(109, 247);
+			this.txtMonitor.Location = new System.Drawing.Point(109, 244);
 			this.txtMonitor.Name = "txtMonitor";
 			this.txtMonitor.Size = new System.Drawing.Size(207, 20);
 			this.txtMonitor.TabIndex = 4;
 			// 
 			// txtMousePad
 			// 
-			this.txtMousePad.Location = new System.Drawing.Point(109, 290);
+			this.txtMousePad.Location = new System.Drawing.Point(109, 287);
 			this.txtMousePad.Name = "txtMousePad";
 			this.txtMousePad.Size = new System.Drawing.Size(207, 20);
 			this.txtMousePad.TabIndex = 5;
@@ -369,9 +370,9 @@
 			// 
 			// txtCooler
 			// 
-			this.txtCooler.Location = new System.Drawing.Point(106, 333);
+			this.txtCooler.Location = new System.Drawing.Point(106, 330);
 			this.txtCooler.Name = "txtCooler";
-			this.txtCooler.Size = new System.Drawing.Size(207, 20);
+			this.txtCooler.Size = new System.Drawing.Size(210, 20);
 			this.txtCooler.TabIndex = 13;
 			// 
 			// btnsave

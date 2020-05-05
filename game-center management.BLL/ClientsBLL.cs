@@ -33,20 +33,7 @@ namespace game_center_management.BLL
 			return clientsDal.Remove(ID);
 		}
 
-		public int Remove(Clients model)
-		{
-			throw new NotImplementedException();
-		}
-
-		public Clients get(int ID)
-		{
-			throw new NotImplementedException();
-		}
-
-		public Clients get(Clients model)
-		{
-			throw new NotImplementedException();
-		}
+		
 
 		public List<Clients> GetAll()
 		{

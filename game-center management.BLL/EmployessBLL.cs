@@ -38,20 +38,6 @@ namespace game_center_management.BLL
 			return empDal.Remove(ID);
 		}
 
-		public int Remove(Employess model)
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public Employess get(int ID)
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public Employess get(Employess model)
-		{
-			throw new System.NotImplementedException();
-		}
 
 		public List<Employess> GetAll()
 		{

@@ -148,7 +148,7 @@ namespace Game_center_management.Products
 
 		private void txtPrice_TextChanged(object sender, EventArgs e)
 		{
-			if (Regex.IsMatch(txtPrice.Text, "[^0-9]"))
+			if (Regex.IsMatch(txtPrice.Text, "[^0-9.-]"))
 			{
 				MessageBox.Show("Please enter only numbers");
 				txtPrice.Text = txtPrice.Text.Remove(txtPrice.Text.Length - 1);

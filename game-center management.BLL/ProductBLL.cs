@@ -42,21 +42,6 @@ namespace game_center_management.BLL
 			return productsDal.Remove(ID);
 		}
 
-		public int Remove(Product model)
-		{
-			throw new NotImplementedException();
-		}
-
-		public Product get(int ID)
-		{
-			throw new NotImplementedException();
-		}
-
-		public Product get(Product model)
-		{
-			throw new NotImplementedException();
-		}
-
 		public List<Product> GetAll()
 		{
 			 return productsDal.GetAll();

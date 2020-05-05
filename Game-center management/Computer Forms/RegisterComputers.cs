@@ -239,5 +239,10 @@ namespace Game_center_management.Computer_Forms
 		{
 			this.Close();
 		}
+
+		private void radPanel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
 	}
 }
