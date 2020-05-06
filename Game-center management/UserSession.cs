@@ -12,7 +12,6 @@ namespace Game_center_management
 {
 	public class UserSession
 	{
-
 		public static Employess LoggedUser;
 
 	}

@@ -239,7 +239,7 @@
 			// radMenuItem14
 			// 
 			this.radMenuItem14.Name = "radMenuItem14";
-			this.radMenuItem14.Text = "Reports";
+			this.radMenuItem14.Text = "Raports";
 			// 
 			// radMenuItem15
 			// 
@@ -332,7 +332,8 @@
 			// radLogout
 			// 
 			this.radLogout.Name = "radLogout";
-			this.radLogout.Text = "LOGOUT";
+			this.radLogout.ShadowColor = System.Drawing.Color.Black;
+			this.radLogout.Text = "Log Out";
 			this.radLogout.Click += new System.EventHandler(this.radLogout_Click);
 			// 
 			// radMenu2
@@ -360,7 +361,7 @@
 			this.Controls.Add(this.radMenu1);
 			this.IsMdiContainer = true;
 			this.Name = "MainForm";
-			this.Text = "Form1";
+			this.Text = "Gaming-Center Management";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.Shown += new System.EventHandler(this.MainForm_Shown);
 			((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();

@@ -61,7 +61,7 @@ namespace Game_center_management.Staff_Forms
 			if (Regex.IsMatch(txtEmail.Text, pattern))
 			{
 
-				this.Close();
+				//this.Close();
 			}
 			else
 			{
@@ -243,7 +243,7 @@ namespace Game_center_management.Staff_Forms
 				{
 					MessageBox.Show("Insert Successful");
 					sf.FillGrid();
-
+					this.Close();
 				}
 				else
 				{

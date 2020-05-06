@@ -97,8 +97,7 @@ namespace game_center_management.DAL
 			}
 			catch (Exception e)
 			{
-				Console.WriteLine(e);
-				throw;
+				return -1;
 			}
 		}
 

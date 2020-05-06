@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using game_center_management.BLL;
+using Telerik.WinControls.UI;
 
 namespace Game_center_management.Computer_Forms
 {
@@ -40,8 +41,8 @@ namespace Game_center_management.Computer_Forms
 				MessageBoxButtons.YesNo);
 			if (dialogResult == DialogResult.Yes)
 			{
-				int index = gridComputerParts.SelectedCells[0].RowIndex;
-				if (index > 0) return;
+				int index = this.gridComputerParts.Rows.IndexOf((GridViewDataRowInfo)this.gridComputerParts.CurrentRow);
+				if (index < 0) return;
 				BO.ComputerParts computerParts = (BO.ComputerParts)gridComputerParts.Rows[index].DataBoundItem;
 				if (index != null)
 				{

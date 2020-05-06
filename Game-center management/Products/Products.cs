@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using game_center_management.BLL;
 using Telerik.Charting;
+using Telerik.WinControls.UI;
 using Product = Game_center_management.BO.Product;
 
 namespace Game_center_management.Products
@@ -50,7 +51,7 @@ namespace Game_center_management.Products
 
 			if (dialogResult == DialogResult.Yes)
 			{
-				int index = ProductsGRID.SelectedCells[0].RowIndex;
+				int index = this.ProductsGRID.Rows.IndexOf((GridViewDataRowInfo) this.ProductsGRID.CurrentRow);
 				if (index > 0) return;
 				Product product = (Product)ProductsGRID.Rows[index].DataBoundItem;
 				if (product != null)

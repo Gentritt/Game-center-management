@@ -324,63 +324,63 @@
 			this.txtProcessor.Location = new System.Drawing.Point(514, 72);
 			this.txtProcessor.Name = "txtProcessor";
 			this.txtProcessor.Size = new System.Drawing.Size(207, 20);
-			this.txtProcessor.TabIndex = 6;
+			this.txtProcessor.TabIndex = 8;
 			// 
 			// txtGrahpicCard
 			// 
 			this.txtGrahpicCard.Location = new System.Drawing.Point(514, 112);
 			this.txtGrahpicCard.Name = "txtGrahpicCard";
 			this.txtGrahpicCard.Size = new System.Drawing.Size(207, 20);
-			this.txtGrahpicCard.TabIndex = 7;
+			this.txtGrahpicCard.TabIndex = 9;
 			// 
 			// txtMotherBoard
 			// 
 			this.txtMotherBoard.Location = new System.Drawing.Point(514, 152);
 			this.txtMotherBoard.Name = "txtMotherBoard";
 			this.txtMotherBoard.Size = new System.Drawing.Size(207, 20);
-			this.txtMotherBoard.TabIndex = 8;
+			this.txtMotherBoard.TabIndex = 10;
 			// 
 			// txtRam
 			// 
 			this.txtRam.Location = new System.Drawing.Point(514, 192);
 			this.txtRam.Name = "txtRam";
 			this.txtRam.Size = new System.Drawing.Size(207, 20);
-			this.txtRam.TabIndex = 9;
+			this.txtRam.TabIndex = 11;
 			// 
 			// txtSsd
 			// 
 			this.txtSsd.Location = new System.Drawing.Point(514, 232);
 			this.txtSsd.Name = "txtSsd";
 			this.txtSsd.Size = new System.Drawing.Size(207, 20);
-			this.txtSsd.TabIndex = 10;
+			this.txtSsd.TabIndex = 12;
 			// 
 			// txtHDD
 			// 
 			this.txtHDD.Location = new System.Drawing.Point(514, 272);
 			this.txtHDD.Name = "txtHDD";
 			this.txtHDD.Size = new System.Drawing.Size(207, 20);
-			this.txtHDD.TabIndex = 11;
+			this.txtHDD.TabIndex = 13;
 			// 
 			// txtPsu
 			// 
 			this.txtPsu.Location = new System.Drawing.Point(106, 367);
 			this.txtPsu.Name = "txtPsu";
 			this.txtPsu.Size = new System.Drawing.Size(207, 20);
-			this.txtPsu.TabIndex = 12;
+			this.txtPsu.TabIndex = 7;
 			// 
 			// txtCooler
 			// 
 			this.txtCooler.Location = new System.Drawing.Point(106, 330);
 			this.txtCooler.Name = "txtCooler";
 			this.txtCooler.Size = new System.Drawing.Size(210, 20);
-			this.txtCooler.TabIndex = 13;
+			this.txtCooler.TabIndex = 6;
 			// 
 			// btnsave
 			// 
 			this.btnsave.Location = new System.Drawing.Point(203, 402);
 			this.btnsave.Name = "btnsave";
 			this.btnsave.Size = new System.Drawing.Size(110, 34);
-			this.btnsave.TabIndex = 14;
+			this.btnsave.TabIndex = 16;
 			this.btnsave.Text = "SAVE";
 			this.btnsave.ThemeName = "Crystal";
 			this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -390,7 +390,7 @@
 			this.btnCancel.Location = new System.Drawing.Point(397, 402);
 			this.btnCancel.Name = "btnCancel";
 			this.btnCancel.Size = new System.Drawing.Size(110, 34);
-			this.btnCancel.TabIndex = 15;
+			this.btnCancel.TabIndex = 17;
 			this.btnCancel.Text = "CANCEL";
 			this.btnCancel.ThemeName = "Crystal";
 			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -466,14 +466,14 @@
 			this.txtInsertBy.Location = new System.Drawing.Point(514, 311);
 			this.txtInsertBy.Name = "txtInsertBy";
 			this.txtInsertBy.Size = new System.Drawing.Size(207, 20);
-			this.txtInsertBy.TabIndex = 17;
+			this.txtInsertBy.TabIndex = 14;
 			// 
 			// txtInsertDate
 			// 
 			this.txtInsertDate.Location = new System.Drawing.Point(514, 349);
 			this.txtInsertDate.Name = "txtInsertDate";
 			this.txtInsertDate.Size = new System.Drawing.Size(207, 20);
-			this.txtInsertDate.TabIndex = 18;
+			this.txtInsertDate.TabIndex = 15;
 			// 
 			// label2
 			// 

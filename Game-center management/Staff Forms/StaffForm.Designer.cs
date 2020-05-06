@@ -30,7 +30,9 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffForm));
+			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
 			this.pnlServicStaff = new Telerik.WinControls.UI.RadPanel();
+			this.jImageButton1 = new JImageButton.JImageButton();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.desertTheme1 = new Telerik.WinControls.Themes.DesertTheme();
 			this.highContrastBlackTheme1 = new Telerik.WinControls.Themes.HighContrastBlackTheme();
@@ -39,19 +41,21 @@
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
 			this.crystalDarkTheme1 = new Telerik.WinControls.Themes.CrystalDarkTheme();
 			this.btnEdit = new Telerik.WinControls.UI.RadButton();
-			this.gridServiceStaff = new System.Windows.Forms.DataGridView();
-			this.employessBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.btnRefresh = new Telerik.WinControls.UI.RadButton();
-			this.jImageButton1 = new JImageButton.JImageButton();
+			this.employessBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.gridServiceStaff = new Telerik.WinControls.UI.RadGridView();
+			this.office2013DarkTheme1 = new Telerik.WinControls.Themes.Office2013DarkTheme();
+			this.materialTealTheme1 = new Telerik.WinControls.Themes.MaterialTealTheme();
 			((System.ComponentModel.ISupportInitialize)(this.pnlServicStaff)).BeginInit();
 			this.pnlServicStaff.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff.MasterTemplate)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pnlServicStaff
@@ -61,9 +65,26 @@
 			this.pnlServicStaff.Dock = System.Windows.Forms.DockStyle.Top;
 			this.pnlServicStaff.Location = new System.Drawing.Point(0, 0);
 			this.pnlServicStaff.Name = "pnlServicStaff";
-			this.pnlServicStaff.Size = new System.Drawing.Size(819, 59);
+			this.pnlServicStaff.Size = new System.Drawing.Size(865, 59);
 			this.pnlServicStaff.TabIndex = 0;
 			this.pnlServicStaff.ThemeName = "CrystalDark";
+			// 
+			// jImageButton1
+			// 
+			this.jImageButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.jImageButton1.BackColor = System.Drawing.SystemColors.Highlight;
+			this.jImageButton1.CausesValidation = false;
+			this.jImageButton1.Cursor = System.Windows.Forms.Cursors.Default;
+			this.jImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("jImageButton1.ErrorImage")));
+			this.jImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("jImageButton1.Image")));
+			this.jImageButton1.ImageHover = null;
+			this.jImageButton1.InitialImage = null;
+			this.jImageButton1.Location = new System.Drawing.Point(0, 0);
+			this.jImageButton1.Name = "jImageButton1";
+			this.jImageButton1.Size = new System.Drawing.Size(157, 59);
+			this.jImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+			this.jImageButton1.TabIndex = 8;
+			this.jImageButton1.Zoom = 4;
 			// 
 			// radLabel1
 			// 
@@ -110,21 +131,6 @@
 			this.btnEdit.ThemeName = "CrystalDark";
 			this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
 			// 
-			// gridServiceStaff
-			// 
-			this.gridServiceStaff.AllowUserToAddRows = false;
-			this.gridServiceStaff.AllowUserToDeleteRows = false;
-			this.gridServiceStaff.AllowUserToResizeRows = false;
-			this.gridServiceStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.gridServiceStaff.Location = new System.Drawing.Point(12, 135);
-			this.gridServiceStaff.Name = "gridServiceStaff";
-			this.gridServiceStaff.Size = new System.Drawing.Size(795, 325);
-			this.gridServiceStaff.TabIndex = 6;
-			// 
-			// employessBLLBindingSource
-			// 
-			this.employessBLLBindingSource.DataSource = typeof(game_center_management.BLL.EmployessBLL);
-			// 
 			// btnRefresh
 			// 
 			this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
@@ -136,36 +142,43 @@
 			this.btnRefresh.ThemeName = "CrystalDark";
 			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
 			// 
-			// jImageButton1
+			// employessBLLBindingSource
 			// 
-			this.jImageButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.jImageButton1.BackColor = System.Drawing.SystemColors.Highlight;
-			this.jImageButton1.CausesValidation = false;
-			this.jImageButton1.Cursor = System.Windows.Forms.Cursors.Default;
-			this.jImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("jImageButton1.ErrorImage")));
-			this.jImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("jImageButton1.Image")));
-			this.jImageButton1.ImageHover = null;
-			this.jImageButton1.InitialImage = null;
-			this.jImageButton1.Location = new System.Drawing.Point(0, 0);
-			this.jImageButton1.Name = "jImageButton1";
-			this.jImageButton1.Size = new System.Drawing.Size(157, 59);
-			this.jImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-			this.jImageButton1.TabIndex = 8;
-			this.jImageButton1.Zoom = 4;
+			this.employessBLLBindingSource.DataSource = typeof(game_center_management.BLL.EmployessBLL);
+			// 
+			// gridServiceStaff
+			// 
+			this.gridServiceStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.gridServiceStaff.Location = new System.Drawing.Point(21, 144);
+			// 
+			// 
+			// 
+			this.gridServiceStaff.MasterTemplate.AllowAddNewRow = false;
+			this.gridServiceStaff.MasterTemplate.AllowDeleteRow = false;
+			this.gridServiceStaff.MasterTemplate.AllowSearchRow = true;
+			this.gridServiceStaff.MasterTemplate.ViewDefinition = tableViewDefinition1;
+			this.gridServiceStaff.Name = "gridServiceStaff";
+			this.gridServiceStaff.ReadOnly = true;
+			this.gridServiceStaff.Size = new System.Drawing.Size(832, 367);
+			this.gridServiceStaff.TabIndex = 8;
+			this.gridServiceStaff.ThemeName = "Office2013Dark";
 			// 
 			// StaffForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(819, 558);
-			this.Controls.Add(this.btnRefresh);
+			this.ClientSize = new System.Drawing.Size(865, 514);
 			this.Controls.Add(this.gridServiceStaff);
+			this.Controls.Add(this.btnRefresh);
 			this.Controls.Add(this.btnEdit);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnAdd);
 			this.Controls.Add(this.pnlServicStaff);
 			this.Name = "StaffForm";
 			this.Text = "StaffForm";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.StaffForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pnlServicStaff)).EndInit();
 			this.pnlServicStaff.ResumeLayout(false);
@@ -174,9 +187,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff.MasterTemplate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -193,8 +207,10 @@
 		private Telerik.WinControls.Themes.CrystalDarkTheme crystalDarkTheme1;
 		private System.Windows.Forms.BindingSource employessBLLBindingSource;
 		private Telerik.WinControls.UI.RadButton btnEdit;
-		private System.Windows.Forms.DataGridView gridServiceStaff;
 		private Telerik.WinControls.UI.RadButton btnRefresh;
 		private JImageButton.JImageButton jImageButton1;
+		private Telerik.WinControls.UI.RadGridView gridServiceStaff;
+		private Telerik.WinControls.Themes.Office2013DarkTheme office2013DarkTheme1;
+		private Telerik.WinControls.Themes.MaterialTealTheme materialTealTheme1;
 	}
 }

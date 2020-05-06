@@ -47,10 +47,6 @@
 			this.erpQuantity = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpInsertBy = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpInsertDate = new System.Windows.Forms.ErrorProvider(this.components);
-			this.bnEdit = new System.Windows.Forms.Button();
-			this.txtUpdateBy = new System.Windows.Forms.TextBox();
-			this.txtUpdateDate = new System.Windows.Forms.TextBox();
-			this.txtUpdateNO = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
 			this.radGroupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.txtInserDate)).BeginInit();
@@ -72,7 +68,6 @@
 			// radGroupBox1
 			// 
 			this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.radGroupBox1.Controls.Add(this.bnEdit);
 			this.radGroupBox1.Controls.Add(this.label3);
 			this.radGroupBox1.Controls.Add(this.txtInserDate);
 			this.radGroupBox1.Controls.Add(this.txtInserBy);
@@ -89,7 +84,7 @@
 			this.radGroupBox1.HeaderText = "Register Product";
 			this.radGroupBox1.Location = new System.Drawing.Point(31, 28);
 			this.radGroupBox1.Name = "radGroupBox1";
-			this.radGroupBox1.Size = new System.Drawing.Size(255, 326);
+			this.radGroupBox1.Size = new System.Drawing.Size(249, 293);
 			this.radGroupBox1.TabIndex = 0;
 			this.radGroupBox1.Text = "Register Product";
 			this.radGroupBox1.ThemeName = "Crystal";
@@ -172,6 +167,7 @@
 			this.txtPrice.Name = "txtPrice";
 			this.txtPrice.Size = new System.Drawing.Size(133, 20);
 			this.txtPrice.TabIndex = 1;
+			this.txtPrice.Text = "                          ";
 			this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
 			// 
 			// txtProductName
@@ -219,45 +215,11 @@
 			// 
 			this.erpInsertDate.ContainerControl = this;
 			// 
-			// bnEdit
-			// 
-			this.bnEdit.Location = new System.Drawing.Point(147, 278);
-			this.bnEdit.Name = "bnEdit";
-			this.bnEdit.Size = new System.Drawing.Size(82, 37);
-			this.bnEdit.TabIndex = 1;
-			this.bnEdit.Text = "Edit";
-			this.bnEdit.UseVisualStyleBackColor = true;
-			this.bnEdit.Click += new System.EventHandler(this.bnEdit_Click);
-			// 
-			// txtUpdateBy
-			// 
-			this.txtUpdateBy.Location = new System.Drawing.Point(481, 28);
-			this.txtUpdateBy.Name = "txtUpdateBy";
-			this.txtUpdateBy.Size = new System.Drawing.Size(100, 20);
-			this.txtUpdateBy.TabIndex = 1;
-			// 
-			// txtUpdateDate
-			// 
-			this.txtUpdateDate.Location = new System.Drawing.Point(481, 74);
-			this.txtUpdateDate.Name = "txtUpdateDate";
-			this.txtUpdateDate.Size = new System.Drawing.Size(100, 20);
-			this.txtUpdateDate.TabIndex = 2;
-			// 
-			// txtUpdateNO
-			// 
-			this.txtUpdateNO.Location = new System.Drawing.Point(481, 126);
-			this.txtUpdateNO.Name = "txtUpdateNO";
-			this.txtUpdateNO.Size = new System.Drawing.Size(100, 20);
-			this.txtUpdateNO.TabIndex = 3;
-			// 
 			// RegisterProduct
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(599, 431);
-			this.Controls.Add(this.txtUpdateNO);
-			this.Controls.Add(this.txtUpdateDate);
-			this.Controls.Add(this.txtUpdateBy);
+			this.ClientSize = new System.Drawing.Size(304, 362);
 			this.Controls.Add(this.radGroupBox1);
 			this.Name = "RegisterProduct";
 			this.Text = "RegisterProduct";
@@ -280,7 +242,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertBy)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpInsertDate)).EndInit();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
@@ -304,9 +265,5 @@
 		private System.Windows.Forms.ErrorProvider erpQuantity;
 		private System.Windows.Forms.ErrorProvider erpInsertBy;
 		private System.Windows.Forms.ErrorProvider erpInsertDate;
-		private System.Windows.Forms.Button bnEdit;
-		private System.Windows.Forms.TextBox txtUpdateNO;
-		private System.Windows.Forms.TextBox txtUpdateDate;
-		private System.Windows.Forms.TextBox txtUpdateBy;
 	}
 }

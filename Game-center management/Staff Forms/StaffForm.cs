@@ -47,15 +47,6 @@ namespace Game_center_management.Forms
 
 		}
 
-		private void gridServiceStaff_CellContentClick(object sender, DataGridViewCellEventArgs e)
-		{
-
-		}
-
-		private void gridServiceStaff_Click(object sender, EventArgs e)
-		{
-
-		}
 
 		private void btnDelete_Click(object sender, EventArgs e)
 		{
@@ -63,7 +54,7 @@ namespace Game_center_management.Forms
 				MessageBoxButtons.YesNo);
 			if (dialogResult == DialogResult.Yes)
 			{
-				int index = gridServiceStaff.SelectedCells[0].RowIndex;
+				int index = this.gridServiceStaff.Rows.IndexOf((GridViewDataRowInfo) this.gridServiceStaff.CurrentRow);
 				if (index < 0) return;
 
 				Employess employess = (Employess)gridServiceStaff.Rows[index].DataBoundItem;

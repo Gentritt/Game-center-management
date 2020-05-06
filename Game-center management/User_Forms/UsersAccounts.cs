@@ -57,8 +57,8 @@ namespace Game_center_management.Forms
 			if (dialogResult==DialogResult.Yes)
 			{
 
-				int index = gridUsers.SelectedCells[0].RowIndex;
-				if (index > 0) return;
+				int index = this.gridUsers.Rows.IndexOf((GridViewRowInfo) this.gridUsers.CurrentRow);
+				if (index < 0) return;
 				Clients clients = (Clients)gridUsers.Rows[index].DataBoundItem;
 
 				if (clients != null)

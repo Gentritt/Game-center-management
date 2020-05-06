@@ -29,17 +29,19 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
+			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
 			this.btnADD = new Telerik.WinControls.UI.RadButton();
 			this.btnUpdate = new Telerik.WinControls.UI.RadButton();
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
-			this.ProductsGRID = new System.Windows.Forms.DataGridView();
 			this.btnRefresh = new Telerik.WinControls.UI.RadButton();
 			this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
+			this.ProductsGRID = new Telerik.WinControls.UI.RadGridView();
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID.MasterTemplate)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnADD
@@ -77,14 +79,6 @@
 			this.btnDelete.ThemeName = "CrystalDark";
 			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
-			// ProductsGRID
-			// 
-			this.ProductsGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.ProductsGRID.Location = new System.Drawing.Point(2, 71);
-			this.ProductsGRID.Name = "ProductsGRID";
-			this.ProductsGRID.Size = new System.Drawing.Size(692, 394);
-			this.ProductsGRID.TabIndex = 4;
-			// 
 			// btnRefresh
 			// 
 			this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
@@ -96,24 +90,46 @@
 			this.btnRefresh.ThemeName = "CrystalDark";
 			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
 			// 
+			// ProductsGRID
+			// 
+			this.ProductsGRID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.ProductsGRID.Location = new System.Drawing.Point(13, 87);
+			// 
+			// 
+			// 
+			this.ProductsGRID.MasterTemplate.AllowAddNewRow = false;
+			this.ProductsGRID.MasterTemplate.AllowColumnReorder = false;
+			this.ProductsGRID.MasterTemplate.AllowSearchRow = true;
+			this.ProductsGRID.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+			this.ProductsGRID.MasterTemplate.ViewDefinition = tableViewDefinition1;
+			this.ProductsGRID.Name = "ProductsGRID";
+			this.ProductsGRID.ReadOnly = true;
+			this.ProductsGRID.Size = new System.Drawing.Size(681, 363);
+			this.ProductsGRID.TabIndex = 6;
+			this.ProductsGRID.ThemeName = "Crystal";
+			// 
 			// Products
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(706, 477);
-			this.Controls.Add(this.btnRefresh);
 			this.Controls.Add(this.ProductsGRID);
+			this.Controls.Add(this.btnRefresh);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnUpdate);
 			this.Controls.Add(this.btnADD);
 			this.Name = "Products";
 			this.Text = "Products";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Products_Load);
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID.MasterTemplate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -122,8 +138,8 @@
 		private Telerik.WinControls.UI.RadButton btnADD;
 		private Telerik.WinControls.UI.RadButton btnUpdate;
 		private Telerik.WinControls.UI.RadButton btnDelete;
-		private System.Windows.Forms.DataGridView ProductsGRID;
 		private Telerik.WinControls.UI.RadButton btnRefresh;
 		private Telerik.WinControls.RadThemeManager radThemeManager1;
+		private Telerik.WinControls.UI.RadGridView ProductsGRID;
 	}
 }

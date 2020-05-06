@@ -164,17 +164,17 @@ namespace Game_center_management.Products
 		private void bnEdit_Click(object sender, EventArgs e)
 		{
 
-			Product product = new Product();
-			product.ProductName = txtProductName.Text;
-			product.Price = decimal.Parse(txtPrice.Text);
-			product.Quantity = int.Parse(txtQuantity.Text);
-			product.UpdatedBy = txtUpdateBy.Text;
-			product.UpdateDate = DateTime.Parse(txtUpdateDate.Text);
-			product.LastUpdate = int.Parse(txtUpdateNO.Text);
-			//product.Insertby = txtInserBy.Text;
-			//product.InserDate = DateTime.Parse(txtInserDate.Text);
+			//Product product = new Product();
+			//product.ProductName = txtProductName.Text;
+			//product.Price = decimal.Parse(txtPrice.Text);
+			//product.Quantity = int.Parse(txtQuantity.Text);
+			//product.UpdatedBy = txtUpdateBy.Text;
+			//product.UpdateDate = DateTime.Parse(txtUpdateDate.Text);
+			//product.LastUpdate = int.Parse(txtUpdateNO.Text);
+			////product.Insertby = txtInserBy.Text;
+			////product.InserDate = DateTime.Parse(txtInserDate.Text);
 
-			var result = _productBll.Modify(product);
+			//var result = _productBll.Modify(product);
 		}
 	}
 }
