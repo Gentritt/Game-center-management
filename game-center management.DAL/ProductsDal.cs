@@ -147,7 +147,8 @@ namespace game_center_management.DAL
 			Product product = new Product();
 			product.ProductName = reader["ProductName"].ToString();
 			product.ProductID = int.Parse(reader["ProductID"].ToString());
-			product.Price = decimal.Parse(reader["ProductPrice"].ToString());
+			if(reader["ProductPrice"]!=DBNull.Value)
+			     product.Price = decimal.Parse(reader["ProductPrice"].ToString());
 			product.Quantity = int.Parse(reader["ProductQuantity"].ToString());
 			product.Insertby = reader["InsertBy"].ToString();
 			product.InserDate = DateTime.Parse(reader["InsertDate"].ToString());

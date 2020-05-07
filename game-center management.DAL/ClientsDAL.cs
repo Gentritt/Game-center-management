@@ -136,6 +136,7 @@ namespace game_center_management.DAL
 			clients.Birthday = (DateTime) reader["Birthday"];
 			clients.PhoneNumber = reader["PhoneNumber"].ToString();
 			clients.UserName = reader["UserName"].ToString();
+			if(reader["Balance"]!=DBNull.Value)
 			clients.Balance = decimal.Parse(reader["Balance"].ToString());
 			//clients.IsGuest = (bool) reader["IsGuest"];
 			clients.Insertby = reader["InsertBy"].ToString();

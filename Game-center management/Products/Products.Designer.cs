@@ -103,6 +103,7 @@
 			this.ProductsGRID.MasterTemplate.AllowColumnReorder = false;
 			this.ProductsGRID.MasterTemplate.AllowSearchRow = true;
 			this.ProductsGRID.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+			this.ProductsGRID.MasterTemplate.EnableFiltering = true;
 			this.ProductsGRID.MasterTemplate.ViewDefinition = tableViewDefinition1;
 			this.ProductsGRID.Name = "ProductsGRID";
 			this.ProductsGRID.ReadOnly = true;

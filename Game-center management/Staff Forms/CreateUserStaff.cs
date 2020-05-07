@@ -61,9 +61,9 @@ namespace Game_center_management.Staff_Forms
 			if (Regex.IsMatch(txtEmail.Text, pattern))
 			{
 
-				//this.Close();
+				txtAddress.Focus();
 			}
-			else
+			else 
 			{
 				DialogResult dialogResult = MessageBox.Show("Email is not Valid!!");
 				if (dialogResult ==DialogResult.OK)
@@ -164,6 +164,8 @@ namespace Game_center_management.Staff_Forms
 
 
 		}
+
+	
 		private void ValidateFields()
 		{
 			if (txtUsernameStaff.Text == "")
@@ -220,7 +222,7 @@ namespace Game_center_management.Staff_Forms
 			{
 				erpPersonalID.SetError(txtPersonalID, "This cannot be Blank");
 			}
-			else
+			else if(txtSalary.Text !="" && txtPersonalID.Text!=""&&txtAddress.Text!=""&&txtPhoneNumber.Text!=""&&txtLastNameStaff.Text!=""&&txtNameStaff.Text!="" &&txtPasswordStaff.Text!=""&&txtUsernameStaff.Text!=""&&txtEmail.Text!="")
 			{
 				Employess employess = new Employess();
 
@@ -233,22 +235,16 @@ namespace Game_center_management.Staff_Forms
 				employess.Birthday = DateTime.Parse(rdDatetimepicker.Text);
 				employess.Email = txtEmail.Text;
 				employess.PhoneNumber = txtPhoneNumber.Text;
-				employess.Salary = decimal.Parse(txtSalary.Text);
+				employess.Salary = double.Parse(txtSalary.Text);
 				employess.Insertby = txtInsertBy.Text;
 				employess.InserDate = DateTime.Parse(txtInsertDate.Text);
 
-				int reg = employessbll.ADD(employess);
+				employessbll.ADD(employess);
 				StaffForm sf = new StaffForm();
-				if (reg != 0)
-				{
-					MessageBox.Show("Insert Successful");
-					sf.FillGrid();
-					this.Close();
-				}
-				else
-				{
-					MessageBox.Show("Insert Unsuccesful");
-				}
+				sf.FillGrid();
+				this.Close();
+				
+			
 				
 				
 
@@ -311,6 +307,11 @@ namespace Game_center_management.Staff_Forms
 		private void btnCancelStaff_Click(object sender, EventArgs e)
 		{
 			this.Close();
+		}
+
+		private void radGroupBox1_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

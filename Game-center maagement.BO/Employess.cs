@@ -14,7 +14,7 @@ namespace Game_center_management.BO
 		public string Name { get; set; }
 		public string LastName { get; set; }
 		public string Adress { get; set; }
-		public decimal Salary { get; set; }
+		public double Salary { get; set; }
 		public string Email { get; set; }
 		public DateTime Birthday { get; set; }
 		public string PhoneNumber { get; set; }

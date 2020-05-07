@@ -171,9 +171,10 @@ namespace game_center_management.DAL
 			employess.Email = reader["Email"].ToString();
 			employess.Adress = reader["Adress"].ToString();
 			employess.Birthday = DateTime.Parse(reader["Birthday"].ToString());
-			employess.Salary = decimal.Parse(reader["Salary"].ToString());
-			employess.Insertby = reader["InsertBy"].ToString();
-			employess.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
+			if( reader["Salary"]!= DBNull.Value)
+				employess.Salary=double.Parse(reader["Salary"].ToString());
+			//employess.Insertby = reader["InsertBy"].ToString();
+			//employess.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
 			employess.IsActive = (bool)reader["IsActive"];
 			employess.PersonalID = reader["PersonalID"].ToString();
 			employess.PhoneNumber = reader["PhoneNumber"].ToString();

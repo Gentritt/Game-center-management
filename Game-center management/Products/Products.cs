@@ -52,7 +52,7 @@ namespace Game_center_management.Products
 			if (dialogResult == DialogResult.Yes)
 			{
 				int index = this.ProductsGRID.Rows.IndexOf((GridViewDataRowInfo) this.ProductsGRID.CurrentRow);
-				if (index > 0) return;
+				if (index < 0) return;
 				Product product = (Product)ProductsGRID.Rows[index].DataBoundItem;
 				if (product != null)
 				{
