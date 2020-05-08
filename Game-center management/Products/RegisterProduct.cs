@@ -107,7 +107,7 @@ namespace Game_center_management.Products
 
 				var result = _productBll.ADD(product);
 
-				if (result > 0)
+				if (result != 0)
 				{
 					MessageBox.Show("Data inserted succesfully!!!");
 					Products products = new Products();

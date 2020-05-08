@@ -27,13 +27,6 @@ namespace Game_center_management.Staff_Forms
 			
 		}
 
-		//private void InitData()
-		//{
-		//	var result = employessbll.GetAll();
-			
-
-		//}
-
 		//private bool ValidateFields()
 		//{
 
@@ -75,26 +68,6 @@ namespace Game_center_management.Staff_Forms
 
 
 		}
-
-		//private void BirthdayValidator()
-		//{
-
-		//	Regex pattern = new Regex(@"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$");
-		//	bool isValid = pattern.IsMatch(r.Text.Trim());
-		//	DateTime dt;
-		//	isValid = DateTime.TryParseExact(txtBirthday.Text, "dd/MM/yyyy", new CultureInfo("en-GB"),
-		//		DateTimeStyles.None, out dt);
-		//	if (!isValid)
-		//	{
-
-		//		MessageBox.Show("Invalid Birthday (Ex: dd/mm/yyyy)");
-		//	}
-		//	else
-		//	{
-		//		//MessageBox.Show("email is valid");
-		//		return;
-		//	}
-		//}
 		private void ValidateNotNULL()
 		{
 
@@ -164,8 +137,21 @@ namespace Game_center_management.Staff_Forms
 
 
 		}
+		private bool ValidateNullFields()
+		{
+			if (txtSalary.Text != "" && txtPersonalID.Text != "" && txtAddress.Text != "" &&
+			    txtPhoneNumber.Text != "" &&
+			    txtLastNameStaff.Text != "" && txtNameStaff.Text != "" && txtPasswordStaff.Text != "" &&
+			    txtUsernameStaff.Text != "" && txtEmail.Text != "")
+				return true;
+			else
+			{
+				return false;
+			}
 
-	
+
+
+		}
 		private void ValidateFields()
 		{
 			if (txtUsernameStaff.Text == "")
@@ -222,7 +208,7 @@ namespace Game_center_management.Staff_Forms
 			{
 				erpPersonalID.SetError(txtPersonalID, "This cannot be Blank");
 			}
-			else if(txtSalary.Text !="" && txtPersonalID.Text!=""&&txtAddress.Text!=""&&txtPhoneNumber.Text!=""&&txtLastNameStaff.Text!=""&&txtNameStaff.Text!="" &&txtPasswordStaff.Text!=""&&txtUsernameStaff.Text!=""&&txtEmail.Text!="")
+			else if(ValidateNullFields()==true)
 			{
 				Employess employess = new Employess();
 
@@ -258,7 +244,7 @@ namespace Game_center_management.Staff_Forms
 			ValidateFields();
 			ValidateNotNULL();
 		
-			//BirthdayValidator();
+			
 
 		}
 
@@ -269,19 +255,6 @@ namespace Game_center_management.Staff_Forms
 			txtInsertDate.Text += DateTime.Now.ToShortDateString();
 			txtInsertDate.ReadOnly = true;
 		}
-
-
-		private void txtPersonalID_KeyPress(object sender, KeyPressEventArgs e)
-		{
-			//e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-			//if (!char.IsLetter(e.KeyChar))
-			//{
-
-			//	MessageBox.Show("Only numbers accepted !");
-			//}
-
-		}
-
 		private void txtPersonalID_TextChanged(object sender, EventArgs e)
 		{
 			if (Regex.IsMatch(txtPersonalID.Text, "[^0-9]"))
@@ -296,7 +269,7 @@ namespace Game_center_management.Staff_Forms
 
 		private void txtSalary_TextChanged(object sender, EventArgs e)
 		{
-			if (Regex.IsMatch(txtSalary.Text, "[^0-9]"))
+			if (Regex.IsMatch(txtSalary.Text, "[^0-9.-]"))
 			{
 				MessageBox.Show("Please enter only numbers");
 				txtSalary.Text = txtSalary.Text.Remove(txtSalary.Text.Length - 1);

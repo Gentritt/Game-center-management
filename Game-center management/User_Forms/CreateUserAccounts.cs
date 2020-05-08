@@ -33,7 +33,6 @@ namespace Game_center_management.Forms
 			if (Regex.IsMatch(txtEmail.Text, pattern))
 			{
 
-				this.Close();
 
 			}
 			else
@@ -69,6 +68,22 @@ namespace Game_center_management.Forms
 		//		return;
 		//	}
 		//}
+
+		private bool ValidateNullFields()
+		{
+			if(txtName.Text != "" && txtLastname.Text != "" && txtAdress.Text != "" && txtEmail.Text != "" &&
+				txtUsername.Text != "" && txtPasswordUserAcc.Text != "" && txtPhone.Text != "" &&
+				txtPersonalID.Text != "" && txtBalance.Text != ""
+			)
+			 return false;
+
+
+			else
+			{
+				return true;
+			}
+
+		}
 		private void ValidateNotNULL()
 		{
 
@@ -137,14 +152,6 @@ namespace Game_center_management.Forms
 
 
 		}
-
-		private void MyCustomFormat()
-		{
-
-
-		}
-
-
 		private void ValidateFields()
 		{
 
@@ -213,7 +220,7 @@ namespace Game_center_management.Forms
 			{
 				erpPersonalID.SetError(txtPersonalID,"This cannot be Blank");
 			}
-			else
+			else if(ValidateNullFields()==true )
 			{
 		
 
@@ -233,6 +240,7 @@ namespace Game_center_management.Forms
 				clientsBll.ADD(clients);
 				UserAccounts userAccounts = new UserAccounts();
 				userAccounts.InitData();
+				this.Close();
 
 				
 
@@ -244,15 +252,9 @@ namespace Game_center_management.Forms
 		
 		private void btnSave_Click(object sender, EventArgs e)
 		{
-
 			EmailValidator();
-			//BirthdayValidator();
 			ValidateFields();
 			ValidateNotNULL();
-			//BirthdayValidator();
-	
-			
-
 		}
 
 		private void CreateUserAccounts_Load(object sender, EventArgs e)
@@ -264,23 +266,6 @@ namespace Game_center_management.Forms
 			txtInsertBy.ReadOnly = true;
 			txtInsertDate.Text += DateTime.Now.ToShortDateString();
 			txtInsertDate.ReadOnly = true;
-
-		}
-
-		private void grUserInformation_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void grLoginInformation_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void rdDatetime_ValueChanged(object sender, EventArgs e)
-		{
-		
-		//	rdDatetime.ShowUpDown = true;
 		}
 
 		private void txtPersonalID_TextChanged(object sender, EventArgs e)
@@ -295,12 +280,17 @@ namespace Game_center_management.Forms
 
 		private void txtBalance_TextChanged(object sender, EventArgs e)
 		{
-			if (Regex.IsMatch(txtBalance.Text, "[^0-9]"))
+			if (Regex.IsMatch(txtBalance.Text, "[^0-9.-]"))
 			{
 				MessageBox.Show("Please enter only numbers");
 				txtBalance.Text = txtBalance.Text.Remove(txtBalance.Text.Length - 1);
 
 			}
+		}
+
+		private void btnCancel_Click(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 }

@@ -135,7 +135,7 @@
 			this.label2.AutoSize = true;
 			this.label2.Location = new System.Drawing.Point(156, 650);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(45, 17);
+			this.label2.Size = new System.Drawing.Size(38, 13);
 			this.label2.TabIndex = 16;
 			this.label2.Text = "label2";
 			// 
@@ -197,7 +197,6 @@
 			this.txtPersonalID.TabIndex = 12;
 			this.txtPersonalID.ThemeName = "Crystal";
 			this.txtPersonalID.TextChanged += new System.EventHandler(this.txtPersonalID_TextChanged);
-			this.txtPersonalID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPersonalID_KeyPress);
 			// 
 			// txtLastNameStaff
 			// 
@@ -329,7 +328,7 @@
 			this.rdDatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 			this.rdDatetimepicker.Location = new System.Drawing.Point(428, 65);
 			this.rdDatetimepicker.Name = "rdDatetimepicker";
-			this.rdDatetimepicker.Size = new System.Drawing.Size(164, 24);
+			this.rdDatetimepicker.Size = new System.Drawing.Size(164, 20);
 			this.rdDatetimepicker.TabIndex = 23;
 			this.rdDatetimepicker.TabStop = false;
 			this.rdDatetimepicker.Text = "04-05-2020";

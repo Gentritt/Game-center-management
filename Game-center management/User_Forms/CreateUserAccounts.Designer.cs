@@ -123,7 +123,7 @@ namespace Game_center_management.Forms
 			this.grLoginInformation.TabIndex = 0;
 			this.grLoginInformation.Text = "Login Information";
 			this.grLoginInformation.ThemeName = "Crystal";
-			this.grLoginInformation.Click += new System.EventHandler(this.grLoginInformation_Click);
+			
 			// 
 			// txtPasswordUserAcc
 			// 
@@ -189,7 +189,7 @@ namespace Game_center_management.Forms
 			this.grUserInformation.TabIndex = 1;
 			this.grUserInformation.Text = "User Information";
 			this.grUserInformation.ThemeName = "Crystal";
-			this.grUserInformation.Click += new System.EventHandler(this.grUserInformation_Click);
+		
 			// 
 			// rdDatePicker
 			// 
@@ -378,6 +378,7 @@ namespace Game_center_management.Forms
 			this.btnCancel.TabIndex = 12;
 			this.btnCancel.Text = "Cancel";
 			this.btnCancel.ThemeName = "Crystal";
+			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
 			// erpUsername
 			// 
