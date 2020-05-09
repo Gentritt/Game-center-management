@@ -123,7 +123,6 @@ namespace Game_center_management.Forms
 			this.grLoginInformation.TabIndex = 0;
 			this.grLoginInformation.Text = "Login Information";
 			this.grLoginInformation.ThemeName = "Crystal";
-			
 			// 
 			// txtPasswordUserAcc
 			// 
@@ -189,7 +188,6 @@ namespace Game_center_management.Forms
 			this.grUserInformation.TabIndex = 1;
 			this.grUserInformation.Text = "User Information";
 			this.grUserInformation.ThemeName = "Crystal";
-		
 			// 
 			// rdDatePicker
 			// 
@@ -458,7 +456,6 @@ namespace Game_center_management.Forms
 			this.Controls.Add(this.grUserInformation);
 			this.Controls.Add(this.grLoginInformation);
 			this.Name = "CreateUserAccounts";
-			this.Text = "CreateUserAccounts";
 			this.Load += new System.EventHandler(this.CreateUserAccounts_Load);
 			((System.ComponentModel.ISupportInitialize)(this.grLoginInformation)).EndInit();
 			this.grLoginInformation.ResumeLayout(false);

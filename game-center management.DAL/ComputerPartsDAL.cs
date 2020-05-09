@@ -148,8 +148,8 @@ namespace game_center_management.DAL
 			computerParts.ComputerPSU = reader["PSU"].ToString();
 			computerParts.ComputerRAM = reader["RAM"].ToString();
 			computerParts.ComputerSSD = reader["SSD"].ToString();
-			computerParts.Insertby = reader["InsertBy"].ToString();
-			computerParts.InserDate = (DateTime) reader["InsertDate"];
+			//computerParts.Insertby = reader["InsertBy"].ToString();
+			//computerParts.InserDate = (DateTime) reader["InsertDate"];
 
 			return computerParts;
 

@@ -110,7 +110,7 @@ namespace game_center_management.DAL
 				using (var conn = SQLfunctions.GetConnection())
 				{
 					using (var cmd =
-						SQLfunctions.Command(conn, cmdText: "Products_getALL", CommandType.StoredProcedure))
+						SQLfunctions.Command(conn, cmdText: "Product_GETALL", CommandType.StoredProcedure))
 					{
 						ProductResult = new List<Product>();
 						using (SqlDataReader reader = cmd.ExecuteReader())
@@ -150,12 +150,12 @@ namespace game_center_management.DAL
 			if(reader["ProductPrice"]!=DBNull.Value)
 			     product.Price = decimal.Parse(reader["ProductPrice"].ToString());
 			product.Quantity = int.Parse(reader["ProductQuantity"].ToString());
-			product.Insertby = reader["InsertBy"].ToString();
-			product.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
+			//product.Insertby = reader["InsertBy"].ToString();
+			//product.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
 			//product.UpdatedBy = reader["UpdateBy"].ToString();
 			//product.UpdateDate = DateTime.Parse(reader["UpdateDate"].ToString());
 			//product.LastUpdate = int.Parse(reader["UpdateNo"].ToString());
-
+			
 
 			return product;
 

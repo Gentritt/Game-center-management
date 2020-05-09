@@ -139,8 +139,8 @@ namespace game_center_management.DAL
 			if(reader["Balance"]!=DBNull.Value)
 			clients.Balance = decimal.Parse(reader["Balance"].ToString());
 			//clients.IsGuest = (bool) reader["IsGuest"];
-			clients.Insertby = reader["InsertBy"].ToString();
-			clients.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
+			//clients.Insertby = reader["InsertBy"].ToString();
+			//clients.InserDate = DateTime.Parse(reader["InsertDate"].ToString());
 			clients.IsActive = (bool) reader["IsActive"];
 			clients.Email = reader["Email"].ToString();
 			clients.PersonalID = reader["PersonalID"].ToString();

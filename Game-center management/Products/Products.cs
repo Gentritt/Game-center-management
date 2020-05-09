@@ -17,14 +17,19 @@ namespace Game_center_management.Products
 	public partial class Products : Form
 	{
 		private readonly ProductBLL productBll;
-		
-		
+
+
 		public Products()
+
 		{
+
+			
 			InitializeComponent();
 			productBll = new ProductBLL();
-		}
+			ProductsGRID.AutoGenerateColumns = false;
 
+		}
+		
 		public void InitData()
 		{
 			var result = productBll.GetAll();
@@ -51,7 +56,7 @@ namespace Game_center_management.Products
 
 			if (dialogResult == DialogResult.Yes)
 			{
-				int index = this.ProductsGRID.Rows.IndexOf((GridViewDataRowInfo) this.ProductsGRID.CurrentRow);
+				int index = this.ProductsGRID.Rows.IndexOf((GridViewRowInfo) this.ProductsGRID.CurrentRow);
 				if (index < 0) return;
 				Product product = (Product)ProductsGRID.Rows[index].DataBoundItem;
 				if (product != null)
@@ -86,6 +91,18 @@ namespace Game_center_management.Products
 			RegisterProduct reg = new RegisterProduct();
 			reg.ShowDialog();
 
+
+		}
+
+		private void ProductsGRID_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+			
+
+		}
+
+		private void ProductsGRID_Click(object sender, EventArgs e)
+		{
 
 		}
 	}

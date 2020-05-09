@@ -97,7 +97,7 @@
 			this.btnCreateAccount.Size = new System.Drawing.Size(147, 37);
 			this.btnCreateAccount.TabIndex = 2;
 			this.btnCreateAccount.Text = "ADD ";
-			this.btnCreateAccount.ThemeName = "Crystal";
+			this.btnCreateAccount.ThemeName = "CrystalDark";
 			this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
 			// 
 			// btnEditAccount
@@ -108,7 +108,7 @@
 			this.btnEditAccount.Size = new System.Drawing.Size(147, 37);
 			this.btnEditAccount.TabIndex = 3;
 			this.btnEditAccount.Text = "EDIT";
-			this.btnEditAccount.ThemeName = "Crystal";
+			this.btnEditAccount.ThemeName = "CrystalDark";
 			// 
 			// btnDeleteAccount
 			// 

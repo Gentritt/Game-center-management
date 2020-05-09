@@ -75,12 +75,12 @@ namespace Game_center_management.Forms
 				txtUsername.Text != "" && txtPasswordUserAcc.Text != "" && txtPhone.Text != "" &&
 				txtPersonalID.Text != "" && txtBalance.Text != ""
 			)
-			 return false;
+			 return true;
 
 
 			else
 			{
-				return true;
+				return false;
 			}
 
 		}

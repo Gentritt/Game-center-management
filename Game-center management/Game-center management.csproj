@@ -36,6 +36,12 @@
     <Reference Include="FlatButton">
       <HintPath>..\..\..\..\Desktop\JControls\FlatButton.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Desktop\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Desktop\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="JDragControl">
       <HintPath>..\..\..\..\Desktop\JControls\JDragControl.dll</HintPath>
     </Reference>
@@ -54,12 +60,14 @@
     <Reference Include="JThinButton">
       <HintPath>..\..\..\..\Desktop\JControls\JThinButton.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -216,6 +224,7 @@
     </Compile>
     <None Include="Properties\DataSources\game_center_management.BLL.ClientsBLL.datasource" />
     <None Include="Properties\DataSources\game_center_management.BLL.EmployessBLL.datasource" />
+    <None Include="Properties\DataSources\game_center_management.BLL.ProductBLL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

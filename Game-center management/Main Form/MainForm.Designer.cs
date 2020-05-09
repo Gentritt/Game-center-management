@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.aquaTheme1 = new Telerik.WinControls.Themes.AquaTheme();
 			this.crystalTheme1 = new Telerik.WinControls.Themes.CrystalTheme();
 			this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
@@ -61,7 +62,6 @@
 			this.radMenuItem15 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem21 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem22 = new Telerik.WinControls.UI.RadMenuItem();
-			this.radMenuItem23 = new Telerik.WinControls.UI.RadMenuItem();
 			this.lblUsername = new System.Windows.Forms.Label();
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.label2 = new System.Windows.Forms.Label();
@@ -74,12 +74,17 @@
 			this.materialBlueGreyTheme1 = new Telerik.WinControls.Themes.MaterialBlueGreyTheme();
 			this.office2010SilverTheme1 = new Telerik.WinControls.Themes.Office2010SilverTheme();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
-			this.radLogout = new Telerik.WinControls.UI.RadMenuItem();
+			this.lblUserAdministrator = new Guna.UI.WinForms.GunaLabel();
+			this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+			this.radMenuItem16 = new Telerik.WinControls.UI.RadMenuItem();
+			this.radMenuItem17 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenu2 = new Telerik.WinControls.UI.RadMenu();
 			((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
 			this.radPanel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radMenu2)).BeginInit();
+			this.radMenu2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// radMenuItem1
@@ -195,7 +200,7 @@
 			this.radMenu1.ProcessKeyboard = false;
 			this.radMenu1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.radMenu1.RollOverItemSelection = true;
-			this.radMenu1.Size = new System.Drawing.Size(154, 80);
+			this.radMenu1.Size = new System.Drawing.Size(133, 80);
 			this.radMenu1.TabIndex = 0;
 			this.radMenu1.ThemeName = "Crystal";
 			this.radMenu1.VerticalAlignmentCorrectionMode = Telerik.WinControls.UI.AlignmentCorrectionMode.SnapToOuterEdges;
@@ -204,6 +209,7 @@
 			// 
 			// radMenuItem13
 			// 
+			this.radMenuItem13.Image = ((System.Drawing.Image)(resources.GetObject("radMenuItem13.Image")));
 			this.radMenuItem13.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.menuPuntoret,
             this.menuMenaxhimiPuntoreve,
@@ -238,32 +244,28 @@
 			// 
 			// radMenuItem14
 			// 
+			this.radMenuItem14.Image = ((System.Drawing.Image)(resources.GetObject("radMenuItem14.Image")));
 			this.radMenuItem14.Name = "radMenuItem14";
 			this.radMenuItem14.Text = "Raports";
 			// 
 			// radMenuItem15
 			// 
+			this.radMenuItem15.Image = ((System.Drawing.Image)(resources.GetObject("radMenuItem15.Image")));
 			this.radMenuItem15.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuItem21,
-            this.radMenuItem22,
-            this.radMenuItem23});
+            this.radMenuItem22});
 			this.radMenuItem15.Name = "radMenuItem15";
-			this.radMenuItem15.Text = "Help";
+			this.radMenuItem15.Text = "Language";
 			// 
 			// radMenuItem21
 			// 
 			this.radMenuItem21.Name = "radMenuItem21";
-			this.radMenuItem21.Text = "Info";
+			this.radMenuItem21.Text = "English";
 			// 
 			// radMenuItem22
 			// 
 			this.radMenuItem22.Name = "radMenuItem22";
-			this.radMenuItem22.Text = "Content";
-			// 
-			// radMenuItem23
-			// 
-			this.radMenuItem23.Name = "radMenuItem23";
-			this.radMenuItem23.Text = "Contact Us";
+			this.radMenuItem22.Text = "Albanian";
 			// 
 			// lblUsername
 			// 
@@ -329,32 +331,61 @@
 			this.timer1.Enabled = true;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
-			// radLogout
+			// lblUserAdministrator
 			// 
-			this.radLogout.Name = "radLogout";
-			this.radLogout.ShadowColor = System.Drawing.Color.Black;
-			this.radLogout.Text = "Log Out";
-			this.radLogout.Click += new System.EventHandler(this.radLogout_Click);
+			this.lblUserAdministrator.AutoSize = true;
+			this.lblUserAdministrator.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.lblUserAdministrator.Location = new System.Drawing.Point(733, 9);
+			this.lblUserAdministrator.Name = "lblUserAdministrator";
+			this.lblUserAdministrator.Size = new System.Drawing.Size(0, 15);
+			this.lblUserAdministrator.TabIndex = 1;
 			// 
-			// radMenu2
+			// guna2CirclePictureBox1
 			// 
-			this.radMenu2.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuItem13,
-            this.radMenuItem14,
-            this.radMenuItem15,
-            this.radLogout});
-			this.radMenu2.Location = new System.Drawing.Point(0, 0);
-			this.radMenu2.Name = "radMenu2";
-			this.radMenu2.Size = new System.Drawing.Size(804, 34);
-			this.radMenu2.TabIndex = 1;
-			this.radMenu2.ThemeName = "Crystal";
-			this.radMenu2.Click += new System.EventHandler(this.radMenu2_Click_1);
+			this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
+			this.guna2CirclePictureBox1.Location = new System.Drawing.Point(697, 0);
+			this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+			this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+			this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+			this.guna2CirclePictureBox1.Size = new System.Drawing.Size(30, 30);
+			this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.guna2CirclePictureBox1.TabIndex = 0;
+			this.guna2CirclePictureBox1.TabStop = false;
+			// 
+			// radMenuItem16
+			// 
+			this.radMenuItem16.Image = ((System.Drawing.Image)(resources.GetObject("radMenuItem16.Image")));
+			this.radMenuItem16.Name = "radMenuItem16";
+			this.radMenuItem16.Text = "Help";
+			// 
+			// radMenuItem17
+			// 
+			this.radMenuItem17.Image = ((System.Drawing.Image)(resources.GetObject("radMenuItem17.Image")));
+			this.radMenuItem17.Name = "radMenuItem17";
+			this.radMenuItem17.Text = "Log Out";
+			this.radMenuItem17.Click += new System.EventHandler(this.radMenuItem17_Click_1);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(804, 461);
+			// 
+			// radMenu2
+			// 
+			this.radMenu2.Controls.Add(this.lblUserAdministrator);
+			this.radMenu2.Controls.Add(this.guna2CirclePictureBox1);
+			this.radMenu2.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radMenuItem13,
+            this.radMenuItem14,
+            this.radMenuItem15,
+            this.radMenuItem16,
+            this.radMenuItem17});
+			this.radMenu2.Location = new System.Drawing.Point(0, 0);
+			this.radMenu2.Name = "radMenu2";
+			this.radMenu2.Size = new System.Drawing.Size(804, 50);
+			this.radMenu2.TabIndex = 1;
+			this.radMenu2.ThemeName = "Material";
 			this.Controls.Add(this.radPanel1);
 			this.Controls.Add(this.lblUsername);
 			this.Controls.Add(this.radMenu2);
@@ -368,7 +399,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
 			this.radPanel1.ResumeLayout(false);
 			this.radPanel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radMenu2)).EndInit();
+			this.radMenu2.ResumeLayout(false);
+			this.radMenu2.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -406,7 +440,6 @@
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem18;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem21;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem22;
-		private Telerik.WinControls.UI.RadMenuItem radMenuItem23;
 		private System.Windows.Forms.Label lblUsername;
 		private Telerik.WinControls.UI.RadMenuItem menuRegjistrimiProduktev;
 		private Telerik.WinControls.UI.RadPanel radPanel1;
@@ -420,8 +453,11 @@
 		private System.Windows.Forms.Label lblDatetime;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Timer timer1;
+		private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+		private Guna.UI.WinForms.GunaLabel lblUserAdministrator;
+		private Telerik.WinControls.UI.RadMenuItem radMenuItem16;
+		private Telerik.WinControls.UI.RadMenuItem radMenuItem17;
 		private Telerik.WinControls.UI.RadMenu radMenu2;
-		private Telerik.WinControls.UI.RadMenuItem radLogout;
 	}
 }
 

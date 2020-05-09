@@ -42,6 +42,7 @@ namespace Game_center_management
 			if (UserSession.LoggedUser != null)
 			{
 				lblLoggedUser.Text += UserSession.LoggedUser.Username;
+				lblUserAdministrator.Text = UserSession.LoggedUser.Username;
 				lblDatetime.Text += DateTime.Now.ToString();
 				timer1.Start();
 			}
@@ -95,9 +96,10 @@ namespace Game_center_management
 
 		}
 
-		private void radMenu2_Click_1(object sender, EventArgs e)
+		private void radMenuItem17_Click_1(object sender, EventArgs e)
 		{
-
+			Application.Restart();
+			
 		}
 	}
 }
