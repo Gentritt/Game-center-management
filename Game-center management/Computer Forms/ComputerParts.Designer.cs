@@ -125,6 +125,7 @@
 			this.gridComputerParts.MasterTemplate.AllowColumnReorder = false;
 			this.gridComputerParts.MasterTemplate.AllowDeleteRow = false;
 			this.gridComputerParts.MasterTemplate.AllowSearchRow = true;
+			this.gridComputerParts.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
 			this.gridComputerParts.MasterTemplate.HorizontalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
 			this.gridComputerParts.MasterTemplate.VerticalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
 			this.gridComputerParts.MasterTemplate.ViewDefinition = tableViewDefinition1;

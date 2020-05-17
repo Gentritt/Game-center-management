@@ -14,19 +14,17 @@ using Product = Game_center_management.BO.Product;
 
 namespace Game_center_management.Products
 {
-	public partial class Products : Form
+	public partial class Product : Form
 	{
 		private readonly ProductBLL productBll;
 
-
-		public Products()
+		public Product()
 
 		{
 
 			
 			InitializeComponent();
 			productBll = new ProductBLL();
-			ProductsGRID.AutoGenerateColumns = false;
 
 		}
 		
@@ -56,14 +54,12 @@ namespace Game_center_management.Products
 
 			if (dialogResult == DialogResult.Yes)
 			{
-				int index = this.ProductsGRID.Rows.IndexOf((GridViewRowInfo) this.ProductsGRID.CurrentRow);
+				int index = ProductsGRID.SelectedCells[0].RowIndex;
 				if (index < 0) return;
-				Product product = (Product)ProductsGRID.Rows[index].DataBoundItem;
+				BO.Product product = (BO.Product)ProductsGRID.Rows[index].DataBoundItem;
 				if (product != null)
 				{
 					productBll.Remove(product.ProductID);
-
-
 				}
 
 			}
@@ -72,7 +68,7 @@ namespace Game_center_management.Products
 
 				
 				this.Hide();
-				Products  products = new Products();
+				Product  products = new Product();
 				products.ShowDialog();
 			}
 		
@@ -82,28 +78,29 @@ namespace Game_center_management.Products
 		private void btnRefresh_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-			Products products = new Products();
+			Product products = new Product();
 			products.ShowDialog();
 		}
 
 		private void btnUpdate_Click(object sender, EventArgs e)
 		{
-			RegisterProduct reg = new RegisterProduct();
-			reg.ShowDialog();
+			int index = ProductsGRID.SelectedCells[0].RowIndex;
+			if (index < 0) return;
+			BO.Product product = (BO.Product)ProductsGRID.Rows[index].DataBoundItem;
+			if (product != null)
+			{
+
+				productBll.GetByID(product.ProductID);
+				ProductEdit edit = new ProductEdit();
+				edit.ShowDialog();
+
+			}
+
+
+		
 
 
 		}
 
-		private void ProductsGRID_CellContentClick(object sender, DataGridViewCellEventArgs e)
-		{
-
-			
-
-		}
-
-		private void ProductsGRID_Click(object sender, EventArgs e)
-		{
-
-		}
 	}
 }

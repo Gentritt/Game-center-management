@@ -77,6 +77,9 @@
 			this.lblUserAdministrator = new Guna.UI.WinForms.GunaLabel();
 			this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
 			this.radMenuItem16 = new Telerik.WinControls.UI.RadMenuItem();
+			this.radMenuItem19 = new Telerik.WinControls.UI.RadMenuItem();
+			this.radMenuItem20 = new Telerik.WinControls.UI.RadMenuItem();
+			this.radMenuItem23 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenuItem17 = new Telerik.WinControls.UI.RadMenuItem();
 			this.radMenu2 = new Telerik.WinControls.UI.RadMenu();
 			((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
@@ -284,7 +287,7 @@
 			this.radPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.radPanel1.Location = new System.Drawing.Point(0, 428);
 			this.radPanel1.Name = "radPanel1";
-			this.radPanel1.Size = new System.Drawing.Size(804, 33);
+			this.radPanel1.Size = new System.Drawing.Size(806, 33);
 			this.radPanel1.TabIndex = 5;
 			this.radPanel1.ThemeName = "CrystalDark";
 			// 
@@ -355,8 +358,27 @@
 			// radMenuItem16
 			// 
 			this.radMenuItem16.Image = ((System.Drawing.Image)(resources.GetObject("radMenuItem16.Image")));
+			this.radMenuItem16.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radMenuItem19,
+            this.radMenuItem20,
+            this.radMenuItem23});
 			this.radMenuItem16.Name = "radMenuItem16";
 			this.radMenuItem16.Text = "Help";
+			// 
+			// radMenuItem19
+			// 
+			this.radMenuItem19.Name = "radMenuItem19";
+			this.radMenuItem19.Text = "Info";
+			// 
+			// radMenuItem20
+			// 
+			this.radMenuItem20.Name = "radMenuItem20";
+			this.radMenuItem20.Text = "Content";
+			// 
+			// radMenuItem23
+			// 
+			this.radMenuItem23.Name = "radMenuItem23";
+			this.radMenuItem23.Text = "Contact US";
 			// 
 			// radMenuItem17
 			// 
@@ -364,12 +386,6 @@
 			this.radMenuItem17.Name = "radMenuItem17";
 			this.radMenuItem17.Text = "Log Out";
 			this.radMenuItem17.Click += new System.EventHandler(this.radMenuItem17_Click_1);
-			// 
-			// MainForm
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(804, 461);
 			// 
 			// radMenu2
 			// 
@@ -383,9 +399,15 @@
             this.radMenuItem17});
 			this.radMenu2.Location = new System.Drawing.Point(0, 0);
 			this.radMenu2.Name = "radMenu2";
-			this.radMenu2.Size = new System.Drawing.Size(804, 50);
+			this.radMenu2.Size = new System.Drawing.Size(806, 50);
 			this.radMenu2.TabIndex = 1;
 			this.radMenu2.ThemeName = "Material";
+			// 
+			// MainForm
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(806, 461);
 			this.Controls.Add(this.radPanel1);
 			this.Controls.Add(this.lblUsername);
 			this.Controls.Add(this.radMenu2);
@@ -393,6 +415,7 @@
 			this.IsMdiContainer = true;
 			this.Name = "MainForm";
 			this.Text = "Gaming-Center Management";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.Shown += new System.EventHandler(this.MainForm_Shown);
 			((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
@@ -458,6 +481,9 @@
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem16;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem17;
 		private Telerik.WinControls.UI.RadMenu radMenu2;
+		private Telerik.WinControls.UI.RadMenuItem radMenuItem19;
+		private Telerik.WinControls.UI.RadMenuItem radMenuItem20;
+		private Telerik.WinControls.UI.RadMenuItem radMenuItem23;
 	}
 }
 

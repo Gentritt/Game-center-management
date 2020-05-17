@@ -1,6 +1,6 @@
 ﻿namespace Game_center_management.Products
 {
-	partial class Products
+	partial class Product
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,28 +29,22 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
 			this.btnADD = new Telerik.WinControls.UI.RadButton();
 			this.btnUpdate = new Telerik.WinControls.UI.RadButton();
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
 			this.btnRefresh = new Telerik.WinControls.UI.RadButton();
 			this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
-			this.productBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.ProductsGRID = new Telerik.WinControls.UI.RadGridView();
-			this.productBLLBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
 			this.crystalTheme1 = new Telerik.WinControls.Themes.CrystalTheme();
+			this.ProductsGRID = new System.Windows.Forms.DataGridView();
+			this.productBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.productBLLBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.productBLLBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID.MasterTemplate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.productBLLBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.productBLLBindingSource1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -100,50 +94,29 @@
 			this.btnRefresh.ThemeName = "CrystalDark";
 			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
 			// 
+			// ProductsGRID
+			// 
+			this.ProductsGRID.AllowUserToAddRows = false;
+			this.ProductsGRID.AllowUserToDeleteRows = false;
+			this.ProductsGRID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.ProductsGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.ProductsGRID.Location = new System.Drawing.Point(44, 99);
+			this.ProductsGRID.Name = "ProductsGRID";
+			this.ProductsGRID.ReadOnly = true;
+			this.ProductsGRID.Size = new System.Drawing.Size(595, 366);
+			this.ProductsGRID.TabIndex = 6;
+			// 
 			// productBLLBindingSource
 			// 
 			this.productBLLBindingSource.DataSource = typeof(game_center_management.BLL.ProductBLL);
-			// 
-			// ProductsGRID
-			// 
-			this.ProductsGRID.Location = new System.Drawing.Point(12, 94);
-			// 
-			// 
-			// 
-			this.ProductsGRID.MasterTemplate.AllowAddNewRow = false;
-			this.ProductsGRID.MasterTemplate.AllowColumnReorder = false;
-			this.ProductsGRID.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-			gridViewTextBoxColumn1.AllowHide = false;
-			gridViewTextBoxColumn1.HeaderText = "ProdcutID";
-			gridViewTextBoxColumn1.Name = "ProductID";
-			gridViewTextBoxColumn1.Width = 122;
-			gridViewTextBoxColumn2.HeaderText = "ProductName";
-			gridViewTextBoxColumn2.Name = "ProductName";
-			gridViewTextBoxColumn2.Width = 122;
-			gridViewTextBoxColumn3.HeaderText = "ProductPrice";
-			gridViewTextBoxColumn3.Name = "ProductPrice";
-			gridViewTextBoxColumn3.Width = 122;
-			gridViewTextBoxColumn4.HeaderText = "ProductQuantity";
-			gridViewTextBoxColumn4.Name = "ProdcutQuantity";
-			gridViewTextBoxColumn4.Width = 121;
-			this.ProductsGRID.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewTextBoxColumn4});
-			this.ProductsGRID.MasterTemplate.ViewDefinition = tableViewDefinition1;
-			this.ProductsGRID.Name = "ProductsGRID";
-			this.ProductsGRID.ReadOnly = true;
-			this.ProductsGRID.Size = new System.Drawing.Size(519, 302);
-			this.ProductsGRID.TabIndex = 6;
-			this.ProductsGRID.ThemeName = "Crystal";
-			this.ProductsGRID.Click += new System.EventHandler(this.ProductsGRID_Click);
 			// 
 			// productBLLBindingSource1
 			// 
 			this.productBLLBindingSource1.DataSource = typeof(game_center_management.BLL.ProductBLL);
 			// 
-			// Products
+			// Product
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,7 +126,7 @@
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnUpdate);
 			this.Controls.Add(this.btnADD);
-			this.Name = "Products";
+			this.Name = "Product";
 			this.Text = "Products";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Products_Load);
@@ -161,9 +134,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.productBLLBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.ProductsGRID)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.productBLLBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.productBLLBindingSource1)).EndInit();
 			this.ResumeLayout(false);
 
@@ -176,8 +148,8 @@
 		private Telerik.WinControls.UI.RadButton btnRefresh;
 		private Telerik.WinControls.RadThemeManager radThemeManager1;
 		private System.Windows.Forms.BindingSource productBLLBindingSource;
-		private Telerik.WinControls.UI.RadGridView ProductsGRID;
 		private System.Windows.Forms.BindingSource productBLLBindingSource1;
 		private Telerik.WinControls.Themes.CrystalTheme crystalTheme1;
+		public System.Windows.Forms.DataGridView ProductsGRID;
 	}
 }

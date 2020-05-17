@@ -98,7 +98,7 @@ namespace Game_center_management.Products
 		
 			else
 			{
-				Product product = new Product();
+				BO.Product product = new BO.Product();
 				product.ProductName = txtProductName.Text;
 				product.Price = decimal.Parse(txtPrice.Text);
 				product.Quantity = int.Parse(txtQuantity.Text);
@@ -110,7 +110,7 @@ namespace Game_center_management.Products
 				if (result != 0)
 				{
 					MessageBox.Show("Data inserted succesfully!!!");
-					Products products = new Products();
+					Product products = new Product();
 					products.InitData();
 					this.Close();
 

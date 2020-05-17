@@ -57,7 +57,7 @@
 			this.radPanel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.radPanel1.Location = new System.Drawing.Point(0, 0);
 			this.radPanel1.Name = "radPanel1";
-			this.radPanel1.Size = new System.Drawing.Size(801, 59);
+			this.radPanel1.Size = new System.Drawing.Size(802, 59);
 			this.radPanel1.TabIndex = 0;
 			this.radPanel1.ThemeName = "CrystalDark";
 			// 
@@ -137,7 +137,7 @@
 			this.gridUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.gridUsers.Location = new System.Drawing.Point(12, 128);
+			this.gridUsers.Location = new System.Drawing.Point(12, 114);
 			// 
 			// 
 			// 
@@ -153,7 +153,7 @@
 			// 
 			this.gridUsers.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
 			this.gridUsers.RootElement.BorderHighlightColor = System.Drawing.Color.Gray;
-			this.gridUsers.Size = new System.Drawing.Size(672, 339);
+			this.gridUsers.Size = new System.Drawing.Size(778, 354);
 			this.gridUsers.TabIndex = 7;
 			this.gridUsers.ThemeName = "CrystalDark";
 			// 
@@ -161,7 +161,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(801, 465);
+			this.ClientSize = new System.Drawing.Size(802, 480);
 			this.Controls.Add(this.gridUsers);
 			this.Controls.Add(this.btnRefresh);
 			this.Controls.Add(this.btnDeleteAccount);
@@ -170,6 +170,7 @@
 			this.Controls.Add(this.radPanel1);
 			this.Name = "UserAccounts";
 			this.Text = "Create_User";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Create_User_Load);
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
 			this.radPanel1.ResumeLayout(false);

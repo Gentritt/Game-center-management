@@ -72,13 +72,8 @@ namespace Game_center_management
 
 		private void menuRegjistrimiProduktev_Click(object sender, EventArgs e)
 		{
-			Products.Products products = new Products.Products();
+			Products.Product products = new Products.Product();
 			products.ShowDialog();
-
-		}
-
-		private void radMenu2_Click(object sender, EventArgs e)
-		{
 
 		}
 
@@ -88,18 +83,28 @@ namespace Game_center_management
 			timer1.Start();
 		}
 
-		private void radLogout_Click(object sender, EventArgs e)
-		{
-			
-		Application.Restart();
-
-
-		}
-
 		private void radMenuItem17_Click_1(object sender, EventArgs e)
 		{
 			Application.Restart();
-			
+		}
+
+		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+
+				DialogResult dialog = MessageBox.Show("Are you sure you want to Exit ?", "Exit",MessageBoxButtons.YesNo);
+
+				if (dialog == DialogResult.Yes)
+				{
+					Application.Exit(); 
+
+				}
+				else if (dialog == DialogResult.No)
+				{
+
+					e.Cancel = true;
+					
+					
+				}
 		}
 	}
 }

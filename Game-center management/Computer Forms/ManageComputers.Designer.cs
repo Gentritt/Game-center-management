@@ -28,7 +28,11 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageComputers));
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
@@ -74,8 +78,24 @@
 			// 
 			// 
 			// 
-			this.gridManageComputers.MasterTemplate.ViewDefinition = tableViewDefinition2;
+			this.gridManageComputers.MasterTemplate.AllowAddNewRow = false;
+			this.gridManageComputers.MasterTemplate.AllowColumnReorder = false;
+			gridViewTextBoxColumn1.HeaderText = "ID";
+			gridViewTextBoxColumn1.Name = "ID";
+			gridViewTextBoxColumn2.HeaderText = "PartID";
+			gridViewTextBoxColumn2.Name = "PartID";
+			gridViewTextBoxColumn3.HeaderText = "Price Per Hour";
+			gridViewTextBoxColumn3.Name = "PricePerHour";
+			gridViewTextBoxColumn4.HeaderText = "IsActive";
+			gridViewTextBoxColumn4.Name = "IsActive";
+			this.gridManageComputers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4});
+			this.gridManageComputers.MasterTemplate.ViewDefinition = tableViewDefinition1;
 			this.gridManageComputers.Name = "gridManageComputers";
+			this.gridManageComputers.ReadOnly = true;
 			this.gridManageComputers.Size = new System.Drawing.Size(590, 389);
 			this.gridManageComputers.TabIndex = 1;
 			this.gridManageComputers.ThemeName = "Crystal";
@@ -89,7 +109,6 @@
 			this.btnADD.TabIndex = 2;
 			this.btnADD.Text = "       ADD";
 			this.btnADD.ThemeName = "CrystalDark";
-			this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
 			// 
 			// btnUpdate
 			// 
@@ -110,7 +129,6 @@
 			this.btnDelete.TabIndex = 4;
 			this.btnDelete.Text = "      DELETE";
 			this.btnDelete.ThemeName = "CrystalDark";
-			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
 			// btnParts
 			// 
@@ -136,6 +154,7 @@
 			this.Controls.Add(this.radPanel1);
 			this.Name = "ManageComputers";
 			this.Text = "ManageComputers";
+			this.Load += new System.EventHandler(this.ManageComputers_Load);
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
 			this.radPanel1.ResumeLayout(false);
 			this.radPanel1.PerformLayout();

@@ -43,12 +43,16 @@
 			this.btnCancel = new Telerik.WinControls.UI.RadButton();
 			this.txtUsername = new Telerik.WinControls.UI.RadTextBox();
 			this.txtPassword = new Telerik.WinControls.UI.RadTextBox();
+			this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUsername)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPassword)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -108,6 +112,7 @@
 			// 
 			// btnLogin
 			// 
+			this.btnLogin.BackColor = System.Drawing.Color.Gray;
 			this.btnLogin.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
 			this.btnLogin.Location = new System.Drawing.Point(25, 298);
 			this.btnLogin.Name = "btnLogin";
@@ -144,12 +149,36 @@
 			this.txtPassword.TabIndex = 1;
 			this.txtPassword.ThemeName = "Crystal";
 			// 
+			// gunaCirclePictureBox1
+			// 
+			this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
+			this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
+			this.gunaCirclePictureBox1.Location = new System.Drawing.Point(13, 155);
+			this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
+			this.gunaCirclePictureBox1.Size = new System.Drawing.Size(24, 24);
+			this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.gunaCirclePictureBox1.TabIndex = 6;
+			this.gunaCirclePictureBox1.TabStop = false;
+			this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(12, 239);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(25, 26);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox2.TabIndex = 7;
+			this.pictureBox2.TabStop = false;
+			// 
 			// LoginForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(359, 409);
+			this.Controls.Add(this.pictureBox2);
+			this.Controls.Add(this.gunaCirclePictureBox1);
 			this.Controls.Add(this.txtPassword);
 			this.Controls.Add(this.txtUsername);
 			this.Controls.Add(this.btnCancel);
@@ -157,6 +186,7 @@
 			this.Controls.Add(this.lblPassword);
 			this.Controls.Add(this.lblUsername);
 			this.Controls.Add(this.panel1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "LoginForm";
 			this.Load += new System.EventHandler(this.LoginForm_Load);
 			this.panel1.ResumeLayout(false);
@@ -166,6 +196,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUsername)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPassword)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -187,5 +219,7 @@
 		private Telerik.WinControls.UI.RadButton btnCancel;
 		private Telerik.WinControls.UI.RadTextBox txtUsername;
 		private Telerik.WinControls.UI.RadTextBox txtPassword;
+		private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
+		private System.Windows.Forms.PictureBox pictureBox2;
 	}
 }

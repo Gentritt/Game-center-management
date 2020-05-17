@@ -44,9 +44,9 @@ namespace game_center_management.DAL
 						{
 							while (reader.Read())
 							{
-								//var result = ToObject(reader);
-								//computers.Add(result);
-								
+							   Computer computer = ToObject(reader);
+								computers.Add(computer);
+
 							}
 
 						}
@@ -63,14 +63,19 @@ namespace game_center_management.DAL
 			}
 		}
 
-		//public Computer ToObject(SqlDataReader reader)
-		//{
-		//	Computer computer = new Computer();
-		//	//ComputerParts computerParts = new ComputerParts();
+		public Computer ToObject(SqlDataReader reader)
+		{
+			Computer computer = new Computer();
+			//ComputerParts computerParts = new ComputerParts();
 
-		//	computer.PartID = int.Parse(reader["PartID"].ToString());
+			computer.PartID = int.Parse(reader["PartID"].ToString());
+			computer.ComputerID = int.Parse(reader["ComputerID"].ToString());
+			if(reader["PricePerHour"]!=DBNull.Value)
+			 computer.PricePerHour = double.Parse(reader["PricePerHour"].ToString());
+			computer.IsActive = (bool)reader["IsActive"];
 
+			return computer;
 
-		//}
+		}
 	}
 }

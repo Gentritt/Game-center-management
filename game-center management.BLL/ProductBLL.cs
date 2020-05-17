@@ -34,6 +34,11 @@ namespace game_center_management.BLL
 			return productsDal.Remove(ID);
 		}
 
+		public  Product GetByID(int ID)
+		{
+
+			return productsDal.GetByID(ID);
+		}
 		public List<Product> GetAll()
 		{
 			 return productsDal.GetAll();

@@ -17,28 +17,36 @@ namespace game_center_management.DAL
 		{
 			try
 			{
-				SqlConnection con = new SqlConnection(_connString);
-				con.Open();
-				SqlCommand cmd = new SqlCommand("Clients_Insert", con);
-				cmd.CommandType = CommandType.StoredProcedure;
-				cmd.Parameters.AddWithValue("@name", model.Name);
-				cmd.Parameters.AddWithValue("@lastname", model.LastName);
-				cmd.Parameters.AddWithValue("@personalid", model.PersonalID);
-				cmd.Parameters.AddWithValue("@address", model.Address);
-				cmd.Parameters.AddWithValue("@birthday", model.Birthday);
-				cmd.Parameters.AddWithValue("@email", model.Email);
-				cmd.Parameters.AddWithValue("@username",model.UserName);
-				cmd.Parameters.AddWithValue("@password", model.Password);
-				cmd.Parameters.AddWithValue("@balance", model.Balance);
-				cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
-				cmd.Parameters.AddWithValue("@insertby", model.Insertby);
-				cmd.Parameters.AddWithValue("@insertdate", model.InserDate);
+				using (var con = SQLfunctions.GetConnection())
+				{
 
-				//cmd.Parameters.AddWithValue("@isactive", model.IsActive);
-				//cmd.Parameters.AddWithValue("@isguest", model.IsGuest);
+					using (var cmd = SQLfunctions.Command(con,cmdText:"ClientsInsert",cmdType:CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@name", model.Name);
+						cmd.Parameters.AddWithValue("@lastname", model.LastName);
+						cmd.Parameters.AddWithValue("@personalid", model.PersonalID);
+						cmd.Parameters.AddWithValue("@address", model.Address);
+						cmd.Parameters.AddWithValue("@birthday", model.Birthday);
+						cmd.Parameters.AddWithValue("@email", model.Email);
+						cmd.Parameters.AddWithValue("@username", model.UserName);
+						cmd.Parameters.AddWithValue("@password", model.Password);
+						cmd.Parameters.AddWithValue("@balance", model.Balance);
+						cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
+						cmd.Parameters.AddWithValue("@insertby", model.Insertby);
+						cmd.Parameters.AddWithValue("@insertdate", model.InserDate);
 
-				int rowaffect = cmd.ExecuteNonQuery();
-				return rowaffect;
+						//cmd.Parameters.AddWithValue("@isactive", model.IsActive);
+						//cmd.Parameters.AddWithValue("@isguest", model.IsGuest);
+
+						int rowaffect = cmd.ExecuteNonQuery();
+						return rowaffect;
+					}
+
+				}
+		
+				
+			
+			
 
 
 

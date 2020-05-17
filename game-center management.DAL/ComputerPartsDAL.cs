@@ -145,7 +145,7 @@ namespace game_center_management.DAL
 			computerParts.ComputerMotherboard = reader["MotherBoard"].ToString();
 			computerParts.ComputerMouse = reader["Mouse"].ToString();
 			computerParts.ComputerMousePad = reader["MousePad"].ToString();
-			computerParts.ComputerPSU = reader["PSU"].ToString();
+			computerParts.ComputerPSU = reader["PCU"].ToString();
 			computerParts.ComputerRAM = reader["RAM"].ToString();
 			computerParts.ComputerSSD = reader["SSD"].ToString();
 			//computerParts.Insertby = reader["InsertBy"].ToString();

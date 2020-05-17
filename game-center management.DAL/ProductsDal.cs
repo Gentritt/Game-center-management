@@ -48,33 +48,83 @@ namespace game_center_management.DAL
 
 		public int Modify(Product model)
 		{
-			//try
-			//{
-			//	using (var con = SQLfunctions.GetConnection()) 
-			//	{
-			//		using (var cmd = SQLfunctions.Command(con, cmdText: "Edit_Products", CommandType.StoredProcedure))
-			//		{
-			//			cmd.Parameters.AddWithValue("@productname", model.ProductName);
-			//			cmd.Parameters.AddWithValue("@productprice", model.Price);
-			//			cmd.Parameters.AddWithValue("@productquantity", model.Quantity);
-			//			cmd.Parameters.AddWithValue("@updateby", model.UpdatedBy);
-			//			cmd.Parameters.AddWithValue("@updatedate", model.UpdateDate);
-			//			cmd.Parameters.AddWithValue("@updateno", model.LastUpdate);
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con, cmdText: "Edit_Products", CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@productname", model.ProductName);
+						cmd.Parameters.AddWithValue("@productprice", model.Price);
+						cmd.Parameters.AddWithValue("@productquantity", model.Quantity);
+						cmd.Parameters.AddWithValue("@updateby", model.UpdatedBy);
+						cmd.Parameters.AddWithValue("@updatedate", model.UpdateDate);
+						cmd.Parameters.AddWithValue("@updateno", model.LastUpdate);
+						int rowaffectd = cmd.ExecuteNonQuery();
+						return rowaffectd;
 
-			//			int rowaffected = cmd.ExecuteNonQuery();
-			//			return rowaffected;
+					}
 
-			//		}
+				}
 
-			//	}
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e);
+				throw;
+			}
+			
+		}
 
-			//}
-			//catch (Exception e)
-			//{
-			//	Console.WriteLine(e);
-			//	throw;
-			//}
-			throw new NotImplementedException();
+		public  Product GetByID(int ID)
+		{
+			Product product = null;
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "ProductGetByID",cmdType:CommandType.StoredProcedure))
+					{
+
+						cmd.Parameters.AddWithValue("productid",ID);
+
+						using (SqlDataReader reader = cmd.ExecuteReader())
+						{
+							if (reader.HasRows)
+							{
+
+								product = new Product();
+								if (reader.Read())
+								{
+
+									product.ProductID = int.Parse(reader["ProductID"].ToString());
+									product.ProductName = reader["ProductName"].ToString();
+									product.Quantity = int.Parse(reader["ProductQuantity"].ToString());
+									if (reader["ProductPrice"] != DBNull.Value)
+										product.Price = decimal.Parse(reader["ProductPrice"].ToString());
+									
+
+								}
+
+							}
+
+						}
+						
+					}
+
+				}
+
+				return product;
+
+			}
+			catch (Exception e)
+			{
+				return null;
+
+			}
+
+
+
 		}
 
 		public int Remove(int ID)

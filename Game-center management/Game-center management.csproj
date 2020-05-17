@@ -122,11 +122,23 @@
     <Compile Include="Computer Forms\ManageComputers.Designer.cs">
       <DependentUpon>ManageComputers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Computer Forms\RegisterComputerParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computer Forms\RegisterComputerParts.Designer.cs">
+      <DependentUpon>RegisterComputerParts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Computer Forms\RegisterComputers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Computer Forms\RegisterComputers.Designer.cs">
       <DependentUpon>RegisterComputers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\ProductEdit.Designer.cs">
+      <DependentUpon>ProductEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Products\Products.cs">
       <SubType>Form</SubType>
@@ -185,8 +197,14 @@
     <EmbeddedResource Include="Computer Forms\ManageComputers.resx">
       <DependentUpon>ManageComputers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Computer Forms\RegisterComputerParts.resx">
+      <DependentUpon>RegisterComputerParts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Computer Forms\RegisterComputers.resx">
       <DependentUpon>RegisterComputers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\ProductEdit.resx">
+      <DependentUpon>ProductEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products\Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
