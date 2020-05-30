@@ -11,6 +11,7 @@ using Game_center_management.BO.Interfaces;
 
 namespace game_center_management.DAL
 {
+	//
 	public class ComputerPartsDAL : IbaseCrud<ComputerParts>, IConvertToObject<ComputerParts>
 	{
 		public int ADD(ComputerParts model)
