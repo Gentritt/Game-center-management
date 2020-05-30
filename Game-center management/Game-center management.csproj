@@ -158,6 +158,12 @@
     <Compile Include="Staff Forms\CreateUserStaff.Designer.cs">
       <DependentUpon>CreateUserStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staff Forms\StaffEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Forms\StaffEditForm.Designer.cs">
+      <DependentUpon>StaffEditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Forms\CreateUserAccounts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff Forms\CreateUserStaff.resx">
       <DependentUpon>CreateUserStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Forms\StaffEditForm.resx">
+      <DependentUpon>StaffEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Forms\CreateUserAccounts.resx">
       <DependentUpon>CreateUserAccounts.cs</DependentUpon>

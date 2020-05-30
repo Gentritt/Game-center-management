@@ -55,7 +55,38 @@ namespace game_center_management.DAL
 
 		public int Modify(Employess model)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Employess_Edit",cmdType:CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@employeeid", model.ID);
+						cmd.Parameters.AddWithValue("@name", model.Name);
+						cmd.Parameters.AddWithValue("@lastname", model.LastName);
+						cmd.Parameters.AddWithValue("@personalid", model.PersonalID);
+						cmd.Parameters.AddWithValue("@address", model.Adress);
+						cmd.Parameters.AddWithValue("@birthday", model.Birthday);
+						cmd.Parameters.AddWithValue("@email", model.Email);
+						cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
+						cmd.Parameters.AddWithValue("@usernmae", model.Username);
+						cmd.Parameters.AddWithValue("@password", model.Password);
+						cmd.Parameters.AddWithValue("@salary", model.Salary);
+						cmd.Parameters.AddWithValue("@updateby", model.UpdatedBy);
+						cmd.Parameters.AddWithValue("@updatedate", model.UpdateDate);
+						cmd.Parameters.AddWithValue("@updateno", model.LastUpdate);
+
+						var rowaffectd = cmd.ExecuteNonQuery();
+						return rowaffectd;
+
+					}
+				}
+
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
 		}
 
 		public int Remove(int ID)

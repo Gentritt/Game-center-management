@@ -41,11 +41,10 @@ namespace Game_center_management.Products
 		{
 			txtUpdateBy.Text += UserSession.LoggedUser.Username;
 			txtUpdateBy.ReadOnly = true;
-			txtUpdateDate.Text += DateTime.Now;
+			txtUpdateDate.Text += DateTime.Now.ToShortDateString();
 			txtUpdateDate.ReadOnly = true;
 			txtProductID.Visible = false;
 			txtProductID.ReadOnly = false;
-			//LoadData();
 		}
 		private void btnSave_Click(object sender, EventArgs e)
 		{
@@ -58,15 +57,17 @@ namespace Game_center_management.Products
 			product.UpdateDate = DateTime.Parse(txtUpdateDate.Text);
 			product.LastUpdate = int.Parse(txtUpdateNo.Text);
 		  var result  = bll.Modify(product);
-		  Products products = new Products();
-			 products.InitData();
-			 this.Close();
+		  if (result != null)
+		  {
 
-		  
-			
+			  Products products = new Products();
+			  products.InitData();
+			  MessageBox.Show("Data Updated Successfully");
+			  this.Close();
+
+		  }
 
 		}
-
 		private void btnCancel_Click(object sender, EventArgs e)
 		{
 

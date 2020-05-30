@@ -19,12 +19,12 @@ namespace Game_center_management.Staff_Forms
 	public partial class CreateUserStaff : Form
 	{
 		private readonly EmployessBLL employessbll;
-	
+
 		public CreateUserStaff()
 		{
 			InitializeComponent();
 			employessbll = new EmployessBLL();
-			
+
 		}
 
 		//private bool ValidateFields()
@@ -56,10 +56,10 @@ namespace Game_center_management.Staff_Forms
 
 				txtAddress.Focus();
 			}
-			else 
+			else
 			{
 				DialogResult dialogResult = MessageBox.Show("Email is not Valid!!");
-				if (dialogResult ==DialogResult.OK)
+				if (dialogResult == DialogResult.OK)
 				{
 					txtEmail.Focus();
 
@@ -68,6 +68,7 @@ namespace Game_center_management.Staff_Forms
 
 
 		}
+
 		private void ValidateNotNULL()
 		{
 
@@ -92,7 +93,7 @@ namespace Game_center_management.Staff_Forms
 			{
 				//EmailValidator();
 				erpMail.Dispose();
-				
+
 			}
 
 			if (txtAddress.Text != "")
@@ -137,6 +138,7 @@ namespace Game_center_management.Staff_Forms
 
 
 		}
+
 		private bool ValidateNullFields()
 		{
 			if (txtSalary.Text != "" && txtPersonalID.Text != "" && txtAddress.Text != "" &&
@@ -152,6 +154,7 @@ namespace Game_center_management.Staff_Forms
 
 
 		}
+
 		private void ValidateFields()
 		{
 			if (txtUsernameStaff.Text == "")
@@ -159,56 +162,67 @@ namespace Game_center_management.Staff_Forms
 
 				erpUsername.SetError(txtUsernameStaff, "This cannot be blank");
 			}
+
 			if (txtPasswordStaff.Text == "")
 			{
 
 				erpPassword.SetError(txtPasswordStaff, "This cannot be blank");
 			}
+
 			if (txtNameStaff.Text == "")
 			{
 
 				erpName.SetError(txtNameStaff, "This cannot be blank");
 			}
+
 			if (txtLastNameStaff.Text == "")
 			{
 
 				erpLastName.SetError(txtLastNameStaff, "This cannot be blank");
 			}
+
 			if (rdDatetimepicker.Text == "")
 			{
 
 				erpBirthday.SetError(rdDatetimepicker, "This cannot be blank");
 			}
+
 			if (txtPhoneNumber.Text == "")
 			{
 				erpPhone.SetError(txtPhoneNumber, "This cannot be blank");
 			}
+
 			if (txtEmail.Text == "")
 			{
 
 				erpMail.SetError(txtEmail, "This cannot be blank");
 			}
+
 			if (txtInsertBy.Text == "")
 			{
 				erpInsertby.SetError(txtInsertBy, "This cannot be blank");
 			}
+
 			if (txtInsertDate.Text == "")
 			{
 				erpInsertDate.SetError(txtInsertDate, "This cannot be blank");
 			}
+
 			if (txtAddress.Text == "")
 			{
 				erpAdress.SetError(txtAddress, "This cannot be blank");
 			}
+
 			if (txtSalary.Text == "")
 			{
 				erpSalary.SetError(txtSalary, "This cannot be blank");
 			}
+
 			if (txtPersonalID.Text == "")
 			{
 				erpPersonalID.SetError(txtPersonalID, "This cannot be Blank");
 			}
-			else if(ValidateNullFields()==true)
+			else if (ValidateNullFields() == true)
 			{
 				Employess employess = new Employess();
 
@@ -229,10 +243,10 @@ namespace Game_center_management.Staff_Forms
 				StaffForm sf = new StaffForm();
 				sf.FillGrid();
 				this.Close();
-				
-			
-				
-				
+
+
+
+
 
 			}
 
@@ -243,18 +257,20 @@ namespace Game_center_management.Staff_Forms
 			EmailValidator();
 			ValidateFields();
 			ValidateNotNULL();
-		
-			
+
+
 
 		}
 
 		private void CreateUserStaff_Load(object sender, EventArgs e)
 		{
+			
 			txtInsertBy.Text += UserSession.LoggedUser.Username;
 			txtInsertBy.ReadOnly = true;
 			txtInsertDate.Text += DateTime.Now.ToShortDateString();
 			txtInsertDate.ReadOnly = true;
 		}
+
 		private void txtPersonalID_TextChanged(object sender, EventArgs e)
 		{
 			if (Regex.IsMatch(txtPersonalID.Text, "[^0-9]"))
@@ -282,9 +298,6 @@ namespace Game_center_management.Staff_Forms
 			this.Close();
 		}
 
-		private void radGroupBox1_Click(object sender, EventArgs e)
-		{
 
-		}
 	}
 }

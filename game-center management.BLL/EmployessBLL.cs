@@ -30,7 +30,14 @@ namespace game_center_management.BLL
 
 		public int Modify(Employess model)
 		{
-			throw new System.NotImplementedException();
+			try
+			{
+				return empDal.Modify(model);
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
 		}
 
 		public int Remove(int ID)

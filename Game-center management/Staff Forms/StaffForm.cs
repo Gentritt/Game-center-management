@@ -27,9 +27,9 @@ namespace Game_center_management.Forms
 
 		private void btnAdd_Click(object sender, EventArgs e)
 		{
+			
 			CreateUserStaff createUserStaff = new CreateUserStaff();
 			createUserStaff.ShowDialog();
-
 		}
 
 		
@@ -86,8 +86,27 @@ namespace Game_center_management.Forms
 
 		private void btnEdit_Click(object sender, EventArgs e)
 		{
-			gridServiceStaff.Update();
-			
+
+			int index = this.gridServiceStaff.Rows.IndexOf((GridViewDataRowInfo) this.gridServiceStaff.CurrentRow);
+			if (index < 0) return;
+			BO.Employess employess = (BO.Employess)gridServiceStaff.Rows[index].DataBoundItem;
+
+			if (employess != null)
+			{
+				StaffEditForm edit = new StaffEditForm();
+				edit.txtEmployeeID.Text = this.gridServiceStaff.CurrentRow.Cells[0].Value.ToString();
+				edit.txtNameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[2].Value.ToString();
+				edit.txtLastNameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[3].Value.ToString();
+				edit.txtPersonalID.Text = this.gridServiceStaff.CurrentRow.Cells[1].Value.ToString();
+				edit.txtAddress.Text = this.gridServiceStaff.CurrentRow.Cells[4].Value.ToString();
+				edit.rdDatetimepicker.Text = this.gridServiceStaff.CurrentRow.Cells[7].Value.ToString();
+				edit.txtEmail.Text = this.gridServiceStaff.CurrentRow.Cells[6].Value.ToString();
+				edit.txtPhoneNumber.Text = this.gridServiceStaff.CurrentRow.Cells[8].Value.ToString();
+				edit.txtUsernameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[9].Value.ToString();
+				//edit.txtPasswordStaff.Text = this.gridServiceStaff.CurrentRow.Cells[10].Value.ToString();
+				edit.txtSalary.Text = this.gridServiceStaff.CurrentRow.Cells[5].Value.ToString();
+				edit.ShowDialog();
+			}
 		}
 
 		private void btnRefresh_Click(object sender, EventArgs e)

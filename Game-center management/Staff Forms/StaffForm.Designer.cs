@@ -202,7 +202,6 @@
 		private Telerik.WinControls.Themes.HighContrastBlackTheme highContrastBlackTheme1;
 		private Telerik.WinControls.Themes.TelerikMetroTouchTheme telerikMetroTouchTheme1;
 		private Telerik.WinControls.UI.RadLabel radLabel1;
-		private Telerik.WinControls.UI.RadButton btnAdd;
 		private Telerik.WinControls.UI.RadButton btnDelete;
 		private Telerik.WinControls.Themes.CrystalDarkTheme crystalDarkTheme1;
 		private System.Windows.Forms.BindingSource employessBLLBindingSource;
@@ -212,5 +211,6 @@
 		private Telerik.WinControls.UI.RadGridView gridServiceStaff;
 		private Telerik.WinControls.Themes.Office2013DarkTheme office2013DarkTheme1;
 		private Telerik.WinControls.Themes.MaterialTealTheme materialTealTheme1;
+		public Telerik.WinControls.UI.RadButton btnAdd;
 	}
 }
