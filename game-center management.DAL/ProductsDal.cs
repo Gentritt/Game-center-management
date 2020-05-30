@@ -52,8 +52,9 @@ namespace game_center_management.DAL
 			{
 				using (var con = SQLfunctions.GetConnection())
 				{
-					using (var cmd = SQLfunctions.Command(con, cmdText: "Edit_Products", CommandType.StoredProcedure))
+					using (var cmd = SQLfunctions.Command(con, cmdText: "Product_Edit", CommandType.StoredProcedure))
 					{
+						cmd.Parameters.AddWithValue("@productid", model.ProductID);
 						cmd.Parameters.AddWithValue("@productname", model.ProductName);
 						cmd.Parameters.AddWithValue("@productprice", model.Price);
 						cmd.Parameters.AddWithValue("@productquantity", model.Quantity);

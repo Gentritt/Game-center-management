@@ -88,6 +88,7 @@
 			this.radGroupBox1.TabIndex = 0;
 			this.radGroupBox1.Text = "Register Product";
 			this.radGroupBox1.ThemeName = "Crystal";
+			this.radGroupBox1.Click += new System.EventHandler(this.radGroupBox1_Click);
 			// 
 			// label3
 			// 

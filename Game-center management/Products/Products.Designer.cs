@@ -41,7 +41,7 @@
 			this.productBLLBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
 			this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
@@ -103,14 +103,14 @@
 			this.ProductsGRID.AllowUserToAddRows = false;
 			this.ProductsGRID.AllowUserToDeleteRows = false;
 			this.ProductsGRID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.ProductsGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.ProductsGRID.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Name,
-            this.Price,
-            this.Quantity});
+			this.ID,
+			this.Name,
+			this.ProductPrice,
+			this.Quantity});
 			this.ProductsGRID.Location = new System.Drawing.Point(44, 99);
 			this.ProductsGRID.Name = "ProductsGRID";
 			this.ProductsGRID.ReadOnly = true;
@@ -129,24 +129,28 @@
 			// 
 			// ID
 			// 
+			this.ID.DataPropertyName = "ProductID";
 			this.ID.HeaderText = "ID";
 			this.ID.Name = "ID";
 			this.ID.ReadOnly = true;
 			// 
 			// Name
 			// 
+			this.Name.DataPropertyName = "ProductName";
 			this.Name.HeaderText = "Name";
 			this.Name.Name = "Name";
 			this.Name.ReadOnly = true;
 			// 
-			// Price
+			// ProductPrice
 			// 
-			this.Price.HeaderText = "Price";
-			this.Price.Name = "Price";
-			this.Price.ReadOnly = true;
+			this.ProductPrice.DataPropertyName = "Price";
+			this.ProductPrice.HeaderText = "ProductPrice";
+			this.ProductPrice.Name = "ProductPrice";
+			this.ProductPrice.ReadOnly = true;
 			// 
 			// Quantity
 			// 
+			this.Quantity.DataPropertyName = "Quantity";
 			this.Quantity.HeaderText = "Quantity";
 			this.Quantity.Name = "Quantity";
 			this.Quantity.ReadOnly = true;
@@ -161,6 +165,7 @@
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnUpdate);
 			this.Controls.Add(this.btnADD);
+			this.Name.Name = "Products";
 			this.Text = "Products";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Products_Load);
@@ -187,7 +192,7 @@
 		public System.Windows.Forms.DataGridView ProductsGRID;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ProductPrice;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
 	}
 }

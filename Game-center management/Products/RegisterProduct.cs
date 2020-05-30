@@ -176,5 +176,10 @@ namespace Game_center_management.Products
 
 			//var result = _productBll.Modify(product);
 		}
+
+		private void radGroupBox1_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

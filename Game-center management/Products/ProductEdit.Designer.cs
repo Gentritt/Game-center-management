@@ -36,6 +36,13 @@
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.btnSave = new Telerik.WinControls.UI.RadButton();
 			this.btnCancel = new Telerik.WinControls.UI.RadButton();
+			this.txtUpdateDate = new Telerik.WinControls.UI.RadTextBox();
+			this.UpdateDate = new System.Windows.Forms.Label();
+			this.txtUpdateNo = new Telerik.WinControls.UI.RadTextBox();
+			this.txtUpdateBy = new Telerik.WinControls.UI.RadTextBox();
+			this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+			this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
+			this.txtProductID = new Telerik.WinControls.UI.RadTextBox();
 			((System.ComponentModel.ISupportInitialize)(this.txtQuantity)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPrice)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtProductName)).BeginInit();
@@ -43,6 +50,12 @@
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUpdateDate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUpdateNo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUpdateBy)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtProductID)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// txtQuantity
@@ -115,11 +128,75 @@
 			this.btnCancel.ThemeName = "Crystal";
 			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
+			// txtUpdateDate
+			// 
+			this.txtUpdateDate.Location = new System.Drawing.Point(129, 203);
+			this.txtUpdateDate.Name = "txtUpdateDate";
+			this.txtUpdateDate.Size = new System.Drawing.Size(133, 20);
+			this.txtUpdateDate.TabIndex = 30;
+			// 
+			// UpdateDate
+			// 
+			this.UpdateDate.AutoSize = true;
+			this.UpdateDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.UpdateDate.Location = new System.Drawing.Point(24, 201);
+			this.UpdateDate.Name = "UpdateDate";
+			this.UpdateDate.Size = new System.Drawing.Size(63, 17);
+			this.UpdateDate.TabIndex = 31;
+			this.UpdateDate.Text = "Quantity: ";
+			// 
+			// txtUpdateNo
+			// 
+			this.txtUpdateNo.Location = new System.Drawing.Point(129, 168);
+			this.txtUpdateNo.Name = "txtUpdateNo";
+			this.txtUpdateNo.Size = new System.Drawing.Size(133, 20);
+			this.txtUpdateNo.TabIndex = 28;
+			this.txtUpdateNo.Text = "                          ";
+			// 
+			// txtUpdateBy
+			// 
+			this.txtUpdateBy.Location = new System.Drawing.Point(129, 130);
+			this.txtUpdateBy.Name = "txtUpdateBy";
+			this.txtUpdateBy.Size = new System.Drawing.Size(133, 20);
+			this.txtUpdateBy.TabIndex = 26;
+			// 
+			// radLabel3
+			// 
+			this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.radLabel3.Location = new System.Drawing.Point(24, 166);
+			this.radLabel3.Name = "radLabel3";
+			this.radLabel3.Size = new System.Drawing.Size(68, 21);
+			this.radLabel3.TabIndex = 29;
+			this.radLabel3.Text = "UpdateNo";
+			// 
+			// radLabel4
+			// 
+			this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.radLabel4.Location = new System.Drawing.Point(24, 128);
+			this.radLabel4.Name = "radLabel4";
+			this.radLabel4.Size = new System.Drawing.Size(64, 21);
+			this.radLabel4.TabIndex = 27;
+			this.radLabel4.Text = "UpdateBy";
+			// 
+			// txtProductID
+			// 
+			this.txtProductID.Location = new System.Drawing.Point(129, 2);
+			this.txtProductID.Name = "txtProductID";
+			this.txtProductID.Size = new System.Drawing.Size(133, 20);
+			this.txtProductID.TabIndex = 32;
+			// 
 			// ProductEdit
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(336, 293);
+			this.Controls.Add(this.txtProductID);
+			this.Controls.Add(this.txtUpdateDate);
+			this.Controls.Add(this.UpdateDate);
+			this.Controls.Add(this.txtUpdateNo);
+			this.Controls.Add(this.txtUpdateBy);
+			this.Controls.Add(this.radLabel3);
+			this.Controls.Add(this.radLabel4);
 			this.Controls.Add(this.btnCancel);
 			this.Controls.Add(this.btnSave);
 			this.Controls.Add(this.txtQuantity);
@@ -138,6 +215,12 @@
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUpdateDate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUpdateNo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtUpdateBy)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtProductID)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -152,5 +235,12 @@
 		public Telerik.WinControls.UI.RadTextBox txtQuantity;
 		public Telerik.WinControls.UI.RadTextBox txtPrice;
 		public Telerik.WinControls.UI.RadTextBox txtProductName;
+		public Telerik.WinControls.UI.RadTextBox txtUpdateDate;
+		private System.Windows.Forms.Label UpdateDate;
+		public Telerik.WinControls.UI.RadTextBox txtUpdateNo;
+		public Telerik.WinControls.UI.RadTextBox txtUpdateBy;
+		private Telerik.WinControls.UI.RadLabel radLabel3;
+		private Telerik.WinControls.UI.RadLabel radLabel4;
+		public Telerik.WinControls.UI.RadTextBox txtProductID;
 	}
 }

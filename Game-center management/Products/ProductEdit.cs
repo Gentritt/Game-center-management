@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using game_center_management.BLL;
 using game_center_management;
+using Game_center_management.BO;
 using Game_center_management.Products;
 
 namespace Game_center_management.Products
@@ -38,10 +39,31 @@ namespace Game_center_management.Products
 		}
 		private void ProductEdit_Load(object sender, EventArgs e)
 		{
-	      LoadData();
+			txtUpdateBy.Text += UserSession.LoggedUser.Username;
+			txtUpdateBy.ReadOnly = true;
+			txtUpdateDate.Text += DateTime.Now;
+			txtUpdateDate.ReadOnly = true;
+			txtProductID.Visible = false;
+			txtProductID.ReadOnly = false;
+			//LoadData();
 		}
 		private void btnSave_Click(object sender, EventArgs e)
 		{
+			Product product = new Product();
+			product.ProductID = int.Parse(txtProductID.Text);
+			product.ProductName = txtProductName.Text;
+			product.Price = decimal.Parse(txtPrice.Text);
+			product.Quantity = int.Parse(txtQuantity.Text);
+			product.UpdatedBy = txtUpdateBy.Text;
+			product.UpdateDate = DateTime.Parse(txtUpdateDate.Text);
+			product.LastUpdate = int.Parse(txtUpdateNo.Text);
+		  var result  = bll.Modify(product);
+		  Products products = new Products();
+			 products.InitData();
+			 this.Close();
+
+		  
+			
 
 		}
 

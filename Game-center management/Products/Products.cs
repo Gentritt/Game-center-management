@@ -17,22 +17,21 @@ namespace Game_center_management.Products
 	public partial class Products : Form
 	{
 		private readonly ProductBLL productBll;
-		
+		Product product = new Product();
 
 		public Products()
 
 		{
-
-			
 			InitializeComponent();
-			ProductsGRID.AutoGenerateColumns = false;
+			
 			productBll = new ProductBLL();
-		
+			ProductsGRID.AutoGenerateColumns = false;
 
 		}
 
 		public void InitData()
 		{
+			
 			var result = productBll.GetAll();
 			ProductsGRID.DataSource = result;
 		}
@@ -91,6 +90,7 @@ namespace Game_center_management.Products
 			if (product != null)
 			{
 				ProductEdit edit = new ProductEdit();
+				edit.txtProductID.Text = this.ProductsGRID.CurrentRow.Cells[0].Value.ToString();
 				edit.txtProductName.Text = this.ProductsGRID.CurrentRow.Cells[1].Value.ToString();
 				edit.txtPrice.Text = this.ProductsGRID.CurrentRow.Cells[2].Value.ToString();
 				edit.txtQuantity.Text = this.ProductsGRID.CurrentRow.Cells[3].Value.ToString();
