@@ -103,7 +103,7 @@ namespace Game_center_management.Forms
 				edit.txtEmail.Text = this.gridServiceStaff.CurrentRow.Cells[6].Value.ToString();
 				edit.txtPhoneNumber.Text = this.gridServiceStaff.CurrentRow.Cells[8].Value.ToString();
 				edit.txtUsernameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[9].Value.ToString();
-				//edit.txtPasswordStaff.Text = this.gridServiceStaff.CurrentRow.Cells[10].Value.ToString();
+				edit.txtPasswordStaff.Text = this.gridServiceStaff.CurrentRow.Cells[10].Value.ToString();
 				edit.txtSalary.Text = this.gridServiceStaff.CurrentRow.Cells[5].Value.ToString();
 				edit.ShowDialog();
 			}

@@ -69,7 +69,7 @@ namespace game_center_management.DAL
 						cmd.Parameters.AddWithValue("@birthday", model.Birthday);
 						cmd.Parameters.AddWithValue("@email", model.Email);
 						cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
-						cmd.Parameters.AddWithValue("@usernmae", model.Username);
+						cmd.Parameters.AddWithValue("@username", model.Username);
 						cmd.Parameters.AddWithValue("@password", model.Password);
 						cmd.Parameters.AddWithValue("@salary", model.Salary);
 						cmd.Parameters.AddWithValue("@updateby", model.UpdatedBy);
@@ -201,6 +201,7 @@ namespace game_center_management.DAL
 			employess.Name = reader["Name"].ToString();
 			employess.LastName = reader["LastName"].ToString();
 			employess.Email = reader["Email"].ToString();
+			employess.Password = reader["Password"].ToString();
 			employess.Adress = reader["Adress"].ToString();
 			employess.Birthday = DateTime.Parse(reader["Birthday"].ToString());
 			if( reader["Salary"]!= DBNull.Value)

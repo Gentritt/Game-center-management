@@ -35,7 +35,7 @@ namespace Game_center_management.Staff_Forms
 		private void btnOK_Click(object sender, EventArgs e)
 		{
 			Employess employess = new Employess();
-
+			employess.ID = int.Parse(txtEmployeeID.Text); 
 			employess.Name = txtNameStaff.Text;
 			employess.LastName = txtLastNameStaff.Text;
 			employess.Username = txtUsernameStaff.Text;
