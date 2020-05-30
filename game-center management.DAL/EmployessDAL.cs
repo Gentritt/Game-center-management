@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Data.Sql;
 using Game_center_management.BO;
 using Game_center_management.BO.Interfaces;
+using System.Windows;
 
 
 namespace game_center_management.DAL
@@ -17,34 +18,55 @@ namespace game_center_management.DAL
 	public class EmployessDAL: IbaseCrud<Employess>,IConvertToObject<Employess>
 	{
 		//public string _connString = ConfigurationManager.ConnectionStrings["Game-Center"].ConnectionString;
-
+		
 
 		public int ADD(Employess model)
 		{
 			try
 			{
-				using (var con = SQLfunctions.GetConnection())
+				using (var conn = SQLfunctions.GetConnection())
 				{
-					using (var cmd = SQLfunctions.Command(con,cmdText:"Add_Employess",CommandType.StoredProcedure))
+					using (var command = SQLfunctions.Command(conn,cmdText: "UserName_Check", cmdType:CommandType.StoredProcedure))
 					{
-						cmd.Parameters.AddWithValue("@name", model.Name);
-						cmd.Parameters.AddWithValue("@personalid", model.PersonalID);
-						cmd.Parameters.AddWithValue("@lastname", model.LastName);
-						cmd.Parameters.AddWithValue("@birthday", model.Birthday);
-						cmd.Parameters.AddWithValue("@email", model.Email);
-						cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
-						cmd.Parameters.AddWithValue("@username", model.Username);
-						cmd.Parameters.AddWithValue("@password", model.Password);
-						cmd.Parameters.AddWithValue("@salary", model.Salary);
-						cmd.Parameters.AddWithValue("@insertBy", model.Insertby);
-						cmd.Parameters.AddWithValue("@insertDate", model.InserDate);
-						cmd.Parameters.AddWithValue("@address", model.Adress);
+						command.Parameters.AddWithValue("@username", model.Username);
 
-						int RowAffected = cmd.ExecuteNonQuery();
-						return RowAffected;
+						var result = command.ExecuteScalar();
+						if (result != null)
+						{
+							return -1;
+
+						}
+						else
+						{
+
+
+							using (var con = SQLfunctions.GetConnection())
+							{
+								using (var cmd = SQLfunctions.Command(con, cmdText: "Add_Employess", CommandType.StoredProcedure))
+								{
+									cmd.Parameters.AddWithValue("@name", model.Name);
+									cmd.Parameters.AddWithValue("@personalid", model.PersonalID);
+									cmd.Parameters.AddWithValue("@lastname", model.LastName);
+									cmd.Parameters.AddWithValue("@birthday", model.Birthday);
+									cmd.Parameters.AddWithValue("@email", model.Email);
+									cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
+									cmd.Parameters.AddWithValue("@username", model.Username);
+									cmd.Parameters.AddWithValue("@password", model.Password);
+									cmd.Parameters.AddWithValue("@salary", model.Salary);
+									cmd.Parameters.AddWithValue("@insertBy", model.Insertby);
+									cmd.Parameters.AddWithValue("@insertDate", model.InserDate);
+									cmd.Parameters.AddWithValue("@address", model.Adress);
+
+									int RowAffected = cmd.ExecuteNonQuery();
+									return RowAffected;
+								}
+
+							}
+						}
 					}
-
 				}
+
+
 
 			}
 			catch (Exception e)
