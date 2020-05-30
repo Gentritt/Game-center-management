@@ -10,6 +10,7 @@ using System.Data.Sql;
 using Game_center_management.BO;
 using Game_center_management.BO.Interfaces;
 using System.Windows;
+using System.Windows.Forms;
 
 
 namespace game_center_management.DAL
@@ -33,7 +34,8 @@ namespace game_center_management.DAL
 						var result = command.ExecuteScalar();
 						if (result != null)
 						{
-							return -1;
+							//return -1;
+							 MessageBox.Show("UserName Exits!",model.Username);
 
 						}
 						else
@@ -66,6 +68,7 @@ namespace game_center_management.DAL
 					}
 				}
 
+				return -1;
 
 
 			}
