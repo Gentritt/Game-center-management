@@ -35,8 +35,7 @@ namespace Game_center_management.Forms
 		
 		private void StaffForm_Load(object sender, EventArgs e)
 		{
-			//gridServiceStaff.AutoSizeColumnsMode = (GridViewAutoSizeColumnsMode) DataGridViewAutoSizeColumnsMode.ColumnHeader;
-
+			gridServiceStaff.AutoGenerateColumns = false;
 			FillGrid();
 
 		}
@@ -95,16 +94,16 @@ namespace Game_center_management.Forms
 			{
 				StaffEditForm edit = new StaffEditForm();
 				edit.txtEmployeeID.Text = this.gridServiceStaff.CurrentRow.Cells[0].Value.ToString();
-				edit.txtNameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[2].Value.ToString();
-				edit.txtLastNameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[3].Value.ToString();
-				edit.txtPersonalID.Text = this.gridServiceStaff.CurrentRow.Cells[1].Value.ToString();
+				edit.txtNameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[1].Value.ToString();
+				edit.txtLastNameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[2].Value.ToString();
+				edit.txtPersonalID.Text = this.gridServiceStaff.CurrentRow.Cells[3].Value.ToString();
 				edit.txtAddress.Text = this.gridServiceStaff.CurrentRow.Cells[4].Value.ToString();
-				edit.rdDatetimepicker.Text = this.gridServiceStaff.CurrentRow.Cells[7].Value.ToString();
+				edit.rdDatetimepicker.Text = this.gridServiceStaff.CurrentRow.Cells[5].Value.ToString();
 				edit.txtEmail.Text = this.gridServiceStaff.CurrentRow.Cells[6].Value.ToString();
-				edit.txtPhoneNumber.Text = this.gridServiceStaff.CurrentRow.Cells[8].Value.ToString();
-				edit.txtUsernameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[9].Value.ToString();
-				edit.txtPasswordStaff.Text = this.gridServiceStaff.CurrentRow.Cells[10].Value.ToString();
-				edit.txtSalary.Text = this.gridServiceStaff.CurrentRow.Cells[5].Value.ToString();
+				edit.txtPhoneNumber.Text = this.gridServiceStaff.CurrentRow.Cells[7].Value.ToString();
+				edit.txtUsernameStaff.Text = this.gridServiceStaff.CurrentRow.Cells[8].Value.ToString();
+				edit.txtPasswordStaff.Text = this.gridServiceStaff.CurrentRow.Cells[9].Value.ToString();
+				edit.txtSalary.Text = this.gridServiceStaff.CurrentRow.Cells[10].Value.ToString();
 				edit.ShowDialog();
 			}
 		}
@@ -114,6 +113,11 @@ namespace Game_center_management.Forms
 			this.Hide();
 			StaffForm stf = new StaffForm();
 			stf.ShowDialog();
+		}
+
+		private void pnlServicStaff_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }

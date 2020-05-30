@@ -57,9 +57,7 @@ namespace Game_center_management.Staff_Forms
 				sf.FillGrid();
 				this.Close();
 			}
-		
-
-
+			
 		}
 	}
 }

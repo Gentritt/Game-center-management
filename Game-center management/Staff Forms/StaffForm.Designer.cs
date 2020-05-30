@@ -30,6 +30,18 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffForm));
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
 			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
 			this.pnlServicStaff = new Telerik.WinControls.UI.RadPanel();
 			this.jImageButton1 = new JImageButton.JImageButton();
@@ -42,10 +54,10 @@
 			this.crystalDarkTheme1 = new Telerik.WinControls.Themes.CrystalDarkTheme();
 			this.btnEdit = new Telerik.WinControls.UI.RadButton();
 			this.btnRefresh = new Telerik.WinControls.UI.RadButton();
-			this.employessBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.gridServiceStaff = new Telerik.WinControls.UI.RadGridView();
 			this.office2013DarkTheme1 = new Telerik.WinControls.Themes.Office2013DarkTheme();
 			this.materialTealTheme1 = new Telerik.WinControls.Themes.MaterialTealTheme();
+			this.employessBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.pnlServicStaff)).BeginInit();
 			this.pnlServicStaff.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
@@ -53,9 +65,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff.MasterTemplate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pnlServicStaff
@@ -68,6 +80,7 @@
 			this.pnlServicStaff.Size = new System.Drawing.Size(865, 59);
 			this.pnlServicStaff.TabIndex = 0;
 			this.pnlServicStaff.ThemeName = "CrystalDark";
+			this.pnlServicStaff.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlServicStaff_Paint);
 			// 
 			// jImageButton1
 			// 
@@ -142,10 +155,6 @@
 			this.btnRefresh.ThemeName = "CrystalDark";
 			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
 			// 
-			// employessBLLBindingSource
-			// 
-			this.employessBLLBindingSource.DataSource = typeof(game_center_management.BLL.EmployessBLL);
-			// 
 			// gridServiceStaff
 			// 
 			this.gridServiceStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -158,12 +167,78 @@
 			this.gridServiceStaff.MasterTemplate.AllowAddNewRow = false;
 			this.gridServiceStaff.MasterTemplate.AllowDeleteRow = false;
 			this.gridServiceStaff.MasterTemplate.AllowSearchRow = true;
+			this.gridServiceStaff.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+			gridViewTextBoxColumn1.FieldName = "ID";
+			gridViewTextBoxColumn1.HeaderText = "ID";
+			gridViewTextBoxColumn1.Name = "ID";
+			gridViewTextBoxColumn1.Width = 68;
+			gridViewTextBoxColumn2.FieldName = "Name";
+			gridViewTextBoxColumn2.HeaderText = "Name";
+			gridViewTextBoxColumn2.Name = "Name";
+			gridViewTextBoxColumn2.Width = 68;
+			gridViewTextBoxColumn3.FieldName = "LastName";
+			gridViewTextBoxColumn3.HeaderText = "LastName";
+			gridViewTextBoxColumn3.Name = "LastName";
+			gridViewTextBoxColumn3.Width = 68;
+			gridViewTextBoxColumn4.FieldName = "PersonalID";
+			gridViewTextBoxColumn4.HeaderText = "PersonalID";
+			gridViewTextBoxColumn4.Name = "PersonalID";
+			gridViewTextBoxColumn4.Width = 68;
+			gridViewTextBoxColumn5.FieldName = "Adress";
+			gridViewTextBoxColumn5.HeaderText = "Adress";
+			gridViewTextBoxColumn5.Name = "Adress";
+			gridViewTextBoxColumn5.Width = 68;
+			gridViewTextBoxColumn6.FieldName = "Birthday";
+			gridViewTextBoxColumn6.HeaderText = "Birthday";
+			gridViewTextBoxColumn6.Name = "Birthday";
+			gridViewTextBoxColumn6.Width = 68;
+			gridViewTextBoxColumn7.FieldName = "Email";
+			gridViewTextBoxColumn7.HeaderText = "Email";
+			gridViewTextBoxColumn7.Name = "Email";
+			gridViewTextBoxColumn7.Width = 68;
+			gridViewTextBoxColumn8.FieldName = "PhoneNumber";
+			gridViewTextBoxColumn8.HeaderText = "PhoneNumber";
+			gridViewTextBoxColumn8.Name = "PhoneNumber";
+			gridViewTextBoxColumn8.Width = 68;
+			gridViewTextBoxColumn9.FieldName = "UserName";
+			gridViewTextBoxColumn9.HeaderText = "Username";
+			gridViewTextBoxColumn9.Name = "Username";
+			gridViewTextBoxColumn9.Width = 68;
+			gridViewTextBoxColumn10.FieldName = "Password";
+			gridViewTextBoxColumn10.HeaderText = "Password";
+			gridViewTextBoxColumn10.Name = "Password";
+			gridViewTextBoxColumn10.Width = 68;
+			gridViewTextBoxColumn11.FieldName = "Salary";
+			gridViewTextBoxColumn11.HeaderText = "Salary";
+			gridViewTextBoxColumn11.Name = "Salary";
+			gridViewTextBoxColumn11.Width = 68;
+			gridViewTextBoxColumn12.FieldName = "IsActive";
+			gridViewTextBoxColumn12.HeaderText = "IsActive";
+			gridViewTextBoxColumn12.Name = "Is Active";
+			gridViewTextBoxColumn12.Width = 62;
+			this.gridServiceStaff.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8,
+            gridViewTextBoxColumn9,
+            gridViewTextBoxColumn10,
+            gridViewTextBoxColumn11,
+            gridViewTextBoxColumn12});
 			this.gridServiceStaff.MasterTemplate.ViewDefinition = tableViewDefinition1;
 			this.gridServiceStaff.Name = "gridServiceStaff";
 			this.gridServiceStaff.ReadOnly = true;
 			this.gridServiceStaff.Size = new System.Drawing.Size(832, 367);
 			this.gridServiceStaff.TabIndex = 8;
 			this.gridServiceStaff.ThemeName = "Office2013Dark";
+			// 
+			// employessBLLBindingSource
+			// 
+			this.employessBLLBindingSource.DataSource = typeof(game_center_management.BLL.EmployessBLL);
 			// 
 			// StaffForm
 			// 
@@ -188,9 +263,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridServiceStaff)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.employessBLLBindingSource)).EndInit();
 			this.ResumeLayout(false);
 
 		}
