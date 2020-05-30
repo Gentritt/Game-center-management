@@ -14,26 +14,27 @@ using Product = Game_center_management.BO.Product;
 
 namespace Game_center_management.Products
 {
-	public partial class Product : Form
+	public partial class Products : Form
 	{
 		private readonly ProductBLL productBll;
+		
 
-		public Product()
+		public Products()
 
 		{
 
 			
 			InitializeComponent();
+			ProductsGRID.AutoGenerateColumns = false;
 			productBll = new ProductBLL();
+		
 
 		}
-		
+
 		public void InitData()
 		{
 			var result = productBll.GetAll();
 			ProductsGRID.DataSource = result;
-
-
 		}
 		private void Products_Load(object sender, EventArgs e)
 		{
@@ -65,10 +66,10 @@ namespace Game_center_management.Products
 			}
 			else if (dialogResult == DialogResult.No)
 			{
-
+				
 				
 				this.Hide();
-				Product  products = new Product();
+				Products  products = new Products();
 				products.ShowDialog();
 			}
 		
@@ -78,7 +79,7 @@ namespace Game_center_management.Products
 		private void btnRefresh_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-			Product products = new Product();
+			Products products = new Products();
 			products.ShowDialog();
 		}
 
@@ -89,18 +90,22 @@ namespace Game_center_management.Products
 			BO.Product product = (BO.Product)ProductsGRID.Rows[index].DataBoundItem;
 			if (product != null)
 			{
-
-				productBll.GetByID(product.ProductID);
 				ProductEdit edit = new ProductEdit();
+				edit.txtProductName.Text = this.ProductsGRID.CurrentRow.Cells[1].Value.ToString();
+				edit.txtPrice.Text = this.ProductsGRID.CurrentRow.Cells[2].Value.ToString();
+				edit.txtQuantity.Text = this.ProductsGRID.CurrentRow.Cells[3].Value.ToString();
 				edit.ShowDialog();
-
 			}
+		}
 
-
-		
-
+		private void ProductsGRID_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
 
 		}
 
+		private void ProductsGRID_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+		{
+			
+		}
 	}
 }

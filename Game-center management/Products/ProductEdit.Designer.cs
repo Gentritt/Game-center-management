@@ -28,10 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.UpdateDate = new System.Windows.Forms.Label();
-			this.txtUpdateDate = new Telerik.WinControls.UI.RadTextBox();
-			this.txtUpdateBy = new Telerik.WinControls.UI.RadTextBox();
-			this.label2 = new System.Windows.Forms.Label();
 			this.txtQuantity = new Telerik.WinControls.UI.RadTextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.txtPrice = new Telerik.WinControls.UI.RadTextBox();
@@ -40,9 +36,6 @@
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.btnSave = new Telerik.WinControls.UI.RadButton();
 			this.btnCancel = new Telerik.WinControls.UI.RadButton();
-			this.txtProductID = new System.Windows.Forms.TextBox();
-			((System.ComponentModel.ISupportInitialize)(this.txtUpdateDate)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtUpdateBy)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtQuantity)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPrice)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtProductName)).BeginInit();
@@ -51,40 +44,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// UpdateDate
-			// 
-			this.UpdateDate.AutoSize = true;
-			this.UpdateDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.UpdateDate.Location = new System.Drawing.Point(24, 177);
-			this.UpdateDate.Name = "UpdateDate";
-			this.UpdateDate.Size = new System.Drawing.Size(78, 17);
-			this.UpdateDate.TabIndex = 23;
-			this.UpdateDate.Text = "UpdateDate";
-			// 
-			// txtUpdateDate
-			// 
-			this.txtUpdateDate.Location = new System.Drawing.Point(129, 176);
-			this.txtUpdateDate.Name = "txtUpdateDate";
-			this.txtUpdateDate.Size = new System.Drawing.Size(133, 20);
-			this.txtUpdateDate.TabIndex = 20;
-			// 
-			// txtUpdateBy
-			// 
-			this.txtUpdateBy.Location = new System.Drawing.Point(129, 136);
-			this.txtUpdateBy.Name = "txtUpdateBy";
-			this.txtUpdateBy.Size = new System.Drawing.Size(133, 20);
-			this.txtUpdateBy.TabIndex = 19;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(24, 134);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(72, 17);
-			this.label2.TabIndex = 22;
-			this.label2.Text = "UpdateBY: ";
 			// 
 			// txtQuantity
 			// 
@@ -156,25 +115,13 @@
 			this.btnCancel.ThemeName = "Crystal";
 			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
-			// txtProductID
-			// 
-			this.txtProductID.Location = new System.Drawing.Point(129, 203);
-			this.txtProductID.Name = "txtProductID";
-			this.txtProductID.Size = new System.Drawing.Size(100, 20);
-			this.txtProductID.TabIndex = 26;
-			// 
 			// ProductEdit
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(336, 293);
-			this.Controls.Add(this.txtProductID);
 			this.Controls.Add(this.btnCancel);
 			this.Controls.Add(this.btnSave);
-			this.Controls.Add(this.UpdateDate);
-			this.Controls.Add(this.txtUpdateDate);
-			this.Controls.Add(this.txtUpdateBy);
-			this.Controls.Add(this.label2);
 			this.Controls.Add(this.txtQuantity);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.txtPrice);
@@ -184,8 +131,6 @@
 			this.Name = "ProductEdit";
 			this.Text = "ProductEditcs";
 			this.Load += new System.EventHandler(this.ProductEdit_Load);
-			((System.ComponentModel.ISupportInitialize)(this.txtUpdateDate)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtUpdateBy)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtQuantity)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPrice)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtProductName)).EndInit();
@@ -199,19 +144,13 @@
 		}
 
 		#endregion
-
-		private System.Windows.Forms.Label UpdateDate;
-		private Telerik.WinControls.UI.RadTextBox txtUpdateDate;
-		private Telerik.WinControls.UI.RadTextBox txtUpdateBy;
-		private System.Windows.Forms.Label label2;
-		private Telerik.WinControls.UI.RadTextBox txtQuantity;
 		private System.Windows.Forms.Label label4;
-		private Telerik.WinControls.UI.RadTextBox txtPrice;
-		private Telerik.WinControls.UI.RadTextBox txtProductName;
 		private Telerik.WinControls.UI.RadLabel radLabel2;
 		private Telerik.WinControls.UI.RadLabel radLabel1;
 		private Telerik.WinControls.UI.RadButton btnSave;
 		private Telerik.WinControls.UI.RadButton btnCancel;
-		private System.Windows.Forms.TextBox txtProductID;
+		public Telerik.WinControls.UI.RadTextBox txtQuantity;
+		public Telerik.WinControls.UI.RadTextBox txtPrice;
+		public Telerik.WinControls.UI.RadTextBox txtProductName;
 	}
 }

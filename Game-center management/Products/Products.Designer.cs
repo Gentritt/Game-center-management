@@ -1,6 +1,6 @@
 ﻿namespace Game_center_management.Products
 {
-	partial class Product
+	partial class Products
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
 			this.btnADD = new Telerik.WinControls.UI.RadButton();
 			this.btnUpdate = new Telerik.WinControls.UI.RadButton();
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
@@ -39,6 +39,10 @@
 			this.ProductsGRID = new System.Windows.Forms.DataGridView();
 			this.productBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.productBLLBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+			this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.btnADD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
@@ -102,11 +106,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.ProductsGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.ProductsGRID.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Name,
+            this.Price,
+            this.Quantity});
 			this.ProductsGRID.Location = new System.Drawing.Point(44, 99);
 			this.ProductsGRID.Name = "ProductsGRID";
 			this.ProductsGRID.ReadOnly = true;
 			this.ProductsGRID.Size = new System.Drawing.Size(595, 366);
 			this.ProductsGRID.TabIndex = 6;
+			this.ProductsGRID.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsGRID_CellContentClick);
+			this.ProductsGRID.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsGRID_CellDoubleClick);
 			// 
 			// productBLLBindingSource
 			// 
@@ -116,7 +127,31 @@
 			// 
 			this.productBLLBindingSource1.DataSource = typeof(game_center_management.BLL.ProductBLL);
 			// 
-			// Product
+			// ID
+			// 
+			this.ID.HeaderText = "ID";
+			this.ID.Name = "ID";
+			this.ID.ReadOnly = true;
+			// 
+			// Name
+			// 
+			this.Name.HeaderText = "Name";
+			this.Name.Name = "Name";
+			this.Name.ReadOnly = true;
+			// 
+			// Price
+			// 
+			this.Price.HeaderText = "Price";
+			this.Price.Name = "Price";
+			this.Price.ReadOnly = true;
+			// 
+			// Quantity
+			// 
+			this.Quantity.HeaderText = "Quantity";
+			this.Quantity.Name = "Quantity";
+			this.Quantity.ReadOnly = true;
+			// 
+			// Products
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,7 +161,6 @@
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnUpdate);
 			this.Controls.Add(this.btnADD);
-			this.Name = "Product";
 			this.Text = "Products";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Products_Load);
@@ -151,5 +185,9 @@
 		private System.Windows.Forms.BindingSource productBLLBindingSource1;
 		private Telerik.WinControls.Themes.CrystalTheme crystalTheme1;
 		public System.Windows.Forms.DataGridView ProductsGRID;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
 	}
 }

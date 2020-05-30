@@ -110,7 +110,7 @@ namespace Game_center_management.Products
 				if (result != 0)
 				{
 					MessageBox.Show("Data inserted succesfully!!!");
-					Product products = new Product();
+					Products products = new Products();
 					products.InitData();
 					this.Close();
 

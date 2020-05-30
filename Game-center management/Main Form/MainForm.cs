@@ -72,7 +72,7 @@ namespace Game_center_management
 
 		private void menuRegjistrimiProduktev_Click(object sender, EventArgs e)
 		{
-			Products.Product products = new Products.Product();
+			Products.Products products = new Products.Products();
 			products.ShowDialog();
 
 		}
