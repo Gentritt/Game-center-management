@@ -74,20 +74,28 @@
 			// 
 			// gridManageComputers
 			// 
+			this.gridManageComputers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.gridManageComputers.Location = new System.Drawing.Point(0, 62);
 			// 
 			// 
 			// 
 			this.gridManageComputers.MasterTemplate.AllowAddNewRow = false;
 			this.gridManageComputers.MasterTemplate.AllowColumnReorder = false;
+			this.gridManageComputers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
 			gridViewTextBoxColumn1.HeaderText = "ID";
 			gridViewTextBoxColumn1.Name = "ID";
+			gridViewTextBoxColumn1.Width = 140;
 			gridViewTextBoxColumn2.HeaderText = "PartID";
 			gridViewTextBoxColumn2.Name = "PartID";
+			gridViewTextBoxColumn2.Width = 140;
 			gridViewTextBoxColumn3.HeaderText = "Price Per Hour";
 			gridViewTextBoxColumn3.Name = "PricePerHour";
+			gridViewTextBoxColumn3.Width = 140;
 			gridViewTextBoxColumn4.HeaderText = "IsActive";
 			gridViewTextBoxColumn4.Name = "IsActive";
+			gridViewTextBoxColumn4.Width = 138;
 			this.gridManageComputers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,

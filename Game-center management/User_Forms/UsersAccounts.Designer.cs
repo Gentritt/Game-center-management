@@ -29,6 +29,19 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserAccounts));
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
 			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.jImageButton1 = new JImageButton.JImageButton();
@@ -57,7 +70,7 @@
 			this.radPanel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.radPanel1.Location = new System.Drawing.Point(0, 0);
 			this.radPanel1.Name = "radPanel1";
-			this.radPanel1.Size = new System.Drawing.Size(802, 59);
+			this.radPanel1.Size = new System.Drawing.Size(824, 59);
 			this.radPanel1.TabIndex = 0;
 			this.radPanel1.ThemeName = "CrystalDark";
 			// 
@@ -109,6 +122,7 @@
 			this.btnEditAccount.TabIndex = 3;
 			this.btnEditAccount.Text = "EDIT";
 			this.btnEditAccount.ThemeName = "CrystalDark";
+			this.btnEditAccount.Click += new System.EventHandler(this.btnEditAccount_Click);
 			// 
 			// btnDeleteAccount
 			// 
@@ -137,23 +151,83 @@
 			this.gridUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.gridUsers.Location = new System.Drawing.Point(12, 114);
+			this.gridUsers.Location = new System.Drawing.Point(13, 144);
 			// 
 			// 
 			// 
 			this.gridUsers.MasterTemplate.AllowAddNewRow = false;
 			this.gridUsers.MasterTemplate.AllowColumnReorder = false;
-			this.gridUsers.MasterTemplate.AllowSearchRow = true;
 			this.gridUsers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+			gridViewTextBoxColumn1.FieldName = "ID";
+			gridViewTextBoxColumn1.HeaderText = "ClientID";
+			gridViewTextBoxColumn1.Name = "ClientID";
+			gridViewTextBoxColumn1.Width = 60;
+			gridViewTextBoxColumn2.FieldName = "IsGuest";
+			gridViewTextBoxColumn2.HeaderText = "IsGuest";
+			gridViewTextBoxColumn2.Name = "IsGuest";
+			gridViewTextBoxColumn2.Width = 60;
+			gridViewTextBoxColumn3.FieldName = "Name";
+			gridViewTextBoxColumn3.HeaderText = "Name";
+			gridViewTextBoxColumn3.Name = "Name";
+			gridViewTextBoxColumn3.Width = 60;
+			gridViewTextBoxColumn4.FieldName = "LastName";
+			gridViewTextBoxColumn4.HeaderText = "Lastname";
+			gridViewTextBoxColumn4.Name = "LastName";
+			gridViewTextBoxColumn4.Width = 60;
+			gridViewTextBoxColumn5.FieldName = "PersonalID";
+			gridViewTextBoxColumn5.HeaderText = "PersID";
+			gridViewTextBoxColumn5.Name = "PersonalID";
+			gridViewTextBoxColumn5.Width = 60;
+			gridViewTextBoxColumn6.FieldName = "Address";
+			gridViewTextBoxColumn6.HeaderText = "Adress";
+			gridViewTextBoxColumn6.Name = "Adress";
+			gridViewTextBoxColumn6.Width = 60;
+			gridViewTextBoxColumn7.FieldName = "Birthday";
+			gridViewTextBoxColumn7.HeaderText = "Birthday";
+			gridViewTextBoxColumn7.Name = "Birthday";
+			gridViewTextBoxColumn7.Width = 60;
+			gridViewTextBoxColumn8.FieldName = "PhoneNumber";
+			gridViewTextBoxColumn8.HeaderText = "Phone.N";
+			gridViewTextBoxColumn8.Name = "PhoneNu";
+			gridViewTextBoxColumn8.Width = 60;
+			gridViewTextBoxColumn9.FieldName = "Email";
+			gridViewTextBoxColumn9.HeaderText = "Email";
+			gridViewTextBoxColumn9.Name = "Email";
+			gridViewTextBoxColumn9.Width = 60;
+			gridViewTextBoxColumn10.FieldName = "UserName";
+			gridViewTextBoxColumn10.HeaderText = "Username";
+			gridViewTextBoxColumn10.Name = "UserName";
+			gridViewTextBoxColumn10.Width = 60;
+			gridViewTextBoxColumn11.FieldName = "Password";
+			gridViewTextBoxColumn11.HeaderText = "Password";
+			gridViewTextBoxColumn11.Name = "Password";
+			gridViewTextBoxColumn11.Width = 60;
+			gridViewTextBoxColumn12.FieldName = "Balance";
+			gridViewTextBoxColumn12.HeaderText = "Balance";
+			gridViewTextBoxColumn12.Name = "Balance";
+			gridViewTextBoxColumn12.Width = 60;
+			gridViewTextBoxColumn13.FieldName = "IsActive";
+			gridViewTextBoxColumn13.HeaderText = "IsActive";
+			gridViewTextBoxColumn13.Name = "IsActive";
+			gridViewTextBoxColumn13.Width = 60;
+			this.gridUsers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8,
+            gridViewTextBoxColumn9,
+            gridViewTextBoxColumn10,
+            gridViewTextBoxColumn11,
+            gridViewTextBoxColumn12,
+            gridViewTextBoxColumn13});
 			this.gridUsers.MasterTemplate.ViewDefinition = tableViewDefinition1;
 			this.gridUsers.Name = "gridUsers";
 			this.gridUsers.ReadOnly = true;
-			// 
-			// 
-			// 
-			this.gridUsers.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
-			this.gridUsers.RootElement.BorderHighlightColor = System.Drawing.Color.Gray;
-			this.gridUsers.Size = new System.Drawing.Size(778, 354);
+			this.gridUsers.Size = new System.Drawing.Size(812, 348);
 			this.gridUsers.TabIndex = 7;
 			this.gridUsers.ThemeName = "CrystalDark";
 			// 
@@ -161,7 +235,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(802, 480);
+			this.ClientSize = new System.Drawing.Size(824, 504);
 			this.Controls.Add(this.gridUsers);
 			this.Controls.Add(this.btnRefresh);
 			this.Controls.Add(this.btnDeleteAccount);

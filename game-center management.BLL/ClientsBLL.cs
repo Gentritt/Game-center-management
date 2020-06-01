@@ -25,7 +25,7 @@ namespace game_center_management.BLL
 
 		public int Modify(Clients model)
 		{
-			throw new NotImplementedException();
+			return clientsDal.Modify(model);
 		}
 
 		public int Remove(int ID)

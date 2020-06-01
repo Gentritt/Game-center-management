@@ -61,7 +61,35 @@ namespace game_center_management.DAL
 
 		public int Modify(Clients model)
 		{
-			throw new System.NotImplementedException();
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Clients_Edit",cmdType:CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@clientid", model.ID);
+						cmd.Parameters.AddWithValue("@name", model.Name);
+						cmd.Parameters.AddWithValue("@lastname", model.LastName);
+						cmd.Parameters.AddWithValue("@personalid", model.PersonalID);
+						cmd.Parameters.AddWithValue("@address", model.Address);
+						cmd.Parameters.AddWithValue("@birthday", model.Birthday);
+						cmd.Parameters.AddWithValue("@email", model.Email);
+						cmd.Parameters.AddWithValue("@phonenumber", model.PhoneNumber);
+						cmd.Parameters.AddWithValue("@username", model.UserName);
+						cmd.Parameters.AddWithValue("@password", model.Password);
+						cmd.Parameters.AddWithValue("@balance", model.Balance);
+						cmd.Parameters.AddWithValue("@updateby", model.UpdatedBy);
+						cmd.Parameters.AddWithValue("@updatedate", model.UpdateDate);
+						cmd.Parameters.AddWithValue("@updateno", model.LastUpdate);
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+					}
+				}
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
 		}
 
 		public int Remove(int ID)
@@ -140,6 +168,7 @@ namespace game_center_management.DAL
 			clients.ID = int.Parse(reader["ClientID"].ToString());
 			clients.Name = reader["Name"].ToString();
 			clients.LastName = reader["LastName"].ToString();
+			clients.Password = reader["Password"].ToString();
 			clients.Address = reader["Adress"].ToString();
 			clients.Birthday = (DateTime) reader["Birthday"];
 			clients.PhoneNumber = reader["PhoneNumber"].ToString();

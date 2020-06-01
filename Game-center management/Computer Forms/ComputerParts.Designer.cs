@@ -29,6 +29,21 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ComputerParts));
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
 			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
@@ -54,7 +69,7 @@
 			this.radPanel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.radPanel1.Location = new System.Drawing.Point(0, 0);
 			this.radPanel1.Name = "radPanel1";
-			this.radPanel1.Size = new System.Drawing.Size(714, 50);
+			this.radPanel1.Size = new System.Drawing.Size(1222, 50);
 			this.radPanel1.TabIndex = 0;
 			this.radPanel1.ThemeName = "CrystalDark";
 			// 
@@ -116,22 +131,93 @@
 			this.gridComputerParts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.gridComputerParts.AutoSizeRows = true;
-			this.gridComputerParts.Location = new System.Drawing.Point(0, 125);
+			this.gridComputerParts.Location = new System.Drawing.Point(12, 133);
 			// 
 			// 
 			// 
 			this.gridComputerParts.MasterTemplate.AllowAddNewRow = false;
 			this.gridComputerParts.MasterTemplate.AllowColumnReorder = false;
-			this.gridComputerParts.MasterTemplate.AllowDeleteRow = false;
-			this.gridComputerParts.MasterTemplate.AllowSearchRow = true;
 			this.gridComputerParts.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-			this.gridComputerParts.MasterTemplate.HorizontalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
-			this.gridComputerParts.MasterTemplate.VerticalScrollState = Telerik.WinControls.UI.ScrollState.AlwaysShow;
+			gridViewTextBoxColumn1.FieldName = "PartID";
+			gridViewTextBoxColumn1.HeaderText = "ID";
+			gridViewTextBoxColumn1.Name = "ID";
+			gridViewTextBoxColumn1.Width = 78;
+			gridViewTextBoxColumn2.FieldName = "ComputerCase";
+			gridViewTextBoxColumn2.HeaderText = "Case";
+			gridViewTextBoxColumn2.Name = "Case";
+			gridViewTextBoxColumn2.Width = 78;
+			gridViewTextBoxColumn3.FieldName = "ComputerMouse";
+			gridViewTextBoxColumn3.HeaderText = "Mouse";
+			gridViewTextBoxColumn3.Name = "Mouse";
+			gridViewTextBoxColumn3.Width = 78;
+			gridViewTextBoxColumn4.FieldName = "ComputerKeyboard";
+			gridViewTextBoxColumn4.HeaderText = "Keyboard";
+			gridViewTextBoxColumn4.Name = "Keyboard";
+			gridViewTextBoxColumn4.Width = 78;
+			gridViewTextBoxColumn5.FieldName = "ComputerHeadSet";
+			gridViewTextBoxColumn5.HeaderText = "HeadSets";
+			gridViewTextBoxColumn5.Name = "HeadSets";
+			gridViewTextBoxColumn5.Width = 78;
+			gridViewTextBoxColumn6.FieldName = "ComputerMonitor";
+			gridViewTextBoxColumn6.HeaderText = "Monitor";
+			gridViewTextBoxColumn6.Name = "Monitor";
+			gridViewTextBoxColumn6.Width = 78;
+			gridViewTextBoxColumn7.FieldName = "ComputerMousePad";
+			gridViewTextBoxColumn7.HeaderText = "MousePad";
+			gridViewTextBoxColumn7.Name = "MousePad";
+			gridViewTextBoxColumn7.Width = 78;
+			gridViewTextBoxColumn8.FieldName = "ComputerCPU";
+			gridViewTextBoxColumn8.HeaderText = "Processor";
+			gridViewTextBoxColumn8.Name = "Processor";
+			gridViewTextBoxColumn8.Width = 78;
+			gridViewTextBoxColumn9.FieldName = "ComputerGraphicCard";
+			gridViewTextBoxColumn9.HeaderText = "Graphic Card";
+			gridViewTextBoxColumn9.Name = "GraphicCard";
+			gridViewTextBoxColumn9.Width = 78;
+			gridViewTextBoxColumn10.FieldName = "ComputerMotherBoard";
+			gridViewTextBoxColumn10.HeaderText = "Motherboard";
+			gridViewTextBoxColumn10.Name = "Motherboard";
+			gridViewTextBoxColumn10.Width = 78;
+			gridViewTextBoxColumn11.FieldName = "ComputerRAM";
+			gridViewTextBoxColumn11.HeaderText = "RAM";
+			gridViewTextBoxColumn11.Name = "RAM";
+			gridViewTextBoxColumn11.Width = 78;
+			gridViewTextBoxColumn12.FieldName = "ComputerSSD";
+			gridViewTextBoxColumn12.HeaderText = "SSD";
+			gridViewTextBoxColumn12.Name = "SSD";
+			gridViewTextBoxColumn12.Width = 78;
+			gridViewTextBoxColumn13.FieldName = "ComputerHDD";
+			gridViewTextBoxColumn13.HeaderText = "HDD";
+			gridViewTextBoxColumn13.Name = "HDD";
+			gridViewTextBoxColumn13.Width = 78;
+			gridViewTextBoxColumn14.FieldName = "ComputerPSU";
+			gridViewTextBoxColumn14.HeaderText = "PSU";
+			gridViewTextBoxColumn14.Name = "PSU";
+			gridViewTextBoxColumn14.Width = 78;
+			gridViewTextBoxColumn15.FieldName = "ComputerCooler";
+			gridViewTextBoxColumn15.HeaderText = "Cooler";
+			gridViewTextBoxColumn15.Name = "Cooler";
+			gridViewTextBoxColumn15.Width = 74;
+			this.gridComputerParts.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8,
+            gridViewTextBoxColumn9,
+            gridViewTextBoxColumn10,
+            gridViewTextBoxColumn11,
+            gridViewTextBoxColumn12,
+            gridViewTextBoxColumn13,
+            gridViewTextBoxColumn14,
+            gridViewTextBoxColumn15});
 			this.gridComputerParts.MasterTemplate.ViewDefinition = tableViewDefinition1;
 			this.gridComputerParts.Name = "gridComputerParts";
 			this.gridComputerParts.ReadOnly = true;
-			this.gridComputerParts.Size = new System.Drawing.Size(714, 345);
+			this.gridComputerParts.Size = new System.Drawing.Size(1198, 378);
 			this.gridComputerParts.TabIndex = 7;
 			this.gridComputerParts.ThemeName = "CrystalDark";
 			// 
@@ -139,7 +225,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(714, 468);
+			this.ClientSize = new System.Drawing.Size(1222, 508);
 			this.Controls.Add(this.gridComputerParts);
 			this.Controls.Add(this.btnRefresh);
 			this.Controls.Add(this.btnADD);

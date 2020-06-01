@@ -203,7 +203,7 @@
 			this.radMenu1.ProcessKeyboard = false;
 			this.radMenu1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.radMenu1.RollOverItemSelection = true;
-			this.radMenu1.Size = new System.Drawing.Size(133, 80);
+			this.radMenu1.Size = new System.Drawing.Size(154, 80);
 			this.radMenu1.TabIndex = 0;
 			this.radMenu1.ThemeName = "Crystal";
 			this.radMenu1.VerticalAlignmentCorrectionMode = Telerik.WinControls.UI.AlignmentCorrectionMode.SnapToOuterEdges;

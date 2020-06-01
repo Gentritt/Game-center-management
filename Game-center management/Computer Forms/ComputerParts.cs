@@ -20,6 +20,7 @@ namespace Game_center_management.Computer_Forms
 			InitializeComponent();
 			
 			_computerPartsBll = new ComputerPartsBLL();
+			gridComputerParts.AutoGenerateColumns = false;
 		}
 
 		public void InitData()
@@ -32,6 +33,7 @@ namespace Game_center_management.Computer_Forms
 		private void ComputerParts_Load(object sender, EventArgs e)
 		{
 			InitData();
+
 		}
 
 		private void btnDelete_Click(object sender, EventArgs e)
