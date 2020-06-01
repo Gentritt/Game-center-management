@@ -50,5 +50,10 @@ namespace game_center_management.BLL
 		{
 			return empDal.GetAll();
 		}
+
+		//public bool UserNameCheck(Employess model)
+		//{
+		//	return empDal.UserNameCheck(model);
+		//}
 	}
 }

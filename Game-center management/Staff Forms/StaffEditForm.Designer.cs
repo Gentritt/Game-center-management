@@ -29,6 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
+			this.txtEmployeeID = new System.Windows.Forms.TextBox();
+			this.txtUpdateNo = new Telerik.WinControls.UI.RadTextBox();
+			this.label5 = new System.Windows.Forms.Label();
 			this.rdDatetimepicker = new Telerik.WinControls.UI.RadDateTimePicker();
 			this.txtUpdateDate = new Telerik.WinControls.UI.RadTextBox();
 			this.txtUpdateBy = new Telerik.WinControls.UI.RadTextBox();
@@ -55,13 +58,11 @@
 			this.txtUsernameStaff = new Telerik.WinControls.UI.RadTextBox();
 			this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-			this.txtUpdateNo = new Telerik.WinControls.UI.RadTextBox();
-			this.label5 = new System.Windows.Forms.Label();
-			this.txtEmployeeID = new System.Windows.Forms.TextBox();
 			this.btnCancelStaff = new Telerik.WinControls.UI.RadButton();
 			this.btnOK = new Telerik.WinControls.UI.RadButton();
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
 			this.radGroupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txtUpdateNo)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.rdDatetimepicker)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUpdateDate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUpdateBy)).BeginInit();
@@ -84,7 +85,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.txtUsernameStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtUpdateNo)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancelStaff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnOK)).BeginInit();
 			this.SuspendLayout();
@@ -123,6 +123,32 @@
 			this.radGroupBox2.TabIndex = 20;
 			this.radGroupBox2.Text = "Employe Information";
 			this.radGroupBox2.ThemeName = "CrystalDark";
+			// 
+			// txtEmployeeID
+			// 
+			this.txtEmployeeID.Location = new System.Drawing.Point(99, 289);
+			this.txtEmployeeID.Name = "txtEmployeeID";
+			this.txtEmployeeID.ReadOnly = true;
+			this.txtEmployeeID.Size = new System.Drawing.Size(100, 20);
+			this.txtEmployeeID.TabIndex = 26;
+			// 
+			// txtUpdateNo
+			// 
+			this.txtUpdateNo.Location = new System.Drawing.Point(428, 290);
+			this.txtUpdateNo.Name = "txtUpdateNo";
+			this.txtUpdateNo.Size = new System.Drawing.Size(167, 24);
+			this.txtUpdateNo.TabIndex = 25;
+			this.txtUpdateNo.ThemeName = "Crystal";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(325, 295);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(69, 17);
+			this.label5.TabIndex = 24;
+			this.label5.Text = "UpdateNo";
 			// 
 			// rdDatetimepicker
 			// 
@@ -365,32 +391,6 @@
 			this.radLabel1.TabIndex = 0;
 			this.radLabel1.Text = "Username: ";
 			// 
-			// txtUpdateNo
-			// 
-			this.txtUpdateNo.Location = new System.Drawing.Point(428, 290);
-			this.txtUpdateNo.Name = "txtUpdateNo";
-			this.txtUpdateNo.Size = new System.Drawing.Size(167, 24);
-			this.txtUpdateNo.TabIndex = 25;
-			this.txtUpdateNo.ThemeName = "Crystal";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(325, 295);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(69, 17);
-			this.label5.TabIndex = 24;
-			this.label5.Text = "UpdateNo";
-			// 
-			// txtEmployeeID
-			// 
-			this.txtEmployeeID.Location = new System.Drawing.Point(99, 289);
-			this.txtEmployeeID.Name = "txtEmployeeID";
-			this.txtEmployeeID.ReadOnly = true;
-			this.txtEmployeeID.Size = new System.Drawing.Size(100, 20);
-			this.txtEmployeeID.TabIndex = 26;
-			// 
 			// btnCancelStaff
 			// 
 			this.btnCancelStaff.Location = new System.Drawing.Point(346, 465);
@@ -425,6 +425,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
 			this.radGroupBox2.ResumeLayout(false);
 			this.radGroupBox2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txtUpdateNo)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.rdDatetimepicker)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUpdateDate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUpdateBy)).EndInit();
@@ -448,7 +449,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.txtUsernameStaff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtUpdateNo)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancelStaff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnOK)).EndInit();
 			this.ResumeLayout(false);

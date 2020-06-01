@@ -19,7 +19,7 @@ namespace Game_center_management.Staff_Forms
 	public partial class CreateUserStaff : Form
 	{
 		private readonly EmployessBLL employessbll;
-
+		Employess employess = new Employess();
 		public CreateUserStaff()
 		{
 			InitializeComponent();
@@ -218,14 +218,15 @@ namespace Game_center_management.Staff_Forms
 				erpSalary.SetError(txtSalary, "This cannot be blank");
 			}
 
+			
 			if (txtPersonalID.Text == "")
 			{
 				erpPersonalID.SetError(txtPersonalID, "This cannot be Blank");
 			}
+		
 			else if (ValidateNullFields() == true)
 			{
-				Employess employess = new Employess();
-
+				
 				employess.Name = txtNameStaff.Text;
 				employess.LastName = txtLastNameStaff.Text;
 				employess.Username = txtUsernameStaff.Text;
@@ -239,10 +240,14 @@ namespace Game_center_management.Staff_Forms
 				employess.Insertby = txtInsertBy.Text;
 				employess.InserDate = DateTime.Parse(txtInsertDate.Text);
 
+				
+
 				employessbll.ADD(employess);
-				StaffForm sf = new StaffForm();
-				sf.FillGrid();
-				this.Close();
+					StaffForm sf = new StaffForm();
+					sf.FillGrid();
+					this.Close();
+				
+			
 
 
 
@@ -257,6 +262,19 @@ namespace Game_center_management.Staff_Forms
 			EmailValidator();
 			ValidateFields();
 			ValidateNotNULL();
+			//employessbll.UserNameCheck(employess);
+
+
+
+			//if (employessbll.UserNameCheck(employess))
+			//{
+			//	MessageBox.Show("This UserName Exits ");
+			//	txtUsernameStaff.Focus();
+			//}
+
+
+
+
 
 
 
@@ -298,6 +316,22 @@ namespace Game_center_management.Staff_Forms
 			this.Close();
 		}
 
+		private void CreateUserStaff_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			
+		}
 
+		private void txtUsernameStaff_TextChanged(object sender, EventArgs e)
+		{
+
+			//lblErrorMssg.Text = "";
+			//bool check = employessbll.UserNameCheck(employess);
+			//if (check)
+			//{
+
+			//	lblErrorMssg.Text = "Please Enter A valid Username !";
+			//}
+
+		}
 	}
 }

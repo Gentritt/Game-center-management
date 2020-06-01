@@ -71,6 +71,7 @@
 			this.erpInsertby = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpInsertDate = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpPassword = new System.Windows.Forms.ErrorProvider(this.components);
+			this.lblErrorMssg = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
 			this.radGroupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.txtPasswordStaff)).BeginInit();
@@ -115,6 +116,7 @@
 			// radGroupBox1
 			// 
 			this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.radGroupBox1.Controls.Add(this.lblErrorMssg);
 			this.radGroupBox1.Controls.Add(this.label2);
 			this.radGroupBox1.Controls.Add(this.txtPasswordStaff);
 			this.radGroupBox1.Controls.Add(this.txtUsernameStaff);
@@ -153,6 +155,7 @@
 			this.txtUsernameStaff.Size = new System.Drawing.Size(164, 24);
 			this.txtUsernameStaff.TabIndex = 8;
 			this.txtUsernameStaff.ThemeName = "Crystal";
+			this.txtUsernameStaff.TextChanged += new System.EventHandler(this.txtUsernameStaff_TextChanged);
 			// 
 			// radLabel3
 			// 
@@ -459,6 +462,14 @@
 			// 
 			this.erpPassword.ContainerControl = this;
 			// 
+			// lblErrorMssg
+			// 
+			this.lblErrorMssg.AutoSize = true;
+			this.lblErrorMssg.Location = new System.Drawing.Point(263, 51);
+			this.lblErrorMssg.Name = "lblErrorMssg";
+			this.lblErrorMssg.Size = new System.Drawing.Size(0, 17);
+			this.lblErrorMssg.TabIndex = 17;
+			// 
 			// CreateUserStaff
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,6 +481,7 @@
 			this.Controls.Add(this.btnOK);
 			this.Name = "CreateUserStaff";
 			this.Text = "CreateUserStaff";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CreateUserStaff_FormClosing);
 			this.Load += new System.EventHandler(this.CreateUserStaff_Load);
 			((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
 			this.radGroupBox1.ResumeLayout(false);
@@ -533,7 +545,6 @@
 		private Telerik.WinControls.UI.RadTextBox txtLastNameStaff;
 		private Telerik.WinControls.UI.RadTextBox txtNameStaff;
 		private Telerik.WinControls.UI.RadTextBox txtPasswordStaff;
-		private Telerik.WinControls.UI.RadTextBox txtUsernameStaff;
 		private Telerik.WinControls.UI.RadButton btnOK;
 		private Telerik.WinControls.UI.RadButton btnCancelStaff;
 		private System.Windows.Forms.Label label2;
@@ -560,5 +571,7 @@
 		private System.Windows.Forms.ErrorProvider erpInsertDate;
 		private System.Windows.Forms.ErrorProvider erpPassword;
 		private Telerik.WinControls.UI.RadDateTimePicker rdDatetimepicker;
+		public Telerik.WinControls.UI.RadTextBox txtUsernameStaff;
+		private System.Windows.Forms.Label lblErrorMssg;
 	}
 }
