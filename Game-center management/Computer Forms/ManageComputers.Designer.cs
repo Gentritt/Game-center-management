@@ -61,6 +61,7 @@
 			this.radPanel1.Size = new System.Drawing.Size(716, 61);
 			this.radPanel1.TabIndex = 0;
 			this.radPanel1.ThemeName = "CrystalDark";
+			this.radPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.radPanel1_Paint);
 			// 
 			// radLabel1
 			// 
@@ -84,15 +85,19 @@
 			this.gridManageComputers.MasterTemplate.AllowAddNewRow = false;
 			this.gridManageComputers.MasterTemplate.AllowColumnReorder = false;
 			this.gridManageComputers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+			gridViewTextBoxColumn1.FieldName = "ComputerID";
 			gridViewTextBoxColumn1.HeaderText = "ID";
 			gridViewTextBoxColumn1.Name = "ID";
 			gridViewTextBoxColumn1.Width = 140;
+			gridViewTextBoxColumn2.FieldName = "PartID";
 			gridViewTextBoxColumn2.HeaderText = "PartID";
 			gridViewTextBoxColumn2.Name = "PartID";
 			gridViewTextBoxColumn2.Width = 140;
+			gridViewTextBoxColumn3.FieldName = "PricePerHour";
 			gridViewTextBoxColumn3.HeaderText = "Price Per Hour";
 			gridViewTextBoxColumn3.Name = "PricePerHour";
 			gridViewTextBoxColumn3.Width = 140;
+			gridViewTextBoxColumn4.FieldName = "IsActive";
 			gridViewTextBoxColumn4.HeaderText = "IsActive";
 			gridViewTextBoxColumn4.Name = "IsActive";
 			gridViewTextBoxColumn4.Width = 138;
@@ -106,7 +111,7 @@
 			this.gridManageComputers.ReadOnly = true;
 			this.gridManageComputers.Size = new System.Drawing.Size(590, 389);
 			this.gridManageComputers.TabIndex = 1;
-			this.gridManageComputers.ThemeName = "Crystal";
+			this.gridManageComputers.ThemeName = "CrystalDark";
 			// 
 			// btnADD
 			// 
@@ -117,6 +122,7 @@
 			this.btnADD.TabIndex = 2;
 			this.btnADD.Text = "       ADD";
 			this.btnADD.ThemeName = "CrystalDark";
+			this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
 			// 
 			// btnUpdate
 			// 
@@ -125,8 +131,9 @@
 			this.btnUpdate.Name = "btnUpdate";
 			this.btnUpdate.Size = new System.Drawing.Size(110, 53);
 			this.btnUpdate.TabIndex = 3;
-			this.btnUpdate.Text = "          UPDATE";
+			this.btnUpdate.Text = "      EDIT";
 			this.btnUpdate.ThemeName = "CrystalDark";
+			this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
 			// 
 			// btnDelete
 			// 
@@ -137,6 +144,7 @@
 			this.btnDelete.TabIndex = 4;
 			this.btnDelete.Text = "      DELETE";
 			this.btnDelete.ThemeName = "CrystalDark";
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
 			// btnParts
 			// 

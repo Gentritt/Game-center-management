@@ -72,6 +72,7 @@
 			this.radPanel1.Size = new System.Drawing.Size(1222, 50);
 			this.radPanel1.TabIndex = 0;
 			this.radPanel1.ThemeName = "CrystalDark";
+			this.radPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.radPanel1_Paint);
 			// 
 			// radLabel1
 			// 
@@ -92,6 +93,7 @@
 			this.btnEdit.TabIndex = 2;
 			this.btnEdit.Text = "EDIT";
 			this.btnEdit.ThemeName = "CrystalDark";
+			this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
 			// 
 			// btnDelete
 			// 
@@ -141,63 +143,63 @@
 			gridViewTextBoxColumn1.FieldName = "PartID";
 			gridViewTextBoxColumn1.HeaderText = "ID";
 			gridViewTextBoxColumn1.Name = "ID";
-			gridViewTextBoxColumn1.Width = 78;
+			gridViewTextBoxColumn1.Width = 80;
 			gridViewTextBoxColumn2.FieldName = "ComputerCase";
 			gridViewTextBoxColumn2.HeaderText = "Case";
 			gridViewTextBoxColumn2.Name = "Case";
-			gridViewTextBoxColumn2.Width = 78;
+			gridViewTextBoxColumn2.Width = 80;
 			gridViewTextBoxColumn3.FieldName = "ComputerMouse";
 			gridViewTextBoxColumn3.HeaderText = "Mouse";
 			gridViewTextBoxColumn3.Name = "Mouse";
-			gridViewTextBoxColumn3.Width = 78;
+			gridViewTextBoxColumn3.Width = 80;
 			gridViewTextBoxColumn4.FieldName = "ComputerKeyboard";
 			gridViewTextBoxColumn4.HeaderText = "Keyboard";
 			gridViewTextBoxColumn4.Name = "Keyboard";
-			gridViewTextBoxColumn4.Width = 78;
+			gridViewTextBoxColumn4.Width = 80;
 			gridViewTextBoxColumn5.FieldName = "ComputerHeadSet";
 			gridViewTextBoxColumn5.HeaderText = "HeadSets";
 			gridViewTextBoxColumn5.Name = "HeadSets";
-			gridViewTextBoxColumn5.Width = 78;
+			gridViewTextBoxColumn5.Width = 80;
 			gridViewTextBoxColumn6.FieldName = "ComputerMonitor";
 			gridViewTextBoxColumn6.HeaderText = "Monitor";
 			gridViewTextBoxColumn6.Name = "Monitor";
-			gridViewTextBoxColumn6.Width = 78;
+			gridViewTextBoxColumn6.Width = 80;
 			gridViewTextBoxColumn7.FieldName = "ComputerMousePad";
 			gridViewTextBoxColumn7.HeaderText = "MousePad";
 			gridViewTextBoxColumn7.Name = "MousePad";
-			gridViewTextBoxColumn7.Width = 78;
+			gridViewTextBoxColumn7.Width = 80;
 			gridViewTextBoxColumn8.FieldName = "ComputerCPU";
 			gridViewTextBoxColumn8.HeaderText = "Processor";
 			gridViewTextBoxColumn8.Name = "Processor";
-			gridViewTextBoxColumn8.Width = 78;
+			gridViewTextBoxColumn8.Width = 80;
 			gridViewTextBoxColumn9.FieldName = "ComputerGraphicCard";
 			gridViewTextBoxColumn9.HeaderText = "Graphic Card";
 			gridViewTextBoxColumn9.Name = "GraphicCard";
-			gridViewTextBoxColumn9.Width = 78;
+			gridViewTextBoxColumn9.Width = 80;
 			gridViewTextBoxColumn10.FieldName = "ComputerMotherBoard";
 			gridViewTextBoxColumn10.HeaderText = "Motherboard";
 			gridViewTextBoxColumn10.Name = "Motherboard";
-			gridViewTextBoxColumn10.Width = 78;
+			gridViewTextBoxColumn10.Width = 80;
 			gridViewTextBoxColumn11.FieldName = "ComputerRAM";
 			gridViewTextBoxColumn11.HeaderText = "RAM";
 			gridViewTextBoxColumn11.Name = "RAM";
-			gridViewTextBoxColumn11.Width = 78;
+			gridViewTextBoxColumn11.Width = 80;
 			gridViewTextBoxColumn12.FieldName = "ComputerSSD";
 			gridViewTextBoxColumn12.HeaderText = "SSD";
 			gridViewTextBoxColumn12.Name = "SSD";
-			gridViewTextBoxColumn12.Width = 78;
+			gridViewTextBoxColumn12.Width = 80;
 			gridViewTextBoxColumn13.FieldName = "ComputerHDD";
 			gridViewTextBoxColumn13.HeaderText = "HDD";
 			gridViewTextBoxColumn13.Name = "HDD";
-			gridViewTextBoxColumn13.Width = 78;
+			gridViewTextBoxColumn13.Width = 80;
 			gridViewTextBoxColumn14.FieldName = "ComputerPSU";
 			gridViewTextBoxColumn14.HeaderText = "PSU";
 			gridViewTextBoxColumn14.Name = "PSU";
-			gridViewTextBoxColumn14.Width = 78;
+			gridViewTextBoxColumn14.Width = 80;
 			gridViewTextBoxColumn15.FieldName = "ComputerCooler";
 			gridViewTextBoxColumn15.HeaderText = "Cooler";
 			gridViewTextBoxColumn15.Name = "Cooler";
-			gridViewTextBoxColumn15.Width = 74;
+			gridViewTextBoxColumn15.Width = 71;
 			this.gridComputerParts.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -258,6 +260,6 @@
 		private Telerik.WinControls.UI.RadButton btnDelete;
 		private Telerik.WinControls.UI.RadButton btnADD;
 		private Telerik.WinControls.UI.RadButton btnRefresh;
-		private Telerik.WinControls.UI.RadGridView gridComputerParts;
+		public Telerik.WinControls.UI.RadGridView gridComputerParts;
 	}
 }

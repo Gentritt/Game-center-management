@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Management.Instrumentation;
 using System.Text;
@@ -60,7 +61,41 @@ namespace game_center_management.DAL
 
 		public int Modify(ComputerParts model)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "PCparts_Edit",cmdType:CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@partid", model.PartID);
+						cmd.Parameters.AddWithValue("@case", model.ComputerCase);
+						cmd.Parameters.AddWithValue("@mouse", model.ComputerMouse);
+						cmd.Parameters.AddWithValue("@keyboard", model.ComputerKeyboard);
+						cmd.Parameters.AddWithValue("@headsets", model.ComputerHeadSet);
+						cmd.Parameters.AddWithValue("@monitor", model.ComputerMonitor);
+						cmd.Parameters.AddWithValue("@mousepad", model.ComputerMousePad);
+						cmd.Parameters.AddWithValue("@processor", model.ComputerCPU);
+						cmd.Parameters.AddWithValue("@graphiccard", model.ComputerGraphicCard);
+						cmd.Parameters.AddWithValue("@motherboard", model.ComputerMotherboard);
+						cmd.Parameters.AddWithValue("@ram", model.ComputerRAM);
+						cmd.Parameters.AddWithValue("@ssd", model.ComputerSSD);
+						cmd.Parameters.AddWithValue("@hdd", model.ComputerHDD);
+						cmd.Parameters.AddWithValue("@psu", model.ComputerPSU);
+						cmd.Parameters.AddWithValue("@cooler", model.ComputerCooler);
+						cmd.Parameters.AddWithValue("@updateby", model.UpdatedBy);
+						cmd.Parameters.AddWithValue("@updatedate", model.UpdateDate);
+						cmd.Parameters.AddWithValue("@updateno", model.LastUpdate);
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+
+					}
+				}
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e);
+				throw;
+			}
 		}
 
 		public int Remove(int ID)

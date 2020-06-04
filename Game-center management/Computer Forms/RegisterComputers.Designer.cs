@@ -31,7 +31,6 @@
 			this.components = new System.ComponentModel.Container();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
 			this.txtPricePerHour = new Telerik.WinControls.UI.RadTextBox();
-			this.txtPartID = new Telerik.WinControls.UI.RadTextBox();
 			this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
 			this.btnCancel = new Telerik.WinControls.UI.RadButton();
 			this.btnSave = new Telerik.WinControls.UI.RadButton();
@@ -41,9 +40,10 @@
 			this.InsertDate = new Telerik.WinControls.UI.RadLabel();
 			this.txtInsertBY = new Telerik.WinControls.UI.RadTextBox();
 			this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
+			this.computerPartsBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.cmbPC = new System.Windows.Forms.ComboBox();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPricePerHour)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtPartID)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
@@ -53,6 +53,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.InsertDate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtInsertBY)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.computerPartsBLLBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// radLabel1
@@ -69,13 +70,6 @@
 			this.txtPricePerHour.Name = "txtPricePerHour";
 			this.txtPricePerHour.Size = new System.Drawing.Size(135, 20);
 			this.txtPricePerHour.TabIndex = 1;
-			// 
-			// txtPartID
-			// 
-			this.txtPartID.Location = new System.Drawing.Point(106, 82);
-			this.txtPartID.Name = "txtPartID";
-			this.txtPartID.Size = new System.Drawing.Size(135, 20);
-			this.txtPartID.TabIndex = 3;
 			// 
 			// radLabel2
 			// 
@@ -102,6 +96,7 @@
 			this.btnSave.TabIndex = 6;
 			this.btnSave.Text = "Save";
 			this.btnSave.ThemeName = "Crystal";
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
 			// erpPricePerhour
 			// 
@@ -141,27 +136,38 @@
 			this.radLabel4.TabIndex = 7;
 			this.radLabel4.Text = "InsertBy: ";
 			// 
+			// computerPartsBLLBindingSource
+			// 
+			this.computerPartsBLLBindingSource.DataSource = typeof(game_center_management.BLL.ComputerPartsBLL);
+			// 
+			// cmbPC
+			// 
+			this.cmbPC.FormattingEnabled = true;
+			this.cmbPC.Location = new System.Drawing.Point(106, 85);
+			this.cmbPC.Name = "cmbPC";
+			this.cmbPC.Size = new System.Drawing.Size(121, 21);
+			this.cmbPC.TabIndex = 11;
+			// 
 			// RegisterComputers
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(294, 263);
+			this.Controls.Add(this.cmbPC);
 			this.Controls.Add(this.txtInsertDate);
 			this.Controls.Add(this.InsertDate);
 			this.Controls.Add(this.txtInsertBY);
 			this.Controls.Add(this.radLabel4);
 			this.Controls.Add(this.btnSave);
 			this.Controls.Add(this.btnCancel);
-			this.Controls.Add(this.txtPartID);
 			this.Controls.Add(this.radLabel2);
 			this.Controls.Add(this.txtPricePerHour);
 			this.Controls.Add(this.radLabel1);
 			this.Name = "RegisterComputers";
-			this.Text = "RegisterComputers";
+			this.Text = "z";
 			this.Load += new System.EventHandler(this.RegisterComputers_Load);
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtPricePerHour)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtPartID)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
@@ -171,6 +177,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.InsertDate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtInsertBY)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.computerPartsBLLBindingSource)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -180,7 +187,6 @@
 
 		private Telerik.WinControls.UI.RadLabel radLabel1;
 		private Telerik.WinControls.UI.RadTextBox txtPricePerHour;
-		private Telerik.WinControls.UI.RadTextBox txtPartID;
 		private Telerik.WinControls.UI.RadLabel radLabel2;
 		private Telerik.WinControls.UI.RadButton btnCancel;
 		private Telerik.WinControls.UI.RadButton btnSave;
@@ -190,5 +196,7 @@
 		private Telerik.WinControls.UI.RadLabel InsertDate;
 		private Telerik.WinControls.UI.RadTextBox txtInsertBY;
 		private Telerik.WinControls.UI.RadLabel radLabel4;
+		private System.Windows.Forms.BindingSource computerPartsBLLBindingSource;
+		private System.Windows.Forms.ComboBox cmbPC;
 	}
 }

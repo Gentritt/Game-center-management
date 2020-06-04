@@ -152,6 +152,7 @@
 			this.btnsave.TabIndex = 50;
 			this.btnsave.Text = "SAVE";
 			this.btnsave.ThemeName = "Crystal";
+			this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
 			// 
 			// txtCooler
 			// 
@@ -445,6 +446,7 @@
 			this.Controls.Add(this.radLabel1);
 			this.Name = "ComputerPartsEdit";
 			this.Text = "ComputerPartsEdit";
+			this.Load += new System.EventHandler(this.ComputerPartsEdit_Load);
 			((System.ComponentModel.ISupportInitialize)(this.txtUpdateDate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtUpdateBy)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();

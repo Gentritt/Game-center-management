@@ -122,6 +122,12 @@
     <Compile Include="Computer Forms\ComputerPartsEdit.Designer.cs">
       <DependentUpon>ComputerPartsEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Computer Forms\ComputersEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computer Forms\ComputersEdit.Designer.cs">
+      <DependentUpon>ComputersEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Computer Forms\ManageComputers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     <EmbeddedResource Include="Computer Forms\ComputerPartsEdit.resx">
       <DependentUpon>ComputerPartsEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Computer Forms\ComputersEdit.resx">
+      <DependentUpon>ComputersEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Computer Forms\ManageComputers.resx">
       <DependentUpon>ManageComputers.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +277,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Properties\DataSources\game_center_management.BLL.ClientsBLL.datasource" />
+    <None Include="Properties\DataSources\game_center_management.BLL.ComputerPartsBLL.datasource" />
     <None Include="Properties\DataSources\game_center_management.BLL.EmployessBLL.datasource" />
     <None Include="Properties\DataSources\game_center_management.BLL.ProductBLL.datasource" />
     <None Include="Properties\Settings.settings">
@@ -291,6 +301,10 @@
     <ProjectReference Include="..\game-center management.BLL\game-center management.BLL.csproj">
       <Project>{f634e746-a986-4031-af15-79f8cbd6767b}</Project>
       <Name>game-center management.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\game-center management.DAL\Game-center management.DAL.csproj">
+      <Project>{7e02a785-4682-482c-849a-7ce58bd05b2b}</Project>
+      <Name>Game-center management.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

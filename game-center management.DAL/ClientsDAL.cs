@@ -20,7 +20,7 @@ namespace game_center_management.DAL
 				using (var con = SQLfunctions.GetConnection())
 				{
 
-					using (var cmd = SQLfunctions.Command(con,cmdText:"ClientsInsert",cmdType:CommandType.StoredProcedure))
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Clients_Insert", cmdType:CommandType.StoredProcedure))
 					{
 						cmd.Parameters.AddWithValue("@name", model.Name);
 						cmd.Parameters.AddWithValue("@lastname", model.LastName);

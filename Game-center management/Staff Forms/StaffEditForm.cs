@@ -22,6 +22,7 @@ namespace Game_center_management.Staff_Forms
 			employessBll = new EmployessBLL();
 		}
 
+		private static int count = 0;
 		private void StaffEditForm_Load(object sender, EventArgs e)
 		{
 			txtUpdateBy.Text += UserSession.LoggedUser.Username;
@@ -30,7 +31,13 @@ namespace Game_center_management.Staff_Forms
 			txtUpdateDate.ReadOnly = true;
 			txtEmployeeID.Visible = false;
 			txtEmployeeID.ReadOnly = false;
+
+			count++;
+			txtUpdateNo.Text = count.ToString();
+
+
 		}
+	
 
 		private void btnOK_Click(object sender, EventArgs e)
 		{
@@ -50,6 +57,8 @@ namespace Game_center_management.Staff_Forms
 			employess.UpdateDate = DateTime.Parse(txtUpdateDate.Text);
 			employess.LastUpdate = int.Parse(txtUpdateNo.Text);
 
+			
+
 			var result =employessBll.Modify(employess);
 			if (result != null)
 			{
@@ -59,5 +68,5 @@ namespace Game_center_management.Staff_Forms
 			}
 			
 		}
-	}
+	} 
 }

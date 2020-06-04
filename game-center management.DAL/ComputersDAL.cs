@@ -14,17 +14,81 @@ namespace game_center_management.DAL
 	{
 		public int ADD(Computer model)
 		{
-			throw new NotImplementedException();
+			try
+			{
+
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Add_Computers",cmdType:CommandType.StoredProcedure))
+					{
+
+						cmd.Parameters.AddWithValue("@partid", model.PartID);
+						cmd.Parameters.AddWithValue("@priceperhour", model.PricePerHour);
+						cmd.Parameters.AddWithValue("@insertby", model.Insertby);
+						cmd.Parameters.AddWithValue("@insertdate", model.InserDate);
+
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+
+					}
+
+				}
+
+			}
+			catch (Exception e)
+			{
+				return -1;
+
+			}
+
+
 		}
 
 		public int Modify(Computer model)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con, cmdText: "Computers_Update", cmdType: CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@computerid", model.ComputerID);
+						cmd.Parameters.AddWithValue("@partid", model.PartID);
+						cmd.Parameters.AddWithValue("@priceperhour", model.PricePerHour);
+						cmd.Parameters.AddWithValue("@updateby", model.UpdatedBy);
+						cmd.Parameters.AddWithValue("@updatedate", model.UpdateDate);
+						cmd.Parameters.AddWithValue("@updateno", model.LastUpdate);
+
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+					}
+				}
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
+			
 		}
 
 		public int Remove(int ID)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con,cmdText: "Computers_Delete",cmdType:CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@computerid", ID);
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+					}
+				}
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
 		}
 
 
@@ -46,7 +110,7 @@ namespace game_center_management.DAL
 							{
 							   Computer computer = ToObject(reader);
 								computers.Add(computer);
-
+								
 							}
 
 						}

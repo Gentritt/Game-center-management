@@ -37,6 +37,8 @@ namespace Game_center_management.Products
 			//txtPrice.Text = product.Price.ToString();
 			//txtQuantity.Text = product.Quantity.ToString();
 		}
+
+		private static int count = 0;
 		private void ProductEdit_Load(object sender, EventArgs e)
 		{
 			txtUpdateBy.Text += UserSession.LoggedUser.Username;
@@ -45,6 +47,12 @@ namespace Game_center_management.Products
 			txtUpdateDate.ReadOnly = true;
 			txtProductID.Visible = false;
 			txtProductID.ReadOnly = false;
+			txtUpdateNo.ReadOnly = true;
+			count++;
+			txtUpdateNo.Text = count.ToString();
+
+
+
 		}
 		private void btnSave_Click(object sender, EventArgs e)
 		{

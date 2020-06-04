@@ -25,7 +25,7 @@ namespace game_center_management.BLL
 
 		public int Modify(ComputerParts model)
 		{
-			throw new NotImplementedException();
+			return _computersDal.Modify(model);
 		}
 
 		public int Remove(int ID)

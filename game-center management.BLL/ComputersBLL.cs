@@ -21,17 +21,17 @@ namespace game_center_management.BLL
 		}
 		public int ADD(Computer model)
 		{
-			throw new NotImplementedException();
+			return computersDAL.ADD(model);
 		}
 
 		public int Modify(Computer model)
 		{
-			throw new NotImplementedException();
+			return computersDAL.Modify(model);
 		}
 
 		public int Remove(int ID)
 		{
-			throw new NotImplementedException();
+			return computersDAL.Remove(ID);
 		}
 
 		public List<Computer> GetAll()

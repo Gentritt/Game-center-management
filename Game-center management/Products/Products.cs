@@ -54,7 +54,7 @@ namespace Game_center_management.Products
 
 			if (dialogResult == DialogResult.Yes)
 			{
-				int index = ProductsGRID.SelectedCells[0].RowIndex;
+				int index = this.ProductsGRID.Rows.IndexOf((GridViewDataRowInfo) this.ProductsGRID.CurrentRow);
 				if (index < 0) return;
 				BO.Product product = (BO.Product)ProductsGRID.Rows[index].DataBoundItem;
 				if (product != null)
@@ -84,7 +84,7 @@ namespace Game_center_management.Products
 
 		private void btnUpdate_Click(object sender, EventArgs e)
 		{
-			int index = ProductsGRID.SelectedCells[0].RowIndex;
+			int index = this.ProductsGRID.Rows.IndexOf((GridViewDataRowInfo)this.ProductsGRID.CurrentRow);
 			if (index < 0) return;
 			BO.Product product = (BO.Product)ProductsGRID.Rows[index].DataBoundItem;
 			if (product != null)

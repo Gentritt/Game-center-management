@@ -22,6 +22,8 @@ namespace Game_center_management.User_Forms
 			clientsBll = new ClientsBLL();
 		}
 
+		private static int count = 0;
+
 		private void UserEdit_Load(object sender, EventArgs e)
 		{
 
@@ -32,7 +34,10 @@ namespace Game_center_management.User_Forms
 			txtUpdateBy.ReadOnly = true;
 			txtClientID.ReadOnly = true;
 			txtClientID.Visible = false;
+			txtUpdateNo.ReadOnly = true;
 
+			count++;
+			txtUpdateNo.Text = count.ToString();
 
 		}
 
