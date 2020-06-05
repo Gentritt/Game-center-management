@@ -48,9 +48,11 @@ namespace Game_center_management.Computer_Forms
 				computer.InserDate = DateTime.Parse(txtInsertDate.Text);
 
 				computersBLL.ADD(computer);
+				
 
 
 				ManageComputers mg = new ManageComputers();
+				mg.gridManageComputers.Refresh();
 				mg.InitData();
 				this.Close();
 
@@ -62,7 +64,7 @@ namespace Game_center_management.Computer_Forms
 		{
 			using (var con = SQLfunctions.GetConnection())
 			{
-				using (var cmd = SQLfunctions.Command(con,cmdText: "GetPartID", cmdType:CommandType.StoredProcedure))
+				using (var cmd = SQLfunctions.Command(con, cmdText: "GetPartID", cmdType: CommandType.StoredProcedure))
 				{
 					using (SqlDataReader dr = cmd.ExecuteReader())
 					{
@@ -84,6 +86,7 @@ namespace Game_center_management.Computer_Forms
 
 		private void RegisterComputers_Load(object sender, EventArgs e)
 		{
+			FillComboBox fill  = new FillComboBox();
 
 			txtInsertBY.Text = UserSession.LoggedUser.Username;
 			txtInsertBY.ReadOnly = true;

@@ -28,11 +28,11 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageComputers));
 			this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
 			this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
@@ -41,6 +41,7 @@
 			this.btnUpdate = new Telerik.WinControls.UI.RadButton();
 			this.btnDelete = new Telerik.WinControls.UI.RadButton();
 			this.btnParts = new Telerik.WinControls.UI.RadButton();
+			this.btnRefresh = new Telerik.WinControls.UI.RadButton();
 			((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
 			this.radPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
@@ -50,6 +51,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnParts)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// radPanel1
@@ -58,7 +60,7 @@
 			this.radPanel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.radPanel1.Location = new System.Drawing.Point(0, 0);
 			this.radPanel1.Name = "radPanel1";
-			this.radPanel1.Size = new System.Drawing.Size(716, 61);
+			this.radPanel1.Size = new System.Drawing.Size(712, 61);
 			this.radPanel1.TabIndex = 0;
 			this.radPanel1.ThemeName = "CrystalDark";
 			this.radPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.radPanel1_Paint);
@@ -85,31 +87,31 @@
 			this.gridManageComputers.MasterTemplate.AllowAddNewRow = false;
 			this.gridManageComputers.MasterTemplate.AllowColumnReorder = false;
 			this.gridManageComputers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-			gridViewTextBoxColumn1.FieldName = "ComputerID";
-			gridViewTextBoxColumn1.HeaderText = "ID";
-			gridViewTextBoxColumn1.Name = "ID";
-			gridViewTextBoxColumn1.Width = 140;
-			gridViewTextBoxColumn2.FieldName = "PartID";
-			gridViewTextBoxColumn2.HeaderText = "PartID";
-			gridViewTextBoxColumn2.Name = "PartID";
-			gridViewTextBoxColumn2.Width = 140;
-			gridViewTextBoxColumn3.FieldName = "PricePerHour";
-			gridViewTextBoxColumn3.HeaderText = "Price Per Hour";
-			gridViewTextBoxColumn3.Name = "PricePerHour";
-			gridViewTextBoxColumn3.Width = 140;
-			gridViewTextBoxColumn4.FieldName = "IsActive";
-			gridViewTextBoxColumn4.HeaderText = "IsActive";
-			gridViewTextBoxColumn4.Name = "IsActive";
-			gridViewTextBoxColumn4.Width = 138;
+			gridViewTextBoxColumn5.FieldName = "ComputerID";
+			gridViewTextBoxColumn5.HeaderText = "ID";
+			gridViewTextBoxColumn5.Name = "ID";
+			gridViewTextBoxColumn5.Width = 139;
+			gridViewTextBoxColumn6.FieldName = "PartID";
+			gridViewTextBoxColumn6.HeaderText = "PartID";
+			gridViewTextBoxColumn6.Name = "PartID";
+			gridViewTextBoxColumn6.Width = 139;
+			gridViewTextBoxColumn7.FieldName = "PricePerHour";
+			gridViewTextBoxColumn7.HeaderText = "Price Per Hour";
+			gridViewTextBoxColumn7.Name = "PricePerHour";
+			gridViewTextBoxColumn7.Width = 139;
+			gridViewTextBoxColumn8.FieldName = "IsActive";
+			gridViewTextBoxColumn8.HeaderText = "IsActive";
+			gridViewTextBoxColumn8.Name = "IsActive";
+			gridViewTextBoxColumn8.Width = 137;
 			this.gridManageComputers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewTextBoxColumn4});
-			this.gridManageComputers.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8});
+			this.gridManageComputers.MasterTemplate.ViewDefinition = tableViewDefinition2;
 			this.gridManageComputers.Name = "gridManageComputers";
 			this.gridManageComputers.ReadOnly = true;
-			this.gridManageComputers.Size = new System.Drawing.Size(590, 389);
+			this.gridManageComputers.Size = new System.Drawing.Size(586, 389);
 			this.gridManageComputers.TabIndex = 1;
 			this.gridManageComputers.ThemeName = "CrystalDark";
 			// 
@@ -157,11 +159,23 @@
 			this.btnParts.ThemeName = "CrystalDark";
 			this.btnParts.Click += new System.EventHandler(this.radButton1_Click);
 			// 
+			// btnRefresh
+			// 
+			this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
+			this.btnRefresh.Location = new System.Drawing.Point(597, 296);
+			this.btnRefresh.Name = "btnRefresh";
+			this.btnRefresh.Size = new System.Drawing.Size(109, 47);
+			this.btnRefresh.TabIndex = 6;
+			this.btnRefresh.Text = "            RESET";
+			this.btnRefresh.ThemeName = "CrystalDark";
+			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+			// 
 			// ManageComputers
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(716, 458);
+			this.ClientSize = new System.Drawing.Size(712, 458);
+			this.Controls.Add(this.btnRefresh);
 			this.Controls.Add(this.btnParts);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnUpdate);
@@ -181,6 +195,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnParts)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -189,10 +204,11 @@
 
 		private Telerik.WinControls.UI.RadPanel radPanel1;
 		private Telerik.WinControls.UI.RadLabel radLabel1;
-		private Telerik.WinControls.UI.RadGridView gridManageComputers;
 		private Telerik.WinControls.UI.RadButton btnADD;
 		private Telerik.WinControls.UI.RadButton btnUpdate;
 		private Telerik.WinControls.UI.RadButton btnDelete;
 		private Telerik.WinControls.UI.RadButton btnParts;
+		public Telerik.WinControls.UI.RadGridView gridManageComputers;
+		private Telerik.WinControls.UI.RadButton btnRefresh;
 	}
 }

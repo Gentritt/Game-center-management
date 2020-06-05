@@ -99,5 +99,12 @@ namespace Game_center_management.Computer_Forms
 			}
 
 		}
+
+		private void btnRefresh_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			ManageComputers mg = new ManageComputers();
+			mg.ShowDialog();
+		}
 	}
 }

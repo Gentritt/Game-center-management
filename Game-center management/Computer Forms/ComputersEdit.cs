@@ -50,6 +50,7 @@ namespace Game_center_management.Computer_Forms
 		private static int count = 0;
 		private void ComputersEdit_Load(object sender, EventArgs e)
 		{
+			FillComboBox fill = new FillComboBox();
 			txtUpdateDate.Text += DateTime.Now.ToShortDateString();
 			txtUpdateDate.ReadOnly = true;
 			txtupdateby.Text += UserSession.LoggedUser.Username;

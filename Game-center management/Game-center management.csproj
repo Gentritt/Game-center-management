@@ -146,6 +146,7 @@
     <Compile Include="Computer Forms\RegisterComputers.Designer.cs">
       <DependentUpon>RegisterComputers.cs</DependentUpon>
     </Compile>
+    <Compile Include="FillComboBox.cs" />
     <Compile Include="Products\ProductEdit.cs">
       <SubType>Form</SubType>
     </Compile>

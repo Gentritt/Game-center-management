@@ -4,26 +4,35 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using game_center_management.BLL;
 using Game_center_management.Computer_Forms;
 using Game_center_management.Forms;
+using Microsoft.VisualBasic.Devices;
+using Telerik.WinControls.UI;
+using Computer = Game_center_management.BO.Computer;
 
 namespace Game_center_management
 {
 	public partial class MainForm : Form
 	{
+		private ComputersBLL computers;
+
 		public MainForm()
 		{
 			InitializeComponent();
+			computers = new ComputersBLL();
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			
-			//this.Shown += MainForm_Shown;
-		
+			foreach (Computer computer in computers.GetAll())
+			{
+				listviewitem.Items.Add( new ListViewItem (computer.ComputerID.ToString(),0));
+			}
 
 		}
 
@@ -51,9 +60,7 @@ namespace Game_center_management
 				this.Close();
 
 			}
-			
-			
-
+		
 		}
 
 
@@ -95,7 +102,8 @@ namespace Game_center_management
 
 				if (dialog == DialogResult.Yes)
 				{
-					Application.Exit(); 
+					Application.Exit();
+
 
 				}
 				else if (dialog == DialogResult.No)
@@ -105,6 +113,60 @@ namespace Game_center_management
 					
 					
 				}
+		}
+
+		private void startToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			ManageComputers mg = new ManageComputers();
+			mg.ShowDialog();
+
+
+		}
+
+		private void listviewitem_MouseClick(object sender, MouseEventArgs e)
+		{
+			
+		}
+
+		private void listviewitem_MouseClick_1(object sender, MouseEventArgs e)
+		{
+			//if (e.Button == MouseButtons.Right)
+			//{
+
+			//	if (listviewitem.FocusedItem.Bounds.Contains(e.Location))
+			//	{
+			//		contextMenuStrip1.Show(Cursor.Position);
+			//	}
+			//	else
+			//	{
+			//		contextMenuStrip1.Hide();
+
+			//	}
+			//}
+
+			//ListView listView = sender as ListView;
+			//if (e.Button == MouseButtons.Right)
+			//{
+			//	ListViewItem item = listviewitem.GetItemAt(e.X, e.Y);
+			//	if (item != null)
+			//	{
+			//		item.Selected = true;
+			//		contextMenuStrip1.Show(listView, e.Location);
+			//	}
+			//}
+
+		}
+
+
+		private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+		{
+
+
+			if (listviewitem.SelectedItems.Count  <= 0)
+			{
+
+				e.Cancel = true;
+			}
 		}
 	}
 }
