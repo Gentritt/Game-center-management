@@ -67,5 +67,10 @@ namespace Game_center_management.User_Forms
 				this.Close();
 			}
 		}
-	}
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

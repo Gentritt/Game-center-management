@@ -33,9 +33,8 @@ namespace Game_center_management
 			{
 				listviewitem.Items.Add( new ListViewItem (computer.ComputerID.ToString(),0));
 			}
-
 		}
-
+        
 		private void radMenuItem17_Click(object sender, EventArgs e)
 		{
 			StaffForm staffForm = new StaffForm();
@@ -114,13 +113,13 @@ namespace Game_center_management
 					
 				}
 		}
-
-		private void startToolStripMenuItem_Click(object sender, EventArgs e)
+        
+        private void startToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+           
+
 			ManageComputers mg = new ManageComputers();
 			mg.ShowDialog();
-
-
 		}
 
 		private void listviewitem_MouseClick(object sender, MouseEventArgs e)

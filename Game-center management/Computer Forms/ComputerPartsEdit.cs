@@ -68,5 +68,10 @@ namespace Game_center_management.Computer_Forms
 
 
 		}
-	}
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

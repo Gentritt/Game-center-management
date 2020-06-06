@@ -88,5 +88,10 @@ namespace Game_center_management.Computer_Forms
 		private void cmbPC_SelectedIndexChanged(object sender, EventArgs e)
 		{
 		}
-	}
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

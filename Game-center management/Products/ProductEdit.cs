@@ -78,7 +78,7 @@ namespace Game_center_management.Products
 		}
 		private void btnCancel_Click(object sender, EventArgs e)
 		{
-
+            this.Close();
 		}
 	}
 }

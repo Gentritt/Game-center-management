@@ -75,13 +75,8 @@ namespace Game_center_management.Computer_Forms
 
 						}
 					}
-
 				}
-
 			}
-
-
-
 		}
 
 		private void RegisterComputers_Load(object sender, EventArgs e)
@@ -109,5 +104,10 @@ namespace Game_center_management.Computer_Forms
 
 			ValidateFields();
 		}
-	}
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }
