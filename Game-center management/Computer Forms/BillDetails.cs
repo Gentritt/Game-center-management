@@ -37,6 +37,7 @@ namespace Game_center_management.Computer_Forms
 
         private void BtnPrint_Click(object sender, EventArgs e)
         {
+            
             lblBillID.Text = this.rdvBill.CurrentRow.Cells[0].Value.ToString();
             lblEmployee.Text = this.rdvBill.CurrentRow.Cells[1].Value.ToString();
             lblComputerID.Text = this.rdvBill.CurrentRow.Cells[2].Value.ToString();
@@ -44,8 +45,15 @@ namespace Game_center_management.Computer_Forms
             lblStartTime.Text = this.rdvBill.CurrentRow.Cells[4].Value.ToString();
             lblEndTime.Text = this.rdvBill.CurrentRow.Cells[5].Value.ToString();
             lblTotal.Text = this.rdvBill.CurrentRow.Cells[6].Value.ToString();
+            UsingTime();
         }
-
+        private void UsingTime()
+        {
+            DateTime startTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[4].Value.ToString()); ;
+            DateTime endTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[5].Value.ToString());
+            string diffTime = endTime.Subtract(startTime).ToString().Split('.')[0].ToString();
+            lblUsingTime.Text = diffTime;
+        }
         private void RdvBill_Click(object sender, EventArgs e)
         {
 
