@@ -415,12 +415,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 507);
+            this.ClientSize = new System.Drawing.Size(689, 507);
             this.Controls.Add(this.btnCancelStaff);
             this.Controls.Add(this.radGroupBox2);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.radGroupBox1);
             this.Name = "StaffEditForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "StaffEditForm";
             this.Load += new System.EventHandler(this.StaffEditForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();

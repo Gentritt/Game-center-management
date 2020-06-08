@@ -28,8 +28,9 @@ namespace Game_center_management.Computer_Forms
 			txtUpdateDate.Text += DateTime.Now.ToShortDateString();
 			txtUpdateDate.ReadOnly = true;
 			txtPartID.ReadOnly = true;
-			txtPartID.Visible = true;
+			txtPartID.Visible = false;
 			txtUpdateNo.ReadOnly = true;
+
 
 
 		}

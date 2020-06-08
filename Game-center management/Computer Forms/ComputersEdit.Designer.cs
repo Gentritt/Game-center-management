@@ -60,7 +60,7 @@
             this.cmbPC.FormattingEnabled = true;
             this.cmbPC.Location = new System.Drawing.Point(119, 58);
             this.cmbPC.Name = "cmbPC";
-            this.cmbPC.Size = new System.Drawing.Size(121, 21);
+            this.cmbPC.Size = new System.Drawing.Size(135, 21);
             this.cmbPC.TabIndex = 21;
             this.cmbPC.SelectedIndexChanged += new System.EventHandler(this.cmbPC_SelectedIndexChanged);
             // 
@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 310);
+            this.ClientSize = new System.Drawing.Size(291, 310);
             this.Controls.Add(this.txtComputerID);
             this.Controls.Add(this.txtUpdateNo);
             this.Controls.Add(this.radLabel3);
@@ -178,6 +178,7 @@
             this.Controls.Add(this.txtPricePerHour);
             this.Controls.Add(this.radLabel1);
             this.Name = "ComputersEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ComputersEdit";
             this.Load += new System.EventHandler(this.ComputersEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtUpdateDate)).EndInit();

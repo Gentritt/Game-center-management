@@ -380,12 +380,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 509);
+            this.ClientSize = new System.Drawing.Size(805, 509);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grUserInformation);
             this.Controls.Add(this.grLoginInformation);
             this.Name = "UserEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "UserEdit";
             this.Load += new System.EventHandler(this.UserEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();

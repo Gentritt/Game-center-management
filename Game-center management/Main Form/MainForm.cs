@@ -14,13 +14,13 @@ using Game_center_management.Forms;
 using Microsoft.VisualBasic.Devices;
 using Telerik.WinControls.UI;
 using Computer = Game_center_management.BO.Computer;
+using Bill = Game_center_management.BO.Bill;
 
 namespace Game_center_management
 {
 	public partial class MainForm : Form
 	{
 		private ComputersBLL computers;
-
 		public MainForm()
 		{
 			InitializeComponent();
@@ -102,59 +102,60 @@ namespace Game_center_management
 				if (dialog == DialogResult.Yes)
 				{
 					Application.Exit();
-
-
 				}
 				else if (dialog == DialogResult.No)
 				{
-
 					e.Cancel = true;
-					
-					
 				}
 		}
         
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-           
+            ComputerStart cs = new ComputerStart();
+            ListViewItem item = listviewitem.SelectedItems[0];
+            cs.txtComputerID.Text = item.SubItems[0].Text;
+            cs.txtEmployee.Text = lblLoggedUser.Text;
+            cs.ShowDialog();
 
-			ManageComputers mg = new ManageComputers();
-			mg.ShowDialog();
-		}
-
+        }
 		private void listviewitem_MouseClick(object sender, MouseEventArgs e)
 		{
 			
 		}
 
+        public static int cID;
 		private void listviewitem_MouseClick_1(object sender, MouseEventArgs e)
 		{
-			//if (e.Button == MouseButtons.Right)
-			//{
 
-			//	if (listviewitem.FocusedItem.Bounds.Contains(e.Location))
-			//	{
-			//		contextMenuStrip1.Show(Cursor.Position);
-			//	}
-			//	else
-			//	{
-			//		contextMenuStrip1.Hide();
+            ListViewItem item = listviewitem.SelectedItems[0];
+            cID = int.Parse(item.SubItems[0].Text);
 
-			//	}
-			//}
+            //if (e.Button == MouseButtons.Right)
+            //{
 
-			//ListView listView = sender as ListView;
-			//if (e.Button == MouseButtons.Right)
-			//{
-			//	ListViewItem item = listviewitem.GetItemAt(e.X, e.Y);
-			//	if (item != null)
-			//	{
-			//		item.Selected = true;
-			//		contextMenuStrip1.Show(listView, e.Location);
-			//	}
-			//}
+            //	if (listviewitem.FocusedItem.Bounds.Contains(e.Location))
+            //	{
+            //		contextMenuStrip1.Show(Cursor.Position);
+            //	}
+            //	else
+            //	{
+            //		contextMenuStrip1.Hide();
 
-		}
+            //	}
+            //}
+
+            //ListView listView = sender as ListView;
+            //if (e.Button == MouseButtons.Right)
+            //{
+            //	ListViewItem item = listviewitem.GetItemAt(e.X, e.Y);
+            //	if (item != null)
+            //	{
+            //		item.Selected = true;
+            //		contextMenuStrip1.Show(listView, e.Location);
+            //	}
+            //}
+
+        }
 
 
 		private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -167,5 +168,17 @@ namespace Game_center_management
 				e.Cancel = true;
 			}
 		}
-	}
+
+        private void DetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BillDetails bd = new BillDetails();
+            bd.ShowDialog();
+        }
+
+        private void StopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+    }
 }

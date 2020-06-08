@@ -446,6 +446,7 @@
             this.Controls.Add(this.radLabel2);
             this.Controls.Add(this.radLabel1);
             this.Name = "ComputerPartsEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ComputerPartsEdit";
             this.Load += new System.EventHandler(this.ComputerPartsEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtUpdateDate)).EndInit();

@@ -189,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 293);
+            this.ClientSize = new System.Drawing.Size(285, 275);
             this.Controls.Add(this.txtProductID);
             this.Controls.Add(this.txtUpdateDate);
             this.Controls.Add(this.UpdateDate);
@@ -206,6 +206,7 @@
             this.Controls.Add(this.radLabel2);
             this.Controls.Add(this.radLabel1);
             this.Name = "ProductEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ProductEditcs";
             this.Load += new System.EventHandler(this.ProductEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtQuantity)).EndInit();

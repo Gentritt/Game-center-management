@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillsDAL.cs" />
     <Compile Include="ClientsDAL.cs" />
     <Compile Include="ComputerPartsDAL.cs" />
     <Compile Include="ComputersDAL.cs" />
@@ -57,9 +58,8 @@
       <Name>Game-center management.BO</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Database\GameCenter.sql" />
+    <Content Include="Database\GameCenterTI1.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

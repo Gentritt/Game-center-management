@@ -116,6 +116,12 @@
     <Reference Include="TelerikCommon, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Computer Forms\BillDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computer Forms\BillDetails.Designer.cs">
+      <DependentUpon>BillDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Computer Forms\ComputerParts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,12 @@
     </Compile>
     <Compile Include="Computer Forms\ComputersEdit.Designer.cs">
       <DependentUpon>ComputersEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Computer Forms\ComputerStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computer Forms\ComputerStart.Designer.cs">
+      <DependentUpon>ComputerStart.cs</DependentUpon>
     </Compile>
     <Compile Include="Computer Forms\ManageComputers.cs">
       <SubType>Form</SubType>
@@ -153,12 +165,6 @@
       <DependentUpon>RegisterComputers.cs</DependentUpon>
     </Compile>
     <Compile Include="FillComboBox.cs" />
-    <Compile Include="Main Form\ComputerStart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main Form\ComputerStart.Designer.cs">
-      <DependentUpon>ComputerStart.cs</DependentUpon>
-    </Compile>
     <Compile Include="Products\ProductEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserSession.cs" />
+    <EmbeddedResource Include="Computer Forms\BillDetails.resx">
+      <DependentUpon>BillDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Computer Forms\ComputerParts.resx">
       <DependentUpon>ComputerParts.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +246,9 @@
     <EmbeddedResource Include="Computer Forms\ComputersEdit.resx">
       <DependentUpon>ComputersEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Computer Forms\ComputerStart.resx">
+      <DependentUpon>ComputerStart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Computer Forms\ManageComputers.resx">
       <DependentUpon>ManageComputers.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,9 +257,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Computer Forms\RegisterComputers.resx">
       <DependentUpon>RegisterComputers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Main Form\ComputerStart.resx">
-      <DependentUpon>ComputerStart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products\ProductEdit.resx">
       <DependentUpon>ProductEdit.cs</DependentUpon>
