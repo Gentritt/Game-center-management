@@ -180,5 +180,25 @@ namespace Game_center_management
            
 
         }
+
+        private void BtnRefresh_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainForm mf = new MainForm();
+            mf.ShowDialog();
+        }
+
+        private void RadMenuItem13_admClick(object sender, EventArgs e)
+        {
+            if (lblLoggedUser.Text == "admin")
+            {
+                miAdministrationMenu.Enabled = true;
+
+            }
+            else if (lblLoggedUser.Text != "admin")
+            {
+                miAdministrationMenu.Enabled = false;
+            }
+        }
     }
 }

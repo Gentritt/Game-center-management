@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,11 +58,13 @@
             this.btnRefresh = new Telerik.WinControls.UI.RadButton();
             this.lblUsingTime = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.grdComputer = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEndTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdComputer)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -239,49 +241,48 @@
             this.rdvBill.MasterTemplate.AllowColumnReorder = false;
             this.rdvBill.MasterTemplate.AutoGenerateColumns = false;
             this.rdvBill.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn8.FieldName = "BillID";
-            gridViewTextBoxColumn8.HeaderText = "Bill ID";
-            gridViewTextBoxColumn8.Name = "BillID";
-            gridViewTextBoxColumn8.Width = 101;
-            gridViewTextBoxColumn9.FieldName = "EmployeeUsername";
-            gridViewTextBoxColumn9.HeaderText = "Employee";
-            gridViewTextBoxColumn9.Name = "Employee";
-            gridViewTextBoxColumn9.Width = 63;
-            gridViewTextBoxColumn10.FieldName = "ComputerId";
-            gridViewTextBoxColumn10.HeaderText = "Computer ID";
-            gridViewTextBoxColumn10.Name = "ComputerID";
-            gridViewTextBoxColumn10.Width = 67;
-            gridViewTextBoxColumn11.FieldName = "ClientUsername";
-            gridViewTextBoxColumn11.HeaderText = "Client";
-            gridViewTextBoxColumn11.Name = "Client";
-            gridViewTextBoxColumn11.Width = 73;
-            gridViewTextBoxColumn12.FieldName = "StartTime";
-            gridViewTextBoxColumn12.HeaderText = "Start Time";
-            gridViewTextBoxColumn12.Name = "StartTime";
-            gridViewTextBoxColumn12.Width = 77;
-            gridViewTextBoxColumn13.FieldName = "EndTime";
-            gridViewTextBoxColumn13.HeaderText = "End Time";
-            gridViewTextBoxColumn13.Name = "EndTime";
-            gridViewTextBoxColumn13.Width = 87;
-            gridViewTextBoxColumn14.FieldName = "Total";
-            gridViewTextBoxColumn14.HeaderText = "Total";
-            gridViewTextBoxColumn14.Name = "Total";
-            gridViewTextBoxColumn14.Width = 89;
+            gridViewTextBoxColumn1.FieldName = "BillID";
+            gridViewTextBoxColumn1.HeaderText = "Bill ID";
+            gridViewTextBoxColumn1.Name = "BillID";
+            gridViewTextBoxColumn1.Width = 101;
+            gridViewTextBoxColumn2.FieldName = "EmployeeUsername";
+            gridViewTextBoxColumn2.HeaderText = "Employee";
+            gridViewTextBoxColumn2.Name = "Employee";
+            gridViewTextBoxColumn2.Width = 63;
+            gridViewTextBoxColumn3.FieldName = "ComputerId";
+            gridViewTextBoxColumn3.HeaderText = "Computer ID";
+            gridViewTextBoxColumn3.Name = "ComputerID";
+            gridViewTextBoxColumn3.Width = 67;
+            gridViewTextBoxColumn4.FieldName = "ClientUsername";
+            gridViewTextBoxColumn4.HeaderText = "Client";
+            gridViewTextBoxColumn4.Name = "Client";
+            gridViewTextBoxColumn4.Width = 73;
+            gridViewTextBoxColumn5.FieldName = "StartTime";
+            gridViewTextBoxColumn5.HeaderText = "Start Time";
+            gridViewTextBoxColumn5.Name = "StartTime";
+            gridViewTextBoxColumn5.Width = 77;
+            gridViewTextBoxColumn6.FieldName = "EndTime";
+            gridViewTextBoxColumn6.HeaderText = "End Time";
+            gridViewTextBoxColumn6.Name = "EndTime";
+            gridViewTextBoxColumn6.Width = 87;
+            gridViewTextBoxColumn7.FieldName = "Total";
+            gridViewTextBoxColumn7.HeaderText = "Total";
+            gridViewTextBoxColumn7.Name = "Total";
+            gridViewTextBoxColumn7.Width = 89;
             this.rdvBill.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn8,
-            gridViewTextBoxColumn9,
-            gridViewTextBoxColumn10,
-            gridViewTextBoxColumn11,
-            gridViewTextBoxColumn12,
-            gridViewTextBoxColumn13,
-            gridViewTextBoxColumn14});
-            this.rdvBill.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7});
+            this.rdvBill.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.rdvBill.Name = "rdvBill";
             this.rdvBill.ReadOnly = true;
-            this.rdvBill.Size = new System.Drawing.Size(589, 377);
+            this.rdvBill.Size = new System.Drawing.Size(589, 232);
             this.rdvBill.TabIndex = 22;
             this.rdvBill.ThemeName = "Crystal";
-            this.rdvBill.Click += new System.EventHandler(this.RdvBill_Click);
             // 
             // lblBillID
             // 
@@ -321,11 +322,20 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Using Time:";
             // 
+            // grdComputer
+            // 
+            this.grdComputer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdComputer.Location = new System.Drawing.Point(356, 307);
+            this.grdComputer.Name = "grdComputer";
+            this.grdComputer.Size = new System.Drawing.Size(589, 172);
+            this.grdComputer.TabIndex = 28;
+            // 
             // BillDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 491);
+            this.Controls.Add(this.grdComputer);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblUsingTime);
             this.Controls.Add(this.btnRefresh);
@@ -356,6 +366,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdComputer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,5 +396,6 @@
         private Telerik.WinControls.UI.RadButton btnRefresh;
         private System.Windows.Forms.Label lblUsingTime;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView grdComputer;
     }
 }

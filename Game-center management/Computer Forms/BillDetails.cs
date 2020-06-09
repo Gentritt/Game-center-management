@@ -17,10 +17,48 @@ namespace Game_center_management.Computer_Forms
     public partial class BillDetails : Form
     {
         private readonly BillBLL billBLL;
+        private readonly ComputersBLL computersBLL;
+
+        ManageComputers mc = new ManageComputers();
         public BillDetails()
         {
             InitializeComponent();
             billBLL = new BillBLL();
+            computersBLL = new ComputersBLL();
+        }
+        private void Computer()
+        {
+            var result = computersBLL.GetAll();
+            grdComputer.DataSource = result;
+
+        }
+        private void Calculate()
+        {
+            //foreach (var item in grdComputer.Columns)
+            //{
+            //    if(this.rdvBill.CurrentRow.Cells[2].Value.ToString() == item.ToString())
+            //    {
+            //        lblTotal.Text = grdComputer.CurrentRow.Cells[2].Value.ToString();
+            //    }
+            //}
+
+            //string data = string.Empty;
+            //int indexOfYourColumn = 0;
+            //foreach (DataGridViewRow row in grdComputer.Rows)
+            //{
+            //    data = row.Cells[indexOfYourColumn].Value.ToString();
+
+            //    foreach (var item in data)
+            //    {
+            //        if (this.rdvBill.CurrentRow.Cells[2].Value.ToString() == item.ToString())
+            //        {
+            //            lblTotal.Text = grdComputer.CurrentRow.Cells[2].Value.ToString();
+
+            //        }
+
+            //    }
+            //}
+
         }
         private void InitData()
         {
@@ -33,6 +71,7 @@ namespace Game_center_management.Computer_Forms
         private void BillDetails_Load(object sender, EventArgs e)
         {
             InitData();
+            Computer();
         }
 
         private void BtnPrint_Click(object sender, EventArgs e)
@@ -44,22 +83,34 @@ namespace Game_center_management.Computer_Forms
             lblClient.Text = this.rdvBill.CurrentRow.Cells[3].Value.ToString();
             lblStartTime.Text = this.rdvBill.CurrentRow.Cells[4].Value.ToString();
             lblEndTime.Text = this.rdvBill.CurrentRow.Cells[5].Value.ToString();
-            lblTotal.Text = this.rdvBill.CurrentRow.Cells[6].Value.ToString();
+            //lblTotal.Text = this.rdvBill.CurrentRow.Cells[6].Value.ToString();
+            Calculate();
             UsingTime();
+            if (lblEndTime.Text != "01/01/0001 00:00:00")
+            {
+                btnEndTime.Enabled = false;
+            }
+            else
+            {
+                btnEndTime.Enabled = true;
+                lblEndTime.Text = "";
+            }
+
         }
         private void UsingTime()
         {
             DateTime startTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[4].Value.ToString()); ;
             DateTime endTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[5].Value.ToString());
             string diffTime = endTime.Subtract(startTime).ToString().Split('.')[0].ToString();
-            lblUsingTime.Text = diffTime;
+            if (lblEndTime.Text != "01/01/0001 00:00:00")
+            {
+                lblUsingTime.Text = diffTime;
+            }
+            else
+            {
+                lblUsingTime.Text = "";
+            }
         }
-        private void RdvBill_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
 
         private void BtnRefresh_Click(object sender, EventArgs e)
         {

@@ -97,8 +97,7 @@ namespace Game_center_management.Computer_Forms
 				ce.ShowDialog();
 
 			}
-
-		}
+        }
 
 		private void btnRefresh_Click(object sender, EventArgs e)
 		{

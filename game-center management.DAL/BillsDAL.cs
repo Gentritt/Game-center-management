@@ -137,7 +137,8 @@ namespace game_center_management.DAL
             bill.StartTime = DateTime.Parse(reader["StartTime"].ToString());
             if (reader["EndTime"] != DBNull.Value)
                 bill.EndTime = DateTime.Parse(reader["EndTime"].ToString());
-           // bill.Total = double.Parse(reader["Total"].ToString());
+            if (reader["Total"] != DBNull.Value)
+                bill.Total = double.Parse(reader["Total"].ToString());
 
             return bill;
 

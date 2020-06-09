@@ -41,7 +41,7 @@
             this.radMenuItem6 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem4 = new Telerik.WinControls.UI.RadMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.radMenuItem13 = new Telerik.WinControls.UI.RadMenuItem();
+            this.miAdministrationMenu = new Telerik.WinControls.UI.RadMenuItem();
             this.menuPuntoret = new Telerik.WinControls.UI.RadMenuItem();
             this.menuMenaxhimiPuntoreve = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem18 = new Telerik.WinControls.UI.RadMenuItem();
@@ -77,12 +77,14 @@
             this.radContextMenu1 = new Telerik.WinControls.UI.RadContextMenu(this.components);
             this.radMenuItem2 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
+            this.btnRefresh = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu2)).BeginInit();
             this.radMenu2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenuItem1
@@ -115,16 +117,16 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "icons8-computer-96.png");
             // 
-            // radMenuItem13
+            // miAdministrationMenu
             // 
-            this.radMenuItem13.Image = ((System.Drawing.Image)(resources.GetObject("radMenuItem13.Image")));
-            this.radMenuItem13.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.miAdministrationMenu.Image = ((System.Drawing.Image)(resources.GetObject("miAdministrationMenu.Image")));
+            this.miAdministrationMenu.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.menuPuntoret,
             this.menuMenaxhimiPuntoreve,
             this.radMenuItem18,
             this.menuRegjistrimiProduktev});
-            this.radMenuItem13.Name = "radMenuItem13";
-            this.radMenuItem13.Text = "Administration";
+            this.miAdministrationMenu.Name = "miAdministrationMenu";
+            this.miAdministrationMenu.Text = "Administration";
             // 
             // menuPuntoret
             // 
@@ -192,7 +194,7 @@
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.radPanel1.Location = new System.Drawing.Point(0, 428);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(806, 33);
+            this.radPanel1.Size = new System.Drawing.Size(810, 33);
             this.radPanel1.TabIndex = 5;
             this.radPanel1.ThemeName = "CrystalDark";
             // 
@@ -297,14 +299,14 @@
             this.radMenu2.Controls.Add(this.lblUserAdministrator);
             this.radMenu2.Controls.Add(this.guna2CirclePictureBox1);
             this.radMenu2.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuItem13,
+            this.miAdministrationMenu,
             this.radMenuItem14,
             this.radMenuItem15,
             this.radMenuItem16,
             this.radMenuItem17});
             this.radMenu2.Location = new System.Drawing.Point(0, 0);
             this.radMenu2.Name = "radMenu2";
-            this.radMenu2.Size = new System.Drawing.Size(806, 50);
+            this.radMenu2.Size = new System.Drawing.Size(810, 50);
             this.radMenu2.TabIndex = 1;
             this.radMenu2.ThemeName = "Material";
             // 
@@ -314,20 +316,20 @@
             this.startToolStripMenuItem,
             this.detailsToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(110, 48);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // detailsToolStripMenuItem
             // 
             this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
-            this.detailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.detailsToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.detailsToolStripMenuItem.Text = "Details";
             this.detailsToolStripMenuItem.Click += new System.EventHandler(this.DetailsToolStripMenuItem_Click);
             // 
@@ -341,7 +343,7 @@
             this.listviewitem.LargeImageList = this.imageList1;
             this.listviewitem.Location = new System.Drawing.Point(12, 68);
             this.listviewitem.Name = "listviewitem";
-            this.listviewitem.Size = new System.Drawing.Size(782, 354);
+            this.listviewitem.Size = new System.Drawing.Size(758, 354);
             this.listviewitem.TabIndex = 15;
             this.listviewitem.UseCompatibleStateImageBehavior = false;
             this.listviewitem.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listviewitem_MouseClick_1);
@@ -362,12 +364,22 @@
             this.radMenuItem3.Name = "radMenuItem3";
             this.radMenuItem3.Text = "Stop";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(772, 82);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(31, 42);
+            this.btnRefresh.TabIndex = 17;
+            this.btnRefresh.Text = "R";
+            this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(806, 461);
+            this.ClientSize = new System.Drawing.Size(810, 461);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.listviewitem);
             this.Controls.Add(this.radPanel1);
             this.Controls.Add(this.lblUsername);
@@ -386,6 +398,7 @@
             this.radMenu2.ResumeLayout(false);
             this.radMenu2.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -402,7 +415,7 @@
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem5;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem6;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem4;
-		private Telerik.WinControls.UI.RadMenuItem radMenuItem13;
+		private Telerik.WinControls.UI.RadMenuItem miAdministrationMenu;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem14;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem15;
 		private Telerik.WinControls.UI.RadMenuItem menuPuntoret;
@@ -439,6 +452,7 @@
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem3;
 		public Telerik.WinControls.UI.RadContextMenu radContextMenu1;
         private System.Windows.Forms.ToolStripMenuItem detailsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadButton btnRefresh;
     }
 }
 
