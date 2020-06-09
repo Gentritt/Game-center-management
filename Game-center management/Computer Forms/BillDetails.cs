@@ -26,12 +26,7 @@ namespace Game_center_management.Computer_Forms
             billBLL = new BillBLL();
             computersBLL = new ComputersBLL();
         }
-        private void Computer()
-        {
-            var result = computersBLL.GetAll();
-            grdComputer.DataSource = result;
-
-        }
+        
         private void Calculate()
         {
             //foreach (var item in grdComputer.Columns)
@@ -71,9 +66,27 @@ namespace Game_center_management.Computer_Forms
         private void BillDetails_Load(object sender, EventArgs e)
         {
             InitData();
-            Computer();
         }
+        private void TotalPrice()
+        {
+            DateTime startTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[4].Value.ToString());
+            DateTime endTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[5].Value.ToString());
+            //int Column =int.Parse(this.grdComputer.CurrentRow.Cells[2].Value.ToString());
 
+            double minutes = (endTime - startTime).TotalHours;
+            double cost = 1;
+            if (minutes < 1)
+                lblTotal.Text = Convert.ToDouble(cost).ToString();
+            else
+                lblTotal.Text = Convert.ToDouble(cost + Math.Round(minutes - 1)).ToString();
+
+            int billId = int.Parse(this.rdvBill.CurrentRow.Cells[0].Value.ToString());
+            int total = int.Parse(lblTotal.Text);
+            Bill bill = new Bill();
+            bill.Total = int.Parse(total.ToString());
+            bill.BillID = billId;
+            billBLL.GetTotal(bill);
+        }
         private void BtnPrint_Click(object sender, EventArgs e)
         {
             
@@ -84,7 +97,8 @@ namespace Game_center_management.Computer_Forms
             lblStartTime.Text = this.rdvBill.CurrentRow.Cells[4].Value.ToString();
             lblEndTime.Text = this.rdvBill.CurrentRow.Cells[5].Value.ToString();
             //lblTotal.Text = this.rdvBill.CurrentRow.Cells[6].Value.ToString();
-            Calculate();
+            //Calculate();
+            TotalPrice();
             UsingTime();
             if (lblEndTime.Text != "01/01/0001 00:00:00")
             {

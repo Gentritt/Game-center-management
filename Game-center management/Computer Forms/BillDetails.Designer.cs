@@ -58,13 +58,11 @@
             this.btnRefresh = new Telerik.WinControls.UI.RadButton();
             this.lblUsingTime = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.grdComputer = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEndTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grdComputer)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -244,31 +242,31 @@
             gridViewTextBoxColumn1.FieldName = "BillID";
             gridViewTextBoxColumn1.HeaderText = "Bill ID";
             gridViewTextBoxColumn1.Name = "BillID";
-            gridViewTextBoxColumn1.Width = 101;
+            gridViewTextBoxColumn1.Width = 104;
             gridViewTextBoxColumn2.FieldName = "EmployeeUsername";
             gridViewTextBoxColumn2.HeaderText = "Employee";
             gridViewTextBoxColumn2.Name = "Employee";
-            gridViewTextBoxColumn2.Width = 63;
+            gridViewTextBoxColumn2.Width = 65;
             gridViewTextBoxColumn3.FieldName = "ComputerId";
             gridViewTextBoxColumn3.HeaderText = "Computer ID";
             gridViewTextBoxColumn3.Name = "ComputerID";
-            gridViewTextBoxColumn3.Width = 67;
+            gridViewTextBoxColumn3.Width = 69;
             gridViewTextBoxColumn4.FieldName = "ClientUsername";
             gridViewTextBoxColumn4.HeaderText = "Client";
             gridViewTextBoxColumn4.Name = "Client";
-            gridViewTextBoxColumn4.Width = 73;
+            gridViewTextBoxColumn4.Width = 75;
             gridViewTextBoxColumn5.FieldName = "StartTime";
             gridViewTextBoxColumn5.HeaderText = "Start Time";
             gridViewTextBoxColumn5.Name = "StartTime";
-            gridViewTextBoxColumn5.Width = 77;
+            gridViewTextBoxColumn5.Width = 79;
             gridViewTextBoxColumn6.FieldName = "EndTime";
             gridViewTextBoxColumn6.HeaderText = "End Time";
             gridViewTextBoxColumn6.Name = "EndTime";
-            gridViewTextBoxColumn6.Width = 87;
+            gridViewTextBoxColumn6.Width = 90;
             gridViewTextBoxColumn7.FieldName = "Total";
             gridViewTextBoxColumn7.HeaderText = "Total";
             gridViewTextBoxColumn7.Name = "Total";
-            gridViewTextBoxColumn7.Width = 89;
+            gridViewTextBoxColumn7.Width = 92;
             this.rdvBill.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -280,7 +278,7 @@
             this.rdvBill.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.rdvBill.Name = "rdvBill";
             this.rdvBill.ReadOnly = true;
-            this.rdvBill.Size = new System.Drawing.Size(589, 232);
+            this.rdvBill.Size = new System.Drawing.Size(589, 355);
             this.rdvBill.TabIndex = 22;
             this.rdvBill.ThemeName = "Crystal";
             // 
@@ -322,20 +320,11 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Using Time:";
             // 
-            // grdComputer
-            // 
-            this.grdComputer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdComputer.Location = new System.Drawing.Point(356, 307);
-            this.grdComputer.Name = "grdComputer";
-            this.grdComputer.Size = new System.Drawing.Size(589, 172);
-            this.grdComputer.TabIndex = 28;
-            // 
             // BillDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 491);
-            this.Controls.Add(this.grdComputer);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblUsingTime);
             this.Controls.Add(this.btnRefresh);
@@ -366,7 +355,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grdComputer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,6 +384,5 @@
         private Telerik.WinControls.UI.RadButton btnRefresh;
         private System.Windows.Forms.Label lblUsingTime;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView grdComputer;
     }
 }

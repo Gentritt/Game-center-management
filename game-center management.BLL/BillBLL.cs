@@ -22,7 +22,10 @@ namespace game_center_management.BLL
         {
             return billsDal.ADD(model);
         }
-
+        public int GetTotal(Bill model)
+        {
+            return billsDal.GetTotal(model);
+        }
         public List<Bill> GetAll()
         {
             return billsDal.GetAll();

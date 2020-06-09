@@ -116,6 +116,28 @@ namespace game_center_management.DAL
                 return -1;
             }
         }
+        public int GetTotal(Bill model)
+        {
+            try
+            {
+                using (var conn = SQLfunctions.GetConnection())
+                {
+                    using (var cmd = SQLfunctions.Command(conn, cmdText: "Total_ADD", CommandType.StoredProcedure))
+                    {
+                        cmd.Parameters.AddWithValue("@billID", model.BillID);
+                        cmd.Parameters.AddWithValue("@total", model.Total);
+
+                        int rowaffected = cmd.ExecuteNonQuery();
+
+                        return rowaffected;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return -1;
+            }
+        }
         
         public int Modify(Bill model)
         {
