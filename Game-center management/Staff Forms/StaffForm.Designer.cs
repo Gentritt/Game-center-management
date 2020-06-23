@@ -238,8 +238,6 @@
 			// 
 			// employessBLLBindingSource
 			// 
-			this.employessBLLBindingSource.DataSource = typeof(game_center_management.BLL.EmployessBLL);
-			// 
 			// StaffForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

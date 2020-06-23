@@ -139,8 +139,6 @@
             // 
             // computerPartsBLLBindingSource
             // 
-            this.computerPartsBLLBindingSource.DataSource = typeof(game_center_management.BLL.ComputerPartsBLL);
-            // 
             // cmbPC
             // 
             this.cmbPC.FormattingEnabled = true;

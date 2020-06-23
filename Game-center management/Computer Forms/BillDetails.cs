@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using game_center_management.BLL;
 using Game_center_management.BO;
 using game_center_management.DAL;
+using Game_center_management.Products;
 
 namespace Game_center_management.Computer_Forms
 {
@@ -18,8 +19,7 @@ namespace Game_center_management.Computer_Forms
     {
         private readonly BillBLL billBLL;
         private readonly ComputersBLL computersBLL;
-
-        ManageComputers mc = new ManageComputers();
+        
         public BillDetails()
         {
             InitializeComponent();
@@ -143,6 +143,27 @@ namespace Game_center_management.Computer_Forms
             bill.BillID = billId;
 
             billBLL.GetEndTime(bill);
+        }
+
+        private void brnOrder_Click(object sender, EventArgs e)
+        {
+            Order order = new Order();
+            order.lblBillID.Text = this.rdvBill.CurrentRow.Cells[0].Value.ToString();
+
+            using (var con = SQLfunctions.GetConnection())
+            {
+                using (var cmd = SQLfunctions.Command(con, cmdText: "GetProduct", cmdType: CommandType.StoredProcedure))
+                {
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            order.cmbProduct.Items.Add(dr[0]);
+                        }
+                    }
+                }
+            }
+            order.ShowDialog();
         }
     }
 }

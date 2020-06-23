@@ -100,14 +100,6 @@
             this.btnRefresh.ThemeName = "CrystalDark";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // productBLLBindingSource
-            // 
-            this.productBLLBindingSource.DataSource = typeof(game_center_management.BLL.ProductBLL);
-            // 
-            // productBLLBindingSource1
-            // 
-            this.productBLLBindingSource1.DataSource = typeof(game_center_management.BLL.ProductBLL);
-            // 
             // ProductsGRID
             // 
             this.ProductsGRID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -185,6 +177,6 @@
 		private System.Windows.Forms.BindingSource productBLLBindingSource;
 		private System.Windows.Forms.BindingSource productBLLBindingSource1;
 		private Telerik.WinControls.Themes.CrystalTheme crystalTheme1;
-		private Telerik.WinControls.UI.RadGridView ProductsGRID;
-	}
+        public Telerik.WinControls.UI.RadGridView ProductsGRID;
+    }
 }

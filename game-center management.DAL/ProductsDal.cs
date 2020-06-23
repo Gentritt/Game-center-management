@@ -170,26 +170,15 @@ namespace game_center_management.DAL
 							{
 								Product product = ToObject(reader);
 								ProductResult.Add(product);
-
-
 							}
-
 						}
-
-
-
 					}
-
-
 				}
-
 				return ProductResult;
 			}
 			catch(Exception e )
 			{
 				return null;
-
-
 			}
 		}
 

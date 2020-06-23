@@ -71,7 +71,7 @@ namespace game_center_management.DAL
             {
                 using (var conn = SQLfunctions.GetConnection())
                 {
-                    using (var cmd = SQLfunctions.Command(conn, cmdText: "Bill_GETALL", CommandType.StoredProcedure))
+                    using (var cmd = SQLfunctions.Command(conn, cmdText: "GetBill", CommandType.StoredProcedure))
                     {
                         cmd.Parameters.AddWithValue("@computerID", id);
                        
