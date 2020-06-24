@@ -24,7 +24,7 @@ namespace game_center_management.BLL
             return orderDAL.ADD(model);
         }
 
-        public Orders GetByName(string name)
+        public Orders GetByName(int name)
         {
             return orderDAL.GetByName(name);
         }

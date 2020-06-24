@@ -34,15 +34,15 @@ namespace Game_center_management.Products
         {
             Orders o = new Orders();
             
-            orderBLL.GetByName(cmbProduct.SelectedItem.ToString());
-            lblPrice.Text = o.Price.ToString();
+            orderBLL.GetByName(int.Parse(txtID.Text));
+            lblPrice.Text += o.Price.ToString();
             id = o.ProductId;
         }
 
         private void btnGiveOrder_Click(object sender, EventArgs e)
         {
             Orders orders = new Orders();
-            orders.ProductId = int.Parse(textBox1.Text);
+            orders.ProductId = int.Parse(txtID.Text);
             orders.BillId = int.Parse(lblBillID.Text);
             orders.Quantity = int.Parse(txtQuantity.Text);
             orders.Price = double.Parse(textBox2.Text);

@@ -48,6 +48,7 @@
     <Compile Include="ComputerPartsDAL.cs" />
     <Compile Include="ComputersDAL.cs" />
     <Compile Include="EmployessDAL.cs" />
+    <Compile Include="OrderDAL.cs" />
     <Compile Include="ProductsDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLfunctions.cs" />
@@ -59,7 +60,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database\Gaming-Center.sql" />
+    <Content Include="Database\ScriptGCM.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

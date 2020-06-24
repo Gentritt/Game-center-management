@@ -35,26 +35,25 @@ namespace game_center_management.DAL
 				return -1;
             }
         }
-		public Orders GetByName(string name)
+		public Orders GetByName(int name)
 		{
 			Orders order = null;
 			try
 			{
 				using (var con = SQLfunctions.GetConnection())
 				{
-					using (var cmd = SQLfunctions.Command(con, cmdText: "GetPricePr", cmdType: CommandType.StoredProcedure))
+					using (var cmd = SQLfunctions.Command(con, cmdText: "GetByIdOrder", cmdType: CommandType.StoredProcedure))
 					{
-						cmd.Parameters.AddWithValue("@name", name);
+						cmd.Parameters.AddWithValue("@id", name);
 
 						using (SqlDataReader reader = cmd.ExecuteReader())
 						{
 							if (reader.HasRows)
 							{
-
 								order = new Orders();
 								if (reader.Read())
 								{
-									//order.ProductId = int.Parse(reader["ProductID"].ToString());
+									order.ProductId = int.Parse(reader["ProductID"].ToString());
 									order.Price = double.Parse(reader["ProductPrice"].ToString());
 								}
 							}

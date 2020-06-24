@@ -39,7 +39,7 @@
             this.txtQuantity = new Telerik.WinControls.UI.RadTextBox();
             this.btnGiveOrder = new Telerik.WinControls.UI.RadButton();
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.grvOrders = new Telerik.WinControls.UI.RadGridView();
             ((System.ComponentModel.ISupportInitialize)(this.txtQuantity)).BeginInit();
@@ -138,12 +138,12 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 203);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
+            this.txtID.Location = new System.Drawing.Point(23, 203);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 20);
+            this.txtID.TabIndex = 11;
             // 
             // textBox2
             // 
@@ -170,7 +170,7 @@
             this.ClientSize = new System.Drawing.Size(629, 362);
             this.Controls.Add(this.grvOrders);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnGiveOrder);
             this.Controls.Add(this.txtQuantity);
@@ -206,7 +206,7 @@
         public System.Windows.Forms.ComboBox cmbProduct;
         public System.Windows.Forms.Label lblPrice;
         public Telerik.WinControls.UI.RadTextBox txtQuantity;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox textBox2;
         private Telerik.WinControls.UI.RadGridView grvOrders;
     }
