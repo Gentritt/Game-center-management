@@ -12,12 +12,14 @@ using game_center_management.BLL;
 using Game_center_management.BO;
 using game_center_management.DAL;
 using Game_center_management.Products;
+using Game_center_maagement.BO;
 
 namespace Game_center_management.Products
 {
     public partial class Order : Form
     {
         private readonly OrderBLL orderBLL;
+        
         public Order()
         {
             InitializeComponent();
@@ -35,8 +37,8 @@ namespace Game_center_management.Products
             Orders o = new Orders();
             
             orderBLL.GetByName(int.Parse(txtID.Text));
-            lblPrice.Text += o.Price.ToString();
-            id = o.ProductId;
+            lblPrice.Text = StaticClass.Price.ToString();
+            id = StaticClass.ID;
         }
 
         private void btnGiveOrder_Click(object sender, EventArgs e)
@@ -45,7 +47,7 @@ namespace Game_center_management.Products
             orders.ProductId = int.Parse(txtID.Text);
             orders.BillId = int.Parse(lblBillID.Text);
             orders.Quantity = int.Parse(txtQuantity.Text);
-            orders.Price = double.Parse(textBox2.Text);
+            orders.Price = double.Parse(lblPrice.Text);
             
             var result = orderBLL.ADD(orders);
 

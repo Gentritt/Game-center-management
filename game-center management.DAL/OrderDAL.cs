@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Globalization;
+using Game_center_maagement.BO;
 using Game_center_management.BO;
 using Game_center_management.BO.Interfaces;
 
@@ -38,6 +39,7 @@ namespace game_center_management.DAL
 		public Orders GetByName(int name)
 		{
 			Orders order = null;
+
 			try
 			{
 				using (var con = SQLfunctions.GetConnection())
@@ -45,6 +47,7 @@ namespace game_center_management.DAL
 					using (var cmd = SQLfunctions.Command(con, cmdText: "GetByIdOrder", cmdType: CommandType.StoredProcedure))
 					{
 						cmd.Parameters.AddWithValue("@id", name);
+						//cmd.Parameters.AddWithValue("@name", name);
 
 						using (SqlDataReader reader = cmd.ExecuteReader())
 						{
@@ -53,8 +56,8 @@ namespace game_center_management.DAL
 								order = new Orders();
 								if (reader.Read())
 								{
-									order.ProductId = int.Parse(reader["ProductID"].ToString());
-									order.Price = double.Parse(reader["ProductPrice"].ToString());
+									StaticClass.ID = int.Parse(reader["ProductID"].ToString());
+									StaticClass.Price = double.Parse(reader["ProductPrice"].ToString());
 								}
 							}
 						}

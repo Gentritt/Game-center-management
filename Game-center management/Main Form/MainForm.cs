@@ -97,6 +97,10 @@ namespace Game_center_management
 		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
 				DialogResult dialog = MessageBox.Show("Are you sure you want to Exit ?", "Exit",MessageBoxButtons.YesNo);
+				if(dialog == DialogResult.No)
+                {
+				e.Cancel = true;
+                }
 		}
         
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
