@@ -10,5 +10,6 @@ namespace Game_center_maagement.BO
     {
         public static int  ID { get; set; }
         public static double Price { get; set; }
+        public static double TotalPrice { get; set; }
     }
 }

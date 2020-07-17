@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
+using Game_center_maagement.BO;
 using Game_center_management.BO;
 using Game_center_management.BO.Interfaces;
 
@@ -114,6 +116,37 @@ namespace game_center_management.DAL
             catch (Exception e)
             {
                 return -1;
+            }
+        }
+        public int GetTotalOrders(int billID)
+        {
+            try
+            {
+                using(var conn = SQLfunctions.GetConnection())
+                {
+                    using(var cmd = SQLfunctions.Command(conn, cmdText: "GetTotalPriceOrders", CommandType.StoredProcedure))
+                    {
+                        cmd.Parameters.AddWithValue("@billID", billID);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                if (reader.Read())
+                                {
+                                    StaticClass.TotalPrice = double.Parse(reader["shuma"].ToString());
+                                }
+                            }
+                        }
+                        int rowaffected = cmd.ExecuteNonQuery();
+
+                        return rowaffected;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return - 1;
             }
         }
         public int GetTotal(Bill model)

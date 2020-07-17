@@ -30,6 +30,10 @@ namespace game_center_management.BLL
         {
             return billsDal.GetAll();
         }
+        public int GetTotalOrders(int billID)
+        {
+            return billsDal.GetTotalOrders(billID);
+        }
         public List<Bill> Get(int id)
         {
             return billsDal.Get(id);

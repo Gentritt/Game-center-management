@@ -12,6 +12,8 @@ using game_center_management.BLL;
 using Game_center_management.BO;
 using game_center_management.DAL;
 using Game_center_management.Products;
+using Game_center_maagement.BO;
+
 
 namespace Game_center_management.Computer_Forms
 {
@@ -66,6 +68,24 @@ namespace Game_center_management.Computer_Forms
         private void BillDetails_Load(object sender, EventArgs e)
         {
             InitData();
+            lblBillID.Text = this.rdvBill.CurrentRow.Cells[0].Value.ToString();
+            lblEmployee.Text = this.rdvBill.CurrentRow.Cells[1].Value.ToString();
+            lblComputerID.Text = this.rdvBill.CurrentRow.Cells[2].Value.ToString();
+            lblClient.Text = this.rdvBill.CurrentRow.Cells[3].Value.ToString();
+            lblStartTime.Text = this.rdvBill.CurrentRow.Cells[4].Value.ToString();
+            lblEndTime.Text = this.rdvBill.CurrentRow.Cells[5].Value.ToString();
+            if (lblEndTime.Text != "01/01/0001 00:00:00")
+            {
+                btnEndTime.Enabled = false;
+                brnOrder.Enabled = false;
+            }
+            else
+            {
+                btnEndTime.Enabled = true;
+                brnOrder.Enabled = true;
+                lblEndTime.Text = "";
+            }
+            UsingTime();
         }
         private void TotalPrice()
         {
@@ -98,25 +118,43 @@ namespace Game_center_management.Computer_Forms
             lblEndTime.Text = this.rdvBill.CurrentRow.Cells[5].Value.ToString();
             //lblTotal.Text = this.rdvBill.CurrentRow.Cells[6].Value.ToString();
             //Calculate();
-            TotalPrice();
+            TotalPriceInOrder();
+            if (lblEndTime.Text != "" && lblEndTime.Text != "01/01/0001 00:00:00")
+            {
+                TotalPrice();
+            }
             UsingTime();
+           
             if (lblEndTime.Text != "01/01/0001 00:00:00")
             {
                 btnEndTime.Enabled = false;
+                brnOrder.Enabled = false;
             }
             else
             {
                 btnEndTime.Enabled = true;
+                brnOrder.Enabled = true;
                 lblEndTime.Text = "";
             }
+            CalculateTotal();
 
+        }
+        private void CalculateTotal()
+        {
+            double sum = double.Parse(lblOrders.Text);
+            double sum1 = double.Parse(lblTotal.Text);
+
+            sum += sum1;
+
+            lblTotal.Text = sum.ToString();
+            
         }
         private void UsingTime()
         {
             DateTime startTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[4].Value.ToString()); ;
             DateTime endTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[5].Value.ToString());
             string diffTime = endTime.Subtract(startTime).ToString().Split('.')[0].ToString();
-            if (lblEndTime.Text != "01/01/0001 00:00:00")
+            if (lblEndTime.Text != "" && lblEndTime.Text != "01/01/0001 00:00:00")
             {
                 lblUsingTime.Text = diffTime;
             }
@@ -125,7 +163,11 @@ namespace Game_center_management.Computer_Forms
                 lblUsingTime.Text = "";
             }
         }
-
+        public void TotalPriceInOrder()
+        {
+            billBLL.GetTotalOrders(int.Parse(lblBillID.Text));
+            lblOrders.Text = StaticClass.TotalPrice.ToString();
+        }
         private void BtnRefresh_Click(object sender, EventArgs e)
         {
             this.Hide();

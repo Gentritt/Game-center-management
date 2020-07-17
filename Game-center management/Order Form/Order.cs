@@ -19,34 +19,58 @@ namespace Game_center_management.Products
     public partial class Order : Form
     {
         private readonly OrderBLL orderBLL;
+        private readonly ProductsDal prodal;
         
         public Order()
         {
             InitializeComponent();
             orderBLL = new OrderBLL();
+            prodal = new ProductsDal();
         }
         private void Order_Load(object sender, EventArgs e)
         {
             var result = orderBLL.GetAll();
             grvOrders.DataSource = result;
+            InitData();
         }
         private static int id;
-       
+        private void InitData()
+        {
+            grvProducts.DataSource = prodal.GetAll();
+        }
         private void cmbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string item = cmbProduct.SelectedItem.ToString();
+            for (int rows = 0; rows < grvProducts.Rows.Count; rows++)
+            {
+                if (grvProducts.Rows[rows].Cells[1].Value.ToString() == item)
+                {
+                    id = int.Parse(grvProducts.Rows[rows].Cells[0].Value.ToString());
+                }
+            }
             Orders o = new Orders();
             
-            orderBLL.GetByName(int.Parse(txtID.Text));
+            orderBLL.GetByName(id);
             lblPrice.Text = StaticClass.Price.ToString();
-            id = StaticClass.ID;
+            //id = StaticClass.ID;
+
+            
+            
+
+            //textBox2.Text = cmbProduct.Items.Count.ToString();
+            //lblPrice.Text += grvProducts.Rows[0].Cells["ProductName"].Value;
+
+          
+            
+            //if (dataGridView1.row[i].Cells["ColName"].Value < dataGridView2.row[j].Cells["ColName"].Value)
         }
 
         private void btnGiveOrder_Click(object sender, EventArgs e)
         {
             Orders orders = new Orders();
-            orders.ProductId = int.Parse(txtID.Text);
+            orders.ProductId = id;
             orders.BillId = int.Parse(lblBillID.Text);
-            orders.Quantity = int.Parse(txtQuantity.Text);
+            orders.Quantity = int.Parse(cmbQuantity.SelectedItem.ToString());
             orders.Price = double.Parse(lblPrice.Text);
             
             var result = orderBLL.ADD(orders);
@@ -65,6 +89,15 @@ namespace Game_center_management.Products
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        static double sum2 = StaticClass.Price;
+        private void cmbQuantity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            double sum = double.Parse(lblPrice.Text);
+            double nr = double.Parse(cmbQuantity.SelectedItem.ToString());
+            sum *= nr;
+
+            lblPrice.Text = sum.ToString();
         }
     }
 }
