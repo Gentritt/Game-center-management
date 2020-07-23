@@ -264,6 +264,9 @@
     <EmbeddedResource Include="Computer Forms\RegisterComputers.resx">
       <DependentUpon>RegisterComputers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main Form\MainForm.sq.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Order Form\Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff Forms\CreateUserStaff.resx">
       <DependentUpon>CreateUserStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Forms\LoginForm.sq.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff Forms\StaffEditForm.resx">
       <DependentUpon>StaffEditForm.cs</DependentUpon>

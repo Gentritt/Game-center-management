@@ -90,13 +90,13 @@ namespace Game_center_management.Products
         {
             this.Close();
         }
-        static double sum2 = StaticClass.Price;
+       
         private void cmbQuantity_SelectedIndexChanged(object sender, EventArgs e)
         {
-            double sum = double.Parse(lblPrice.Text);
+            double sum2 = StaticClass.Price;
             double nr = double.Parse(cmbQuantity.SelectedItem.ToString());
-            sum *= nr;
-
+            double sum = sum2 * nr;
+           
             lblPrice.Text = sum.ToString();
         }
     }

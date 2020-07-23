@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -138,7 +138,7 @@
             // 
             // 
             // 
-            this.grvOrders.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            this.grvOrders.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.grvOrders.Name = "grvOrders";
             this.grvOrders.Size = new System.Drawing.Size(341, 274);
             this.grvOrders.TabIndex = 13;
@@ -149,7 +149,7 @@
             // 
             // 
             // 
-            this.grvProducts.MasterTemplate.ViewDefinition = tableViewDefinition4;
+            this.grvProducts.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.grvProducts.Name = "grvProducts";
             this.grvProducts.Size = new System.Drawing.Size(13, 10);
             this.grvProducts.TabIndex = 14;
@@ -177,7 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 310);
+            this.ClientSize = new System.Drawing.Size(629, 333);
             this.Controls.Add(this.cmbQuantity);
             this.Controls.Add(this.grvProducts);
             this.Controls.Add(this.grvOrders);

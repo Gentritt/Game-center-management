@@ -45,6 +45,8 @@
             this.txtPassword = new Telerik.WinControls.UI.RadTextBox();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.rbEnglish = new System.Windows.Forms.RadioButton();
+            this.rbAlbanian = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
@@ -60,123 +62,99 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(94)))), ((int)(((byte)(242)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(359, 124);
-            this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(119, 42);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(94)))), ((int)(((byte)(242)))));
-            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(56, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Log In into your Account";
             // 
             // lblUsername
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblUsername, "lblUsername");
             this.lblUsername.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lblUsername.Location = new System.Drawing.Point(43, 158);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(92, 21);
-            this.lblUsername.TabIndex = 4;
-            this.lblUsername.Text = "USERNAME";
             // 
             // lblPassword
             // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblPassword, "lblPassword");
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lblPassword.Location = new System.Drawing.Point(43, 244);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(95, 21);
-            this.lblPassword.TabIndex = 5;
-            this.lblPassword.Text = "PASSWORD";
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Gray;
-            this.btnLogin.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogin.Location = new System.Drawing.Point(25, 298);
+            resources.ApplyResources(this.btnLogin, "btnLogin");
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(110, 42);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "LOGIN";
             this.btnLogin.ThemeName = "Crystal";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(213, 298);
+            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(110, 42);
-            this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "CANCEL";
             this.btnCancel.ThemeName = "Crystal";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(167, 158);
+            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(124, 24);
-            this.txtUsername.TabIndex = 0;
             this.txtUsername.ThemeName = "Crystal";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(167, 246);
+            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(124, 24);
-            this.txtPassword.TabIndex = 1;
             this.txtPassword.ThemeName = "Crystal";
             // 
             // gunaCirclePictureBox1
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(13, 155);
+            resources.ApplyResources(this.gunaCirclePictureBox1, "gunaCirclePictureBox1");
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox1.TabIndex = 6;
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 239);
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            // 
+            // rbEnglish
+            // 
+            resources.ApplyResources(this.rbEnglish, "rbEnglish");
+            this.rbEnglish.Name = "rbEnglish";
+            this.rbEnglish.TabStop = true;
+            this.rbEnglish.UseVisualStyleBackColor = true;
+            this.rbEnglish.CheckedChanged += new System.EventHandler(this.rbEnglish_CheckedChanged);
+            // 
+            // rbAlbanian
+            // 
+            resources.ApplyResources(this.rbAlbanian, "rbAlbanian");
+            this.rbAlbanian.Name = "rbAlbanian";
+            this.rbAlbanian.TabStop = true;
+            this.rbAlbanian.UseVisualStyleBackColor = true;
+            this.rbAlbanian.CheckedChanged += new System.EventHandler(this.rbAlbanian_CheckedChanged);
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(359, 409);
+            this.Controls.Add(this.rbAlbanian);
+            this.Controls.Add(this.rbEnglish);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.gunaCirclePictureBox1);
             this.Controls.Add(this.txtPassword);
@@ -188,7 +166,6 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -222,5 +199,7 @@
 		private Telerik.WinControls.UI.RadTextBox txtPassword;
 		private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
 		private System.Windows.Forms.PictureBox pictureBox2;
-	}
+        private System.Windows.Forms.RadioButton rbEnglish;
+        private System.Windows.Forms.RadioButton rbAlbanian;
+    }
 }

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using game_center_management.BLL;
@@ -73,5 +75,24 @@ namespace Game_center_management
 		{
 
 		}
-	}
+
+        private void rbAlbanian_CheckedChanged(object sender, EventArgs e)
+        {
+			if (rbAlbanian.Checked) LangChanged(langCode: "sq");
+            
+        }
+
+        private void rbEnglish_CheckedChanged(object sender, EventArgs e)
+        {
+			if (rbEnglish.Checked) LangChanged(langCode: "en-US");
+        }
+		public void LangChanged(string langCode	)
+        {
+			CultureInfo c1 = new CultureInfo(langCode);
+			Thread.CurrentThread.CurrentCulture = c1;
+			Thread.CurrentThread.CurrentUICulture = c1;
+			this.Controls.Clear();
+			this.InitializeComponent();
+        }
+    }
 }

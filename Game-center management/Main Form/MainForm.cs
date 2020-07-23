@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
+using System.Threading;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
@@ -194,5 +196,23 @@ namespace Game_center_management
                 miAdministrationMenu.Enabled = false;
             }
         }
-    }
+
+        private void radMenuItem22_Click(object sender, EventArgs e)
+        {
+			LangChanged(langCode: "sq");
+        }
+
+        private void radMenuItem21_Click(object sender, EventArgs e)
+        {
+			LangChanged(langCode: "en-US");
+
+		}
+		public void LangChanged(string langCode)
+		{
+			CultureInfo c1 = new CultureInfo(langCode);
+			Thread.CurrentThread.CurrentCulture = c1;
+			Thread.CurrentThread.CurrentUICulture = c1;
+			
+		}
+	}
 }
