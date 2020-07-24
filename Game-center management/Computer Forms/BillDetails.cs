@@ -136,8 +136,10 @@ namespace Game_center_management.Computer_Forms
                 brnOrder.Enabled = true;
                 lblEndTime.Text = "";
             }
-            CalculateTotal();
-
+            if (lblTotal.Text != "")
+            {
+                CalculateTotal();
+            }
         }
         private void CalculateTotal()
         {
@@ -147,7 +149,6 @@ namespace Game_center_management.Computer_Forms
             sum += sum1;
 
             lblTotal.Text = sum.ToString();
-            
         }
         private void UsingTime()
         {

@@ -96,14 +96,14 @@ namespace Game_center_management
 			Application.Restart();
 		}
 
-		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-		{
-				DialogResult dialog = MessageBox.Show("Are you sure you want to Exit ?", "Exit",MessageBoxButtons.YesNo);
-				if(dialog == DialogResult.No)
-                {
-				e.Cancel = true;
-                }
-		}
+		//private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+		//{
+  //          DialogResult dialog = MessageBox.Show("Are you sure you want to Exit ?", "Exit", MessageBoxButtons.YesNo);
+  //          if (dialog == DialogResult.No)
+  //          {
+  //              e.Cancel = true;
+  //          }
+  //      }
         
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
 		{
@@ -179,9 +179,7 @@ namespace Game_center_management
 
         private void BtnRefresh_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainForm mf = new MainForm();
-            mf.ShowDialog();
+            
         }
 
         private void RadMenuItem13_admClick(object sender, EventArgs e)
@@ -212,7 +210,9 @@ namespace Game_center_management
 			CultureInfo c1 = new CultureInfo(langCode);
 			Thread.CurrentThread.CurrentCulture = c1;
 			Thread.CurrentThread.CurrentUICulture = c1;
-			
+			this.Hide();
+			MainForm mf = new MainForm();
+			mf.ShowDialog();
 		}
 	}
 }
