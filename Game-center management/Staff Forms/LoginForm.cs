@@ -93,6 +93,6 @@ namespace Game_center_management
 			Thread.CurrentThread.CurrentUICulture = c1;
 			this.Controls.Clear();
 			this.InitializeComponent();
-        }
+		}
     }
 }

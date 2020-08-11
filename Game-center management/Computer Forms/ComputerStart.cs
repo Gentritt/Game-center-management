@@ -55,6 +55,7 @@ namespace Game_center_management.Computer_Forms
             bill.ComputerId = int.Parse(txtComputerID.Text);
             bill.ClientUsername = cmbClientID.SelectedItem.ToString();
             bill.StartTime = DateTime.Parse(txtStartTime.Text);
+           
             var result = billBll.ADD(bill);
 
             if (result != 0)

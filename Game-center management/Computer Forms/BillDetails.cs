@@ -73,19 +73,10 @@ namespace Game_center_management.Computer_Forms
             lblComputerID.Text = this.rdvBill.CurrentRow.Cells[2].Value.ToString();
             lblClient.Text = this.rdvBill.CurrentRow.Cells[3].Value.ToString();
             lblStartTime.Text = this.rdvBill.CurrentRow.Cells[4].Value.ToString();
-            lblEndTime.Text = this.rdvBill.CurrentRow.Cells[5].Value.ToString();
-            if (lblEndTime.Text != "01/01/0001 00:00:00")
-            {
-                btnEndTime.Enabled = false;
-                brnOrder.Enabled = false;
-            }
-            else
-            {
-                btnEndTime.Enabled = true;
-                brnOrder.Enabled = true;
-                lblEndTime.Text = "";
-            }
-            UsingTime();
+            //lblEndTime.Text = this.rdvBill.CurrentRow.Cells[5].Value.ToString();
+            //EndTime i need to fix
+            //EndTimeEnable();
+            
         }
         private void TotalPrice()
         {
@@ -119,12 +110,24 @@ namespace Game_center_management.Computer_Forms
             //lblTotal.Text = this.rdvBill.CurrentRow.Cells[6].Value.ToString();
             //Calculate();
             TotalPriceInOrder();
-            if (lblEndTime.Text != "" && lblEndTime.Text != "01/01/0001 00:00:00")
-            {
-                TotalPrice();
-            }
+            //EndTime i need to fix
+            //if (lblEndTime.Text != "" && lblEndTime.Text != "01/01/0001 00:00:00")
+            // {
+            //TotalPrice();
+            // }
+            TotalPrice();
             UsingTime();
-           
+            
+            //EndTime i need to fix
+            // EndTimeEnable();
+
+            if (lblTotal.Text != "")
+            {
+                CalculateTotal();
+            }
+        }
+        private void EndTimeEnable()
+        {
             if (lblEndTime.Text != "01/01/0001 00:00:00")
             {
                 btnEndTime.Enabled = false;
@@ -135,10 +138,6 @@ namespace Game_center_management.Computer_Forms
                 btnEndTime.Enabled = true;
                 brnOrder.Enabled = true;
                 lblEndTime.Text = "";
-            }
-            if (lblTotal.Text != "")
-            {
-                CalculateTotal();
             }
         }
         private void CalculateTotal()
@@ -155,14 +154,17 @@ namespace Game_center_management.Computer_Forms
             DateTime startTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[4].Value.ToString()); ;
             DateTime endTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[5].Value.ToString());
             string diffTime = endTime.Subtract(startTime).ToString().Split('.')[0].ToString();
-            if (lblEndTime.Text != "" && lblEndTime.Text != "01/01/0001 00:00:00")
-            {
-                lblUsingTime.Text = diffTime;
-            }
-            else
-            {
-                lblUsingTime.Text = "";
-            }
+            //EndTime i need to fix
+            // if (lblEndTime.Text != "" && lblEndTime.Text != "01/01/0001 00:00:00")
+            // {
+            //lblUsingTime.Text = diffTime;
+            //  }
+            //else
+            // {
+            //     lblUsingTime.Text = "";
+            // }
+
+            lblUsingTime.Text = diffTime;
         }
         public void TotalPriceInOrder()
         {

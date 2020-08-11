@@ -199,7 +199,7 @@
 		private Telerik.WinControls.UI.RadTextBox txtPassword;
 		private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
 		private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.RadioButton rbEnglish;
-        private System.Windows.Forms.RadioButton rbAlbanian;
+        public System.Windows.Forms.RadioButton rbEnglish;
+        public System.Windows.Forms.RadioButton rbAlbanian;
     }
 }

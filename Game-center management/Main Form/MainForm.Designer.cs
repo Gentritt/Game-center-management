@@ -337,6 +337,7 @@
             this.Controls.Add(this.radMenu2);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
+            this.ShowInTaskbar = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();

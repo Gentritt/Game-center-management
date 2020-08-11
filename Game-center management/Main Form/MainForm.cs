@@ -41,28 +41,26 @@ namespace Game_center_management
 		{
 			StaffForm staffForm = new StaffForm();
 			staffForm.ShowDialog();
-
 		}
 
 		private void MainForm_Shown(object sender, EventArgs e)
 		{
 			LoginForm loginForm = new LoginForm();
 			loginForm.ShowDialog();
+             
+            if (UserSession.LoggedUser != null)
+            {
+                lblLoggedUser.Text += UserSession.LoggedUser.Username;
+                lblUserAdministrator.Text = UserSession.LoggedUser.Username;
+                lblDatetime.Text += DateTime.Now.ToString();
+                timer1.Start();
+            }
+            else
+            {
+                this.Close();
 
-			if (UserSession.LoggedUser != null)
-			{
-				lblLoggedUser.Text += UserSession.LoggedUser.Username;
-				lblUserAdministrator.Text = UserSession.LoggedUser.Username;
-				lblDatetime.Text += DateTime.Now.ToString();
-				timer1.Start();
-			}
-			else
-			{
-				this.Close();
-
-			}
-		
-		}
+            }
+        }
 
 
 		private void radMenuItem16_Click(object sender, EventArgs e)
@@ -82,7 +80,6 @@ namespace Game_center_management
 		{
 			Products.Products products = new Products.Products();
 			products.ShowDialog();
-
 		}
 
 		private void timer1_Tick(object sender, EventArgs e)
@@ -203,16 +200,27 @@ namespace Game_center_management
         private void radMenuItem21_Click(object sender, EventArgs e)
         {
 			LangChanged(langCode: "en-US");
-
 		}
 		public void LangChanged(string langCode)
 		{
 			CultureInfo c1 = new CultureInfo(langCode);
 			Thread.CurrentThread.CurrentCulture = c1;
 			Thread.CurrentThread.CurrentUICulture = c1;
-			this.Hide();
+
+            //CultureInfo culture = new CultureInfo(language);
+            //NumberFormatInfo numFormatInfo = (NumberFormatInfo)culture.NumberFormat.Clone();
+
+            //c1.DateTimeFormat.DateSeparator = "/";
+            //c1.DateTimeFormat.ShortDatePattern = "d/M/yyyy hh:mm:ss";
+            //c1.DateTimeFormat.LongDatePattern = "dddd, d MMMM yyyy";
+            //Thread.CurrentThread.CurrentCulture = c1;
+            //Thread.CurrentThread.CurrentUICulture = c1;
+
+
+            this.Hide();
 			MainForm mf = new MainForm();
 			mf.ShowDialog();
+
 		}
 	}
 }

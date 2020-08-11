@@ -9,7 +9,7 @@ namespace Game_center_management.BO
         public string EmployeeUsername { get; set; }
         public int ComputerId { get; set; }
         public DateTime StartTime { get; set; }
-		public DateTime EndTime { get; set; }
+		public DateTime? EndTime { get; set; }
 		public double Total { get; set; }
         public virtual Clients Client { get; set; }
 		public virtual Computer ComputerID { get; set; }

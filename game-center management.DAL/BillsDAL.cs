@@ -18,6 +18,7 @@ namespace game_center_management.DAL
             {
                 using (var con = SQLfunctions.GetConnection())
                 {
+                    //AddBill procedure and BillAdd with endTime
                     using (var cmd = SQLfunctions.Command(con, cmdText: "AddBill", CommandType.StoredProcedure))
                     {
                         cmd.Parameters.AddWithValue("@employee", model.EmployeeUsername);

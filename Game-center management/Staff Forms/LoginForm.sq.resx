@@ -274,8 +274,11 @@
         o0UC1j9TmIyQ6GLcoPdhEB7j8XMXv2LF/wA4Pox0Hvit2gAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="rbEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
+  </data>
   <data name="rbEnglish.Text" xml:space="preserve">
-    <value>Anglish</value>
+    <value>Anglisht</value>
   </data>
   <data name="rbAlbanian.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 17</value>
