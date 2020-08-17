@@ -255,6 +255,9 @@
     <EmbeddedResource Include="Computer Forms\ComputerStart.resx">
       <DependentUpon>ComputerStart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Computer Forms\ComputerStart.sq.resx">
+      <DependentUpon>ComputerStart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Computer Forms\ManageComputers.resx">
       <DependentUpon>ManageComputers.cs</DependentUpon>
     </EmbeddedResource>
@@ -287,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff Forms\StaffEditForm.resx">
       <DependentUpon>StaffEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Forms\StaffForm.sq.resx">
+      <DependentUpon>StaffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Forms\CreateUserAccounts.resx">
       <DependentUpon>CreateUserAccounts.cs</DependentUpon>

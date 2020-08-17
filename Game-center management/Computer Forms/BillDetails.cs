@@ -78,6 +78,7 @@ namespace Game_center_management.Computer_Forms
             //EndTimeEnable();
             
         }
+        private static double total;
         private void TotalPrice()
         {
             DateTime startTime = DateTime.Parse(this.rdvBill.CurrentRow.Cells[4].Value.ToString());
@@ -87,16 +88,23 @@ namespace Game_center_management.Computer_Forms
             double minutes = (endTime - startTime).TotalHours;
             double cost = 1;
             if (minutes < 1)
-                lblTotal.Text = Convert.ToDouble(cost).ToString();
+                total = Convert.ToDouble(cost);
             else
-                lblTotal.Text = Convert.ToDouble(cost + Math.Round(minutes - 1)).ToString();
+                total = Convert.ToDouble(cost + Math.Round(minutes - 1));
+
+
+            double priceOrders = double.Parse(lblOrders.Text);
+
+            double priceTotal = total + priceOrders;
 
             int billId = int.Parse(this.rdvBill.CurrentRow.Cells[0].Value.ToString());
-            int total = int.Parse(lblTotal.Text);
+            //int total1 = int.Parse(lblTotal.Text);
             Bill bill = new Bill();
-            bill.Total = int.Parse(total.ToString());
+            bill.Total = priceTotal;
             bill.BillID = billId;
             billBLL.GetTotal(bill);
+
+            lblTotal.Text = total.ToString();
         }
         private void BtnPrint_Click(object sender, EventArgs e)
         {

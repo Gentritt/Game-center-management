@@ -75,17 +75,22 @@ namespace Game_center_management
 		{
 
 		}
-
-        private void rbAlbanian_CheckedChanged(object sender, EventArgs e)
+		public static bool lang;
+		private void rbAlbanian_CheckedChanged(object sender, EventArgs e)
         {
+			lang = true;
 			if (rbAlbanian.Checked) LangChanged(langCode: "sq");
-            
+			
         }
 
         private void rbEnglish_CheckedChanged(object sender, EventArgs e)
         {
+			lang = false;
 			if (rbEnglish.Checked) LangChanged(langCode: "en-US");
+			
+
         }
+
 		public void LangChanged(string langCode	)
         {
 			CultureInfo c1 = new CultureInfo(langCode);

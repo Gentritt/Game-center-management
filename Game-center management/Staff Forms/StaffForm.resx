@@ -117,23 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;telerikMetroTouchTheme1.Name" xml:space="preserve">
+    <value>telerikMetroTouchTheme1</value>
+  </data>
+  <data name="gridViewTextBoxColumn9.HeaderText" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="&gt;&gt;gridServiceStaff.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="jImageButton1.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAdd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="radLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Name" xml:space="preserve">
+    <value>btnAdd</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="&gt;&gt;jImageButton1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlServicStaff.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>865, 514</value>
+  </data>
+  <data name="&gt;&gt;crystalDarkTheme1.Name" xml:space="preserve">
+    <value>crystalDarkTheme1</value>
+  </data>
+  <data name="&gt;&gt;employessBLLBindingSource.Name" xml:space="preserve">
+    <value>employessBLLBindingSource</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="gridServiceStaff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 367</value>
+  </data>
+  <data name="gridServiceStaff.MasterTemplate.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAdd.Text" xml:space="preserve">
+    <value>ADD</value>
+  </data>
+  <data name="&gt;&gt;employessBLLBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gridServiceStaff.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridViewTextBoxColumn8.HeaderText" xml:space="preserve">
+    <value>PhoneNumber</value>
+  </data>
+  <data name="gridServiceStaff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 144</value>
+  </data>
+  <data name="gridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>PersonalID</value>
+  </data>
+  <data name="btnDelete.Text" xml:space="preserve">
+    <value>   DELETE</value>
+  </data>
+  <data name="&gt;&gt;highContrastBlackTheme1.Name" xml:space="preserve">
+    <value>highContrastBlackTheme1</value>
+  </data>
+  <data name="&gt;&gt;crystalDarkTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.CrystalDarkTheme, Telerik.WinControls.Themes.CrystalDark, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="pnlServicStaff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;pnlServicStaff.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radLabel1.Name" xml:space="preserve">
+    <value>radLabel1</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 65</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridServiceStaff.Name" xml:space="preserve">
+    <value>gridServiceStaff</value>
+  </data>
+  <data name="gridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 47</value>
+  </data>
+  <data name="btnEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 65</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>643, 65</value>
+  </data>
+  <data name="gridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="gridViewTextBoxColumn11.HeaderText" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="&gt;&gt;pnlServicStaff.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="btnAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        Qk32AgAAAAAAADYAAAAoAAAADgAAABAAAAABABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEgoTGw8bGw8bGw8bGw8bGw8bGw8bG
-        w8bGw8bGw8bGw8bGw8bGw8YAAAAAAISChP///////////////////////////////////////////8bD
-        xgAAAAAAhIKE////////////////////////////////////////////xsPGAAAAAACEgoT/////////
-        ///////////////////////////////////Gw8YAAAAAAISChP//////////////////////////////
-        /////////////8bDxgAAAAAAhIKE////////////AAD/AAD/////////AAD/AAD/////////xsPGAAAA
-        AACEgoT///////////////8AAP8AAP8AAP8AAP/////////////Gw8YAAAAAAISChP//////////////
-        /////wAA/wAA/////////////////8bDxgAAAAAAhIKE////////////////AAD/AAD/AAD/AAD/////
-        ////////xsPGAAAAAACEgoT///////////8AAP8AAP////////8AAP8AAP/////////Gw8YAAAAAAISC
-        hP///////////////////////////////////////////8bDxgAAAAAAhIKE////////////////////
-        ////////////////////////xsPGAAAAAACEgoT/////////////////////////////////////////
-        ///Gw8YAAAAAAISChP///////////////////////////////////////////8bDxgAAAAAAhIKEhIKE
-        hIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEAAA=
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAABJpJREFUWEft
+        WFFPHFUYRX3RFxONxgf/QKOJvtkYH3zpi4mJMSmptd2Z3bbakBYTWmZmgRRWDK2kXWh4IGF3ZloQWLsU
+        FpYFYYPWEGOaNmlDUYq1KLFv1Wj0qQyw1+/sXAJk77CzM1MejCc5Cezde78zd+53v+9s1X8W4Uuxp0Om
+        8rakqyelpNYl69olYpr+T0iGci5kKOFD5ulX+Nd3B7FY7EkS855sqOMkZoXEsKOXG61TQ20r0cz5tTPj
+        HUwZbrdqU62Pwoa2jvGwGX0oJ9VOOaG9ypd5PAjp2gcRM7okGWpBGf58tfv7PpZZzLH88tdCTv86wwbv
+        DLML3/SwmoEWPExBNtXxcE/DHr5kMJB6614O69FrENacu1i4upAVCtqJ08szzLiZYp98+ZlFO79Ka7VU
+        p6uf4iG8A2dMNrU/TwzErIG5YWHwSohd7Zo16bVra/TqZz/sjj7HQ1UOKaG8KxvaStNYfG1yaVoY0Cuv
+        zGfY8b4zVsSILh5MNr7EQ7pHced01Wqd7CrgqUVB/HL0pwlW0x+zKOHmD/XXPstDlwfOHF5rUza+Vom4
+        2QffsbmH88IxJ47czbGPeptIpDbCw5cHEgJnbuJ+XrioEyEOEI3txC9uDzEkoKQrR7gEZ+AqwZe9JIRX
+        geC5fHeBEuevo3rd81xKKZD2uOdwlYgWKUc/AicoCY/1Nlq0Oa1cTilQIbB7Xu450I9AsONaAtfPP9Xp
+        ume4pO2gwSwqhGiyG/oVmL33FaOMLkhJ5QCXtAkUftx5KF+iyW7oVyCojrSvko4Ul7UJ3pXsWFvLMQiB
+        nd/qLGJqv3NZm6D2qPYYdSWiSW4ZhMC+W2mGjTrYc/oFLs2GpGsX69JtK6JJbhmEwMziRFGgZNS/yaXZ
+        oA8vo58TTdqoEOW4/PdvRYGiMRFFsSaX8lyg9g6XZoPqbqpxLC68/7DY44Ao1tQvMxs7+D6XZoM6Xl3L
+        tHu+YsCNBxGNuWXu/pQt0Kzfx6XZCOnq2ZOpTx+JJrllEAKHfszaApP1r3FpNuhDGR4CWyya6IZBCNRv
+        DBYbh5JqAvcF5ak7I8KJbhiEwLP5bhYxtAUuawtY1RNwXzA4ooluGITAE4NFcxXnqraDWq2Omv5mCwZH
+        NLkc/QpMzWXs86erb3BJ2wHfSoMFuC/RAuXoV2DzeOc6tXuC17sF8K2whl58iB+BV34YtbtqUSezFTDV
+        8K2whqKFdqJXgdiMU0Nt1MU03EQucCnOoCdpgW+FNRQt6ESvApGYcJAld58T0PrDVMO3jlLxFi0aFBPX
+        ++1Xq2vHeXh3gOMPk6mGb4U1FC3ulxAX1rX1kKFc4GErAxw/TDV8K6yhKIgX4szhtdo7p5x3de6cAMcP
+        U43FYA3hvkRB3RLZWkwIOnPUoHzMw/gHTDV8K6wh3NfYvUmhACfiEsY9hwel833DdUJUAphqCtAKawj3
+        BYMDD4E2Hb+z4JcIVKHcz1PFrgSFH7WVly/yGtGF4j3n55W6ARwgAsF90W78wctTKe3dukt/x0Nm/V4+
+        ffcRMRtelHXlLbTpUlLdj2bzsKG97mjA/8euoqrqX2RKQX4CZ+uuAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="gridViewTextBoxColumn12.HeaderText" xml:space="preserve">
+    <value>IsActive</value>
+  </data>
+  <data name="&gt;&gt;gridServiceStaff.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;highContrastBlackTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.HighContrastBlackTheme, Telerik.WinControls.Themes.HighContrastBlack, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="jImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -194,39 +336,70 @@
         HAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="desertTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>194, 17</value>
-  </metadata>
-  <metadata name="highContrastBlackTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>323, 17</value>
-  </metadata>
-  <metadata name="telerikMetroTouchTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>517, 17</value>
-  </metadata>
-  <data name="btnAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="gridViewTextBoxColumn10.HeaderText" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;btnEdit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;jImageButton1.Name" xml:space="preserve">
+    <value>jImageButton1</value>
+  </data>
+  <data name="jImageButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 59</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnDelete.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="&gt;&gt;office2013DarkTheme1.Name" xml:space="preserve">
+    <value>office2013DarkTheme1</value>
+  </data>
+  <data name="pnlServicStaff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>865, 59</value>
+  </data>
+  <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;desertTheme1.Name" xml:space="preserve">
+    <value>desertTheme1</value>
+  </data>
+  <data name="jImageButton1.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAABJpJREFUWEft
-        WFFPHFUYRX3RFxONxgf/QKOJvtkYH3zpi4mJMSmptd2Z3bbakBYTWmZmgRRWDK2kXWh4IGF3ZloQWLsU
-        FpYFYYPWEGOaNmlDUYq1KLFv1Wj0qQyw1+/sXAJk77CzM1MejCc5Cezde78zd+53v+9s1X8W4Uuxp0Om
-        8rakqyelpNYl69olYpr+T0iGci5kKOFD5ulX+Nd3B7FY7EkS855sqOMkZoXEsKOXG61TQ20r0cz5tTPj
-        HUwZbrdqU62Pwoa2jvGwGX0oJ9VOOaG9ypd5PAjp2gcRM7okGWpBGf58tfv7PpZZzLH88tdCTv86wwbv
-        DLML3/SwmoEWPExBNtXxcE/DHr5kMJB6614O69FrENacu1i4upAVCtqJ08szzLiZYp98+ZlFO79Ka7VU
-        p6uf4iG8A2dMNrU/TwzErIG5YWHwSohd7Zo16bVra/TqZz/sjj7HQ1UOKaG8KxvaStNYfG1yaVoY0Cuv
-        zGfY8b4zVsSILh5MNr7EQ7pHced01Wqd7CrgqUVB/HL0pwlW0x+zKOHmD/XXPstDlwfOHF5rUza+Vom4
-        2QffsbmH88IxJ47czbGPeptIpDbCw5cHEgJnbuJ+XrioEyEOEI3txC9uDzEkoKQrR7gEZ+AqwZe9JIRX
-        geC5fHeBEuevo3rd81xKKZD2uOdwlYgWKUc/AicoCY/1Nlq0Oa1cTilQIbB7Xu450I9AsONaAtfPP9Xp
-        ume4pO2gwSwqhGiyG/oVmL33FaOMLkhJ5QCXtAkUftx5KF+iyW7oVyCojrSvko4Ul7UJ3pXsWFvLMQiB
-        nd/qLGJqv3NZm6D2qPYYdSWiSW4ZhMC+W2mGjTrYc/oFLs2GpGsX69JtK6JJbhmEwMziRFGgZNS/yaXZ
-        oA8vo58TTdqoEOW4/PdvRYGiMRFFsSaX8lyg9g6XZoPqbqpxLC68/7DY44Ao1tQvMxs7+D6XZoM6Xl3L
-        tHu+YsCNBxGNuWXu/pQt0Kzfx6XZCOnq2ZOpTx+JJrllEAKHfszaApP1r3FpNuhDGR4CWyya6IZBCNRv
-        DBYbh5JqAvcF5ak7I8KJbhiEwLP5bhYxtAUuawtY1RNwXzA4ooluGITAE4NFcxXnqraDWq2Omv5mCwZH
-        NLkc/QpMzWXs86erb3BJ2wHfSoMFuC/RAuXoV2DzeOc6tXuC17sF8K2whl58iB+BV34YtbtqUSezFTDV
-        8K2whqKFdqJXgdiMU0Nt1MU03EQucCnOoCdpgW+FNRQt6ESvApGYcJAld58T0PrDVMO3jlLxFi0aFBPX
-        ++1Xq2vHeXh3gOMPk6mGb4U1FC3ulxAX1rX1kKFc4GErAxw/TDV8K6yhKIgX4szhtdo7p5x3de6cAMcP
-        U43FYA3hvkRB3RLZWkwIOnPUoHzMw/gHTDV8K6wh3NfYvUmhACfiEsY9hwel833DdUJUAphqCtAKawj3
-        BYMDD4E2Hb+z4JcIVKHcz1PFrgSFH7WVly/yGtGF4j3n55W6ARwgAsF90W78wctTKe3dukt/x0Nm/V4+
-        ffcRMRtelHXlLbTpUlLdj2bzsKG97mjA/8euoqrqX2RKQX4CZ+uuAAAAAElFTkSuQmCC
+        Qk32AgAAAAAAADYAAAAoAAAADgAAABAAAAABABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEgoTGw8bGw8bGw8bGw8bGw8bGw8bG
+        w8bGw8bGw8bGw8bGw8bGw8YAAAAAAISChP///////////////////////////////////////////8bD
+        xgAAAAAAhIKE////////////////////////////////////////////xsPGAAAAAACEgoT/////////
+        ///////////////////////////////////Gw8YAAAAAAISChP//////////////////////////////
+        /////////////8bDxgAAAAAAhIKE////////////AAD/AAD/////////AAD/AAD/////////xsPGAAAA
+        AACEgoT///////////////8AAP8AAP8AAP8AAP/////////////Gw8YAAAAAAISChP//////////////
+        /////wAA/wAA/////////////////8bDxgAAAAAAhIKE////////////////AAD/AAD/AAD/AAD/////
+        ////////xsPGAAAAAACEgoT///////////8AAP8AAP////////8AAP8AAP/////////Gw8YAAAAAAISC
+        hP///////////////////////////////////////////8bDxgAAAAAAhIKE////////////////////
+        ////////////////////////xsPGAAAAAACEgoT/////////////////////////////////////////
+        ///Gw8YAAAAAAISChP///////////////////////////////////////////8bDxgAAAAAAhIKEhIKE
+        hIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEAAA=
 </value>
+  </data>
+  <data name="jImageButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;pnlServicStaff.Name" xml:space="preserve">
+    <value>pnlServicStaff</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>StaffForm</value>
+  </data>
+  <data name="pnlServicStaff.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="jImageButton1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="btnDelete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -241,19 +414,107 @@
         feBI8IBXMLhRo/63ougH0wOw9yRyvDgAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="crystalDarkTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>224, 56</value>
-  </metadata>
-  <data name="btnEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAThJREFUWEft
-        lj9KxEAYR6Ngb2PnWmjpCcRDiKyNjYdZRQu1EPEWW4ogCFp4gr3E4opaiOJf9D13BgaJ3cw2zoNHJl9C
-        fl9mkuw2lUohVvEK3/EZ+7iIE2ED3/ALH/E1jG9xCYtiuHdt4AHO4CyehZozUYw0fIRzGLGJF3zCKQu5
-        ScOdarcDjE04Ey6HSzNtISdp+B4aanjaxGHYv8Ss/A6PpE24HG69+xXMxl/hEZuIy+F5np+NLsZXbd9C
-        Czvo8Q/ctJCLGl7D26jh2cPTj8yxhRb8+Hg8+0dGbtCL6x2uY0rR8Hn04vd4EcafGJsoGi5raMA5+tu9
-        HfadCZejaLj00JDdn71xE3EmiofLKRp0gjbhTDyEWvFwGWK821QfzOLhC2iYD+A1HuEWLuNE8M9jZzys
-        /Aua5hvC8pMHDCWhEwAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;radLabel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radLabel1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pnlServicStaff.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="btnEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="radLabel1.Text" xml:space="preserve">
+    <value>Administration of Service Staff</value>
+  </data>
+  <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 65</value>
+  </data>
+  <data name="&gt;&gt;btnEdit.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gridViewTextBoxColumn7.HeaderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;materialTealTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.MaterialTealTheme, Telerik.WinControls.Themes.MaterialTeal, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;jImageButton1.Parent" xml:space="preserve">
+    <value>pnlServicStaff</value>
+  </data>
+  <data name="radLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 33</value>
+  </data>
+  <data name="btnAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 47</value>
+  </data>
+  <data name="radLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 12</value>
+  </data>
+  <data name="&gt;&gt;office2013DarkTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.Office2013DarkTheme, Telerik.WinControls.Themes.Office2013Dark, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="btnEdit.Text" xml:space="preserve">
+    <value>EDIT</value>
+  </data>
+  <data name="&gt;&gt;gridServiceStaff.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;jImageButton1.Type" xml:space="preserve">
+    <value>JImageButton.JImageButton, JImageButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="jImageButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnRefresh.Text" xml:space="preserve">
+    <value>       REFRESH</value>
+  </data>
+  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 47</value>
+  </data>
+  <data name="&gt;&gt;desertTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.DesertTheme, Telerik.WinControls.Themes.Desert, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 47</value>
+  </data>
+  <data name="&gt;&gt;telerikMetroTouchTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.TelerikMetroTouchTheme, Telerik.WinControls.Themes.TelerikMetroTouch, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;materialTealTheme1.Name" xml:space="preserve">
+    <value>materialTealTheme1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>StaffForm</value>
+  </data>
+  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="radLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridServiceStaff.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="btnRefresh.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -286,16 +547,60 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="office2013DarkTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <data name="gridViewTextBoxColumn6.HeaderText" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="btnEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAThJREFUWEft
+        lj9KxEAYR6Ngb2PnWmjpCcRDiKyNjYdZRQu1EPEWW4ogCFp4gr3E4opaiOJf9D13BgaJ3cw2zoNHJl9C
+        fl9mkuw2lUohVvEK3/EZ+7iIE2ED3/ALH/E1jG9xCYtiuHdt4AHO4CyehZozUYw0fIRzGLGJF3zCKQu5
+        ScOdarcDjE04Ey6HSzNtISdp+B4aanjaxGHYv8Ss/A6PpE24HG69+xXMxl/hEZuIy+F5np+NLsZXbd9C
+        Czvo8Q/ctJCLGl7D26jh2cPTj8yxhRb8+Hg8+0dGbtCL6x2uY0rR8Hn04vd4EcafGJsoGi5raMA5+tu9
+        HfadCZejaLj00JDdn71xE3EmiofLKRp0gjbhTDyEWvFwGWK821QfzOLhC2iYD+A1HuEWLuNE8M9jZzys
+        /Aua5hvC8pMHDCWhEwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;radLabel1.Parent" xml:space="preserve">
+    <value>pnlServicStaff</value>
+  </data>
+  <data name="&gt;&gt;btnEdit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnEdit.Name" xml:space="preserve">
+    <value>btnEdit</value>
+  </data>
+  <metadata name="crystalDarkTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>224, 56</value>
+  </metadata>
+  <metadata name="desertTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>194, 17</value>
   </metadata>
   <metadata name="materialTealTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>712, 17</value>
   </metadata>
-  <metadata name="employessBLLBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
+  </metadata>
+  <metadata name="office2013DarkTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="employessBLLBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="highContrastBlackTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>323, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>sq</value>
+  </metadata>
+  <metadata name="telerikMetroTouchTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>517, 17</value>
   </metadata>
 </root>

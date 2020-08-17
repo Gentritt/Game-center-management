@@ -35,6 +35,8 @@ namespace Game_center_management
 			{
 				listviewitem.Items.Add( new ListViewItem (computer.ComputerID.ToString(),0));
 			}
+
+            
 		}
         
 		private void radMenuItem17_Click(object sender, EventArgs e)
@@ -45,9 +47,15 @@ namespace Game_center_management
 
 		private void MainForm_Shown(object sender, EventArgs e)
 		{
-			LoginForm loginForm = new LoginForm();
-			loginForm.ShowDialog();
-             
+           
+
+            if (lang == false)
+            {
+                LoginForm loginForm = new LoginForm();
+                loginForm.ShowDialog();
+            }
+          
+
             if (UserSession.LoggedUser != null)
             {
                 lblLoggedUser.Text += UserSession.LoggedUser.Username;
@@ -176,7 +184,10 @@ namespace Game_center_management
 
         private void BtnRefresh_Click(object sender, EventArgs e)
         {
-            
+            lang = true;
+            this.Hide();
+            MainForm mf = new MainForm();
+            mf.ShowDialog();
         }
 
         private void RadMenuItem13_admClick(object sender, EventArgs e)
@@ -192,15 +203,18 @@ namespace Game_center_management
             }
         }
 
+        private static bool lang;
         private void radMenuItem22_Click(object sender, EventArgs e)
         {
-			LangChanged(langCode: "sq");
+            lang = true;
+            LangChanged(langCode: "sq");
         }
 
         private void radMenuItem21_Click(object sender, EventArgs e)
         {
-			LangChanged(langCode: "en-US");
-		}
+            lang = true;
+            LangChanged(langCode: "en-US");
+        }
 		public void LangChanged(string langCode)
 		{
 			CultureInfo c1 = new CultureInfo(langCode);
@@ -215,7 +229,6 @@ namespace Game_center_management
             //c1.DateTimeFormat.LongDatePattern = "dddd, d MMMM yyyy";
             //Thread.CurrentThread.CurrentCulture = c1;
             //Thread.CurrentThread.CurrentUICulture = c1;
-
 
             this.Hide();
 			MainForm mf = new MainForm();
