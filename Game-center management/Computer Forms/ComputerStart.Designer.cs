@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStartTime)).BeginInit();
@@ -99,10 +100,18 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // btnHelp
+            // 
+            resources.ApplyResources(this.btnHelp, "btnHelp");
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // ComputerStart
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.cmbClientID);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
@@ -137,5 +146,6 @@
         private System.Windows.Forms.Label label1;
         public Telerik.WinControls.UI.RadTextBox txtComputerID;
         public Telerik.WinControls.UI.RadTextBox txtEmployee;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

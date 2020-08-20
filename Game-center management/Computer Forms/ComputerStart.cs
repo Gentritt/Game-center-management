@@ -78,5 +78,10 @@ namespace Game_center_management.Computer_Forms
         {
             this.Close();
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "file://C:\\Users\\Eugen\\Documents\\My HelpAndManual Projects\\Projekti.chm", "ComputerS.htm");
+        }
     }
 }

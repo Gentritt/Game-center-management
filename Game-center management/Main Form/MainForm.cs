@@ -249,12 +249,12 @@ namespace Game_center_management
 		}
         public static void GetHelpProvider(Form frm,string topic)
         {
-            Help.ShowHelp(frm, "GameCenter.chm", HelpNavigator.Topic,topic);
+            Help.ShowHelp(frm, "Projekti.chm", HelpNavigator.Topic,topic);
         }
 
         private void radMenuItem19_Click(object sender, EventArgs e)
         {
-            GetHelpProvider(this, "Hyrje.htm");
+            Help.ShowHelp(this, "file://C:\\Users\\Eugen\\Documents\\My HelpAndManual Projects\\Projekti.chm", "Hyrje.htm");
         }
     }
 }

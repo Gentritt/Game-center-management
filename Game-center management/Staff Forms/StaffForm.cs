@@ -122,7 +122,8 @@ namespace Game_center_management.Forms
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
-			MainForm.GetHelpProvider(this, "StaffHelp.htm");
-        }
+			//MainForm.GetHelpProvider(this, "StaffHelp.htm");
+			Help.ShowHelp(this, "file://C:\\Users\\Eugen\\Documents\\My HelpAndManual Projects\\Projekti.chm", "StaffHelp.htm");
+		}
     }
 }
