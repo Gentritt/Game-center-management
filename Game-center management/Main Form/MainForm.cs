@@ -35,8 +35,6 @@ namespace Game_center_management
 			{
 				listviewitem.Items.Add( new ListViewItem (computer.ComputerID.ToString(),0));
 			}
-
-            
 		}
         
 		private void radMenuItem17_Click(object sender, EventArgs e)
@@ -44,7 +42,7 @@ namespace Game_center_management
 			StaffForm staffForm = new StaffForm();
 			staffForm.ShowDialog();
 		}
-
+        private static int nr = 1;
 		private void MainForm_Shown(object sender, EventArgs e)
 		{
            
@@ -53,6 +51,20 @@ namespace Game_center_management
             {
                 LoginForm loginForm = new LoginForm();
                 loginForm.ShowDialog();
+                if (nr == 1)
+                {
+                    if (LoginForm.lang1 == true)
+                    {
+                        lang = true;
+                        LangChanged(langCode: "sq");
+                    }
+                    else if (LoginForm.lang2 == true)
+                    {
+                        lang = true;
+                        LangChanged(langCode: "en-US");
+                    }
+                    nr++;
+                }
             }
           
 
@@ -235,5 +247,14 @@ namespace Game_center_management
 			mf.ShowDialog();
 
 		}
-	}
+        public static void GetHelpProvider(Form frm,string topic)
+        {
+            Help.ShowHelp(frm, "GameCenter.chm", HelpNavigator.Topic,topic);
+        }
+
+        private void radMenuItem19_Click(object sender, EventArgs e)
+        {
+            GetHelpProvider(this, "Hyrje.htm");
+        }
+    }
 }

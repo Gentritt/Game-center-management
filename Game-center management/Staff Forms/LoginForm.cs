@@ -75,20 +75,33 @@ namespace Game_center_management
 		{
 
 		}
-		public static bool lang;
+		private static string name;
+		private static string password;
+		public static bool lang1;
+		public static bool lang2;
+
+		public void AfterClear()
+        {
+			txtUsername.Text = name;
+			txtPassword.Text = password;
+            
+        }
 		private void rbAlbanian_CheckedChanged(object sender, EventArgs e)
         {
-			lang = true;
+			lang1 = true;
+			lang2 = false;
+			name = txtUsername.Text;
+			password = txtPassword.Text;
 			if (rbAlbanian.Checked) LangChanged(langCode: "sq");
-			
         }
 
         private void rbEnglish_CheckedChanged(object sender, EventArgs e)
         {
-			lang = false;
+			lang2 = true;
+			lang1 = false;
+			name = txtUsername.Text;
+			password = txtPassword.Text;
 			if (rbEnglish.Checked) LangChanged(langCode: "en-US");
-			
-
         }
 
 		public void LangChanged(string langCode	)
@@ -98,6 +111,7 @@ namespace Game_center_management
 			Thread.CurrentThread.CurrentUICulture = c1;
 			this.Controls.Clear();
 			this.InitializeComponent();
+			AfterClear();
 		}
     }
 }

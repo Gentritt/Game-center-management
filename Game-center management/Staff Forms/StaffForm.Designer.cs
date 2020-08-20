@@ -58,6 +58,7 @@
             this.office2013DarkTheme1 = new Telerik.WinControls.Themes.Office2013DarkTheme();
             this.materialTealTheme1 = new Telerik.WinControls.Themes.MaterialTealTheme();
             this.employessBLLBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pnlServicStaff)).BeginInit();
             this.pnlServicStaff.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
@@ -72,9 +73,9 @@
             // 
             // pnlServicStaff
             // 
-            resources.ApplyResources(this.pnlServicStaff, "pnlServicStaff");
             this.pnlServicStaff.Controls.Add(this.jImageButton1);
             this.pnlServicStaff.Controls.Add(this.radLabel1);
+            resources.ApplyResources(this.pnlServicStaff, "pnlServicStaff");
             this.pnlServicStaff.Name = "pnlServicStaff";
             this.pnlServicStaff.ThemeName = "CrystalDark";
             this.pnlServicStaff.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlServicStaff_Paint);
@@ -137,53 +138,52 @@
             this.gridServiceStaff.MasterTemplate.AllowDeleteRow = false;
             this.gridServiceStaff.MasterTemplate.AllowSearchRow = true;
             this.gridServiceStaff.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            this.gridServiceStaff.MasterTemplate.Caption = resources.GetString("gridServiceStaff.MasterTemplate.Caption");
-            resources.ApplyResources(gridViewTextBoxColumn1, "gridViewTextBoxColumn1");
             gridViewTextBoxColumn1.FieldName = "ID";
+            resources.ApplyResources(gridViewTextBoxColumn1, "gridViewTextBoxColumn1");
             gridViewTextBoxColumn1.Name = "ID";
             gridViewTextBoxColumn1.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn2, "gridViewTextBoxColumn2");
             gridViewTextBoxColumn2.FieldName = "Name";
+            resources.ApplyResources(gridViewTextBoxColumn2, "gridViewTextBoxColumn2");
             gridViewTextBoxColumn2.Name = "Name";
             gridViewTextBoxColumn2.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn3, "gridViewTextBoxColumn3");
             gridViewTextBoxColumn3.FieldName = "LastName";
+            resources.ApplyResources(gridViewTextBoxColumn3, "gridViewTextBoxColumn3");
             gridViewTextBoxColumn3.Name = "LastName";
             gridViewTextBoxColumn3.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn4, "gridViewTextBoxColumn4");
             gridViewTextBoxColumn4.FieldName = "PersonalID";
+            resources.ApplyResources(gridViewTextBoxColumn4, "gridViewTextBoxColumn4");
             gridViewTextBoxColumn4.Name = "PersonalID";
             gridViewTextBoxColumn4.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn5, "gridViewTextBoxColumn5");
             gridViewTextBoxColumn5.FieldName = "Adress";
+            resources.ApplyResources(gridViewTextBoxColumn5, "gridViewTextBoxColumn5");
             gridViewTextBoxColumn5.Name = "Adress";
             gridViewTextBoxColumn5.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn6, "gridViewTextBoxColumn6");
             gridViewTextBoxColumn6.FieldName = "Birthday";
+            resources.ApplyResources(gridViewTextBoxColumn6, "gridViewTextBoxColumn6");
             gridViewTextBoxColumn6.Name = "Birthday";
             gridViewTextBoxColumn6.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn7, "gridViewTextBoxColumn7");
             gridViewTextBoxColumn7.FieldName = "Email";
+            resources.ApplyResources(gridViewTextBoxColumn7, "gridViewTextBoxColumn7");
             gridViewTextBoxColumn7.Name = "Email";
             gridViewTextBoxColumn7.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn8, "gridViewTextBoxColumn8");
             gridViewTextBoxColumn8.FieldName = "PhoneNumber";
+            resources.ApplyResources(gridViewTextBoxColumn8, "gridViewTextBoxColumn8");
             gridViewTextBoxColumn8.Name = "PhoneNumber";
             gridViewTextBoxColumn8.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn9, "gridViewTextBoxColumn9");
             gridViewTextBoxColumn9.FieldName = "UserName";
+            resources.ApplyResources(gridViewTextBoxColumn9, "gridViewTextBoxColumn9");
             gridViewTextBoxColumn9.Name = "Username";
             gridViewTextBoxColumn9.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn10, "gridViewTextBoxColumn10");
             gridViewTextBoxColumn10.FieldName = "Password";
+            resources.ApplyResources(gridViewTextBoxColumn10, "gridViewTextBoxColumn10");
             gridViewTextBoxColumn10.Name = "Password";
             gridViewTextBoxColumn10.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn11, "gridViewTextBoxColumn11");
             gridViewTextBoxColumn11.FieldName = "Salary";
+            resources.ApplyResources(gridViewTextBoxColumn11, "gridViewTextBoxColumn11");
             gridViewTextBoxColumn11.Name = "Salary";
             gridViewTextBoxColumn11.Width = 67;
-            resources.ApplyResources(gridViewTextBoxColumn12, "gridViewTextBoxColumn12");
             gridViewTextBoxColumn12.FieldName = "IsActive";
+            resources.ApplyResources(gridViewTextBoxColumn12, "gridViewTextBoxColumn12");
             gridViewTextBoxColumn12.Name = "Is Active";
             gridViewTextBoxColumn12.Width = 63;
             this.gridServiceStaff.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
@@ -204,10 +204,18 @@
             this.gridServiceStaff.ReadOnly = true;
             this.gridServiceStaff.ThemeName = "CrystalDark";
             // 
+            // btnHelp
+            // 
+            resources.ApplyResources(this.btnHelp, "btnHelp");
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // StaffForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.gridServiceStaff);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnEdit);
@@ -249,5 +257,6 @@
 		private Telerik.WinControls.Themes.Office2013DarkTheme office2013DarkTheme1;
 		private Telerik.WinControls.Themes.MaterialTealTheme materialTealTheme1;
 		public Telerik.WinControls.UI.RadButton btnAdd;
-	}
+        private System.Windows.Forms.Button btnHelp;
+    }
 }

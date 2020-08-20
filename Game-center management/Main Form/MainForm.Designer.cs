@@ -242,6 +242,7 @@
             // 
             this.radMenuItem19.Name = "radMenuItem19";
             resources.ApplyResources(this.radMenuItem19, "radMenuItem19");
+            this.radMenuItem19.Click += new System.EventHandler(this.radMenuItem19_Click);
             // 
             // radMenuItem20
             // 

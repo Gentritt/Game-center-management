@@ -289,9 +289,6 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="gridServiceStaff.MasterTemplate.Caption" xml:space="preserve">
-    <value />
-  </data>
   <data name="gridViewTextBoxColumn2.HeaderText" xml:space="preserve">
     <value>Emri</value>
   </data>
