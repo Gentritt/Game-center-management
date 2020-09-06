@@ -78,6 +78,8 @@
             this.radMenuItem2 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
             this.btnRefresh = new Telerik.WinControls.UI.RadButton();
+            this.endToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -278,6 +280,8 @@
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startToolStripMenuItem,
+            this.endToolStripMenuItem,
+            this.orderToolStripMenuItem,
             this.detailsToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
@@ -326,6 +330,18 @@
             resources.ApplyResources(this.btnRefresh, "btnRefresh");
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
+            // 
+            // endToolStripMenuItem
+            // 
+            this.endToolStripMenuItem.Name = "endToolStripMenuItem";
+            resources.ApplyResources(this.endToolStripMenuItem, "endToolStripMenuItem");
+            this.endToolStripMenuItem.Click += new System.EventHandler(this.endToolStripMenuItem_Click);
+            // 
+            // orderToolStripMenuItem
+            // 
+            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
+            resources.ApplyResources(this.orderToolStripMenuItem, "orderToolStripMenuItem");
+            this.orderToolStripMenuItem.Click += new System.EventHandler(this.orderToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -404,6 +420,8 @@
 		public Telerik.WinControls.UI.RadContextMenu radContextMenu1;
         private System.Windows.Forms.ToolStripMenuItem detailsToolStripMenuItem;
         private Telerik.WinControls.UI.RadButton btnRefresh;
+        private System.Windows.Forms.ToolStripMenuItem endToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem;
     }
 }
 

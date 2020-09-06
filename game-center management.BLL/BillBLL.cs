@@ -13,11 +13,17 @@ namespace game_center_management.BLL
     public class BillBLL : IbaseCrud<Bill>
     {
         private readonly BillsDAL billsDal;
+
+        
         public BillBLL()
         {
             billsDal = new BillsDAL();
         }
 
+        public int GetBillId(Bill model)
+        {
+            return billsDal.GetBillId(model);
+        }
         public int ADD(Bill model)
         {
             return billsDal.ADD(model);

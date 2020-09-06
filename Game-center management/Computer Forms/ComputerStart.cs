@@ -17,10 +17,12 @@ namespace Game_center_management.Computer_Forms
     public partial class ComputerStart : Form
     {
         private readonly BillBLL billBll;
+        private readonly ComputersBLL computerBll;
         public ComputerStart()
         {
             InitializeComponent();
             billBll = new BillBLL();
+            computerBll = new ComputersBLL();
         }
         
         private void ComputerStart_Load(object sender, EventArgs e)
@@ -57,6 +59,11 @@ namespace Game_center_management.Computer_Forms
             bill.StartTime = DateTime.Parse(txtStartTime.Text);
            
             var result = billBll.ADD(bill);
+
+            Computer pc = new Computer();
+            pc.ComputerID = int.Parse(txtComputerID.Text);
+
+            var result1 = computerBll.IsActive(pc);
 
             if (result != 0)
             {

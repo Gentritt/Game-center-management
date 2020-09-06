@@ -12,6 +12,27 @@ namespace game_center_management.DAL
 	{
 		public string _connString = ConfigurationManager.ConnectionStrings["Game-Center"].ConnectionString;
 
+		public int Balance(Clients model)
+        {
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con, cmdText: "Balance", cmdType: CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@username", model.UserName);
+						cmd.Parameters.AddWithValue("@price", model.Price);
+						
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+					}
+				}
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
+		}
 
 		public int ADD(Clients model)
 		{

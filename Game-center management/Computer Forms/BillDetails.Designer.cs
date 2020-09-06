@@ -52,19 +52,13 @@
             this.lblOrders = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnPrint = new Telerik.WinControls.UI.RadButton();
-            this.btnEndTime = new Telerik.WinControls.UI.RadButton();
             this.rdvBill = new Telerik.WinControls.UI.RadGridView();
             this.lblBillID = new System.Windows.Forms.Label();
-            this.btnRefresh = new Telerik.WinControls.UI.RadButton();
             this.lblUsingTime = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.brnOrder = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEndTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill.MasterTemplate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brnOrder)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -219,21 +213,10 @@
             this.btnPrint.Text = "Print";
             this.btnPrint.Click += new System.EventHandler(this.BtnPrint_Click);
             // 
-            // btnEndTime
-            // 
-            this.btnEndTime.Location = new System.Drawing.Point(162, 455);
-            this.btnEndTime.Name = "btnEndTime";
-            this.btnEndTime.Size = new System.Drawing.Size(110, 24);
-            this.btnEndTime.TabIndex = 17;
-            this.btnEndTime.Text = "End Time";
-            this.btnEndTime.Click += new System.EventHandler(this.BtnEndTime_Click);
-            // 
             // rdvBill
             // 
-            this.rdvBill.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rdvBill.Location = new System.Drawing.Point(356, 60);
+            this.rdvBill.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rdvBill.Location = new System.Drawing.Point(612, 12);
             // 
             // 
             // 
@@ -244,31 +227,31 @@
             gridViewTextBoxColumn1.FieldName = "BillID";
             gridViewTextBoxColumn1.HeaderText = "Bill ID";
             gridViewTextBoxColumn1.Name = "BillID";
-            gridViewTextBoxColumn1.Width = 101;
+            gridViewTextBoxColumn1.Width = 5;
             gridViewTextBoxColumn2.FieldName = "EmployeeUsername";
             gridViewTextBoxColumn2.HeaderText = "Employee";
             gridViewTextBoxColumn2.Name = "Employee";
-            gridViewTextBoxColumn2.Width = 63;
+            gridViewTextBoxColumn2.Width = 5;
             gridViewTextBoxColumn3.FieldName = "ComputerId";
             gridViewTextBoxColumn3.HeaderText = "Computer ID";
             gridViewTextBoxColumn3.Name = "ComputerID";
-            gridViewTextBoxColumn3.Width = 67;
+            gridViewTextBoxColumn3.Width = 5;
             gridViewTextBoxColumn4.FieldName = "ClientUsername";
             gridViewTextBoxColumn4.HeaderText = "Client";
             gridViewTextBoxColumn4.Name = "Client";
-            gridViewTextBoxColumn4.Width = 73;
+            gridViewTextBoxColumn4.Width = 5;
             gridViewTextBoxColumn5.FieldName = "StartTime";
             gridViewTextBoxColumn5.HeaderText = "Start Time";
             gridViewTextBoxColumn5.Name = "StartTime";
-            gridViewTextBoxColumn5.Width = 77;
+            gridViewTextBoxColumn5.Width = 5;
             gridViewTextBoxColumn6.FieldName = "EndTime";
             gridViewTextBoxColumn6.HeaderText = "End Time";
             gridViewTextBoxColumn6.Name = "EndTime";
-            gridViewTextBoxColumn6.Width = 87;
+            gridViewTextBoxColumn6.Width = 5;
             gridViewTextBoxColumn7.FieldName = "Total";
             gridViewTextBoxColumn7.HeaderText = "Total";
             gridViewTextBoxColumn7.Name = "Total";
-            gridViewTextBoxColumn7.Width = 89;
+            gridViewTextBoxColumn7.Width = 5;
             this.rdvBill.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -280,7 +263,7 @@
             this.rdvBill.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.rdvBill.Name = "rdvBill";
             this.rdvBill.ReadOnly = true;
-            this.rdvBill.Size = new System.Drawing.Size(589, 355);
+            this.rdvBill.Size = new System.Drawing.Size(53, 40);
             this.rdvBill.TabIndex = 22;
             this.rdvBill.ThemeName = "Crystal";
             // 
@@ -292,16 +275,6 @@
             this.lblBillID.Name = "lblBillID";
             this.lblBillID.Size = new System.Drawing.Size(0, 20);
             this.lblBillID.TabIndex = 23;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRefresh.Location = new System.Drawing.Point(835, 12);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(110, 24);
-            this.btnRefresh.TabIndex = 24;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
             // 
             // lblUsingTime
             // 
@@ -322,27 +295,15 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Using Time:";
             // 
-            // brnOrder
-            // 
-            this.brnOrder.Location = new System.Drawing.Point(307, 455);
-            this.brnOrder.Name = "brnOrder";
-            this.brnOrder.Size = new System.Drawing.Size(110, 24);
-            this.brnOrder.TabIndex = 28;
-            this.brnOrder.Text = "Order";
-            this.brnOrder.Click += new System.EventHandler(this.brnOrder_Click);
-            // 
             // BillDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 491);
-            this.Controls.Add(this.brnOrder);
+            this.ClientSize = new System.Drawing.Size(465, 491);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblUsingTime);
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblBillID);
             this.Controls.Add(this.rdvBill);
-            this.Controls.Add(this.btnEndTime);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblOrders);
@@ -363,11 +324,8 @@
             this.Text = "BillDetails";
             this.Load += new System.EventHandler(this.BillDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEndTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdvBill)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brnOrder)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,13 +348,10 @@
         private System.Windows.Forms.Label lblEndTime;
         private System.Windows.Forms.Label lblTotal;
         private Telerik.WinControls.UI.RadButton btnPrint;
-        private Telerik.WinControls.UI.RadButton btnEndTime;
         private Telerik.WinControls.UI.RadGridView rdvBill;
         private System.Windows.Forms.Label lblBillID;
-        private Telerik.WinControls.UI.RadButton btnRefresh;
         private System.Windows.Forms.Label lblUsingTime;
         private System.Windows.Forms.Label label9;
-        private Telerik.WinControls.UI.RadButton brnOrder;
         public System.Windows.Forms.Label lblOrders;
     }
 }

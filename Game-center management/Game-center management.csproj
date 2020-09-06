@@ -323,7 +323,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="GameCenter.chm" />
-    <None Include="Projekti.chm" />
+    <None Include="NewProject.chm" />
     <None Include="Properties\DataSources\game_center_management.BLL.ClientsBLL.datasource" />
     <None Include="Properties\DataSources\game_center_management.BLL.ComputerPartsBLL.datasource" />
     <None Include="Properties\DataSources\game_center_management.BLL.EmployessBLL.datasource" />

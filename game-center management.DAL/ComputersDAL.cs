@@ -12,6 +12,46 @@ namespace game_center_management.DAL
 {
 	public class ComputersDAL: ComputerParts,IbaseCrud<Computer>
 	{
+		public int IsActive(Computer model)
+        {
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con, cmdText: "IsActive", cmdType: CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@computerId", model.ComputerID);
+						
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+					}
+				}
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
+		}
+		public int IsActiveFalse(Computer model)
+		{
+			try
+			{
+				using (var con = SQLfunctions.GetConnection())
+				{
+					using (var cmd = SQLfunctions.Command(con, cmdText: "IsActiveFalse", cmdType: CommandType.StoredProcedure))
+					{
+						cmd.Parameters.AddWithValue("@computerId", model.ComputerID);
+
+						int rowaffected = cmd.ExecuteNonQuery();
+						return rowaffected;
+					}
+				}
+			}
+			catch (Exception e)
+			{
+				return -1;
+			}
+		}
 		public int ADD(Computer model)
 		{
 			try

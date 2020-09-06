@@ -21,6 +21,7 @@ namespace Game_center_management.BO
 		public bool IsActive { get; set; }
 		public decimal Balance { get; set; }
 
+		public double Price { get; set; }
 		public bool IsGuest { get; set; }
 
 

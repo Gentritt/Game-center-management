@@ -15,6 +15,14 @@ namespace game_center_management.BLL
 	{
 		private readonly ComputersDAL computersDAL;
 
+		public int IsActive(Computer model)
+        {
+			return computersDAL.IsActive(model);
+        }
+		public int IsActiveFalse(Computer model)
+		{
+			return computersDAL.IsActiveFalse(model);
+		}
 		public ComputersBLL()
 		{
 			computersDAL = new ComputersDAL();

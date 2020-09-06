@@ -12,6 +12,39 @@ namespace game_center_management.DAL
 {
     public class BillsDAL : IbaseCrud<Bill>, IConvertToObject<Bill>
     {
+
+        public int GetBillId(Bill model)
+        {
+            try
+            {
+                using (var conn = SQLfunctions.GetConnection())
+                {
+                    using (var cmd = SQLfunctions.Command(conn, cmdText: "GetBillID", CommandType.StoredProcedure))
+                    {
+                        cmd.Parameters.AddWithValue("@computerId", model.ComputerId);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                if (reader.Read())
+                                {
+                                    StaticClass.BillID = int.Parse(reader["BillID"].ToString());
+                                       
+                                }
+                            }
+                        }
+                        int rowaffected = cmd.ExecuteNonQuery();
+
+                        return rowaffected;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return -1;
+            }
+        }
         public int ADD(Bill model)
         {
             try

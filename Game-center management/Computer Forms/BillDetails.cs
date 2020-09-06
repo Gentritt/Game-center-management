@@ -21,12 +21,13 @@ namespace Game_center_management.Computer_Forms
     {
         private readonly BillBLL billBLL;
         private readonly ComputersBLL computersBLL;
-        
+        private readonly ClientsBLL clientsBLL;
         public BillDetails()
         {
             InitializeComponent();
             billBLL = new BillBLL();
             computersBLL = new ComputersBLL();
+            clientsBLL = new ClientsBLL();
         }
         
         private void Calculate()
@@ -133,20 +134,32 @@ namespace Game_center_management.Computer_Forms
             {
                 CalculateTotal();
             }
+
+            Balance();
+
+            btnPrint.Enabled = false;
+        }
+        private void Balance()
+        {
+            Clients client = new Clients();
+            client.UserName = lblClient.Text;
+            client.Price = double.Parse(lblTotal.Text);
+
+            clientsBLL.Balance(client);
         }
         private void EndTimeEnable()
         {
-            if (lblEndTime.Text != "01/01/0001 00:00:00")
-            {
-                btnEndTime.Enabled = false;
-                brnOrder.Enabled = false;
-            }
-            else
-            {
-                btnEndTime.Enabled = true;
-                brnOrder.Enabled = true;
-                lblEndTime.Text = "";
-            }
+            //if (lblEndTime.Text != "01/01/0001 00:00:00")
+            //{
+            //    btnEndTime.Enabled = false;
+            //    brnOrder.Enabled = false;
+            //}
+            //else
+            //{
+            //    btnEndTime.Enabled = true;
+            //    brnOrder.Enabled = true;
+            //    lblEndTime.Text = "";
+            //}
         }
         private void CalculateTotal()
         {
@@ -179,44 +192,50 @@ namespace Game_center_management.Computer_Forms
             billBLL.GetTotalOrders(int.Parse(lblBillID.Text));
             lblOrders.Text = StaticClass.TotalPrice.ToString();
         }
-        private void BtnRefresh_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            BillDetails bd = new BillDetails();
-            bd.ShowDialog();
-        }
+        //private void BtnEndTime_Click(object sender, EventArgs e)
+        //{
+        //    string dateTime = DateTime.Now.ToShortTimeString();
+        //    int billId = int.Parse(this.rdvBill.CurrentRow.Cells[0].Value.ToString());
 
-        private void BtnEndTime_Click(object sender, EventArgs e)
-        {
-            string dateTime = DateTime.Now.ToShortTimeString();
-            int billId = int.Parse(this.rdvBill.CurrentRow.Cells[0].Value.ToString());
+        //    Bill bill = new Bill();
+        //    bill.EndTime = DateTime.Parse(dateTime);
+        //    bill.BillID = billId;
 
-            Bill bill = new Bill();
-            bill.EndTime = DateTime.Parse(dateTime);
-            bill.BillID = billId;
+        //    billBLL.GetEndTime(bill);
 
-            billBLL.GetEndTime(bill);
-        }
+        //    Computer pc = new Computer();
+        //    pc.ComputerID = int.Parse(lblComputerID.Text);
 
-        private void brnOrder_Click(object sender, EventArgs e)
-        {
-            Order order = new Order();
-            order.lblBillID.Text = this.rdvBill.CurrentRow.Cells[0].Value.ToString();
+        //    computersBLL.IsActiveFalse(pc);
 
-            using (var con = SQLfunctions.GetConnection())
-            {
-                using (var cmd = SQLfunctions.Command(con, cmdText: "GetProduct", cmdType: CommandType.StoredProcedure))
-                {
-                    using (SqlDataReader dr = cmd.ExecuteReader())
-                    {
-                        while (dr.Read())
-                        {
-                            order.cmbProduct.Items.Add(dr[0]);
-                        }
-                    }
-                }
-            }
-            order.ShowDialog();
-        }
+        //    //Balance();
+
+        //    this.Hide();
+        //    BillDetails bd = new BillDetails();
+        //    bd.ShowDialog();
+
+           
+        //}
+
+        //private void brnOrder_Click(object sender, EventArgs e)
+        //{
+        //    Order order = new Order();
+        //    order.lblBillID.Text = this.rdvBill.CurrentRow.Cells[0].Value.ToString();
+
+        //    using (var con = SQLfunctions.GetConnection())
+        //    {
+        //        using (var cmd = SQLfunctions.Command(con, cmdText: "GetProduct", cmdType: CommandType.StoredProcedure))
+        //        {
+        //            using (SqlDataReader dr = cmd.ExecuteReader())
+        //            {
+        //                while (dr.Read())
+        //                {
+        //                    order.cmbProduct.Items.Add(dr[0]);
+        //                }
+        //            }
+        //        }
+        //    }
+        //    order.ShowDialog();
+        //}
     }
 }

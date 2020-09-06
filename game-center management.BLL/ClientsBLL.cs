@@ -13,6 +13,10 @@ namespace game_center_management.BLL
 	{
 		private readonly ClientsDAL clientsDal;
 
+		public int Balance(Clients model)
+        {
+			return clientsDal.Balance(model);
+        }
 		public ClientsBLL()
 		{
 				clientsDal = new ClientsDAL();

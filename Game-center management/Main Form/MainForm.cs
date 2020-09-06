@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Globalization;
 using System.Threading;
@@ -10,30 +11,43 @@ using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Game_center_management.BO;
+using Game_center_maagement.BO;
 using game_center_management.BLL;
+using Game_center_management.Products;
 using Game_center_management.Computer_Forms;
 using Game_center_management.Forms;
 using Microsoft.VisualBasic.Devices;
 using Telerik.WinControls.UI;
 using Computer = Game_center_management.BO.Computer;
 using Bill = Game_center_management.BO.Bill;
+using game_center_management.DAL;
 
 namespace Game_center_management
 {
 	public partial class MainForm : Form
 	{
 		private ComputersBLL computers;
+        private readonly BillBLL billBLL;
 		public MainForm()
 		{
 			InitializeComponent();
 			computers = new ComputersBLL();
+            billBLL = new BillBLL();
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			foreach (Computer computer in computers.GetAll())
 			{
-				listviewitem.Items.Add( new ListViewItem (computer.ComputerID.ToString(),0));
+                if (computer.IsActive == true)
+                {
+                    listviewitem.Items.Add(new ListViewItem(computer.ComputerID.ToString(), 0)).ForeColor = System.Drawing.Color.Red;
+                }
+                else if (computer.IsActive == false)
+                {
+                    listviewitem.Items.Add(new ListViewItem(computer.ComputerID.ToString(), 0)).ForeColor = System.Drawing.Color.Green;
+                }
 			}
 		}
         
@@ -249,12 +263,70 @@ namespace Game_center_management
 		}
         public static void GetHelpProvider(Form frm,string topic)
         {
-            Help.ShowHelp(frm, "Projekti.chm", HelpNavigator.Topic,topic);
+            Help.ShowHelp(frm, "NewProject.chm", HelpNavigator.Topic,topic);
         }
 
         private void radMenuItem19_Click(object sender, EventArgs e)
         {
+            GetHelpProvider(this, "Hyrje.htm");
             Help.ShowHelp(this, "file://C:\\Users\\Eugen\\Documents\\My HelpAndManual Projects\\Projekti.chm", "Hyrje.htm");
+        }
+
+        private void orderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListViewItem item = listviewitem.SelectedItems[0];
+            cId = int.Parse(item.SubItems[0].Text);
+
+            Bill bill = new Bill();
+            bill.ComputerId = cId;
+            
+            
+            billBLL.GetBillId(bill);
+            Order order = new Order();
+            order.lblBillID.Text = StaticClass.BillID.ToString();
+
+            using (var con = SQLfunctions.GetConnection())
+            {
+                using (var cmd = SQLfunctions.Command(con, cmdText: "GetProduct", cmdType: CommandType.StoredProcedure))
+                {
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            order.cmbProduct.Items.Add(dr[0]);
+                        }
+                    }
+                }
+            }
+            order.ShowDialog();
+
+        }
+        public static int cId;
+        private void endToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListViewItem item = listviewitem.SelectedItems[0];
+            cId = int.Parse(item.SubItems[0].Text);
+
+            Bill bill = new Bill();
+            bill.ComputerId = cId;
+
+            billBLL.GetBillId(bill);
+
+            string dateTime = DateTime.Now.ToShortTimeString();
+            
+
+            Bill bills = new Bill();
+            
+            bills.EndTime = DateTime.Parse(dateTime);
+            bills.BillID = StaticClass.BillID;
+
+            billBLL.GetEndTime(bills);
+
+            Computer pc = new Computer();
+            pc.ComputerID = cId;
+
+            computers.IsActiveFalse(pc);
+
         }
     }
 }

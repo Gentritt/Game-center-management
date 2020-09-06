@@ -29,6 +29,8 @@ namespace Game_center_management.Products
         }
         private void Order_Load(object sender, EventArgs e)
         {
+            lblBillID.Visible = false;
+
             var result = orderBLL.GetAll();
             grvOrders.DataSource = result;
             InitData();
