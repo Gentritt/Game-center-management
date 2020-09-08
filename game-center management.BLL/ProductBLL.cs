@@ -23,6 +23,10 @@ namespace game_center_management.BLL
 			return	productsDal.ADD(model);
 
 		}
+		public int DecQuantity(Product model)
+        {
+			return productsDal.DecQuantity(model);
+        }
 
 		public int Modify(Product model)
 		{

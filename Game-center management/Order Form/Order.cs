@@ -20,12 +20,14 @@ namespace Game_center_management.Products
     {
         private readonly OrderBLL orderBLL;
         private readonly ProductsDal prodal;
-        
+        private readonly ProductBLL productBLL;
+
         public Order()
         {
             InitializeComponent();
             orderBLL = new OrderBLL();
             prodal = new ProductsDal();
+            productBLL = new ProductBLL();
         }
         private void Order_Load(object sender, EventArgs e)
         {
@@ -77,6 +79,8 @@ namespace Game_center_management.Products
             
             var result = orderBLL.ADD(orders);
 
+            DecreaseQuantity();
+
             if (result != 0)
             {
                 MessageBox.Show("Data inserted succesfully!!!");
@@ -86,8 +90,17 @@ namespace Game_center_management.Products
             {
                 MessageBox.Show("Insert / FAil");
             }
-        }
 
+            DecreaseQuantity();
+        }
+        private void DecreaseQuantity()
+        {
+            Product p = new Product();
+            p.ProductName = cmbProduct.SelectedItem.ToString();
+            p.Quantity = int.Parse(cmbQuantity.SelectedItem.ToString());
+
+            productBLL.DecQuantity(p);
+        }
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();

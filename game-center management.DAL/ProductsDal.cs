@@ -12,6 +12,28 @@ namespace game_center_management.DAL
 {
 	public class ProductsDal : IbaseCrud<Product>, IConvertToObject<Product>
 	{
+		public int DecQuantity(Product model)
+        {
+            try
+            {
+				using (var con = SQLfunctions.GetConnection())
+                {
+					using (var cmd = SQLfunctions.Command(con,cmdText: "DecQuantity", CommandType.StoredProcedure))
+                    {
+						cmd.Parameters.AddWithValue("@name", model.ProductName);
+						cmd.Parameters.AddWithValue("@quantity", model.Quantity);
+
+						int rowaffected = cmd.ExecuteNonQuery();
+
+						return rowaffected;
+					}
+                }
+            }
+            catch (Exception e)
+            {
+				return -1;
+			}
+        }
 		public int ADD(Product model)
 		{
 			try
@@ -29,15 +51,8 @@ namespace game_center_management.DAL
 						int rowaffected = cmd.ExecuteNonQuery();
 
 						return rowaffected;
-						
-
 					}
-					
-
 				}
-
-
-
 			}
 			catch (Exception e)
 			{

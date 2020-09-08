@@ -72,14 +72,14 @@
             this.radMenu2 = new Telerik.WinControls.UI.RadMenu();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.endToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.detailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listviewitem = new System.Windows.Forms.ListView();
             this.radContextMenu1 = new Telerik.WinControls.UI.RadContextMenu(this.components);
             this.radMenuItem2 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
             this.btnRefresh = new Telerik.WinControls.UI.RadButton();
-            this.endToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -91,26 +91,26 @@
             // 
             // radMenuItem1
             // 
-            this.radMenuItem1.Name = "radMenuItem1";
             resources.ApplyResources(this.radMenuItem1, "radMenuItem1");
+            this.radMenuItem1.Name = "radMenuItem1";
             this.radMenuItem1.UseCompatibleTextRendering = false;
             // 
             // radMenuItem5
             // 
-            this.radMenuItem5.Name = "radMenuItem5";
             resources.ApplyResources(this.radMenuItem5, "radMenuItem5");
+            this.radMenuItem5.Name = "radMenuItem5";
             this.radMenuItem5.UseCompatibleTextRendering = false;
             // 
             // radMenuItem6
             // 
-            this.radMenuItem6.Name = "radMenuItem6";
             resources.ApplyResources(this.radMenuItem6, "radMenuItem6");
+            this.radMenuItem6.Name = "radMenuItem6";
             this.radMenuItem6.UseCompatibleTextRendering = false;
             // 
             // radMenuItem4
             // 
-            this.radMenuItem4.Name = "radMenuItem4";
             resources.ApplyResources(this.radMenuItem4, "radMenuItem4");
+            this.radMenuItem4.Name = "radMenuItem4";
             this.radMenuItem4.UseCompatibleTextRendering = false;
             // 
             // imageList1
@@ -131,26 +131,26 @@
             // 
             // menuPuntoret
             // 
-            this.menuPuntoret.Name = "menuPuntoret";
             resources.ApplyResources(this.menuPuntoret, "menuPuntoret");
+            this.menuPuntoret.Name = "menuPuntoret";
             this.menuPuntoret.Click += new System.EventHandler(this.radMenuItem16_Click);
             // 
             // menuMenaxhimiPuntoreve
             // 
-            this.menuMenaxhimiPuntoreve.Name = "menuMenaxhimiPuntoreve";
             resources.ApplyResources(this.menuMenaxhimiPuntoreve, "menuMenaxhimiPuntoreve");
+            this.menuMenaxhimiPuntoreve.Name = "menuMenaxhimiPuntoreve";
             this.menuMenaxhimiPuntoreve.Click += new System.EventHandler(this.radMenuItem17_Click);
             // 
             // radMenuItem18
             // 
-            this.radMenuItem18.Name = "radMenuItem18";
             resources.ApplyResources(this.radMenuItem18, "radMenuItem18");
+            this.radMenuItem18.Name = "radMenuItem18";
             this.radMenuItem18.Click += new System.EventHandler(this.radMenuItem18_Click);
             // 
             // menuRegjistrimiProduktev
             // 
-            this.menuRegjistrimiProduktev.Name = "menuRegjistrimiProduktev";
             resources.ApplyResources(this.menuRegjistrimiProduktev, "menuRegjistrimiProduktev");
+            this.menuRegjistrimiProduktev.Name = "menuRegjistrimiProduktev";
             this.menuRegjistrimiProduktev.Click += new System.EventHandler(this.menuRegjistrimiProduktev_Click);
             // 
             // radMenuItem14
@@ -168,14 +168,14 @@
             // 
             // radMenuItem21
             // 
-            this.radMenuItem21.Name = "radMenuItem21";
             resources.ApplyResources(this.radMenuItem21, "radMenuItem21");
+            this.radMenuItem21.Name = "radMenuItem21";
             this.radMenuItem21.Click += new System.EventHandler(this.radMenuItem21_Click);
             // 
             // radMenuItem22
             // 
-            this.radMenuItem22.Name = "radMenuItem22";
             resources.ApplyResources(this.radMenuItem22, "radMenuItem22");
+            this.radMenuItem22.Name = "radMenuItem22";
             this.radMenuItem22.Click += new System.EventHandler(this.radMenuItem22_Click);
             // 
             // lblUsername
@@ -185,11 +185,11 @@
             // 
             // radPanel1
             // 
+            resources.ApplyResources(this.radPanel1, "radPanel1");
             this.radPanel1.Controls.Add(this.label2);
             this.radPanel1.Controls.Add(this.lblDatetime);
             this.radPanel1.Controls.Add(this.lblLoggedUser);
             this.radPanel1.Controls.Add(this.label1);
-            resources.ApplyResources(this.radPanel1, "radPanel1");
             this.radPanel1.Name = "radPanel1";
             this.radPanel1.ThemeName = "CrystalDark";
             // 
@@ -242,19 +242,19 @@
             // 
             // radMenuItem19
             // 
-            this.radMenuItem19.Name = "radMenuItem19";
             resources.ApplyResources(this.radMenuItem19, "radMenuItem19");
+            this.radMenuItem19.Name = "radMenuItem19";
             this.radMenuItem19.Click += new System.EventHandler(this.radMenuItem19_Click);
             // 
             // radMenuItem20
             // 
-            this.radMenuItem20.Name = "radMenuItem20";
             resources.ApplyResources(this.radMenuItem20, "radMenuItem20");
+            this.radMenuItem20.Name = "radMenuItem20";
             // 
             // radMenuItem23
             // 
-            this.radMenuItem23.Name = "radMenuItem23";
             resources.ApplyResources(this.radMenuItem23, "radMenuItem23");
+            this.radMenuItem23.Name = "radMenuItem23";
             // 
             // radMenuItem17
             // 
@@ -264,6 +264,7 @@
             // 
             // radMenu2
             // 
+            resources.ApplyResources(this.radMenu2, "radMenu2");
             this.radMenu2.Controls.Add(this.lblUserAdministrator);
             this.radMenu2.Controls.Add(this.guna2CirclePictureBox1);
             this.radMenu2.Items.AddRange(new Telerik.WinControls.RadItem[] {
@@ -272,31 +273,42 @@
             this.radMenuItem15,
             this.radMenuItem16,
             this.radMenuItem17});
-            resources.ApplyResources(this.radMenu2, "radMenu2");
             this.radMenu2.Name = "radMenu2";
             this.radMenu2.ThemeName = "Material";
             // 
             // contextMenuStrip1
             // 
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startToolStripMenuItem,
             this.endToolStripMenuItem,
             this.orderToolStripMenuItem,
             this.detailsToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // startToolStripMenuItem
             // 
-            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
             resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
+            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
+            // 
+            // endToolStripMenuItem
+            // 
+            resources.ApplyResources(this.endToolStripMenuItem, "endToolStripMenuItem");
+            this.endToolStripMenuItem.Name = "endToolStripMenuItem";
+            this.endToolStripMenuItem.Click += new System.EventHandler(this.endToolStripMenuItem_Click);
+            // 
+            // orderToolStripMenuItem
+            // 
+            resources.ApplyResources(this.orderToolStripMenuItem, "orderToolStripMenuItem");
+            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
+            this.orderToolStripMenuItem.Click += new System.EventHandler(this.orderToolStripMenuItem_Click);
             // 
             // detailsToolStripMenuItem
             // 
-            this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
             resources.ApplyResources(this.detailsToolStripMenuItem, "detailsToolStripMenuItem");
+            this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
             this.detailsToolStripMenuItem.Click += new System.EventHandler(this.DetailsToolStripMenuItem_Click);
             // 
             // listviewitem
@@ -317,31 +329,19 @@
             // 
             // radMenuItem2
             // 
-            this.radMenuItem2.Name = "radMenuItem2";
             resources.ApplyResources(this.radMenuItem2, "radMenuItem2");
+            this.radMenuItem2.Name = "radMenuItem2";
             // 
             // radMenuItem3
             // 
-            this.radMenuItem3.Name = "radMenuItem3";
             resources.ApplyResources(this.radMenuItem3, "radMenuItem3");
+            this.radMenuItem3.Name = "radMenuItem3";
             // 
             // btnRefresh
             // 
             resources.ApplyResources(this.btnRefresh, "btnRefresh");
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
-            // 
-            // endToolStripMenuItem
-            // 
-            this.endToolStripMenuItem.Name = "endToolStripMenuItem";
-            resources.ApplyResources(this.endToolStripMenuItem, "endToolStripMenuItem");
-            this.endToolStripMenuItem.Click += new System.EventHandler(this.endToolStripMenuItem_Click);
-            // 
-            // orderToolStripMenuItem
-            // 
-            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            resources.ApplyResources(this.orderToolStripMenuItem, "orderToolStripMenuItem");
-            this.orderToolStripMenuItem.Click += new System.EventHandler(this.orderToolStripMenuItem_Click);
             // 
             // MainForm
             // 
