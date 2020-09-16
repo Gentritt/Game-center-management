@@ -120,7 +120,7 @@ namespace Game_center_management
 		{
 			lblDatetime.Text = DateTime.Now.ToString();
 			timer1.Start();
-		}
+        }
 
 		private void radMenuItem17_Click_1(object sender, EventArgs e)
 		{
@@ -327,6 +327,14 @@ namespace Game_center_management
 
             computers.IsActiveFalse(pc);
 
+            BillDetails bd = new BillDetails();
+            bd.ShowDialog();
+
+        }
+
+        private void radMenuItem23_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Numri/Number: 038-500-300 \n Email: gaming-center@hotmail.com \n Adresa: Rruga B Bregu i diellit","Contact Us");
         }
     }
 }

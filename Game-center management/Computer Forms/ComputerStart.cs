@@ -71,6 +71,7 @@ namespace Game_center_management.Computer_Forms
                 //Bill products = new Products();
                 //products.InitData();
                 this.Close();
+                
 
             }
             else

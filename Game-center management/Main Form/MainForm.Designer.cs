@@ -46,7 +46,6 @@
             this.menuMenaxhimiPuntoreve = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem18 = new Telerik.WinControls.UI.RadMenuItem();
             this.menuRegjistrimiProduktev = new Telerik.WinControls.UI.RadMenuItem();
-            this.radMenuItem14 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem15 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem21 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem22 = new Telerik.WinControls.UI.RadMenuItem();
@@ -91,26 +90,26 @@
             // 
             // radMenuItem1
             // 
-            resources.ApplyResources(this.radMenuItem1, "radMenuItem1");
             this.radMenuItem1.Name = "radMenuItem1";
+            resources.ApplyResources(this.radMenuItem1, "radMenuItem1");
             this.radMenuItem1.UseCompatibleTextRendering = false;
             // 
             // radMenuItem5
             // 
-            resources.ApplyResources(this.radMenuItem5, "radMenuItem5");
             this.radMenuItem5.Name = "radMenuItem5";
+            resources.ApplyResources(this.radMenuItem5, "radMenuItem5");
             this.radMenuItem5.UseCompatibleTextRendering = false;
             // 
             // radMenuItem6
             // 
-            resources.ApplyResources(this.radMenuItem6, "radMenuItem6");
             this.radMenuItem6.Name = "radMenuItem6";
+            resources.ApplyResources(this.radMenuItem6, "radMenuItem6");
             this.radMenuItem6.UseCompatibleTextRendering = false;
             // 
             // radMenuItem4
             // 
-            resources.ApplyResources(this.radMenuItem4, "radMenuItem4");
             this.radMenuItem4.Name = "radMenuItem4";
+            resources.ApplyResources(this.radMenuItem4, "radMenuItem4");
             this.radMenuItem4.UseCompatibleTextRendering = false;
             // 
             // imageList1
@@ -131,32 +130,27 @@
             // 
             // menuPuntoret
             // 
-            resources.ApplyResources(this.menuPuntoret, "menuPuntoret");
             this.menuPuntoret.Name = "menuPuntoret";
+            resources.ApplyResources(this.menuPuntoret, "menuPuntoret");
             this.menuPuntoret.Click += new System.EventHandler(this.radMenuItem16_Click);
             // 
             // menuMenaxhimiPuntoreve
             // 
-            resources.ApplyResources(this.menuMenaxhimiPuntoreve, "menuMenaxhimiPuntoreve");
             this.menuMenaxhimiPuntoreve.Name = "menuMenaxhimiPuntoreve";
+            resources.ApplyResources(this.menuMenaxhimiPuntoreve, "menuMenaxhimiPuntoreve");
             this.menuMenaxhimiPuntoreve.Click += new System.EventHandler(this.radMenuItem17_Click);
             // 
             // radMenuItem18
             // 
-            resources.ApplyResources(this.radMenuItem18, "radMenuItem18");
             this.radMenuItem18.Name = "radMenuItem18";
+            resources.ApplyResources(this.radMenuItem18, "radMenuItem18");
             this.radMenuItem18.Click += new System.EventHandler(this.radMenuItem18_Click);
             // 
             // menuRegjistrimiProduktev
             // 
-            resources.ApplyResources(this.menuRegjistrimiProduktev, "menuRegjistrimiProduktev");
             this.menuRegjistrimiProduktev.Name = "menuRegjistrimiProduktev";
+            resources.ApplyResources(this.menuRegjistrimiProduktev, "menuRegjistrimiProduktev");
             this.menuRegjistrimiProduktev.Click += new System.EventHandler(this.menuRegjistrimiProduktev_Click);
-            // 
-            // radMenuItem14
-            // 
-            resources.ApplyResources(this.radMenuItem14, "radMenuItem14");
-            this.radMenuItem14.Name = "radMenuItem14";
             // 
             // radMenuItem15
             // 
@@ -168,14 +162,14 @@
             // 
             // radMenuItem21
             // 
-            resources.ApplyResources(this.radMenuItem21, "radMenuItem21");
             this.radMenuItem21.Name = "radMenuItem21";
+            resources.ApplyResources(this.radMenuItem21, "radMenuItem21");
             this.radMenuItem21.Click += new System.EventHandler(this.radMenuItem21_Click);
             // 
             // radMenuItem22
             // 
-            resources.ApplyResources(this.radMenuItem22, "radMenuItem22");
             this.radMenuItem22.Name = "radMenuItem22";
+            resources.ApplyResources(this.radMenuItem22, "radMenuItem22");
             this.radMenuItem22.Click += new System.EventHandler(this.radMenuItem22_Click);
             // 
             // lblUsername
@@ -185,11 +179,11 @@
             // 
             // radPanel1
             // 
-            resources.ApplyResources(this.radPanel1, "radPanel1");
             this.radPanel1.Controls.Add(this.label2);
             this.radPanel1.Controls.Add(this.lblDatetime);
             this.radPanel1.Controls.Add(this.lblLoggedUser);
             this.radPanel1.Controls.Add(this.label1);
+            resources.ApplyResources(this.radPanel1, "radPanel1");
             this.radPanel1.Name = "radPanel1";
             this.radPanel1.ThemeName = "CrystalDark";
             // 
@@ -242,19 +236,20 @@
             // 
             // radMenuItem19
             // 
-            resources.ApplyResources(this.radMenuItem19, "radMenuItem19");
             this.radMenuItem19.Name = "radMenuItem19";
+            resources.ApplyResources(this.radMenuItem19, "radMenuItem19");
             this.radMenuItem19.Click += new System.EventHandler(this.radMenuItem19_Click);
             // 
             // radMenuItem20
             // 
-            resources.ApplyResources(this.radMenuItem20, "radMenuItem20");
             this.radMenuItem20.Name = "radMenuItem20";
+            resources.ApplyResources(this.radMenuItem20, "radMenuItem20");
             // 
             // radMenuItem23
             // 
-            resources.ApplyResources(this.radMenuItem23, "radMenuItem23");
             this.radMenuItem23.Name = "radMenuItem23";
+            resources.ApplyResources(this.radMenuItem23, "radMenuItem23");
+            this.radMenuItem23.Click += new System.EventHandler(this.radMenuItem23_Click);
             // 
             // radMenuItem17
             // 
@@ -264,51 +259,50 @@
             // 
             // radMenu2
             // 
-            resources.ApplyResources(this.radMenu2, "radMenu2");
             this.radMenu2.Controls.Add(this.lblUserAdministrator);
             this.radMenu2.Controls.Add(this.guna2CirclePictureBox1);
             this.radMenu2.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.miAdministrationMenu,
-            this.radMenuItem14,
             this.radMenuItem15,
             this.radMenuItem16,
             this.radMenuItem17});
+            resources.ApplyResources(this.radMenu2, "radMenu2");
             this.radMenu2.Name = "radMenu2";
             this.radMenu2.ThemeName = "Material";
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startToolStripMenuItem,
             this.endToolStripMenuItem,
             this.orderToolStripMenuItem,
             this.detailsToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // startToolStripMenuItem
             // 
-            resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
+            resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // endToolStripMenuItem
             // 
-            resources.ApplyResources(this.endToolStripMenuItem, "endToolStripMenuItem");
             this.endToolStripMenuItem.Name = "endToolStripMenuItem";
+            resources.ApplyResources(this.endToolStripMenuItem, "endToolStripMenuItem");
             this.endToolStripMenuItem.Click += new System.EventHandler(this.endToolStripMenuItem_Click);
             // 
             // orderToolStripMenuItem
             // 
-            resources.ApplyResources(this.orderToolStripMenuItem, "orderToolStripMenuItem");
             this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
+            resources.ApplyResources(this.orderToolStripMenuItem, "orderToolStripMenuItem");
             this.orderToolStripMenuItem.Click += new System.EventHandler(this.orderToolStripMenuItem_Click);
             // 
             // detailsToolStripMenuItem
             // 
-            resources.ApplyResources(this.detailsToolStripMenuItem, "detailsToolStripMenuItem");
             this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
+            resources.ApplyResources(this.detailsToolStripMenuItem, "detailsToolStripMenuItem");
             this.detailsToolStripMenuItem.Click += new System.EventHandler(this.DetailsToolStripMenuItem_Click);
             // 
             // listviewitem
@@ -329,13 +323,13 @@
             // 
             // radMenuItem2
             // 
-            resources.ApplyResources(this.radMenuItem2, "radMenuItem2");
             this.radMenuItem2.Name = "radMenuItem2";
+            resources.ApplyResources(this.radMenuItem2, "radMenuItem2");
             // 
             // radMenuItem3
             // 
-            resources.ApplyResources(this.radMenuItem3, "radMenuItem3");
             this.radMenuItem3.Name = "radMenuItem3";
+            resources.ApplyResources(this.radMenuItem3, "radMenuItem3");
             // 
             // btnRefresh
             // 
@@ -383,7 +377,6 @@
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem6;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem4;
 		private Telerik.WinControls.UI.RadMenuItem miAdministrationMenu;
-		private Telerik.WinControls.UI.RadMenuItem radMenuItem14;
 		private Telerik.WinControls.UI.RadMenuItem radMenuItem15;
 		private Telerik.WinControls.UI.RadMenuItem menuPuntoret;
 		private Telerik.WinControls.UI.RadMenuItem menuMenaxhimiPuntoreve;

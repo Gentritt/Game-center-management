@@ -117,394 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;radMenuItem23.Name" xml:space="preserve">
-    <value>radMenuItem23</value>
-  </data>
-  <data name="radMenuItem6.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblUserAdministrator.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="radPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblLoggedUser.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblDatetime.Name" xml:space="preserve">
-    <value>lblDatetime</value>
-  </data>
-  <data name="&gt;&gt;guna2CirclePictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="detailsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem20.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12.75pt</value>
-  </data>
-  <data name="&gt;&gt;lblUsername.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radMenuItem21.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="radPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>810, 33</value>
-  </data>
-  <data name="endToolStripMenuItem.Text" xml:space="preserve">
-    <value>End</value>
-  </data>
-  <data name="&gt;&gt;telerikMetroBlueTheme1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.TelerikMetroBlueTheme, Telerik.WinControls.Themes.TelerikMetroBlue, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;menuPuntoret.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;crystalDarkTheme1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.CrystalDarkTheme, Telerik.WinControls.Themes.CrystalDark, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem1.Name" xml:space="preserve">
-    <value>radMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;lblUsername.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblUsername.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;miAdministrationMenu.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem5.Name" xml:space="preserve">
-    <value>radMenuItem5</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 23</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 23</value>
-  </data>
-  <data name="radMenuItem14.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAlhJREFUSEtj
-        IBdkV04RBmEol3TQMGlhV/PUpRNIxZXdc+6BMDY5QhhkJ0Pr9OVvj1++85+eGGQnQ+u0Ze+xSdISg+xk
-        qJ28Ynnz3G0/u5ftJQ0v3fMXjLHJ4cEgu0B2MpRMP+wwY8/9D4de/P9PDwyyC2TnqMXUw/e//j86ezmG
-        OM0tPjJ14f8jG/ZjiNPG4uf/IPTdT/+PZeUj+EiYcouBhh5Zsun/oSe/4WJHG7v+H8vMA+Mjmw+jqodi
-        ii0+snrX/2NFFf+P5hb/P3z5+f8j6/f9P9o5GeygwyduY/UtCJNmMciQp38QfGDCOZaR+//Qox//D599
-        APcliI+iDwsmyWJQ6jyWXfj/8LVXEH7PtP+HtxxBqAE5AOhrOB8PJtriw8du/D9aXAUOPnDcLVz3/1hJ
-        NVa1xGDiLH7wDRykh2+8hfBBebOh8//h848x1RKJibL4aFP3/yNbj2KIU4IJWnxk06H/R9snoohRAxO2
-        GORTIlIpqZigxbTCI9ziqjknPjYuOf+CIF50+heQfgli1y889ROEoXIvoXKYetAwyC6wxcSC8q7Z2RU9
-        cwqhXIbUyv79IAzlMlR2zy0CymdBudQBZZ1zeSu65xzLnTSJHSrEkF7RnwbCUC5DQ8MqNpCa8o6Z/FAh
-        ykFlz9z2yp7ZIVAuTlDRNScUaHkblEs+0A4NZbN08r/i4BP5STu0gQ0qjBOo5OayO3hHfrZ08rtibJzG
-        ChUmHVhb+/GaOfh+Mnfw++TgEMoDFcYJQOrNHf0+m9n7fiRGPV5g6eQjDcJQLkFAnHoGBgDmHEoc4Pp/
-        LwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;lblDatetime.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="radMenu2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>810, 50</value>
-  </data>
-  <data name="&gt;&gt;orderToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radMenuItem18.Text" xml:space="preserve">
-    <value>Computers Management</value>
-  </data>
-  <data name="lblDatetime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Gaming-Center Management</value>
-  </data>
-  <data name="&gt;&gt;orderToolStripMenuItem.Name" xml:space="preserve">
-    <value>orderToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;radMenu2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblUserAdministrator.Location" type="System.Drawing.Point, System.Drawing">
-    <value>733, 9</value>
-  </data>
-  <data name="radMenuItem15.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAVpJREFUSEvt
-        ljtKxUAUhiNo4QMXYG1lY+MDfDUqKuIabK/uxRUI1pa6BnEDop2V2ttoYSH6/bk5cBjnCANJRLgffGRm
-        zp8ME2ZybzViRF8c4gt+tewzHmCIArkb2/AJQ3I3tGlIGvzETdxq2mm91JA0eIXGNab1UkPS4DYaO5jW
-        Sw3xoQccw5lGtTXmMznXcCMZM0N8aKABOMWTYbO++kxO47faDyzwitNoq7TVa0w1/zCpVUb41YdY4Kzu
-        5VHNcuY6RuhUWC7EAvN1L49qlou8RLGLfjzEAnp10p9dtXWeo42j/CLe4zKKc/SZEB8qdQXFRHPVm/lA
-        nwnxoVIfcQ6NPXxHnwnxoRL9rh7HyWGzWkWfC/GhErWrZ/EI71DHbwm1J3wuxIe6MOTPfo/1L6GLyTXp
-        PhaTPkhnVZ/PzvGTvuEC9oKf+FgDfWGTXtS9HrnBW5yqe/+XqvoG2QuBQPUkx9sAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="&gt;&gt;aquaTheme1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.AquaTheme, Telerik.WinControls.Themes.Aqua, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;lblDatetime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="miAdministrationMenu.Text" xml:space="preserve">
-    <value>Administration</value>
-  </data>
-  <data name="&gt;&gt;guna2CirclePictureBox1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CirclePictureBox, Guna.UI2, Version=2.0.0.4, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="radMenuItem19.Text" xml:space="preserve">
-    <value>Info</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="menuPuntoret.Text" xml:space="preserve">
-    <value>Clients Management</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem4.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="miAdministrationMenu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAA4JJREFUSEu1
-        lutPkmEYh11brbbWavW577X60PwH3Fqt1tz6kLbOphObS4dZyrQUT2XLYx4ItQxQStDIrCACgSAkgxZY
-        JiggmsdI0zKSkDued4+N4unwKl7btT3sue/fby97N4igC5cRuZqffGCbJOPQ7qak/dvZbPYqfLUyPMw6
-        vENfktzSe5Nlm5BcnZ+VVsCH+9e8Fu4Fi7Lw9Fk8Fl46ryTEO5vZI6BrAJIz0gqPsighE4+Hhyd5x/eM
-        iAonSYXBTtwrnu6pyzDK2SdLRTExa/D60jFVMdWkoj/pVXH8mmJGM15fGqLMmJ0TkuI5UsHfHGu9PIN2
-        cQx95AVxl/zaemJ4sE5xHvTduQgLmjrqs1/bAPK8uHwcQx/15cTS30uC9ShqoE+YDVNvq+D7+C14I2RR
-        pegO7eIY+iiL4nMXS+Y7OTAoyoOBllwYaM2F/nu54FIVgd/NA5gSUHqG6sHWlOWFwLckz4/LwjH0eZRz
-        9IRHWQND4gKfU1FIPdViyZ98xU/9PCOt9LWzjuzDMfThMqK3OJrZsyZeipdUQtIkOPvtHY/lbmRHrcUx
-        9OkSx2aYeUz/K2EKsYQkmjULUv0Gcex5HEMfvSgmx9KWSoWRSkii2R5JKuhaYi/hGPqohFFbzNJEZ680
-        nVhCEs2aZQkOBW/3ZhyzNAJPvc/RlfmFVELSoWd9Ntw9vBevLw+bOv0pqYSkTXNOjteWz8v2Exlf39/w
-        kYqC/TrM8XVLTqXjteWDfux7ZEmdvg+3iYVIdGeRn1GE/Y+BqvHgRouM4Z4bqg0pnXPVBl4ohvtx07EN
-        eDy8vH4c98ShZ4Jddw4+WksCXqPO9q40QHd4LDywarWbrorNzGrpAF8nzZocf5MNSJfxQsDz1BmJ7qpk
-        Azw0yyxXbcTr9Ekr068rvf+uUmAYH1QO++DZOIC+uw1cJtbPskUHjZnUHZpBs3z92GCJpLcCZeC4/6OY
-        b9xaLbM/V40sUGHB6kwdYNZkg8OQRonOOtPDkDm0WyOza1EWjv07yTWq9ZynDv3vQb846gVNn5USnYkz
-        WI7C+SLluuHfL13FA6tQPeonhixFlFXe0deE48lcuW2KbLN8miIFLMc2y7Q7n/d6F64JpazdyiUthsPy
-        Dms1rgmlQe3SkpbCYSBbg2tCqet09UvtHlgJuQqXDdeEksPvji4QGA+uhCgb1wSIiPgB/wX3JR5Pe0UA
-        AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="detailsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Details</value>
+  <metadata name="aquaTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>289, 17</value>
+  </metadata>
+  <metadata name="crystalTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>411, 17</value>
+  </metadata>
+  <metadata name="fluentDarkTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>663, 17</value>
+  </metadata>
+  <metadata name="crystalDarkTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="telerikMetroBlueTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>628, 56</value>
+  </metadata>
+  <metadata name="crystalTheme2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>156, 95</value>
+  </metadata>
+  <data name="radMenuItem1.Text" xml:space="preserve">
+    <value>Administrimi</value>
   </data>
   <data name="radMenuItem5.Text" xml:space="preserve">
     <value>Raportet</value>
   </data>
-  <data name="&gt;&gt;office2010SilverTheme1.Name" xml:space="preserve">
-    <value>office2010SilverTheme1</value>
+  <data name="radMenuItem6.Text" xml:space="preserve">
+    <value>Help</value>
   </data>
-  <data name="&gt;&gt;guna2CirclePictureBox1.Name" xml:space="preserve">
-    <value>guna2CirclePictureBox1</value>
+  <data name="radMenuItem4.Text" xml:space="preserve">
+    <value>radMenuItem4</value>
   </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem6.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem23.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;aquaTheme2.Name" xml:space="preserve">
-    <value>aquaTheme2</value>
-  </data>
-  <data name="radMenuItem16.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAA7RJREFUSEut
-        V1lPE1EUbvRPuD24/AP1V6gY7EJAQR5sEKPyZiXS4oxCgqCymLhU5EFewKiILNJOpRXQKIgawAUVRYjQ
-        iBSooCwt4/2md6CF02lL+JKvOZl77vkyd86551SXKEymexsPWuq3JOc27gFh4xlfXl/sz23caRQcQoro
-        ep9a4BnNLHk+klXRPQbCTr3oHsUafODLt60dekvzNqMoPcq41O61VA8Eixp9csmTSZJYO3t3IJhe1O41
-        XXDVHchr2MrDJAZDvvNkWqHba6sdDlJCWrTVDAWx15DvOMHDxQa+l0GQ7pjLusaLmybIwPEQe83lnZNG
-        8WlVXDmgF6SqHHvvNBVsLTxt75k2CM5KHp6GPt95/FjpSx8VIJyXWyblyja/QtiUTzjN5V0+g+DI4TKR
-        QCLhu8Q6XkffX/nf/KKsAjaeUb4qETOVxSYTziRI9bESqa3/H5dbDaxRe1Raa4eCyHYuF0KytXlXxqUO
-        L7VB5S23Xw4EQyLvf87LN1r98vXWKcUGsHaT+VB7VaYXdXiTrI93cFkloYSz1QMBylllw7sZRWB6dlG+
-        6lh+DntmLnT08Anfs5KW6q9Blmj5XFanSxGlD1qXA9jxJXTMw+MLq9ZGJwPKmueT9nFDwyS6+hRR1Njh
-        Qs8I5RjO5p6/8uDvBbnr+2zE82uuKXk+EHrj+rfabwymMS2lrpFpuG8pp1hEKX32hr7x7MKiXOacIv3C
-        CS39uZbNuoN5TXuzK96MUU6x2D04p4gCLb3aJaUyq+L1GLqaDj/HWZehnLSIo1fR+S3y+LXIOtqvpHMN
-        u3Xop5mXEz/qiZlQbfWzo6bWoxFHve9M0yYluVIL3KOUUzRWSFOKKFD94g/pE41LyaVktlJO46QjRbvH
-        z2VlxaZ8KKKcWOn2KqKAXpTOs0aveYGE8wrLZvszv0LYlA9Fy92vAaPotHHZ0GiTwa4zynk9iekk4soE
-        2I3yMK9mcJHasJK32ZsiuUDYlM9KWtlUwhrRAy63DFwk8bRF0P1xuUvBpnzCWdzsk1kCe1FBXC4SBsGV
-        Fc8goL6xL843Npd1TrBx6hSXoYExBeMKFWAtzLnVM20UJDsPHx2oMYibS9mwx46IChYPsddc9sqXIjy1
-        L9VtPDgktGRjXEFSUIG1aK35EcQ3xafj4RIDEo5lYh3KgDXxgPZAP45GHziCgV6U7kdNpESA2tOLLhua
-        eFqBZ+Toyr8w7MrFGptSbcm5T7bzbesLQRA2oJ+qf9pg4xlfjhM63X8S1zeZl4B0CwAAAABJRU5ErkJg
-        gg==
-</value>
-  </data>
-  <data name="&gt;&gt;lblUserAdministrator.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem20.Name" xml:space="preserve">
-    <value>radMenuItem20</value>
-  </data>
-  <data name="orderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
-  </data>
-  <data name="radMenuItem14.Text" xml:space="preserve">
-    <value>Raports</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem15.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
-    <value>btnRefresh</value>
-  </data>
-  <data name="&gt;&gt;lblUserAdministrator.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem19.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="lblLoggedUser.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblDatetime.Parent" xml:space="preserve">
-    <value>radPanel1</value>
-  </data>
-  <data name="&gt;&gt;startToolStripMenuItem.Name" xml:space="preserve">
-    <value>startToolStripMenuItem</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="orderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Order</value>
-  </data>
-  <data name="&gt;&gt;lblUserAdministrator.Name" xml:space="preserve">
-    <value>lblUserAdministrator</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem17.Name" xml:space="preserve">
-    <value>radMenuItem17</value>
-  </data>
-  <data name="&gt;&gt;materialTealTheme1.Name" xml:space="preserve">
-    <value>materialTealTheme1</value>
-  </data>
-  <data name="&gt;&gt;materialTealTheme1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.MaterialTealTheme, Telerik.WinControls.Themes.MaterialTeal, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;lblUserAdministrator.Parent" xml:space="preserve">
-    <value>radMenu2</value>
-  </data>
-  <data name="&gt;&gt;listviewitem.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="radMenuItem15.Text" xml:space="preserve">
-    <value>Language</value>
-  </data>
-  <data name="guna2CirclePictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>697, 0</value>
-  </data>
-  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>772, 82</value>
-  </data>
-  <data name="lblLoggedUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 23</value>
-  </data>
-  <data name="&gt;&gt;listviewitem.Name" xml:space="preserve">
-    <value>listviewitem</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="lblLoggedUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 9</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem22.Name" xml:space="preserve">
-    <value>radMenuItem22</value>
-  </data>
-  <data name="radMenuItem1.Text" xml:space="preserve">
-    <value>Administrimi</value>
-  </data>
-  <data name="guna2CirclePictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="&gt;&gt;listviewitem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuRegjistrimiProduktev.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem2.Name" xml:space="preserve">
-    <value>radMenuItem2</value>
-  </data>
-  <data name="lblDatetime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 23</value>
-  </data>
-  <data name="lblUsername.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 425</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem16.Name" xml:space="preserve">
-    <value>radMenuItem16</value>
-  </data>
-  <data name="&gt;&gt;lblLoggedUser.Parent" xml:space="preserve">
-    <value>radPanel1</value>
-  </data>
-  <data name="lblUsername.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;radMenu2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="lblUserAdministrator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 15</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem17.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radPanel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem19.Name" xml:space="preserve">
-    <value>radMenuItem19</value>
-  </data>
-  <data name="&gt;&gt;menuMenaxhimiPuntoreve.Name" xml:space="preserve">
-    <value>menuMenaxhimiPuntoreve</value>
-  </data>
-  <data name="listviewitem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 68</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>radPanel1</value>
-  </data>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADK
-        IgAAAk1TRnQBSQFMAwEBAAHwAQAB9AEAAUABAAFAAQAE/wEZARAI/wFCAU0BNgcAATYDAAEoBAABAQIA
+        IgAAAk1TRnQBSQFMAwEBAAEEAQEBBAEBAUABAAFAAQAE/wEZAQAI/wFCAU0BNgcAATYDAAEoBAABAQIA
         AUADAAEBAQABGAYAAcD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A
         /wD/AP8A/wD/AP8A/wBFAAP+AfkB8QH3AfYB6AHzAfYB5wHyAfYB5wHyAfYB5wHyAfYB5wHyAfYB5wHy
         AfYB5wHyAfYB5wHyAfYB5wHyAfYB5wHyAfYB5wHyAfYB5wHyAfYB5wHyAfYB5wHyAfYB5wHyAfYB5wHy
@@ -652,158 +303,344 @@
         AQ8B8wE/GAAB/AH/AfMBPwL/AfMBPxgAAfwB/wHzAT8C/wHzAT8YAAH8Af8B8wE/Av8B8wE/GAAB/AEA
         AQMBPwL/AfMBPxgAAfwBAAEDAT8C/wHzAT8YAAH+AQABAwMAAQMBPxgAAv8B8wMAAQMBPxgAAv8B8wMA
         AQMBPxgAAv8B8wT/AT8YAAL/AfAEAAE/GAAC/wHwBAABPxgAAv8B+AQAAT8YAAj/GAAI/xgACP8YAAj/
-        GAAI/xgACP8YAAj/GAAI/xgACP8YAAj/GAAI/y4ACw==
+        GAAI/xgACP8YAAj/GAAI/xgACP8YAAj/GAAI/xgACw==
 </value>
   </data>
-  <data name="lblDatetime.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12.75pt</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="miAdministrationMenu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAA4JJREFUSEu1
+        lutPkmEYh11brbbWavW577X60PwH3Fqt1tz6kLbOphObS4dZyrQUT2XLYx4ItQxQStDIrCACgSAkgxZY
+        JiggmsdI0zKSkDued4+N4unwKl7btT3sue/fby97N4igC5cRuZqffGCbJOPQ7qak/dvZbPYqfLUyPMw6
+        vENfktzSe5Nlm5BcnZ+VVsCH+9e8Fu4Fi7Lw9Fk8Fl46ryTEO5vZI6BrAJIz0gqPsighE4+Hhyd5x/eM
+        iAonSYXBTtwrnu6pyzDK2SdLRTExa/D60jFVMdWkoj/pVXH8mmJGM15fGqLMmJ0TkuI5UsHfHGu9PIN2
+        cQx95AVxl/zaemJ4sE5xHvTduQgLmjrqs1/bAPK8uHwcQx/15cTS30uC9ShqoE+YDVNvq+D7+C14I2RR
+        pegO7eIY+iiL4nMXS+Y7OTAoyoOBllwYaM2F/nu54FIVgd/NA5gSUHqG6sHWlOWFwLckz4/LwjH0eZRz
+        9IRHWQND4gKfU1FIPdViyZ98xU/9PCOt9LWzjuzDMfThMqK3OJrZsyZeipdUQtIkOPvtHY/lbmRHrcUx
+        9OkSx2aYeUz/K2EKsYQkmjULUv0Gcex5HEMfvSgmx9KWSoWRSkii2R5JKuhaYi/hGPqohFFbzNJEZ680
+        nVhCEs2aZQkOBW/3ZhyzNAJPvc/RlfmFVELSoWd9Ntw9vBevLw+bOv0pqYSkTXNOjteWz8v2Exlf39/w
+        kYqC/TrM8XVLTqXjteWDfux7ZEmdvg+3iYVIdGeRn1GE/Y+BqvHgRouM4Z4bqg0pnXPVBl4ohvtx07EN
+        eDy8vH4c98ShZ4Jddw4+WksCXqPO9q40QHd4LDywarWbrorNzGrpAF8nzZocf5MNSJfxQsDz1BmJ7qpk
+        Azw0yyxXbcTr9Ekr068rvf+uUmAYH1QO++DZOIC+uw1cJtbPskUHjZnUHZpBs3z92GCJpLcCZeC4/6OY
+        b9xaLbM/V40sUGHB6kwdYNZkg8OQRonOOtPDkDm0WyOza1EWjv07yTWq9ZynDv3vQb846gVNn5USnYkz
+        WI7C+SLluuHfL13FA6tQPeonhixFlFXe0deE48lcuW2KbLN8miIFLMc2y7Q7n/d6F64JpazdyiUthsPy
+        Dms1rgmlQe3SkpbCYSBbg2tCqet09UvtHlgJuQqXDdeEksPvji4QGA+uhCgb1wSIiPgB/wX3JR5Pe0UA
+        AAAASUVORK5CYII=
+</value>
   </data>
-  <data name="&gt;&gt;fluentDarkTheme1.Name" xml:space="preserve">
-    <value>fluentDarkTheme1</value>
+  <data name="miAdministrationMenu.Text" xml:space="preserve">
+    <value>Administration</value>
   </data>
-  <data name="&gt;&gt;aquaTheme1.Name" xml:space="preserve">
-    <value>aquaTheme1</value>
-  </data>
-  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;lblLoggedUser.Name" xml:space="preserve">
-    <value>lblLoggedUser</value>
-  </data>
-  <data name="&gt;&gt;crystalTheme2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.CrystalTheme, Telerik.WinControls.Themes.Crystal, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;endToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem5.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;lblUsername.Name" xml:space="preserve">
-    <value>lblUsername</value>
-  </data>
-  <data name="guna2CirclePictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="menuRegjistrimiProduktev.Text" xml:space="preserve">
-    <value>Products Management</value>
-  </data>
-  <data name="&gt;&gt;menuMenaxhimiPuntoreve.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem3.Name" xml:space="preserve">
-    <value>radMenuItem3</value>
-  </data>
-  <data name="&gt;&gt;lblUsername.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;miAdministrationMenu.Name" xml:space="preserve">
-    <value>miAdministrationMenu</value>
-  </data>
-  <data name="&gt;&gt;startToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radMenuItem2.Text" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="radPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 428</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;crystalDarkTheme1.Name" xml:space="preserve">
-    <value>crystalDarkTheme1</value>
-  </data>
-  <data name="radMenuItem23.Text" xml:space="preserve">
-    <value>Contact US</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem6.Name" xml:space="preserve">
-    <value>radMenuItem6</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem18.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="radMenuItem22.Text" xml:space="preserve">
-    <value>Albanian</value>
-  </data>
-  <data name="&gt;&gt;radMenu2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenu, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;crystalTheme1.Name" xml:space="preserve">
-    <value>crystalTheme1</value>
-  </data>
-  <data name="radMenuItem16.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="&gt;&gt;crystalTheme1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.CrystalTheme, Telerik.WinControls.Themes.Crystal, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radContextMenu1.Name" xml:space="preserve">
-    <value>radContextMenu1</value>
+  <data name="menuPuntoret.Text" xml:space="preserve">
+    <value>Clients Management</value>
   </data>
   <data name="menuMenaxhimiPuntoreve.Text" xml:space="preserve">
     <value>Employess Management</value>
   </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="radMenuItem18.Text" xml:space="preserve">
+    <value>Computers Management</value>
   </data>
-  <data name="&gt;&gt;radMenuItem1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="menuRegjistrimiProduktev.Text" xml:space="preserve">
+    <value>Products Management</value>
   </data>
-  <data name="&gt;&gt;menuRegjistrimiProduktev.Name" xml:space="preserve">
-    <value>menuRegjistrimiProduktev</value>
+  <data name="radMenuItem15.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAVpJREFUSEvt
+        ljtKxUAUhiNo4QMXYG1lY+MDfDUqKuIabK/uxRUI1pa6BnEDop2V2ttoYSH6/bk5cBjnCANJRLgffGRm
+        zp8ME2ZybzViRF8c4gt+tewzHmCIArkb2/AJQ3I3tGlIGvzETdxq2mm91JA0eIXGNab1UkPS4DYaO5jW
+        Sw3xoQccw5lGtTXmMznXcCMZM0N8aKABOMWTYbO++kxO47faDyzwitNoq7TVa0w1/zCpVUb41YdY4Kzu
+        5VHNcuY6RuhUWC7EAvN1L49qlou8RLGLfjzEAnp10p9dtXWeo42j/CLe4zKKc/SZEB8qdQXFRHPVm/lA
+        nwnxoVIfcQ6NPXxHnwnxoRL9rh7HyWGzWkWfC/GhErWrZ/EI71DHbwm1J3wuxIe6MOTPfo/1L6GLyTXp
+        PhaTPkhnVZ/PzvGTvuEC9oKf+FgDfWGTXtS9HrnBW5yqe/+XqvoG2QuBQPUkx9sAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="&gt;&gt;office2010SilverTheme1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.Office2010SilverTheme, Telerik.WinControls.Themes.Office2010Silver, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="radMenuItem15.Text" xml:space="preserve">
+    <value>Language</value>
   </data>
-  <data name="lblLoggedUser.AutoSize" type="System.Boolean, mscorlib">
+  <data name="radMenuItem21.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="radMenuItem22.Text" xml:space="preserve">
+    <value>Albanian</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblUsername.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radMenu2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="lblUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 425</value>
   </data>
-  <data name="btnRefresh.Text" xml:space="preserve">
-    <value>R</value>
+  <data name="lblUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
   </data>
-  <data name="&gt;&gt;radMenuItem22.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="lblUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 42</value>
+  <data name="&gt;&gt;lblUsername.Name" xml:space="preserve">
+    <value>lblUsername</value>
   </data>
-  <data name="&gt;&gt;materialBlueGreyTheme1.Name" xml:space="preserve">
-    <value>materialBlueGreyTheme1</value>
+  <data name="&gt;&gt;lblUsername.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>radPanel1</value>
+  <data name="&gt;&gt;lblUsername.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;telerikMetroBlueTheme1.Name" xml:space="preserve">
-    <value>telerikMetroBlueTheme1</value>
+  <data name="&gt;&gt;lblUsername.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;materialBlueGreyTheme1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.MaterialBlueGreyTheme, Telerik.WinControls.Themes.MaterialBlueGrey, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 10</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 23</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Date and Time: </value>
   </data>
-  <data name="guna2CirclePictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>radPanel1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lblDatetime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDatetime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="lblDatetime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 10</value>
+  </data>
+  <data name="lblDatetime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 23</value>
+  </data>
+  <data name="lblDatetime.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblDatetime.Name" xml:space="preserve">
+    <value>lblDatetime</value>
+  </data>
+  <data name="&gt;&gt;lblDatetime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDatetime.Parent" xml:space="preserve">
+    <value>radPanel1</value>
+  </data>
+  <data name="&gt;&gt;lblDatetime.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblLoggedUser.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblLoggedUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="lblLoggedUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 9</value>
+  </data>
+  <data name="lblLoggedUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 23</value>
+  </data>
+  <data name="lblLoggedUser.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblLoggedUser.Name" xml:space="preserve">
+    <value>lblLoggedUser</value>
+  </data>
+  <data name="&gt;&gt;lblLoggedUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLoggedUser.Parent" xml:space="preserve">
+    <value>radPanel1</value>
+  </data>
+  <data name="&gt;&gt;lblLoggedUser.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 9</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Logged User: </value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>radPanel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="radPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 428</value>
+  </data>
+  <data name="radPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>810, 33</value>
+  </data>
+  <data name="radPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;radPanel1.Name" xml:space="preserve">
+    <value>radPanel1</value>
   </data>
   <data name="&gt;&gt;radPanel1.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="&gt;&gt;radMenu2.Name" xml:space="preserve">
+  <data name="&gt;&gt;radPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radPanel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="materialTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="materialTealTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>123, 17</value>
+  </metadata>
+  <metadata name="aquaTheme2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>541, 17</value>
+  </metadata>
+  <metadata name="materialBlueGreyTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>440, 56</value>
+  </metadata>
+  <metadata name="office2010SilverTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>259, 56</value>
+  </metadata>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>172, 56</value>
+  </metadata>
+  <data name="lblUserAdministrator.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUserAdministrator.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="lblUserAdministrator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>733, 9</value>
+  </data>
+  <data name="lblUserAdministrator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 15</value>
+  </data>
+  <data name="lblUserAdministrator.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblUserAdministrator.Name" xml:space="preserve">
+    <value>lblUserAdministrator</value>
+  </data>
+  <data name="&gt;&gt;lblUserAdministrator.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;lblUserAdministrator.Parent" xml:space="preserve">
     <value>radMenu2</value>
   </data>
-  <data name="&gt;&gt;crystalTheme2.Name" xml:space="preserve">
-    <value>crystalTheme2</value>
+  <data name="&gt;&gt;lblUserAdministrator.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;lblLoggedUser.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="guna2CirclePictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAXtJREFUaEPt
+        10suBFEUh/E2QMIWLEA8FsAqzNiAsViIVwgzPfYYYuKxCcQeROKdGBC+f9IDg9Pl3qrW55LzJb+ko7tu
+        n5bbVdWtKIqif9c0NnCFlw49XscUim0Y2/jAZxfv2MIQikrDX8Aa2nKOoj7EDqxBq2yiiLTnq7ZNN9pO
+        k3BPX1hrwBSrcO8a1nApLuHeM6zhUjzBPQ1hDZfiEe79+S2kK6w1XIoVuKfbA50SrQGr6JgJFJFuD6wh
+        q+j0W0y6LTiDNajlFIMoKn0I3R5UbSc9p/98ccN/T7cHusLqDKNrhOixvrDF7PkoiqJyGoBOj4tYwwlu
+        cIu3Dj3W3/ScXqPX6hgd69Io5nGIO1gXrRQ69gBaawS/3jjaeIU1UBNacxd6j543hn3U+fGeS++xB71n
+        T5pDk21S1wMW0KhlWIv30xJqNYt+bJmfaIYZZHcMa0EPR8hOe9BazMM9srMW8pSdtYin7KxFPGVnLeIp
+        O2sRT1EURcXVan0BhkFwud3RKg0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="guna2CirclePictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>697, 0</value>
+  </data>
+  <data name="guna2CirclePictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="guna2CirclePictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="guna2CirclePictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;guna2CirclePictureBox1.Name" xml:space="preserve">
+    <value>guna2CirclePictureBox1</value>
+  </data>
+  <data name="&gt;&gt;guna2CirclePictureBox1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CirclePictureBox, Guna.UI2, Version=2.0.0.4, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;guna2CirclePictureBox1.Parent" xml:space="preserve">
+    <value>radMenu2</value>
+  </data>
+  <data name="&gt;&gt;guna2CirclePictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radMenuItem16.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAA7RJREFUSEut
+        V1lPE1EUbvRPuD24/AP1V6gY7EJAQR5sEKPyZiXS4oxCgqCymLhU5EFewKiILNJOpRXQKIgawAUVRYjQ
+        iBSooCwt4/2md6CF02lL+JKvOZl77vkyd86551SXKEymexsPWuq3JOc27gFh4xlfXl/sz23caRQcQoro
+        ep9a4BnNLHk+klXRPQbCTr3oHsUafODLt60dekvzNqMoPcq41O61VA8Eixp9csmTSZJYO3t3IJhe1O41
+        XXDVHchr2MrDJAZDvvNkWqHba6sdDlJCWrTVDAWx15DvOMHDxQa+l0GQ7pjLusaLmybIwPEQe83lnZNG
+        8WlVXDmgF6SqHHvvNBVsLTxt75k2CM5KHp6GPt95/FjpSx8VIJyXWyblyja/QtiUTzjN5V0+g+DI4TKR
+        QCLhu8Q6XkffX/nf/KKsAjaeUb4qETOVxSYTziRI9bESqa3/H5dbDaxRe1Raa4eCyHYuF0KytXlXxqUO
+        L7VB5S23Xw4EQyLvf87LN1r98vXWKcUGsHaT+VB7VaYXdXiTrI93cFkloYSz1QMBylllw7sZRWB6dlG+
+        6lh+DntmLnT08Anfs5KW6q9Blmj5XFanSxGlD1qXA9jxJXTMw+MLq9ZGJwPKmueT9nFDwyS6+hRR1Njh
+        Qs8I5RjO5p6/8uDvBbnr+2zE82uuKXk+EHrj+rfabwymMS2lrpFpuG8pp1hEKX32hr7x7MKiXOacIv3C
+        CS39uZbNuoN5TXuzK96MUU6x2D04p4gCLb3aJaUyq+L1GLqaDj/HWZehnLSIo1fR+S3y+LXIOtqvpHMN
+        u3Xop5mXEz/qiZlQbfWzo6bWoxFHve9M0yYluVIL3KOUUzRWSFOKKFD94g/pE41LyaVktlJO46QjRbvH
+        z2VlxaZ8KKKcWOn2KqKAXpTOs0aveYGE8wrLZvszv0LYlA9Fy92vAaPotHHZ0GiTwa4zynk9iekk4soE
+        2I3yMK9mcJHasJK32ZsiuUDYlM9KWtlUwhrRAy63DFwk8bRF0P1xuUvBpnzCWdzsk1kCe1FBXC4SBsGV
+        Fc8goL6xL843Npd1TrBx6hSXoYExBeMKFWAtzLnVM20UJDsPHx2oMYibS9mwx46IChYPsddc9sqXIjy1
+        L9VtPDgktGRjXEFSUIG1aK35EcQ3xafj4RIDEo5lYh3KgDXxgPZAP45GHziCgV6U7kdNpESA2tOLLhua
+        eFqBZ+Toyr8w7MrFGptSbcm5T7bzbesLQRA2oJ+qf9pg4xlfjhM63X8S1zeZl4B0CwAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="radMenuItem19.Text" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="radMenuItem20.Text" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="radMenuItem23.Text" xml:space="preserve">
+    <value>Contact US</value>
+  </data>
+  <data name="radMenuItem16.Text" xml:space="preserve">
+    <value>Help</value>
   </data>
   <data name="radMenuItem17.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -819,232 +656,370 @@
         Px2kzSHDteitVqFCkiTJJ6EjnqCojLhDAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;guna2CirclePictureBox1.Parent" xml:space="preserve">
-    <value>radMenu2</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem15.Name" xml:space="preserve">
-    <value>radMenuItem15</value>
-  </data>
-  <data name="&gt;&gt;materialTheme1.Name" xml:space="preserve">
-    <value>materialTheme1</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem21.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;materialTheme1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.MaterialTheme, Telerik.WinControls.Themes.Material, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="listviewitem.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;detailsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Logged User: </value>
-  </data>
-  <data name="lblDatetime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 10</value>
-  </data>
-  <data name="lblUsername.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;radContextMenu1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadContextMenu, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem21.Name" xml:space="preserve">
-    <value>radMenuItem21</value>
-  </data>
-  <data name="listviewitem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>758, 354</value>
-  </data>
-  <data name="startToolStripMenuItem.Text" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="radPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
-  </data>
-  <data name="lblDatetime.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="endToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
-  </data>
-  <data name="&gt;&gt;endToolStripMenuItem.Name" xml:space="preserve">
-    <value>endToolStripMenuItem</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 10</value>
+  <data name="radMenuItem17.Text" xml:space="preserve">
+    <value>Log Out</value>
   </data>
   <data name="radMenu2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>810, 461</value>
+  <data name="radMenu2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>810, 50</value>
   </data>
-  <data name="lblUserAdministrator.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="guna2CirclePictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAXtJREFUaEPt
-        10suBFEUh/E2QMIWLEA8FsAqzNiAsViIVwgzPfYYYuKxCcQeROKdGBC+f9IDg9Pl3qrW55LzJb+ko7tu
-        n5bbVdWtKIqif9c0NnCFlw49XscUim0Y2/jAZxfv2MIQikrDX8Aa2nKOoj7EDqxBq2yiiLTnq7ZNN9pO
-        k3BPX1hrwBSrcO8a1nApLuHeM6zhUjzBPQ1hDZfiEe79+S2kK6w1XIoVuKfbA50SrQGr6JgJFJFuD6wh
-        q+j0W0y6LTiDNajlFIMoKn0I3R5UbSc9p/98ccN/T7cHusLqDKNrhOixvrDF7PkoiqJyGoBOj4tYwwlu
-        cIu3Dj3W3/ScXqPX6hgd69Io5nGIO1gXrRQ69gBaawS/3jjaeIU1UBNacxd6j543hn3U+fGeS++xB71n
-        T5pDk21S1wMW0KhlWIv30xJqNYt+bJmfaIYZZHcMa0EPR8hOe9BazMM9srMW8pSdtYin7KxFPGVnLeIp
-        O2sRT1EURcXVan0BhkFwud3RKg0AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem3.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem14.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="lblUserAdministrator.TabIndex" type="System.Int32, mscorlib">
+  <data name="radMenu2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12.75pt</value>
+  <data name="&gt;&gt;radMenu2.Name" xml:space="preserve">
+    <value>radMenu2</value>
   </data>
-  <data name="&gt;&gt;fluentDarkTheme1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.FluentDarkTheme, Telerik.WinControls.Themes.FluentDark, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="&gt;&gt;radMenu2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenu, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
+  <data name="&gt;&gt;radMenu2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radMenu2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>436, 95</value>
+  </metadata>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 92</value>
   </data>
-  <data name="&gt;&gt;listviewitem.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
   </data>
-  <data name="&gt;&gt;radMenuItem2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="lblLoggedUser.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12.75pt</value>
-  </data>
-  <data name="radMenuItem17.Text" xml:space="preserve">
-    <value>Log Out</value>
-  </data>
-  <data name="&gt;&gt;detailsToolStripMenuItem.Name" xml:space="preserve">
-    <value>detailsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
-    <value>imageList1</value>
-  </data>
-  <data name="&gt;&gt;radPanel1.Name" xml:space="preserve">
-    <value>radPanel1</value>
-  </data>
-  <data name="&gt;&gt;aquaTheme2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.Themes.AquaTheme, Telerik.WinControls.Themes.Aqua, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem14.Name" xml:space="preserve">
-    <value>radMenuItem14</value>
-  </data>
-  <data name="listviewitem.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem4.Name" xml:space="preserve">
-    <value>radMenuItem4</value>
-  </data>
-  <data name="&gt;&gt;radMenuItem18.Name" xml:space="preserve">
-    <value>radMenuItem18</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 22</value>
   </data>
-  <data name="btnRefresh.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="startToolStripMenuItem.Text" xml:space="preserve">
+    <value>Start</value>
   </data>
-  <data name="&gt;&gt;menuPuntoret.Name" xml:space="preserve">
-    <value>menuPuntoret</value>
+  <data name="endToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 22</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
+  <data name="endToolStripMenuItem.Text" xml:space="preserve">
+    <value>End</value>
   </data>
-  <data name="radMenuItem20.Text" xml:space="preserve">
-    <value>Content</value>
+  <data name="orderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 22</value>
   </data>
-  <data name="radMenuItem4.Text" xml:space="preserve">
-    <value>radMenuItem4</value>
+  <data name="orderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Order</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="detailsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 22</value>
   </data>
-  <data name="&gt;&gt;radMenuItem16.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="detailsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="listviewitem.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="listviewitem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 68</value>
+  </data>
+  <data name="listviewitem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 354</value>
+  </data>
+  <data name="listviewitem.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;listviewitem.Name" xml:space="preserve">
+    <value>listviewitem</value>
+  </data>
+  <data name="&gt;&gt;listviewitem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listviewitem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listviewitem.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="radContextMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>286, 95</value>
+  </metadata>
+  <data name="radMenuItem2.Text" xml:space="preserve">
+    <value>Start</value>
   </data>
   <data name="radMenuItem3.Text" xml:space="preserve">
     <value>Stop</value>
   </data>
-  <metadata name="fluentDarkTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>663, 17</value>
-  </metadata>
-  <metadata name="crystalTheme2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>156, 95</value>
-  </metadata>
-  <metadata name="radContextMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>286, 95</value>
-  </metadata>
-  <metadata name="aquaTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>289, 17</value>
-  </metadata>
-  <metadata name="materialBlueGreyTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>440, 56</value>
-  </metadata>
-  <metadata name="telerikMetroBlueTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>628, 56</value>
-  </metadata>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>172, 56</value>
-  </metadata>
-  <metadata name="aquaTheme2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>541, 17</value>
-  </metadata>
-  <metadata name="office2010SilverTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>259, 56</value>
-  </metadata>
-  <metadata name="materialTealTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>127, 17</value>
+  <data name="btnRefresh.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>772, 82</value>
+  </data>
+  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 42</value>
+  </data>
+  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btnRefresh.Text" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>73</value>
   </metadata>
-  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="crystalTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>411, 17</value>
-  </metadata>
-  <metadata name="materialTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>436, 95</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="crystalDarkTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>810, 461</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Gaming-Center Management</value>
+  </data>
+  <data name="&gt;&gt;aquaTheme1.Name" xml:space="preserve">
+    <value>aquaTheme1</value>
+  </data>
+  <data name="&gt;&gt;aquaTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.AquaTheme, Telerik.WinControls.Themes.Aqua, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;crystalTheme1.Name" xml:space="preserve">
+    <value>crystalTheme1</value>
+  </data>
+  <data name="&gt;&gt;crystalTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.CrystalTheme, Telerik.WinControls.Themes.Crystal, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;fluentDarkTheme1.Name" xml:space="preserve">
+    <value>fluentDarkTheme1</value>
+  </data>
+  <data name="&gt;&gt;fluentDarkTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.FluentDarkTheme, Telerik.WinControls.Themes.FluentDark, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;crystalDarkTheme1.Name" xml:space="preserve">
+    <value>crystalDarkTheme1</value>
+  </data>
+  <data name="&gt;&gt;crystalDarkTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.CrystalDarkTheme, Telerik.WinControls.Themes.CrystalDark, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;telerikMetroBlueTheme1.Name" xml:space="preserve">
+    <value>telerikMetroBlueTheme1</value>
+  </data>
+  <data name="&gt;&gt;telerikMetroBlueTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.TelerikMetroBlueTheme, Telerik.WinControls.Themes.TelerikMetroBlue, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;crystalTheme2.Name" xml:space="preserve">
+    <value>crystalTheme2</value>
+  </data>
+  <data name="&gt;&gt;crystalTheme2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.CrystalTheme, Telerik.WinControls.Themes.Crystal, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem1.Name" xml:space="preserve">
+    <value>radMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem5.Name" xml:space="preserve">
+    <value>radMenuItem5</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem5.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem6.Name" xml:space="preserve">
+    <value>radMenuItem6</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem6.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem4.Name" xml:space="preserve">
+    <value>radMenuItem4</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem4.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miAdministrationMenu.Name" xml:space="preserve">
+    <value>miAdministrationMenu</value>
+  </data>
+  <data name="&gt;&gt;miAdministrationMenu.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;menuPuntoret.Name" xml:space="preserve">
+    <value>menuPuntoret</value>
+  </data>
+  <data name="&gt;&gt;menuPuntoret.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;menuMenaxhimiPuntoreve.Name" xml:space="preserve">
+    <value>menuMenaxhimiPuntoreve</value>
+  </data>
+  <data name="&gt;&gt;menuMenaxhimiPuntoreve.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem18.Name" xml:space="preserve">
+    <value>radMenuItem18</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem18.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;menuRegjistrimiProduktev.Name" xml:space="preserve">
+    <value>menuRegjistrimiProduktev</value>
+  </data>
+  <data name="&gt;&gt;menuRegjistrimiProduktev.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem15.Name" xml:space="preserve">
+    <value>radMenuItem15</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem15.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem21.Name" xml:space="preserve">
+    <value>radMenuItem21</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem21.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem22.Name" xml:space="preserve">
+    <value>radMenuItem22</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem22.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;materialTheme1.Name" xml:space="preserve">
+    <value>materialTheme1</value>
+  </data>
+  <data name="&gt;&gt;materialTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.MaterialTheme, Telerik.WinControls.Themes.Material, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;materialTealTheme1.Name" xml:space="preserve">
+    <value>materialTealTheme1</value>
+  </data>
+  <data name="&gt;&gt;materialTealTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.MaterialTealTheme, Telerik.WinControls.Themes.MaterialTeal, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;aquaTheme2.Name" xml:space="preserve">
+    <value>aquaTheme2</value>
+  </data>
+  <data name="&gt;&gt;aquaTheme2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.AquaTheme, Telerik.WinControls.Themes.Aqua, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;materialBlueGreyTheme1.Name" xml:space="preserve">
+    <value>materialBlueGreyTheme1</value>
+  </data>
+  <data name="&gt;&gt;materialBlueGreyTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.MaterialBlueGreyTheme, Telerik.WinControls.Themes.MaterialBlueGrey, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;office2010SilverTheme1.Name" xml:space="preserve">
+    <value>office2010SilverTheme1</value>
+  </data>
+  <data name="&gt;&gt;office2010SilverTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.Office2010SilverTheme, Telerik.WinControls.Themes.Office2010Silver, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem16.Name" xml:space="preserve">
+    <value>radMenuItem16</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem16.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem19.Name" xml:space="preserve">
+    <value>radMenuItem19</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem19.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem20.Name" xml:space="preserve">
+    <value>radMenuItem20</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem20.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem23.Name" xml:space="preserve">
+    <value>radMenuItem23</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem23.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem17.Name" xml:space="preserve">
+    <value>radMenuItem17</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem17.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Name" xml:space="preserve">
+    <value>startToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;endToolStripMenuItem.Name" xml:space="preserve">
+    <value>endToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;endToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;orderToolStripMenuItem.Name" xml:space="preserve">
+    <value>orderToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;orderToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;detailsToolStripMenuItem.Name" xml:space="preserve">
+    <value>detailsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;detailsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radContextMenu1.Name" xml:space="preserve">
+    <value>radContextMenu1</value>
+  </data>
+  <data name="&gt;&gt;radContextMenu1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadContextMenu, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem2.Name" xml:space="preserve">
+    <value>radMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem3.Name" xml:space="preserve">
+    <value>radMenuItem3</value>
+  </data>
+  <data name="&gt;&gt;radMenuItem3.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

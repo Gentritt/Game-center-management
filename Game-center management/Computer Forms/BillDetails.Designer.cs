@@ -216,7 +216,7 @@
             // rdvBill
             // 
             this.rdvBill.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rdvBill.Location = new System.Drawing.Point(612, 12);
+            this.rdvBill.Location = new System.Drawing.Point(560, 12);
             // 
             // 
             // 
@@ -299,7 +299,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 491);
+            this.ClientSize = new System.Drawing.Size(360, 491);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblUsingTime);
             this.Controls.Add(this.lblBillID);

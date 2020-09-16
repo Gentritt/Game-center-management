@@ -115,7 +115,15 @@ namespace Game_center_management.Computer_Forms
             lblComputerID.Text = this.rdvBill.CurrentRow.Cells[2].Value.ToString();
             lblClient.Text = this.rdvBill.CurrentRow.Cells[3].Value.ToString();
             lblStartTime.Text = this.rdvBill.CurrentRow.Cells[4].Value.ToString();
-            lblEndTime.Text = this.rdvBill.CurrentRow.Cells[5].Value.ToString();
+
+            if (this.rdvBill.CurrentRow.Cells[5].Value == null)
+            {
+                lblEndTime.Text = "";
+            }
+            else
+            {
+                lblEndTime.Text = this.rdvBill.CurrentRow.Cells[5].Value.ToString();
+            }
             //lblTotal.Text = this.rdvBill.CurrentRow.Cells[6].Value.ToString();
             //Calculate();
             TotalPriceInOrder();
@@ -124,8 +132,12 @@ namespace Game_center_management.Computer_Forms
             // {
             //TotalPrice();
             // }
-            TotalPrice();
-            UsingTime();
+            if (this.rdvBill.CurrentRow.Cells[5].Value != null)
+            {
+                TotalPrice();
+                UsingTime();
+            }
+            
             
             //EndTime i need to fix
             // EndTimeEnable();
@@ -135,9 +147,13 @@ namespace Game_center_management.Computer_Forms
                 CalculateTotal();
             }
 
-            Balance();
+            if (this.rdvBill.CurrentRow.Cells[5].Value != null)
+            {
+                Balance();
+                btnPrint.Enabled = false;
+            }
 
-            btnPrint.Enabled = false;
+            
         }
         private void Balance()
         {

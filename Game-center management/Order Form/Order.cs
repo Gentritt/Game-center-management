@@ -90,8 +90,6 @@ namespace Game_center_management.Products
             {
                 MessageBox.Show("Insert / FAil");
             }
-
-            DecreaseQuantity();
         }
         private void DecreaseQuantity()
         {
