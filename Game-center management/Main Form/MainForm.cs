@@ -268,7 +268,7 @@ namespace Game_center_management
 
         private void radMenuItem19_Click(object sender, EventArgs e)
         {
-            GetHelpProvider(this, "Hyrje.htm");
+            //GetHelpProvider(this, "Hyrje.htm");
             Help.ShowHelp(this, "file://C:\\Users\\Eugen\\Documents\\My HelpAndManual Projects\\Projekti.chm", "Hyrje.htm");
         }
 

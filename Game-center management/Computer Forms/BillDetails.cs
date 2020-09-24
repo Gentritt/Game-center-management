@@ -207,6 +207,7 @@ namespace Game_center_management.Computer_Forms
         {
             billBLL.GetTotalOrders(int.Parse(lblBillID.Text));
             lblOrders.Text = StaticClass.TotalPrice.ToString();
+            StaticClass.TotalPrice = 0;
         }
         //private void BtnEndTime_Click(object sender, EventArgs e)
         //{

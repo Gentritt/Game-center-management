@@ -113,5 +113,10 @@ namespace Game_center_management
 			this.InitializeComponent();
 			AfterClear();
 		}
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
